@@ -2,7 +2,9 @@
 
 // Please leave quotes around keys! They're needed for Space Heater.
 var routes = window.routes = [
-    {'pattern': '^/$', 'view_name': 'hello_world'},
+    {'pattern': '^/$', 'view_name': 'homepage'},
+    {'pattern': '^/collection/([^/<>"\']+)$', 'view_name': 'collection'},
+    {'pattern': '^/new_collection$', 'view_name': 'new_collection'},
 
     {'pattern': '^/tests$', 'view_name': 'tests'},
     {'pattern': '^/debug$', 'view_name': 'debug'}

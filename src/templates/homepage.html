@@ -1,0 +1,13 @@
+<section class="main">
+<h1>{{ _('Collections') }}</h1>
+<a class="button" href="{{ url('new_collection') }}">Create a new collection</a>
+<ul>
+{% defer (url=api('collections'), pluck='objects', as='collection') %}
+  {% for collection in this %}
+    <li><a href="{{ url('collection', [collection.id]) }}">{{ collection.name }}</a></li>
+  {% endfor %}
+{% placeholder %}
+  {{ _('Loading collections...') }}
+{% end %}
+</ul>
+</section>

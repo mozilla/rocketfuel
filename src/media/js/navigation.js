@@ -233,6 +233,7 @@ define('navigation',
             navigate(state.path, true, state);
         }
     }).on('submit', 'form', function(e) {
+        e.preventDefault();
         console.error("Form submissions are not allowed.");
         return false;
     });

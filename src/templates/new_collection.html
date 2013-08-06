@@ -1,0 +1,26 @@
+<section class="main">
+<h1>{{ _('New Collection') }}</h1>
+<form class="form-grid account-settings" id="new_collection">
+  <div class="simple-field c">
+    <div class="form-label label">
+      <label for="name">{{ _('Name') }}</label>
+    </div>
+    <div class="form-col">
+      <input type="text" name="name" required>
+    </div>
+  </div>
+
+  <div class="brform simple-field c">
+    <div class="form-label">
+      <label for="description">{{ _('Description') }}</label>
+    </div>
+    <div class="form-col">
+      <textarea name="description" required></textarea>
+    </div>
+  </div>
+
+  <footer>
+    <p><button type="submit" class="button">{{ _('Create') }}</button></p>
+  </footer>
+</form>
+</section>

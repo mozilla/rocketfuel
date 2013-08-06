@@ -2,19 +2,21 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
     var gettext = l10n.gettext;
 
     return _.defaults(settings_local, {
-        app_name: 'commonplace app',
+        app_name: 'rocketfuel',
         init_module: 'main',
         default_locale: 'en-US',
         api_url: 'http://' + window.location.hostname,  // No trailing slash, please.
 
         storage_version: '0',
 
-        param_whitelist: ['q', 'sort'],
+        param_whitelist: [],
 
         model_prototypes: {
             // Dummy prototypes to facilitate testing
             'dummy': 'id',
-            'dummy2': 'id'
+            'dummy2': 'id',
+
+            'collection': 'id'
         },
 
         fragment_error_template: 'errors/fragment.html',
@@ -24,6 +26,6 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
 
         persona_unverified_issuer: 'login.persona.org',
 
-        title_suffix: 'Commonplace App'
+        title_suffix: 'Rocketfuel'
     });
 });

@@ -5,7 +5,8 @@
 define('settings_local', [], function() {
     // Override settings here!
     return {
-        api_url: 'https://marketplace-dev.allizom.org',
+        api_url: 'https://flue.paas.allizom.org',
+        // api_url: 'https://marketplace-dev.allizom.org',
         media_url: 'https://marketplace-dev-cdn.allizom.org/media/'
     };
 });

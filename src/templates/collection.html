@@ -1,0 +1,17 @@
+<section class="main">
+{% defer (url=api('collection', [id]), as='collection') %}
+  <h1>{{ this.name }}</h1>
+  <h2>{{ _('Description') }}</h2>
+  <p>{{ this.description }}</p>
+  <h2>{{ _('Apps') }}</h2>
+  <ul>
+    {% for collection in this.apps %}
+      <li><a href="{{ url('collection', [collection.id]) }}">{{ collection.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% placeholder %}
+  {{ _('Loading collection...') }}
+{% except %}
+  {{ _('Error loading the collection.') }}
+{% end %}
+</section>

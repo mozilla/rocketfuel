@@ -1,11 +1,7 @@
 define('routes_api', [], function() {
-
-    // List API routes here.
-    // E.g.:
-    // {
-    //     "route": "/foo/bar/{0}",
-    //     "another_route": "/foo/bar/{0}/asdf"
-    // }
     return {
+    	'collections': '/api/v1/rocketfuel/collections/',
+    	'collection': '/api/v1/rocketfuel/collections/{0}/',
+    	'add_app': '/api/v1/rocketfuel/collections/{0}/add_app'
     };
 });

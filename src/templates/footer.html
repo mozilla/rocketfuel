@@ -4,22 +4,7 @@
   </div>
   <div class="group links">
     <a href="/developers/">{{ _('Developer Hub') }}</a>
-    <a href="#" class="submit-feedback">{{ _('Feedback') }}</a>
     <a href="https://support.mozilla.org/products/firefox-os/marketplace" target="_blank">{{ _('Support') }}</a>
-  </div>
-  <div class="language group links">
-    <a href="{{ url('settings') }}" class="region region-{{ user.get_setting('region', 'worldwide') }}">
-      {{ REGIONS[user.get_setting('region', 'worldwide')] }}</a>
-    <a href="{{ url('purchases') }}">{{ _('My Apps') }}</a>
-    {% if user.get_permission('developer') %}
-      <a href="/developers/submissions">{{ _('My Submissions') }}</a>
-    {% endif %}
-    {% if user.get_permission('reviewer') %}
-      <a href="/reviewers/apps/queue/" class="only-logged-in">{{ _('Reviewer Tools') }}</a>
-    {% endif %}
-    {% if user.get_permission('lookup') %}
-      <a href="/lookup/" class="only-logged-in">{{ _('Lookup Tool') }}</a>
-    {% endif %}
   </div>
 </div>
 <div id="footer">
@@ -31,8 +16,6 @@
            cc_url='http://creativecommons.org/licenses/by-sa/3.0/') }}
     </p>
     <ul>
-      <li><a href="{{ url('privacy') }}">{{ _('Privacy Policy') }}</a></li>
-      <li><a href="{{ url('terms') }}">{{ _('Terms of Use') }}</a></li>
       <li><a href="http://mozilla.com/legal/fraud-report/index.html" target="_blank">
         {{ _('Report Trademark Abuse') }}</a></li>
     </ul>
