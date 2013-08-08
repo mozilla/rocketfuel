@@ -48,7 +48,7 @@ define('navigation',
     function canNavigate() {
         if (!navigator.onLine && !capabilities.phantom) {
             notification.notification({message: gettext('No internet connection')});
-            return false;
+            //return false;
         }
         return true;
     }
