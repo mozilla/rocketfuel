@@ -5,9 +5,9 @@
 
 // usable on any header
 .header {
-    border-top: 1px solid $salt-flat-white;
+    background: $salt-flat-white;
+    border-top: 1px solid $cement-gray;
     display-flex();
-    gradient-two-color(#fff, #e1e1e1);
     height: 48px;
     max-height: 48px;
     position: relative;
@@ -28,18 +28,29 @@
     }
 }
 
+#site-footer {
+    border-top: 1px solid $seavan-salt-white;
+}
+
+.project {
+    border-left: 1px dotted $seavan-salt-white;
+    color: darken($flamin-hot-cheetos-orange, 20%);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-left: 15px;
+    padding: 5px 0 0 15px;
+}
+
+header .email {
+    border-right: 1px solid $seavan-salt-white;
+    color: $london-fog-gray;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
 .header, .secondary-header {
-    &:before {
-        // Because box-shadows can go suck it.
-        bottom: -10px;
-        content: "";
-        display: block;
-        gradientTop(unquote('rgba(33,40,46,.4) 2%, rgba(241,241,241,.2) 30%, rgba(241,241,241,0) 100%'));
-        height: 10px;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-    }
+    border-bottom: 1px solid darken($cement-gray, 5%);
 }
 
 // # for the primary site header *only*. If you need to generalize a style in here, move it.
@@ -134,37 +145,6 @@
     width: 230px;
     label {
         display: none;
-    }
-}
-
-#search-q {
-    background: #fff;
-    border: 1px solid #d5d5d5;
-    border-color: $cement-gray #d5d5d5 #e0e0e0;
-    border-radius: 10px;
-    color: $sailor-blue;
-    font: 15px/28px $open-stack;
-    height: 34px;
-    outline: none;
-    padding: 2px 10px 1px;
-    width: 100%;
-    z-index: 2;
-    &:-moz-placeholder {
-        color: darken($cement-gray, 5%);
-    }
-    &::-moz-placeholder {
-        color: darken($cement-gray, 5%);
-    }
-    &::-webkit-input-placeholder {
-        color: darken($cement-gray, 5%);
-    }
-    &:invalid ~ .search-clear {
-        // Hide the X icon when the search field is empty.
-        display: none;
-    }
-    &:valid {
-        // Pad for the X icon.
-        padding-right: 34px;
     }
 }
 
@@ -394,6 +374,12 @@ main {
 
 // This probably shouldn't be media query based.
 @media (min-width: 1024px) {
+    .header {
+        background: #fff;
+        border-top: 0;
+        border-bottom: 1px solid #d8d8d8;
+    }
+
     main {
         padding: 48px 0;
     }
@@ -470,23 +456,6 @@ main {
 
     .active .account-links {
         display: block;
-    }
-
-    .site-header .search,
-    #search-q {
-        width: 532px;
-    }
-
-    #search-q {
-        font-size: 18px;
-        font-weight: 400;
-        height: 48px;
-        line-height: 48px;
-        padding: 6px 15px 4px;
-        &:valid {
-            // Adjust width for padding for the X icon.
-            padding-right: 42px;
-        }
     }
 
     .search-clear {
