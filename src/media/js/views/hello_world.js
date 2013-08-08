@@ -6,6 +6,6 @@ define('views/hello_world', ['l10n'], function(l10n) {
         builder.start('hello.html');
 
         builder.z('type', 'root');
-        builder.z('title', gettext('Hello World!'));  // L10n: Page not found (404)
+        builder.z('title', gettext('Hello World!'));
     };
 });

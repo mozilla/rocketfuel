@@ -24,9 +24,8 @@ define('helpers',
 
     safe_filter('make_data_attrs', function(obj) {
         return _.pairs(obj).map(function(pair) {
-                return 'data-' + utils.escape_(pair[0]) + '="' + utils.escape_(pair[1]) + '"';
-            }
-        ).join(' ');
+            return 'data-' + utils.escape_(pair[0]) + '="' + utils.escape_(pair[1]) + '"';
+        }).join(' ');
     });
 
     safe_filter('external_href', function(obj) {

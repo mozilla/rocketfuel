@@ -80,13 +80,8 @@
         fatten();
     }
 
-    &[disabled], &.disabled,
-    &.purchasing, &.purchased,
-    &.installing, &.installed {
+    &[disabled], &.disabled {
         pointer-events: none;
-    }
-    &.installed, &.purchased, &.incompatible {
-        pointer-events: auto;
     }
 
     .spin {
