@@ -9,6 +9,6 @@ define('z', ['jquery'], function($) {
         apps: {},
         flags: {},
         context: {},
-        spaceheater: !!document.body.getAttribute('data-spaceheater')
+        spaceheater: !!document.body.dataset.spaceheater
     };
 });
