@@ -25,26 +25,25 @@
             visibility: hidden;
         }
         .throbber {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 32px;
-            height: 32px;
-            border-radius: 20px;
+            animation(unquote('spin 1s linear infinite'));
             border: 4px solid #666;
             border-color: #666 transparent;
-            animation(unquote('spin 1s linear infinite'));
+            border-radius: 20px;
+            bottom: 0;
+            display: block;
+            height: 32px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 32px;
         }
     }
-}
-
-.loadmore.pagination-error span.error-text {
-    display: block;
-    text-align: center;
+    &.pagination-error span.error-text {
+        display: block;
+        text-align: center;
+    }
 }
 
 .listing .loadmore {

@@ -5,8 +5,8 @@
 
 // usable on any header
 .header {
-    background: $salt-flat-white;
-    border-top: 1px solid $cement-gray;
+    background: #fff;
+    border-bottom: 1px solid #d8d8d8;
     display-flex();
     height: 48px;
     max-height: 48px;
@@ -26,10 +26,6 @@
         line-height: 48px;
         z-index: 10;
     }
-}
-
-#site-footer {
-    border-top: 1px solid $seavan-salt-white;
 }
 
 .project {
@@ -54,9 +50,12 @@ header .email {
 }
 
 // # for the primary site header *only*. If you need to generalize a style in here, move it.
+
 .site-header {
     display: block;
-    position: fixed;
+    height: 90px;
+    max-height: 90px;
+    position: relative;
     text-align: center;
     top: 0;
     z-index: 20;
@@ -64,8 +63,10 @@ header .email {
         display: block;
     }
     > nav {
-        height: 48px;
+        height: 90px;
         display-flex();
+        margin: 0 auto;
+        max-width: 1024px;
         position: relative;
         text-align: left;
         width: 100%;
@@ -75,24 +76,29 @@ header .email {
         }
     }
     .site {
-        height: 48px;
-        margin: 0 5px;
-        width: 200px;
+        margin: 0;
+        width: 232px;
         a {
             display: block;
-            height: 47px;
             hidetext();
             width: 100%;
         }
     }
     .wordmark {
-        background: url(../img/pretty/marketplace_logo.png) 0 50% no-repeat;
-        background-size: auto 37px;
+        background: url(../img/pretty/marketplace_logo.png) -5px 50% no-repeat;
+        background-size: 245px auto;
         display: block;
-        height: 47px;
+        max-width: 232px;
+        width: 232px;
+    }
+    .site, .site a, .wordmark {
+        height: 60px;
     }
     .header-button {
         display: none;
+    }
+    .persona {
+        display: block;
     }
 }
 
@@ -157,65 +163,6 @@ header .email {
     }
 }
 
-.secondary-header,
-.featured-header {
-    position: relative;
-    h2, h3 {
-        color: $london-fog-gray;
-        margin-bottom: -3px;
-        max-width: calc(unquote('100% - 75px'));
-        min-width: 70%;
-        padding-bottom: 3px;
-        position: absolute;
-    }
-}
-
-.secondary-header {
-    background: $salt-flat-white;
-    border-top: 1px solid #fff;
-    .subtitle {
-        color: $earl-gray;
-        font-size: 20px;
-        font-weight: 300;
-        &:before {
-            content: "/\00a0";
-            color: darken($seavan-salt-white, 4%);
-            font-size: 30px;
-        }
-    }
-}
-
-.featured-header {
-    padding: 15px 10px 0;
-    h3, .view-all {
-        font-weight: 400;
-    }
-}
-
-.gallery .featured-header {
-    border-top: 7px solid $flamin-hot-cheetos-orange;
-}
-
-@media $narrower-than-desktop {
-    .hide-on-mobile {
-        display: none;
-    }
-    .secondary-header {
-        height: 40px;
-        h2 {
-            font-size: 15px;
-            line-height: 40px;
-            margin: 0 10px;
-        }
-        .subtitle, .subtitle:before {
-            font-size: 15px;
-        }
-        .subtitle {
-            font-weight: 400;
-        }
-    }
-}
-
 // When we're holding down on the debug page, don't allow clicking on the logo
 // because that would take us back home.
 [data-page-type~=debug] .header .wordmark {
@@ -224,132 +171,38 @@ header .email {
 
 [data-page-type~=search],
 [data-page-type~=leaf] {
-    .back, .expand {
+    .back, .expand, .flex-span {
         display: block;
     }
     .site, .flex-shift {
         display: none;
     }
     .flex-span {
-        display: block;
         flex(1);
     }
 }
 
 main {
-    padding-top: 48px;
+    padding: 48px 0;
 }
 
-@media (min-width: 710px) {
-    main {
-        padding: 96px 0 48px;  // 48px padding + 48px to offset header
-    }
+.logged-in .site-header .persona {
+    display: none;
 }
 
-// ***************** Cursor (Desktop) (>= 1024px)
-
-// This probably shouldn't be media query based.
-@media (min-width: 1024px) {
-    .header {
-        background: #fff;
-        border-top: 0;
-        border-bottom: 1px solid #d8d8d8;
+// How does the header look for the various page "types"?
+[data-page-type~=search],
+[data-page-type~=leaf] {
+    .back, .site {
+        display: block;
     }
-
-    main {
-        padding: 48px 0;
-    }
-
-    .site-header {
-        height: 90px;
-        max-height: 90px;
-        position: relative;
-        > nav {
-            height: 90px;
-            margin: 0 auto;
-            max-width: 1024px;
-        }
-        .site {
-            margin: 0;
-            width: 232px;
-        }
-        .site, .site a, .wordmark {
-            height: 60px;
-        }
-        .wordmark {
-            background-position: -5px 50%;
-            background-size: 245px auto;
-            max-width: 232px;
-            width: 232px;
-        }
-        .persona {
-            display: block;
-        }
-    }
-
-    .logged-in .site-header .persona {
+    .back, .site-header .expand-toggle,
+    .flex-span {
         display: none;
     }
-
-    // How does the header look for the various page "types"?
-    [data-page-type~=search],
-    [data-page-type~=leaf] {
-        .back, .site {
-            display: block;
-        }
-        .back, .site-header .expand-toggle,
-        .flex-span {
-            display: none;
-        }
-        .flex-shift {
-            display: block;
-        }
+    .flex-shift {
+        display: block;
     }
-}
-
-// ***************** Narrow Mobile (<= 671px)
-
-@media $narrower-than-desktop {
-    [data-page-type~=leaf],
-    [data-page-type~=root],
-    [data-page-type~=search] {
-        .site-header {
-            border-bottom: 1px solid darken($cement-gray, 5%);
-            &:before {
-                display: none;
-            }
-        }
-    }
-}
-
-@media (max-width: 540px) {
-    .site-header {
-        .search {
-            flex(1);
-            width: auto;
-        }
-    }
-    [data-page-type~=root] {
-        .site-header {
-            .site, .wordmark {
-                width: 35px;
-            }
-            .flex-shift {
-                display: none;
-            }
-        }
-    }
-    [data-page-type~=search],
-    [data-page-type~=leaf] {
-        .flex-span {
-            display: none;
-        }
-    }
-
-}
-
-[data-page-type=nag] .site-header {
-    display: none;
 }
 
 .nav-overlay.show {

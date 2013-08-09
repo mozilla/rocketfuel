@@ -79,6 +79,12 @@ textarea {
 
 .form-grid {
     diagonal-lines();
+    border-radius: 10px;
+    border: 1px solid $seavan-salt-white;
+    float: left;
+    margin-top: 30px;
+    padding: 3px 5px 8px;  // On desktop we want 18px above and below.
+    position: relative;
     width: 100%;
     input[type=email],
     input[type=text],
@@ -146,70 +152,28 @@ textarea {
         margin-bottom: 5px;
     }
     .simple-field {
-        padding: 10px 10px 0;
+        float: left;
+        padding: 15px 10px 10px;
+        width: 50%;
     }
     footer {
-        border-top: $castle-skull-gray 1px dashed;
         margin-top: 10px;
+        position: absolute;
+        right: -10px;
+        top: -90px;
+        // Show only "Save Changes" and "Sign Out" buttons on tablet and larger.
+        a:nth-child(2) ~ a {
+            display: none;
+        }
         p {
-            border-bottom: $castle-skull-gray 1px dashed;
+            float: left;
             padding: 10px;
         }
         .extras {
-            background: $salt-flat-white;
-            border: 0;
-        }
-        .reviewer-tools {
-            margin-top: 15px;
+            display: none;
         }
         button {
             width: 100%;
-        }
-    }
-}
-
-@media $at-least-desktop {
-    .form-grid {
-        border: 1px solid $seavan-salt-white;
-        border-radius: 10px;
-        float: left;
-        margin-top: 30px;
-        padding: 3px 5px 8px;  // On desktop we want 18px above and below.
-        position: relative;
-        .simple-field {
-            float: left;
-            padding: 15px 10px 10px;
-            width: 50%;
-        }
-        footer {
-            position: absolute;
-            top: -90px;
-            right: -10px;
-            p {
-                float: left;
-            }
-            // Show only "Save Changes" and "Sign Out" buttons on tablet and larger.
-            a:nth-child(2) ~ a {
-                display: none;
-            }
-        }
-        footer, footer p {
-            border: 0;
-        }
-    }
-    #account-settings .secondary-header h2 {
-        // To accomodate the floated "Sign in" button.
-        max-width: calc(unquote('100% - 330px'));
-    }
-    .reviewer-tools {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    .form-grid {
-        .extras {
-            display: none;
         }
     }
 }
