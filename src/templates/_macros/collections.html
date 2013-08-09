@@ -1,0 +1,8 @@
+{% macro collection_overview(collection) %}
+<div class="collection overview">
+  <strong><a href="{{ url('collection', [collection.id]) }}">{{ collection.name }}</a></strong>
+  {% if collection.description %}
+    <p>{{ collection.description }}</p>
+  {% endif %}
+</div>
+{% endmacro %}

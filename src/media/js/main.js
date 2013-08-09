@@ -1,4 +1,4 @@
-console.log('Sample Commonplace App');
+console.log('Rocketfuel');
 
 require.config({
     enforceDefine: true,

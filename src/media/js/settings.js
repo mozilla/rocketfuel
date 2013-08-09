@@ -26,6 +26,13 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
 
         persona_unverified_issuer: 'login.persona.org',
 
-        title_suffix: 'Rocketfuel'
+        title_suffix: 'Rocketfuel',
+
+        COLLECTION_TYPES: {
+            0: gettext('Curated'),
+            1: gettext('Featured App'),
+            2: gettext('Operator Shelf')
+        }
+        
     });
 });

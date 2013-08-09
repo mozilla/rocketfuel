@@ -41,36 +41,28 @@ body, h1, h2, h3, h4 {
     font-weight: 400;
 }
 
-h1 {
-    font-size: 24px;
-    line-height: 26px;
+h1, h2, h3, ul, ol {
+    margin: 0 0 15px;
+    line-height: 1.25em;
+}
+ul, ol {
+    margin: 30px 0;
+    padding-left: 45px;
 }
 
-.main {
-    h1, h2, h3, ul, ol {
-        margin: 15px 0;
-    }
-    ul, ol {
-        margin: 30px 0;
-        padding-left: 45px;
-    }
+h1 {
+    font-size: 30px;
 }
 
 h2 {
     color: $castle-skull-gray;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 50px;
 }
 
 h3 {
     color: $castle-skull-gray;
-    font-size: 15px;
-    line-height: 15px;
-}
-
-.listing h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h4 {
@@ -124,11 +116,6 @@ article {
 }
 
 @media $at-least-desktop {
-    h2 {
-        font-size: 40px;
-        font-weight: 300;
-        line-height: 50px;
-    }
     article {
         border-radius: 10px;
         margin: 48px 0 0;

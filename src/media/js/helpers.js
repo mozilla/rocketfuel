@@ -56,6 +56,21 @@ define('helpers',
         }
     };
 
+    filters.filter = function(list, kwargs) {
+        var output = [];
+        outer:
+        for (var i = 0; i < list.length; i++) {
+            var val = list[i];
+            inner:
+            for (prop in kwargs) {
+                if (!kwargs.hasOwnProperty(prop) || prop === '__keywords') continue inner;
+                if (!(prop in val) || val[prop] !== kwargs[prop]) continue outer;
+            }
+            output.push(val);
+        }
+        return output;
+    };
+
     safe_filter('stringify', JSON.stringify);
 
     filters.format = require('format').format;

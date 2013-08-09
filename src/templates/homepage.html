@@ -1,13 +1,100 @@
+{% from "_macros/collections.html" import collection_overview %}
+
 <section class="main">
-<h1>{{ _('Collections') }}</h1>
-<a class="button" href="{{ url('new_collection') }}">Create a new collection</a>
-<ul>
-{% defer (url=api('collections'), pluck='objects', as='collection') %}
-  {% for collection in this %}
-    <li><a href="{{ url('collection', [collection.id]) }}">{{ collection.name }}</a></li>
-  {% endfor %}
-{% placeholder %}
-  {{ _('Loading collections...') }}
-{% end %}
-</ul>
+  <section class="row home_filters form-grid gutter">
+    <div class="third">
+      {% defer (url=api('categories'), pluck='objects') %}
+        <label for="filter_category">{{ _('Category') }}</label>
+        <div class="pretty-select">
+          <select id="filter_category" class="full">
+            <option value="" selected>{{ _('All Categories (Homepage)') }}</option>
+            {% for category in this %}
+              <option value="{{ category.slug }}">{{ category.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      {% placeholder %}
+        {{ _('Loading categories...') }}
+      {% except %}
+      {% end %}
+    </div>
+    <div class="third">
+      {% defer (url=api('regions'), pluck='objects') %}
+        <label for="filter_region">{{ _('Region') }}</label>
+        <div class="pretty-select">
+          <select id="filter_region" class="full">
+            {% for region in this %}
+              <option value="{{ region.slug }}" {{ 'selected' if region.slug == 'worldwide' }}>{{ region.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      {% placeholder %}
+        {{ _('Loading regions...') }}
+      {% except %}
+      {% end %}
+    </div>
+    <div class="third">
+      {% defer (url=api('carriers'), pluck='objects') %}
+        <label for="#filter_carrier">{{ _('Carrier') }}</label>
+        <div class="pretty-select">
+          <select id="filter_carrier" class="full">
+            {% for carrier in this %}
+              {% set nope = carrier.slug == 'carrierless' %}
+              <option value="{{ '' if nope else carrier.slug }}" {{ 'selected' if nope }}>{{ carrier.name or '--' }}</option>
+              }
+            {% endfor %}
+          </select>
+        </div>
+      {% placeholder %}
+        {{ _('Loading carriers...') }}
+      {% except %}
+      {% end %}
+    </div>
+  </section>
+
+  <section class="row">
+    <iframe class="third" src="{{ settings.api_url }}/?region=worldwide&amp;lang={{ language }}" height="480" id="filter_preview"></iframe>
+    <div class="two-thirds">
+      {% defer (url=api('collections'), pluck='objects', as='collection') %}
+        <section class="group">
+          <h2>Collections</h2>
+          {% set results = this|filter(collection_type=0) %}
+          {% if results.length %}
+            {% for collection in results %}
+              {{ collection_overview(collection) }}
+            {% endfor %}
+          {% else %}
+            <p>{{ _('No collections have been created.') }}</p>
+          {% endif %}
+          <a class="new_collection" href="{{ url('new_collection') }}"><b>+</b> {{ _('Add a new collection' )}}</a>
+        </section>
+        <section class="group">
+          <h2>Featured Apps</h2>
+          {% set results = this|filter(collection_type=1) %}
+          {% if results.length %}
+            {% for collection in results %}
+              {{ collection_overview(collection) }}
+            {% endfor %}
+          {% else %}
+            <p>{{ _('No featured app sections have been created.') }}</p>
+          {% endif %}
+          <a class="new_collection" href="{{ url('new_collection') }}"><b>+</b> {{ _('Add a new featured app collection' )}}</a>
+        </section>
+        <section class="group">
+          <h2>Operator Shelves</h2>
+          {% set results = this|filter(collection_type=2) %}
+          {% if results.length %}
+            {% for collection in results %}
+              {{ collection_overview(collection) }}
+            {% endfor %}
+          {% else %}
+            <p>{{ _('No operator shelves have been created.') }}</p>
+          {% endif %}
+          <a class="new_collection" href="{{ url('new_collection') }}"><b>+</b> {{ _('Add a new operator shelf' )}}</a>
+        </section>
+      {% placeholder %}
+        {{ _('Loading collections...') }}
+      {% end %}
+    </div>
+  </section>
 </section>
