@@ -139,6 +139,11 @@ section.group {
     }
 }
 
+main {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
 .main {
     margin: 0 auto;
     .fragment-error {
@@ -163,12 +168,12 @@ section.group {
 
 .only-logged-in,
 .logged-in .only-logged-out {
-    display: none;
+    display: none !important;
 }
 
 .only-logged-out,
 .logged-in .only-logged-in {
-    display: block;
+    display: block !important;
 }
 
 .spinner {
