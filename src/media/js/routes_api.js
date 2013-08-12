@@ -7,6 +7,8 @@ define('routes_api', [], function() {
         'categories': '/api/v1/apps/category/',
         'carriers': '/api/v1/services/carrier/',
         'regions': '/api/v1/services/region/',
+        'search': '/api/v1/apps/search/',
+        
         'login': '/api/v1/account/login/'
     };
 });
