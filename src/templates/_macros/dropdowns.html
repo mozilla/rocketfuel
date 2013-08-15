@@ -1,0 +1,52 @@
+{% macro category_dropdown(default=None, name=None, value='slug') %}
+  {% set default_ = default %}
+  {% set value_ = value %}
+  {% defer (url=api('categories'), pluck='objects') %}
+    <div class="pretty-select">
+      <select id="filter_category" class="full"{% if name %} name="{{ name }}"{% endif %}>
+        <option value="" {{ 'selected' if not default }}>{{ _('All Categories (Homepage)') }}</option>
+        {% for category in this %}
+          <option value="{{ category[value_] }}" {{ 'selected' if category.slug == default_ }}>{{ category.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  {% placeholder %}
+    {{ _('Loading categories...') }}
+  {% except %}
+  {% end %}
+{% endmacro %}
+
+{% macro region_dropdown(default='worldwide', name=None, value='slug') %}
+  {% set default_ = default %}
+  {% set value_ = value %}
+  {% defer (url=api('regions'), pluck='objects') %}
+    <div class="pretty-select">
+      <select id="filter_region" class="full"{% if name %} name="{{ name }}"{% endif %}>
+        {% for region in this %}
+          <option value="{{ region[value_] }}" {{ 'selected' if region.slug == default_ }}>{{ region.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  {% placeholder %}
+    {{ _('Loading regions...') }}
+  {% except %}
+  {% end %}
+{% endmacro %}
+
+{% macro carrier_dropdown(default='carrierless', name=None, value='slug') %}
+  {% set default_ = default %}
+  {% set value_ = value %}
+  {% defer (url=api('carriers'), pluck='objects') %}
+    <div class="pretty-select">
+      <select id="filter_carrier" class="full"{% if name %} name="{{ name }}"{% endif %}>
+        {% for carrier in this %}
+          <option value="{{ '' if carrier.slug == 'carrierless' else carrier[value_] }}" {{ 'selected' if carrier.slug == default_ }}>
+            {{ carrier.name or '--' }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  {% placeholder %}
+    {{ _('Loading carriers...') }}
+  {% except %}
+  {% end %}
+{% endmacro %}

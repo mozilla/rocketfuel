@@ -9,14 +9,18 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
 
         storage_version: '0',
 
-        param_whitelist: [],
+        param_whitelist: ['carrier', 'region', 'category'],
 
         model_prototypes: {
             // Dummy prototypes to facilitate testing
             'dummy': 'id',
             'dummy2': 'id',
 
-            'collection': 'id'
+            'collection': 'id',
+
+            'region': 'slug',
+            'category': 'slug',
+            'carrier': 'slug'
         },
 
         fragment_error_template: 'errors/fragment.html',
@@ -26,11 +30,11 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
 
         persona_unverified_issuer: 'login.persona.org',
 
-        title_suffix: 'Rocketfuel',
+        title_suffix: 'Curation Tool',
 
         COLLECTION_TYPES: {
-            0: gettext('Curated'),
-            1: gettext('Featured App'),
+            0: gettext('Basic Collection'),
+            1: gettext('Featured App Collection'),
             2: gettext('Operator Shelf')
         }
         

@@ -1,31 +1,38 @@
 define('views/homepage',
-    ['format', 'l10n', 'settings', 'utils', 'z'],
-    function(format, l10n, settings, utils, z) {
+    ['format', 'l10n', 'settings', 'underscore', 'utils', 'z'],
+    function(format, l10n, settings, _, utils, z) {
 
     var gettext = l10n.gettext;
 
     z.page.on('change', '.home_filters select', function(e) {
-        var cat = $('#filter_category').val();
-        var region = $('#filter_region').val();
-        var carrier = $('#filter_carrier').val();
-
-        var base_url = settings.api_url;
-        if (cat) {
-            base_url += '/category/' + cat;
-        }
-
-        var args = {'region': region};
-        if (carrier) {
-            args.carrier = carrier;
-        }
-        base_url = utils.urlparams(base_url, args);
-        $('#filter_preview').attr('src', base_url);
+        var filters = {
+            'category': $('#filter_category').val() || undefined,
+            'region': $('#filter_region').val() || undefined,
+            'carrier': $('#filter_carrier').val() || undefined
+        };
+        z.page.trigger('divert', [utils.urlparams('', filters)]);
     });
 
     return function(builder) {
-        builder.start('homepage.html');
+
+        function get_url_params(url, type) {
+            var filters = utils.getVars();
+            filters.type = type;
+            return utils.urlparams(url, filters);
+        }
+
+        var args = utils.getVars();
+        builder.start(
+            'homepage.html',
+            {
+                'get_url_params': get_url_params,
+                'region': args.region,
+                'category': args.category,
+                'carrier': args.carrier
+            }
+        );
 
         builder.z('type', 'root');
-        builder.z('title', gettext('Publishing Tool'));
+        builder.z('title', gettext('Overview'));
     };
 });

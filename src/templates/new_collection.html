@@ -1,34 +1,59 @@
-<section class="main">
-  <h1>{{ _('New Collection') }}</h1>
-  <form class="form-grid account-settings only-logged-in" id="new_collection">
+{% from "_macros/dropdowns.html" import category_dropdown, region_dropdown, carrier_dropdown %}
 
-    <div class="simple-field c">
-      <label for="type">{{ _('Collection Type') }}</label>
-      <div class="pretty-select">
-        <select name="type">
-          <option value="0">{{ _('Basic Collection') }}</option>
-          <option value="1">{{ _('Featured App Collection') }}</option>
-          <option value="2">{{ _('Operator Shelf Collection') }}</option>
-        </select>
-      </div>
-    </div>
+<h1>{{ _('New {collection_type}', collection_type=settings.COLLECTION_TYPES[type]) }}</h1>
+<form class="form-grid account-settings only-logged-in" id="new_collection">
+  <input type="hidden" name="collection_type" value="{{ type }}">
 
-    <div class="simple-field c">
-      <label for="name">{{ _('Name') }}</label>
-      <input type="text" name="name" required>
-    </div>
-
-    <div class="brform simple-field c">
-      <label for="description">{{ _('Description') }}</label>
-      <textarea name="description" required></textarea>
-    </div>
-
-    <footer>
-      <p><button type="submit" class="button">{{ _('Create') }}</button></p>
-    </footer>
-  </form>
-  <div class="only-logged-out group">
-    <h2>{{ _('Unauthorized') }}</h2>
-    <p>{{ _('You must be logged in to create collections.') }}</p>
+  <div class="simple-field c">
+    <label for="name">{{ _('Name') }}</label>
+    <input type="text" name="name" required>
   </div>
-</section>
+
+  {# Only curated collections get authors #}
+  {% if type == 0 %}
+  <div class="simple-field c">
+    <label for="name">{{ _('Author Name') }}</label>
+    <input type="text" name="author" required>
+  </div>
+  {% endif %}
+
+  <div class="brform simple-field c">
+    <label for="description">{{ _('Description') }}</label>
+    <textarea name="description"></textarea>
+  </div>
+
+  <div class="row gutter">
+    {# Operator shelves don't get categories. #}
+    {% set show_cat = type != 2 %}
+
+    {# Basic collections don't get carriers. #}
+    {% set show_carrier = type != 0 %}
+
+    {% set colmode = 'third' if show_cat and show_carrier else 'half' %}
+
+    {% if show_cat %}
+      <div class="{{ colmode }}">
+        <label for="filter_category">{{ _('Category') }}</label>
+        {{ category_dropdown(name='category', value='id', default=category) }}
+      </div>
+    {% endif %}
+    <div class="{{ colmode }}">
+      <label for="filter_region">{{ _('Region') }}</label>
+      {{ region_dropdown(name='region', value='id', default=region) }}
+    </div>
+    {% if show_carrier %}
+      <div class="{{ colmode }}">
+        <label for="filter_carrier">{{ _('Carrier') }}</label>
+        {{ carrier_dropdown(name='carrier', value='id', default=carrier) }}
+      </div>
+    {% endif %}
+  </div>
+
+  <footer>
+    <p><button type="submit" class="button">{{ _('Create') }}</button></p>
+  </footer>
+</form>
+<div class="only-logged-out group">
+  <h2>{{ _('Unauthorized') }}</h2>
+  <p>{{ _('You must be logged in to create collections.') }}</p>
+</div>
