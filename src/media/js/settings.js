@@ -18,9 +18,9 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
 
             'collection': 'id',
 
-            'region': 'slug',
-            'category': 'slug',
-            'carrier': 'slug'
+            'region': 'id',
+            'category': 'id',
+            'carrier': 'id'
         },
 
         fragment_error_template: 'errors/fragment.html',

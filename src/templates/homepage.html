@@ -8,23 +8,23 @@
   </div>
   <div class="third">
     <label for="filter_region">{{ _('Region') }}</label>
-    {{ region_dropdown(default=region) }}
+    {{ region_dropdown(default=region or '1') }}
   </div>
   <div class="third">
     <label for="filter_carrier">{{ _('Carrier') }}</label>
-    {{ carrier_dropdown(default=carrier or 'carrierless') }}
+    {{ carrier_dropdown(default=carrier or '0') }}
   </div>
 </section>
 
 <section class="row gutter">
   <div class="third">
-    <iframe class="full" src="{{ settings.api_url }}/{{ 'category/' + category if category }}?region={{ region }}&amp;lang={{ language }}{{ '&carrier=' + carrier if carrier }}" height="480" id="filter_preview"></iframe>
+    <iframe class="full" src="" height="480" id="filter_preview"></iframe>
   </div>
   <div class="two-thirds">
     {% defer (url=api('collections'), pluck='objects', as='collection', id='collection_list') %}
       <section class="group">
         <h2>Collections</h2>
-        {% set results = this|filter(collection_type=0) %}
+        {% set results = this|filter(collection_type=0, category=category or None, region=[region, None]) %}
         {% if results.length %}
           {% for collection in results %}
             {{ collection_overview(collection) }}
@@ -37,7 +37,7 @@
       </section>
       <section class="group">
         <h2>Featured Apps</h2>
-        {% set results = this|filter(collection_type=1) %}
+        {% set results = this|filter(collection_type=1, category=category or None, region=[region, None], carrier=[carrier, None]) %}
         {% if results.length %}
           {% for collection in results %}
             {{ collection_overview(collection) }}
@@ -50,7 +50,7 @@
       </section>
       <section class="group">
         <h2>Operator Shelves</h2>
-        {% set results = this|filter(collection_type=2) %}
+        {% set results = this|filter(collection_type=2, region=[region, None], carrier=carrier) %}
         {% if results.length %}
           {% for collection in results %}
             {{ collection_overview(collection) }}

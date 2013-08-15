@@ -24,16 +24,15 @@ define('views/new_collection',
     };
 
     return function(builder) {
-        var type = utils.getVars().type || 'basic';
-
         var args = utils.getVars();
+
         builder.start(
             'new_collection.html',
             {
-                'region': args.region,
-                'carrier': args.carrier,
-                'category': args.category,
-                'type': types[type]
+                'region': parseInt(args.region, 10) || null,
+                'category': parseInt(args.category, 10) || null,
+                'carrier': parseInt(args.carrier, 10) || null,
+                'type': types[args.type || 'basic']
             }
         );
 

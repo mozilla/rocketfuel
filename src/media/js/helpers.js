@@ -15,6 +15,11 @@ define('helpers',
         filters[name] = make_safe(func);
     }
 
+    filters.extend = function(base, kwargs) {
+        delete kwargs.__keywords;
+        return _.extend(base, kwargs);
+    };
+
     filters.urlparams = utils.urlparams;
     filters.urlunparam = utils.urlunparam;
 
@@ -64,7 +69,10 @@ define('helpers',
             inner:
             for (prop in kwargs) {
                 if (!kwargs.hasOwnProperty(prop) || prop === '__keywords') continue inner;
-                if (!(prop in val) || val[prop] !== kwargs[prop]) continue outer;
+                if (!(prop in val)) continue outer;
+                if (Array.isArray(kwargs[prop]) ?
+                    kwargs[prop].indexOf(val[prop]) === -1 :
+                    val[prop] !== kwargs[prop]) continue outer;
             }
             output.push(val);
         }
@@ -96,6 +104,10 @@ define('helpers',
         max: Math.max,
         min: Math.min,
         range: _.range,
+        identity: function(obj) {
+            if ('__keywords' in obj) delete obj.__keywords;
+            return obj;
+        },
 
         REGIONS: require('settings').REGION_CHOICES_SLUG,
 

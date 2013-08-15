@@ -1,12 +1,12 @@
-{% macro category_dropdown(default=None, name=None, value='slug') %}
+{% macro category_dropdown(default=None, name=None, value='id') %}
   {% set default_ = default %}
   {% set value_ = value %}
-  {% defer (url=api('categories'), pluck='objects') %}
+  {% defer (url=api('categories'), pluck='objects', as='category') %}
     <div class="pretty-select">
       <select id="filter_category" class="full"{% if name %} name="{{ name }}"{% endif %}>
         <option value="" {{ 'selected' if not default }}>{{ _('All Categories (Homepage)') }}</option>
         {% for category in this %}
-          <option value="{{ category[value_] }}" {{ 'selected' if category.slug == default_ }}>{{ category.name }}</option>
+          <option value="{{ category[value_] }}" {{ 'selected' if category.id == default_ }}>{{ category.name }}</option>
         {% endfor %}
       </select>
     </div>
@@ -16,14 +16,14 @@
   {% end %}
 {% endmacro %}
 
-{% macro region_dropdown(default='worldwide', name=None, value='slug') %}
+{% macro region_dropdown(default='worldwide', name=None, value='id') %}
   {% set default_ = default %}
   {% set value_ = value %}
-  {% defer (url=api('regions'), pluck='objects') %}
+  {% defer (url=api('regions'), pluck='objects', as='region') %}
     <div class="pretty-select">
       <select id="filter_region" class="full"{% if name %} name="{{ name }}"{% endif %}>
         {% for region in this %}
-          <option value="{{ region[value_] }}" {{ 'selected' if region.slug == default_ }}>{{ region.name }}</option>
+          <option value="{{ region[value_] }}" {{ 'selected' if region.id == default_ }}>{{ region.name }}</option>
         {% endfor %}
       </select>
     </div>
@@ -33,14 +33,14 @@
   {% end %}
 {% endmacro %}
 
-{% macro carrier_dropdown(default='carrierless', name=None, value='slug') %}
+{% macro carrier_dropdown(default='carrierless', name=None, value='id') %}
   {% set default_ = default %}
   {% set value_ = value %}
-  {% defer (url=api('carriers'), pluck='objects') %}
+  {% defer (url=api('carriers'), pluck='objects', as='carrier') %}
     <div class="pretty-select">
       <select id="filter_carrier" class="full"{% if name %} name="{{ name }}"{% endif %}>
         {% for carrier in this %}
-          <option value="{{ '' if carrier.slug == 'carrierless' else carrier[value_] }}" {{ 'selected' if carrier.slug == default_ }}>
+          <option value="{{ carrier[value_] }}" {{ 'selected' if carrier.id == default_ }}>
             {{ carrier.name or '--' }}</option>
         {% endfor %}
       </select>
