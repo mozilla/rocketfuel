@@ -9,9 +9,6 @@ define('views/new_collection',
     z.body.on('submit', 'form#new_collection', function(e) {
         e.preventDefault();
         var data = utils.getVars($(this).serialize());
-        if (!data.author) {
-            data.author = 'nobody';
-        }
         requests.post(urls.api.url('collections'), data).done(function(data) {
             collection_model.cast(data);
             notification.notification({message: gettext('New collection created.')});
