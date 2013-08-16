@@ -7,9 +7,13 @@
         margin: 0 10px 10px;
         padding: 10px;
     }
+
+    .labels {
+        font-size: 0.85em;
+    }
 }
 
-a.new_collection {
+a.new_collection, a.add_app {
     color: $note-gray;
     display: block;
     padding: 10px;
@@ -22,4 +26,38 @@ a.new_collection {
         line-height: 20px;
         margin-right: 5px;
     }
+}
+
+#app_search_results {
+    border: 1px solid $seavan-salt-white;
+    border-radius: 4px;
+    height: calc(unquote('100% - 90px'));
+    margin: 10px 0 0;
+    overflow: auto;
+    padding: 10px;
+}
+
+.app {
+    border: 1px solid $seavan-salt-white;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 55px;
+
+    img {
+        display: block;
+        float: left;
+        margin-left: -43px;
+    }
+    p {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+ul.apps {
+    margin: 0;
+    list-style: none;
+    padding: 0;
 }

@@ -80,9 +80,24 @@ body {
     }
 }
 
+.alert {
+    background: $swiss-cheese-yellow;
+    border: 1px solid $pineapple-yellow;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    h1 {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
 .row {
     clear: both;
     padding: 1em 0;
+    width: 100%;
 
     > * {
         display: block;
@@ -106,6 +121,21 @@ body {
     .third {width: 33.333%;}
     .two-thirds {width: 66.666%;}
     .quarter {width: 25%;}
+}
+
+.well {
+    background: #fff;
+    border: 1px solid $seavan-salt-white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+span.label {
+    border-radius: 0.25em;
+    color: #000;
+    margin-right: 0.5em;
+    padding: 0 0.5em;
 }
 
 section.group {

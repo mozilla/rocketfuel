@@ -20,7 +20,9 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
 
             'region': 'id',
             'category': 'id',
-            'carrier': 'id'
+            'carrier': 'id',
+
+            'app': 'slug'
         },
 
         fragment_error_template: 'errors/fragment.html',

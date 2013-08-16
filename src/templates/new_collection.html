@@ -1,7 +1,7 @@
 {% from "_macros/dropdowns.html" import category_dropdown, region_dropdown, carrier_dropdown %}
 
 <h1>{{ _('New {collection_type}', collection_type=settings.COLLECTION_TYPES[type]) }}</h1>
-<form class="form-grid account-settings only-logged-in" id="new_collection">
+<form class="form-grid only-logged-in" id="new_collection">
   <input type="hidden" name="collection_type" value="{{ type }}">
 
   <div class="simple-field c">
@@ -44,7 +44,7 @@
     {% if show_carrier %}
       <div class="{{ colmode }}">
         <label for="filter_carrier">{{ _('Carrier') }}</label>
-        {{ carrier_dropdown(name='carrier', value='id', default=carrier) }}
+        {{ carrier_dropdown(name='carrier', value='id', default=carrier or 0) }}
       </div>
     {% endif %}
   </div>

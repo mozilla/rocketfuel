@@ -1,8 +1,26 @@
+{% set region_color = color_cycle() %}
+{% set carrier_color = color_cycle() %}
+{% set category_color = color_cycle() %}
+
 {% macro collection_overview(collection) %}
 <div class="collection overview">
   <strong><a href="{{ url('collection', [collection.id]) }}">{{ collection.name }}</a></strong>
   {% if collection.description %}
     <p>{{ collection.description }}</p>
   {% endif %}
+  <p class="labels">
+  	{% if collection.region %}
+  		<span class="label" style="background:{{ region_color(collection.id) }}">
+  			{{ _('Region:') }} <b>{{ model_lookup('region', collection.region).name }}</b></span>
+  	{% endif %}
+  	{% if collection.carrier %}
+  		<span class="label" style="background:{{ carrier_color(collection.id) }}">
+  			{{ _('Carrier:') }} <b>{{ model_lookup('carrier', collection.carrier).name }}</b></span>
+  	{% endif %}
+  	{% if collection.category %}
+  		<span class="label" style="background:{{ category_color(collection.id) }}">
+  			{{ _('Category:') }} <b>{{ model_lookup('category', collection.category).name }}</b></span>
+  	{% endif %}
+  </p>
 </div>
 {% endmacro %}

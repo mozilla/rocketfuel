@@ -1,0 +1,7 @@
+{% macro app(data, icon_size=32) %}
+<a href="#" class="app" data-id="{{ data.id }}">
+  <img src="{{ data.icons['128'] }}" alt="" height="{{ icon_size }}" width="{{ icon_size }}">
+  <strong>{{ data.name or data.slug }}</strong>
+  <p>{{ data.author }}</p>
+</a>
+{% endmacro %}

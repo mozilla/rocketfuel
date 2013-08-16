@@ -1,15 +1,19 @@
 define('views/new_collection',
-    ['jquery', 'l10n', 'notification', 'requests', 'urls', 'utils', 'z'],
-    function($, l10n, notification, requests, urls, utils, z) {
+    ['jquery', 'l10n', 'models', 'notification', 'requests', 'urls', 'utils', 'z'],
+    function($, l10n, models, notification, requests, urls, utils, z) {
 
     var gettext = l10n.gettext;
 
+    var collection_model = models('collection');
+
     z.body.on('submit', 'form#new_collection', function(e) {
         e.preventDefault();
-        requests.post(
-            urls.api.url('collections'),
-            utils.getVars($(this).serialize())
-        ).done(function(data) {
+        var data = utils.getVars($(this).serialize());
+        if (!data.author) {
+            data.author = 'nobody';
+        }
+        requests.post(urls.api.url('collections'), data).done(function(data) {
+            collection_model.cast(data);
             notification.notification({message: gettext('New collection created.')});
             z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
         }).fail(function() {

@@ -1,14 +1,41 @@
-<section class="main">
+{% from "_macros/app.html" import app %}
+
+<section class="main" data-id="{{ id }}">
 {% defer (url=api('collection', [id]), as='collection') %}
-  <h1>{{ this.name }}</h1>
-  <h2>{{ _('Description') }}</h2>
-  <p>{{ this.description }}</p>
-  <h2>{{ _('Apps') }}</h2>
-  <ul>
-    {% for collection in this.apps %}
-      <li><a href="{{ url('collection', [collection.id]) }}">{{ collection.name }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="hidden dialog" id="app_search">
+    <a class="close" href="#">&times;</a>
+    <h2>{{ _('Add Apps') }}</h2>
+    <form>
+      <input type="search" placeholder="{{ _('Search') }}"> <button type="submit">{{ _('Search') }}</button>
+    </form>
+    <ul id="app_search_results"></ul>
+  </div>
+  <section class="row gutter">
+    <div class="two-thirds">
+      <div class="well">
+        <h1>{{ this.name }}</h1>
+        {% if this.author and this.author != 'nobody' %}
+          <p>{{ _('Created by {author}', author=this.author) }}</p>
+        {% endif %}
+      </div>
+      <div class="well">
+        <h2>{{ _('Description') }}</h2>
+        <p>{{ this.description }}</p>
+      </div>
+    </div>
+    <div class="third">
+      <div class="well">
+        <h2>{{ _('Apps') }}</h2>
+        <ul class="apps">
+          {% for app_object in this.apps %}
+            <li>{{ app(app_object) }}</li>
+          {% endfor %}
+        </ul>
+        <a href="#" class="add_app only-logged-in"><b>+</b> {{ _('Add app to collection') }}</a>
+      </div>
+      </div>
+    </div>
+  </section>
 {% placeholder %}
   {{ _('Loading collection...') }}
 {% except %}

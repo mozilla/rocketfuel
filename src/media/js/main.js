@@ -21,13 +21,17 @@ require.config({
             'underscore',
             'helpers',  // Must come before mostly everything else.
             'capabilities',
+            'defer',
             'forms',
             'l10n',
             'log',
             'login',
+            'models',
             'navigation',
+            'requests',
             'templates',
             //'tracking',
+            'urls',
             'user',
             'views',
             'z'
@@ -38,7 +42,10 @@ require.config({
         console.log('Dependencies resolved, starting init');
 
         var capabilities = require('capabilities');
+        var models = require('models');
         var nunjucks = require('templates');
+        var helpers = nunjucks.require('globals');
+        var urls = require('urls');
         var z = require('z');
 
         nunjucks.env.dev = true;
@@ -59,6 +66,22 @@ require.config({
             });
         }
 
+        // Add some helpful functions.
+        helpers.color_cycle = function() {
+            var cache = {};
+            var n = 0;
+            return function(value) {
+                if (value in cache) return cache[value];
+                var h = (Math.pow(n, 2) * 25) % 349 | 0;
+                var l = (n * 49) % 31 + 60 | 0;
+                n++
+                return cache[value] = 'hsla(' + h + ', 50%, ' + l + '%, 0.7)';
+            };
+        }
+        helpers.model_lookup = function(model, key) {
+            return models(model).lookup(key);
+        };
+
         // Do some last minute template compilation.
         z.page.on('reload_chrome', function() {
             console.log('Reloading chrome');
@@ -78,13 +101,25 @@ require.config({
             require('navigation').back();
         });
 
-        // Perform initial navigation.
-        console.log('Triggering initial navigation');
-        if (!z.spaceheater) {
-            z.page.trigger('navigate', [window.location.pathname + window.location.search]);
-        } else {
-            z.page.trigger('loaded');
+        function do_model_cache(model, url) {
+            return require('requests').get(url).done(function(data) {
+                var cache = models(model);
+                data.objects.forEach(function(obj) {
+                    cache.cast(obj);
+                });
+            });
         }
+
+        console.log('Starting cache pre-filling...');
+        require('defer').when(
+            do_model_cache('carrier', urls.api.url('carriers')),
+            do_model_cache('category', urls.api.url('categories')),
+            do_model_cache('region', urls.api.url('regions'))
+        ).done(function() {
+            // Perform initial navigation.
+            console.log('Triggering initial navigation');
+            z.page.trigger('navigate', [window.location.pathname + window.location.search]);
+        });
 
         // Debug page
         (function() {

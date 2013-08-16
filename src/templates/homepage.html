@@ -1,7 +1,14 @@
 {% from "_macros/collections.html" import collection_overview %}
 {% from "_macros/dropdowns.html" import category_dropdown, region_dropdown, carrier_dropdown %}
 
-<section class="row home_filters form-grid gutter">
+{% if not user.get_permission('publisher') %}
+<section class="alert only-logged-in">
+  <h1>{{ _('You are not logged in as a Marketplace Publisher') }}</h1>
+  <p>{{ _('In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool.') }}</p>
+</section>
+{% endif %}
+
+<section class="row home_filters form-grid gutter c">
   <div class="third">
     <label for="filter_category">{{ _('Category') }}</label>
     {{ category_dropdown(default=category) }}
@@ -48,19 +55,22 @@
         <a class="new_collection" href="{{ get_url_params(url('new_collection'), 'featured') }}">
           <b>+</b> {{ _('Add a new featured app collection' )}}</a>
       </section>
-      <section class="group">
-        <h2>Operator Shelves</h2>
-        {% set results = this|filter(collection_type=2, region=[region, None], carrier=carrier) %}
-        {% if results.length %}
-          {% for collection in results %}
-            {{ collection_overview(collection) }}
-          {% endfor %}
-        {% else %}
-          <p>{{ _('No operator shelves have been created.') }}</p>
-        {% endif %}
-        <a class="new_collection" href="{{ get_url_params(url('new_collection'), 'operator') }}">
-          <b>+</b> {{ _('Add a new operator shelf' )}}</a>
-      </section>
+      {# Only show OSCs if we're on the homepage. #}
+      {% if not category %}
+        <section class="group">
+          <h2>Operator Shelves</h2>
+          {% set results = this|filter(collection_type=2, region=[region, None], carrier=carrier) %}
+          {% if results.length %}
+            {% for collection in results %}
+              {{ collection_overview(collection) }}
+            {% endfor %}
+          {% else %}
+            <p>{{ _('No operator shelves have been created.') }}</p>
+          {% endif %}
+          <a class="new_collection" href="{{ get_url_params(url('new_collection'), 'operator') }}">
+            <b>+</b> {{ _('Add a new operator shelf' )}}</a>
+        </section>
+      {% endif %}
     {% placeholder %}
       {{ _('Loading collections...') }}
     {% end %}
