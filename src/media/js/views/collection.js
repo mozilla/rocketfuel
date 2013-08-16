@@ -18,12 +18,20 @@ define('views/collection',
             list.html('');
             data.objects.forEach(function(v) {
                 app_model.cast(v);
-                list.append(nunjucks.env.getTemplate('helpers/app.html').render({'this': v}));
+                list.append(nunjucks.env.getTemplate('helpers/app.html').render(
+                    {'this': v, 'allow_delete': true}));
             });
         });
     }).on('click', '#app_search .close', function(e) {
         e.preventDefault();
         $('#app_search').addClass('hidden');
+    }).on('click', 'a.app .delete', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $app = $(this).parent();
+        var app = app_model.lookup($app.data('id') + '', 'id');
+        notification.notification({message: gettext('Deleting {app}', {app: app.slug})});
+
     }).on('click', '#app_search a.app', function(e) {
         e.preventDefault();
         $('#app_search .close').trigger('click');
@@ -35,7 +43,8 @@ define('views/collection',
         ).done(function(data) {
             var app_data = app_model.lookup(app + '', 'id');
             $('.main ul.apps').append(
-                nunjucks.env.getTemplate('helpers/app.html').render({'this': app_data}));
+                nunjucks.env.getTemplate('helpers/app.html').render(
+                    {'this': app_data, 'allow_delete': true}));
             notification.notification({message: gettext('App added to collection.')});
 
             collection.apps.push(app_data);
@@ -49,6 +58,12 @@ define('views/collection',
             'collection.html',
             {id: params[0]}
         );
+
+        builder.onload('main', function(data) {
+            data.apps.forEach(function(v) {
+                app_model.cast(v);
+            });
+        });
 
         builder.z('type', 'leaf');
         builder.z('title', gettext('Collection')); 

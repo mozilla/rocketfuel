@@ -1,7 +1,7 @@
 {% from "_macros/app.html" import app %}
 
 <section class="main" data-id="{{ id }}">
-{% defer (url=api('collection', [id]), as='collection') %}
+{% defer (url=api('collection', [id]), as='collection', key=id, id='main') %}
   <div class="hidden dialog" id="app_search">
     <a class="close" href="#">&times;</a>
     <h2>{{ _('Add Apps') }}</h2>
@@ -28,7 +28,7 @@
         <h2>{{ _('Apps') }}</h2>
         <ul class="apps">
           {% for app_object in this.apps %}
-            <li>{{ app(app_object) }}</li>
+            <li>{{ app(app_object, allow_delete=True) }}</li>
           {% endfor %}
         </ul>
         <a href="#" class="add_app only-logged-in"><b>+</b> {{ _('Add app to collection') }}</a>

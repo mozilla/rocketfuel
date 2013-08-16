@@ -44,6 +44,7 @@ a.new_collection, a.add_app {
     display: block;
     margin-bottom: 5px;
     padding: 5px 5px 5px 55px;
+    position: relative;
 
     img {
         display: block;
@@ -53,6 +54,23 @@ a.new_collection, a.add_app {
     p {
         color: black;
         text-decoration: none;
+    }
+
+    .delete {
+        color: black;
+        display: none;
+        font-size: 20px;
+        position: absolute;
+        right: 5px;
+        top: 0;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &:hover .delete {
+        display: block;
     }
 }
 

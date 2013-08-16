@@ -26,9 +26,9 @@ define('views/homepage',
             'homepage.html',
             {
                 'get_url_params': get_url_params,
-                'region': parseInt(args.region, 10) || null,
+                'region': parseInt(args.region, 10) || 1,
                 'category': parseInt(args.category, 10) || null,
-                'carrier': parseInt(args.carrier, 10) || null
+                'carrier': parseInt(args.carrier, 10) || 0
             }
         );
 
