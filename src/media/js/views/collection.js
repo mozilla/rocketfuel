@@ -1,6 +1,6 @@
 define('views/collection',
-    ['jquery', 'l10n', 'models', 'notification', 'requests', 'templates', 'urls', 'utils', 'z'],
-    function($, l10n, models, notification, requests, nunjucks, urls, utils, z) {
+    ['cache', 'jquery', 'l10n', 'models', 'notification', 'requests', 'templates', 'urls', 'utils', 'z'],
+    function(cache, $, l10n, models, notification, requests, nunjucks, urls, utils, z) {
 
     var gettext = l10n.gettext;
     var collection_model = models('collection');
@@ -22,9 +22,11 @@ define('views/collection',
                     {'this': v, 'allow_delete': true}));
             });
         });
+
     }).on('click', '#app_search .close', function(e) {
         e.preventDefault();
         $('#app_search').addClass('hidden');
+
     }).on('click', 'a.app .delete', function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -44,13 +46,47 @@ define('views/collection',
             var app_data = app_model.lookup(app + '', 'id');
             $('.main ul.apps').append(
                 nunjucks.env.getTemplate('helpers/app.html').render(
-                    {'this': app_data, 'allow_delete': true}));
+                    {'this': app_data, 'allow_delete': false}));
             notification.notification({message: gettext('App added to collection.')});
 
+            // A bit of cache rewriting.
             collection.apps.push(app_data);
+
         }).fail(function() {
             notification.notification({message: gettext('Failed to add app.')});
         });
+
+    }).on('click', '.delete_collection', function(e) {
+        e.preventDefault();
+
+        var collection_id = $(this).data('id');
+
+        requests.del(urls.api.url('collection', [collection_id])).done(function() {
+            // Rewrite the cache to remove the collection.
+            collection_model.del(collection_id);
+            cache.bust(urls.api.url('collection', [collection_id]));
+            cache.attemptRewrite(
+                function(key) {
+                    return utils.baseurl(key) == urls.api.unsigned.url('collections');
+                },
+                function(entry, key) {
+                    for (var coll in entry.objects) {
+                        if (entry.objects[coll].id === collection_id) {
+                            entry.objects.splice(coll, 1);
+                            break;
+                        }
+                    }
+                    return entry;
+                }
+            );
+
+            notification.notification({message: gettext('Collection deleted.')});
+            z.page.trigger('navigate', [urls.reverse('homepage')]);
+
+        }).fail(function() {
+            notification.notification({message: gettext('Failed to delete collection.')});
+        });
+
     });
 
     return function(builder, params) {

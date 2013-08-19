@@ -7,6 +7,9 @@
   <div class="simple-field c">
     <label for="name">{{ _('Name') }}</label>
     <input type="text" name="name" required>
+    {% if type == 1 %}
+      <p>{{ _('The name is not shown to users, it is only for convenience.') }}</p>
+    {% endif %}
   </div>
 
   {# Only curated collections get authors #}

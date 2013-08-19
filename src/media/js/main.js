@@ -71,9 +71,10 @@ require.config({
             var cache = {};
             var n = 0;
             return function(value) {
+                console.warn(value, n);
                 if (value in cache) return cache[value];
-                var h = (Math.pow(n, 2) * 25) % 349 | 0;
-                var l = (n * 49) % 31 + 60 | 0;
+                var h = (Math.pow(n, 2) * 25 + 40) % 349 | 0;
+                var l = (n * 49 + 20) % 31 + 60 | 0;
                 n++
                 return cache[value] = 'hsla(' + h + ', 50%, ' + l + '%, 0.7)';
             };
