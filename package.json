@@ -1,0 +1,17 @@
+{
+  "name": "rocketfuel",
+  "version": "0.1.0",
+  "description": "The Firefox Marketplace Curation Tool",
+  "main": "stackato.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozilla/rocketfuel.git"
+  },
+  "author": "",
+  "license": "MPL",
+  "readmeFilename": "README.md",
+  "gitHead": "f4e2e4d64070ef663c0902fc657879a62a16ec52"
+}
