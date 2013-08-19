@@ -1,6 +1,6 @@
 define('views/new_collection',
-    ['jquery', 'l10n', 'models', 'notification', 'requests', 'urls', 'utils', 'z'],
-    function($, l10n, models, notification, requests, urls, utils, z) {
+    ['cache', 'jquery', 'l10n', 'models', 'notification', 'requests', 'urls', 'utils', 'z'],
+    function(cache, $, l10n, models, notification, requests, urls, utils, z) {
 
     var gettext = l10n.gettext;
 
@@ -10,7 +10,18 @@ define('views/new_collection',
         e.preventDefault();
         var data = utils.getVars($(this).serialize());
         requests.post(urls.api.url('collections'), data).done(function(data) {
+            // Do a bunch of cache rewriting.
             collection_model.cast(data);
+            cache.attemptRewrite(
+                function(key) {
+                    return utils.baseurl(key) == urls.api.unsigned.url('collections');
+                },
+                function(entry, key) {
+                    entry.objects.unshift(data);
+                    return entry;
+                }
+            );
+
             notification.notification({message: gettext('New collection created.')});
             z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
         }).fail(function() {
