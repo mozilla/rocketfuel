@@ -1,0 +1,11 @@
+name: rocketfuel
+framework:
+    type: node
+
+mem: 8m
+
+hooks:
+    pre-staging:
+        - npm install
+
+ignores: ['node_modules', '.git']
