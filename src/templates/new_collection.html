@@ -42,7 +42,8 @@
     {% endif %}
     <div class="{{ colmode }}">
       <label for="filter_region">{{ _('Region') }}</label>
-      {{ region_dropdown(name='region', value='id', default=region) }}
+      {# Non-basic collections should allow null regions. #}
+      {{ region_dropdown(name='region', value='id', default=region, allow_null=(type != 0)) }}
     </div>
     {% if show_carrier %}
       <div class="{{ colmode }}">

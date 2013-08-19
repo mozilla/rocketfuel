@@ -16,12 +16,15 @@
   {% end %}
 {% endmacro %}
 
-{% macro region_dropdown(default='worldwide', name=None, value='id') %}
+{% macro region_dropdown(default='worldwide', name=None, value='id', allow_null=False) %}
   {% set default_ = default %}
   {% set value_ = value %}
   {% defer (url=api('regions'), pluck='objects', as='region') %}
     <div class="pretty-select">
       <select id="filter_region" class="full"{% if name %} name="{{ name }}"{% endif %}>
+        {% if allow_null %}
+          <option value="">{{ _('-- None --') }}</option>
+        {% endif %}
         {% for region in this %}
           <option value="{{ region[value_] }}" {{ 'selected' if region.id == default_ }}>{{ region.name }}</option>
         {% endfor %}
