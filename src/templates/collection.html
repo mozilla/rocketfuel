@@ -17,6 +17,21 @@
         {% if this.author and this.author != 'nobody' %}
           <p>{{ _('Created by {author}', author=this.author) }}</p>
         {% endif %}
+
+        <div class="row restrictions">
+          <div class="third">
+            {{ _('Region:') }}
+            <span>{{ model_lookup('region', this.region).name if this.region else '--' }}</span>
+          </div>
+          <div class="third">
+            {{ _('Carrier:') }}
+            <span>{{ model_lookup('carrier', this.carrier).name if this.carrier else '--' }}</span>
+          </div>
+          <div class="third">
+            {{ _('Category:') }}
+            <span>{{ model_lookup('category', this.category).name if this.category else '--' }}</span>
+          </div>
+        </div>
       </div>
       <div class="well">
         <h2>{{ _('Description') }}</h2>
