@@ -13,7 +13,7 @@
   <section class="row gutter">
     <div class="two-thirds">
       <div class="well">
-        <h1>{{ this.name }}</h1>
+        <h1>{{ this.name|translate }}</h1>
         {% if this.author and this.author != 'nobody' %}
           <p>{{ _('Created by {author}', author=this.author) }}</p>
         {% endif %}
@@ -35,7 +35,7 @@
       </div>
       <div class="well">
         <h2>{{ _('Description') }}</h2>
-        <p>{{ this.description }}</p>
+        <p>{{ this.description|translate }}</p>
       </div>
     </div>
     <div class="third">

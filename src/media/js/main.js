@@ -44,6 +44,7 @@ require.config({
         var capabilities = require('capabilities');
         var models = require('models');
         var nunjucks = require('templates');
+        var filters = nunjucks.require('filters');
         var helpers = nunjucks.require('globals');
         var urls = require('urls');
         var z = require('z');
@@ -81,6 +82,24 @@ require.config({
         }
         helpers.model_lookup = function(model, key) {
             return models(model).lookup(key);
+        };
+        filters.translate = function(data) {
+            if (typeof data === 'string') {
+                return data;
+            }
+            var lang = helpers.language;
+            if (lang in data) {
+                return data[lang];
+            }
+            var short_lang = lang.split('-')[0];
+            if (short_lang in data) {
+                return data[short_lang];
+            }
+            if ('en-US' in data) {
+                return data['en-US'];
+            }
+            for (var x in data) { return data[x]; }
+            return ''
         };
 
         // Do some last minute template compilation.
