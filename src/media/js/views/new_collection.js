@@ -7,8 +7,12 @@ define('views/new_collection',
     var collection_model = models('collection');
 
     z.body.on('submit', 'form#new_collection', function(e) {
+        var $this = $(this);
         e.preventDefault();
-        var data = utils.getVars($(this).serialize());
+        var data = utils.getVars($this.serialize());
+        var $button = $this.find('.button');
+        var button_text = $button.text();
+        $button.html('<div class="spin">').addClass('disabled');
         requests.post(urls.api.url('collections'), data).done(function(data) {
             // Do a bunch of cache rewriting.
             collection_model.cast(data);
@@ -26,6 +30,7 @@ define('views/new_collection',
             z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
         }).fail(function() {
             notification.notification({message: gettext('Failed to create new collection.')})
+            $button.text(button_text).removeClass('disabled');
         });
     });
 

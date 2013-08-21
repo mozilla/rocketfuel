@@ -31,8 +31,23 @@ define('views/collection',
         e.preventDefault();
         e.stopPropagation();
         var $app = $(this).parent();
-        var app = app_model.lookup($app.data('id') + '', 'id');
-        notification.notification({message: gettext('Deleting {app}', {app: app.slug})});
+        var app_id = $app.data('id');
+        var collection_id = $app.closest('.main').data('id');
+        var app = app_model.lookup(app_id + '', 'id');
+        requests.post(
+            urls.api.url('remove_app', [collection_id]),
+            {app: app.id}
+        ).done(function() {
+            // Do some cache rewriting.
+            var collection = collection_model.lookup(collection_id);
+            collection.apps = collection.apps.filter(function(coll_app) {
+                return coll_app.id != app.id;
+            });
+
+            notification.notification({message: gettext('Removed {app} from collection.', {app: app.slug})});
+        }).fail(function() {
+            notification.notification({message: gettext('Could not delete app from collection.')});
+        });
 
     }).on('click', '#app_search a.app', function(e) {
         e.preventDefault();
