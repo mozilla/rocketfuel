@@ -12,9 +12,8 @@ define('views/new_collection',
         var data = utils.getVars($this.serialize());
         var $button = $this.find('.button');
         var button_text = $button.text();
-        $button.html('<div class="spin">').addClass('disabled');
+        $button.addClass('disabled').html('<div class="spin spinner">');
         requests.post(urls.api.url('collections'), data).done(function(data) {
-            // Do a bunch of cache rewriting.
             collection_model.cast(data);
             cache.attemptRewrite(
                 function(key) {
@@ -30,8 +29,25 @@ define('views/new_collection',
             z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
         }).fail(function() {
             notification.notification({message: gettext('Failed to create new collection.')})
-            $button.text(button_text).removeClass('disabled');
+            $button.removeClass('disabled').text(button_text);
         });
+    });
+
+    z.page.on('keyup', '#new_collection input[name=name]', function(e) {
+        var $slug_field = $('#new_collection input[name=slug]');
+        if ($slug_field.data('modified')) {
+            return;
+        }
+
+        var $this = $(this);
+        var value = $this.val().toLowerCase();
+        value = value.replace(/[ _]/g, '-');
+        value = value.replace(/[^-\w]/g, '');
+        value = value.replace(/^[0-9]+/g, '');
+        $slug_field.val(value);
+
+    }).on('keypress', '#new_collection input[name=slug]', function(e) {
+        $(this).data('modified', true);
     });
 
     var types = {

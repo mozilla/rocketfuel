@@ -72,6 +72,33 @@ textarea {
     vertical-align: top;
 }
 
+input:not([type=radio]):not([type=checkbox]),
+.pretty-select,
+select,
+textarea {
+    alt-btn-shadow();
+    border-radius: 3px;
+    border: 1px solid $primer-gray;
+    box-shadow: 0 1px 0 #fff, 0 1px 1px $seavan-salt-white inset;
+    color: $london-fog-gray;
+    font: 400 15px/28px $open-stack;
+    text-decoration: none;
+    width: 100%;
+
+    &:invalid {
+        border-color: $angry-cvan-red;
+    }
+}
+label p[reason] {
+    color: $angry-cvan-red;
+    display: none;
+    font-size: 0.8em;
+}
+label :required:invalid:not([value]) ~ [reason=required],
+label [value]:invalid ~ [reason=invalid] {
+    display: block;
+}
+
 .form-grid {
     background: #fff;
     border: 1px solid $seavan-salt-white;
@@ -81,30 +108,12 @@ textarea {
     position: relative;
     width: 100%;
 
-    .simple-field {
+    label {
+        margin-bottom: 5px;
         padding: 10px 10px 0;
         width: 50%;
     }
 
-    input[type=email],
-    input[type=text],
-    .pretty-select,
-    select {
-        height: 48px;
-        width: 100%;
-    }
-    input[type=email],
-    input[type=text],
-    .pretty-select {
-        alt-btn-shadow();
-        border-radius: 3px;
-        border: 1px solid $primer-gray;
-        box-shadow: 0 1px 0 #fff, 0 1px 1px $seavan-salt-white inset;
-        color: $london-fog-gray;
-        font: 400 15px/28px $open-stack;
-        padding: 10px 12px;
-        text-decoration: none;
-    }
     .pretty-select,
     .pretty-select select {
         cursor: pointer;
@@ -147,9 +156,6 @@ textarea {
             border: 0;
             padding: 10px 12px;
         }
-    }
-    label {
-        margin-bottom: 5px;
     }
     footer {
         margin-top: 10px;

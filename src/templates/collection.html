@@ -10,6 +10,7 @@
     </form>
     <ul id="app_search_results"></ul>
   </div>
+
   <section class="row gutter">
     <div class="two-thirds">
       <div class="well">
@@ -32,21 +33,22 @@
             <span>{{ model_lookup('category', this.category).name if this.category else '--' }}</span>
           </div>
         </div>
-      </div>
-      <div class="well">
+
         <h2>{{ _('Description') }}</h2>
         <p>{{ this.description|translate }}</p>
       </div>
-    </div>
-    <div class="third">
       <div class="well">
         <h2>{{ _('Apps') }}</h2>
         <ul class="apps">
           {% for app_object in this.apps %}
-            <li>{{ app(app_object, allow_delete=True) }}</li>
+            <li>{{ app(app_object, allow_delete=True, tag='div') }}</li>
           {% endfor %}
         </ul>
         <a href="#" class="add_app only-logged-in"><b>+</b> {{ _('Add app to collection') }}</a>
+      </div>
+    </div>
+    <div class="third">
+      <div class="well">
       </div>
       <div class="well only-logged-in">
         <a href="#" class="delete_collection" data-id="{{ id }}">

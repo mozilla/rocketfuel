@@ -31,6 +31,7 @@ define('views/collection',
         e.preventDefault();
         e.stopPropagation();
         var $app = $(this).parent();
+        $app.hide();
         var app_id = $app.data('id');
         var collection_id = $app.closest('.main').data('id');
         var app = app_model.lookup(app_id + '', 'id');
@@ -44,8 +45,11 @@ define('views/collection',
                 return coll_app.id != app.id;
             });
 
+            $app.remove();
+
             notification.notification({message: gettext('Removed {app} from collection.', {app: app.slug})});
         }).fail(function() {
+            $app.show();
             notification.notification({message: gettext('Could not delete app from collection.')});
         });
 
@@ -61,7 +65,7 @@ define('views/collection',
             var app_data = app_model.lookup(app + '', 'id');
             $('.main ul.apps').append(
                 nunjucks.env.getTemplate('helpers/app.html').render(
-                    {'this': app_data, 'allow_delete': false}));
+                    {'this': app_data, 'allow_delete': true}));
             notification.notification({message: gettext('App added to collection.')});
 
             // A bit of cache rewriting.

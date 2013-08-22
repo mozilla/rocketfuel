@@ -83,11 +83,11 @@ require.config({
         helpers.model_lookup = function(model, key) {
             return models(model).lookup(key);
         };
-        filters.translate = function(data) {
+        filters.translate = function(data, lang) {
             if (typeof data === 'string') {
                 return data;
             }
-            var lang = helpers.language;
+            lang = lang || helpers.language;
             if (lang in data) {
                 return data[lang];
             }

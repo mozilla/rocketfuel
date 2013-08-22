@@ -7,6 +7,11 @@ define('forms', ['z'], function(z) {
     }
     z.body.on('change keyup paste', 'input, select, textarea', function(e) {
         checkValid(e.target.form);
+        if (e.target.value) {
+            e.target.setAttribute('value', e.target.value);
+        } else {
+            e.target.removeAttribute('value');
+        }
     }).on('loaded decloak', function() {
         $('form:not([novalidate])').each(function() {
             checkValid(this);

@@ -4,26 +4,37 @@
 <form class="form-grid only-logged-in" id="new_collection">
   <input type="hidden" name="collection_type" value="{{ type }}">
 
-  <div class="simple-field c">
-    <label for="name">{{ _('Name') }}</label>
+  
+  <label>
+    {{ _('Name') }}
     <input type="text" name="name" required>
     {% if type == 1 %}
       <p>{{ _('The name is not shown to users, it is only for convenience.') }}</p>
     {% endif %}
-  </div>
+    <p reason="required">{{ _('A name is required') }}</p>
+  </label>
+
+  
+  <label>
+    {{ _('Collection Slug') }}
+    <input type="text" name="slug" required pattern="[a-zA-Z][\w\-]*">
+    <p reason="required">{{ _('A slug is required') }}</p>
+    <p reason="invalid">{{ _('Slugs must start with a letter and can only contain letters, numbers, and hyphens.') }}</p>
+  </label>
 
   {# Only curated collections get authors #}
   {% if type == 0 %}
-  <div class="simple-field c">
-    <label for="name">{{ _('Author Name') }}</label>
-    <input type="text" name="author">
-  </div>
+    <label>
+      {{ _('Author Name') }}
+      <input type="text" name="author">
+    </label>
   {% endif %}
 
-  <div class="brform simple-field c">
-    <label for="description">{{ _('Description') }}</label>
+  <label>
+    {{ _('Description') }}
     <textarea name="description" required></textarea>
-  </div>
+    <p reason="required">{{ _('A description is required') }}</p>
+  </label>
 
   <div class="row gutter">
     {# Operator shelves don't get categories. #}
@@ -35,21 +46,21 @@
     {% set colmode = 'third' if show_cat and show_carrier else 'half' %}
 
     {% if show_cat %}
-      <div class="{{ colmode }}">
-        <label for="filter_category">{{ _('Category') }}</label>
+      <label class="{{ colmode }}">
+        {{ _('Category') }}
         {{ category_dropdown(name='category', value='id', default=category) }}
-      </div>
+      </label>
     {% endif %}
-    <div class="{{ colmode }}">
-      <label for="filter_region">{{ _('Region') }}</label>
+    <label class="{{ colmode }}">
+      {{ _('Region') }}
       {# Non-basic collections should allow null regions. #}
       {{ region_dropdown(name='region', value='id', default=region, allow_null=(type != 0)) }}
-    </div>
+    </label>
     {% if show_carrier %}
-      <div class="{{ colmode }}">
-        <label for="filter_carrier">{{ _('Carrier') }}</label>
+      <label class="{{ colmode }}">
+        {{ _('Carrier') }}
         {{ carrier_dropdown(name='carrier', value='id', default=carrier or 0) }}
-      </div>
+      </label>
     {% endif %}
   </div>
 
@@ -57,6 +68,7 @@
     <p><button type="submit" class="button">{{ _('Create') }}</button></p>
   </footer>
 </form>
+
 <div class="only-logged-out group">
   <h2>{{ _('Unauthorized') }}</h2>
   <p>{{ _('You must be logged in to create collections.') }}</p>
