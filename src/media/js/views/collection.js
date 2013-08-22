@@ -1,5 +1,5 @@
 define('views/collection',
-    ['cache', 'jquery', 'l10n', 'models', 'notification', 'requests', 'templates', 'urls', 'utils', 'z'],
+    ['cache', 'jquery', 'l10n', 'models', 'notification', 'requests', 'templates', 'urls', 'utils', 'z', 'lib/html5sortable.jquery'],
     function(cache, $, l10n, models, notification, requests, nunjucks, urls, utils, z) {
 
     var gettext = l10n.gettext;
@@ -18,7 +18,7 @@ define('views/collection',
             list.html('');
             data.objects.forEach(function(v) {
                 app_model.cast(v);
-                list.append(nunjucks.env.getTemplate('helpers/app.html').render(
+                list.append('<li>' + nunjucks.env.getTemplate('helpers/app.html').render(
                     {'this': v, 'allow_delete': true}));
             });
         });
@@ -27,7 +27,7 @@ define('views/collection',
         e.preventDefault();
         $('#app_search').addClass('hidden');
 
-    }).on('click', 'a.app .delete', function(e) {
+    }).on('click', '.app .delete', function(e) {
         e.preventDefault();
         e.stopPropagation();
         var $app = $(this).parent();
@@ -35,6 +35,7 @@ define('views/collection',
         var app_id = $app.data('id');
         var collection_id = $app.closest('.main').data('id');
         var app = app_model.lookup(app_id + '', 'id');
+
         requests.post(
             urls.api.url('remove_app', [collection_id]),
             {app: app.id}
@@ -47,7 +48,8 @@ define('views/collection',
 
             $app.remove();
 
-            notification.notification({message: gettext('Removed {app} from collection.', {app: app.slug})});
+            notification.notification({message: gettext('Removed {app} from collection.', {app: app.name})});
+
         }).fail(function() {
             $app.show();
             notification.notification({message: gettext('Could not delete app from collection.')});
@@ -56,22 +58,25 @@ define('views/collection',
     }).on('click', '#app_search a.app', function(e) {
         e.preventDefault();
         $('#app_search .close').trigger('click');
+
         var app = $(this).data('id');
         var collection = collection_model.lookup($('.main').data('id'));
+        var app_data = app_model.lookup(app + '', 'id');
+        var $app = nunjucks.env.getTemplate('helpers/app.html').render(
+            {'this': app_data, 'allow_delete': true, 'allow_reorder': true});
+        $('.main ul.apps').append($app);
+
         requests.post(
             urls.api.url('add_app', [collection.id]),
             {'app': app}
         ).done(function(data) {
-            var app_data = app_model.lookup(app + '', 'id');
-            $('.main ul.apps').append(
-                nunjucks.env.getTemplate('helpers/app.html').render(
-                    {'this': app_data, 'allow_delete': true}));
-            notification.notification({message: gettext('App added to collection.')});
-
             // A bit of cache rewriting.
             collection.apps.push(app_data);
 
+            notification.notification({message: gettext('App added to collection.')});
+
         }).fail(function() {
+            $app.remove();
             notification.notification({message: gettext('Failed to add app.')});
         });
 
@@ -122,5 +127,24 @@ define('views/collection',
 
         builder.z('type', 'leaf');
         builder.z('title', gettext('Collection')); 
+
+        builder.done(function() {
+            $('ul.apps').sortable({
+                handle: '.handle'
+            }).on('sortupdate', function() {
+                var app_elements = document.querySelectorAll('#app-list .app');
+                var apps = Array.prototype.slice.call(app_elements).map(function(v) {
+                    return parseInt(v.getAttribute('data-id'), 10);
+                });
+                requests.post(
+                    urls.api.url('reorder_apps', [params[0]]),
+                    apps
+                ).done(function() {
+                    notification.notification({message: gettext('Order updated.')});
+                }).fail(function() {
+                    notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
+                });
+            });
+        });
     };
 });

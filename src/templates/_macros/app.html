@@ -3,6 +3,9 @@
   {% if allow_delete %}
   	<span class="delete">&times;</span>
   {% endif %}
+  {% if allow_reorder %}
+  	<div class="handle">↑↓</div>
+  {% endif %}
   <img src="{{ data.icons['128'] }}" alt="" height="{{ icon_size }}" width="{{ icon_size }}">
   <strong>{{ data.name or data.slug }}</strong>
   <p>{{ data.author }}</p>

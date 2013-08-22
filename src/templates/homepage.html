@@ -10,16 +10,22 @@
 
 <section class="row home_filters form-grid gutter c">
   <div class="third">
-    <label for="filter_category">{{ _('Category') }}</label>
-    {{ category_dropdown(default=category) }}
+    <label class="full">
+      {{ _('Category') }}
+      {{ category_dropdown(default=category) }}
+    </label>
   </div>
   <div class="third">
-    <label for="filter_region">{{ _('Region') }}</label>
-    {{ region_dropdown(default=region or '1') }}
+    <label class="full">
+      {{ _('Region') }}
+      {{ region_dropdown(default=region or '1') }}
+    </label>
   </div>
   <div class="third">
-    <label for="filter_carrier">{{ _('Carrier') }}</label>
-    {{ carrier_dropdown(default=carrier or '0') }}
+    <label class="full">
+      {{ _('Carrier') }}
+      {{ carrier_dropdown(default=carrier or '0') }}
+    </label>
   </div>
 </section>
 

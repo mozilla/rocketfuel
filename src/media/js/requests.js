@@ -114,13 +114,15 @@ define('requests',
 
         xhr.open(type, url, true);
 
-        // TODO: Should we be smarter about this?
-        // TODONT: nahhhh
-        if (typeof data === 'object') {
-            data = utils.urlencode(data);
-        }
+        var content_type = 'application/x-www-form-urlencoded';
         if (data) {
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            if (data.constructor && data.constructor === Object) {
+                data = utils.urlencode(data);
+            } else {
+                data = JSON.stringify(data);
+                content_type = 'application/json';
+            }
+            xhr.setRequestHeader('Content-Type', content_type);
         }
         xhr.send(data || undefined);
 

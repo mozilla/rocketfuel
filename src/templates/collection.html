@@ -6,7 +6,7 @@
     <a class="close" href="#">&times;</a>
     <h2>{{ _('Add Apps') }}</h2>
     <form>
-      <input type="search" placeholder="{{ _('Search') }}"> <button type="submit">{{ _('Search') }}</button>
+      <input type="search" placeholder="{{ _('Search') }}">
     </form>
     <ul id="app_search_results"></ul>
   </div>
@@ -39,9 +39,9 @@
       </div>
       <div class="well">
         <h2>{{ _('Apps') }}</h2>
-        <ul class="apps">
+        <ul class="apps" id="app-list">
           {% for app_object in this.apps %}
-            <li>{{ app(app_object, allow_delete=True, tag='div') }}</li>
+            {{ app(app_object, allow_delete=True, allow_reorder='true', tag='li') }}
           {% endfor %}
         </ul>
         <a href="#" class="add_app only-logged-in"><b>+</b> {{ _('Add app to collection') }}</a>
