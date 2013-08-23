@@ -7,7 +7,11 @@
   	<div class="handle">↑↓</div>
   {% endif %}
   <img src="{{ data.icons['128'] }}" alt="" height="{{ icon_size }}" width="{{ icon_size }}">
-  <strong>{{ data.name or data.slug }}</strong>
+  <strong>
+  	{% if tag != 'a' %}<a href="/app/{{ data.slug }}">{% endif %}
+  	{{ data.name or data.slug }}
+  	{% if tag != 'a' %}</a>{% endif %}
+  </strong>
   <p>{{ data.author }}</p>
 </{{ tag }}>
 {% endmacro %}
