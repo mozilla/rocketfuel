@@ -23,13 +23,13 @@ define('views/collection',
             data.objects.forEach(function(v) {
                 app_model.cast(v);
                 list.append('<li>' + nunjucks.env.getTemplate('helpers/app.html').render(
-                    {'this': v, 'allow_delete': true}));
+                    {'this': v, 'allow_delete': false}));
             });
 
             var collection = collection_model.lookup($('.main').data('id'));
             apply_incompat(collection.region, data.objects);
         }).fail(function() {
-            notification.notification({message: gettext('Search failed :(')});
+            notification.notification({message: gettext('Search failed :-(')});
         });
 
     }).on('click', '#app_search .close', function(e) {

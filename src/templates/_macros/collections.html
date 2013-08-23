@@ -2,7 +2,7 @@
 {% set carrier_color = color_cycle() %}
 {% set category_color = color_cycle() %}
 
-{% macro collection_overview(collection) %}
+{% macro collection_overview(collection, show_thumbs=False) %}
 <div class="collection overview">
   <strong><a href="{{ url('collection', [collection.id]) }}">{{ collection.name|translate(collection) }}</a></strong>
   {% if collection.description %}
@@ -22,5 +22,12 @@
   			{{ _('Category:') }} <b>{{ model_lookup('category', collection.category).name }}</b></span>
   	{% endif %}
   </p>
+  {% if show_thumbs %}
+    <div class="thumbs">
+      {% for app in collection.apps %}
+      <img src="{{ app.icons['16'] }}" alt="" width="24" height="24">
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>
 {% endmacro %}
