@@ -4,9 +4,9 @@
 
 {% macro collection_overview(collection) %}
 <div class="collection overview">
-  <strong><a href="{{ url('collection', [collection.id]) }}">{{ collection.name|translate }}</a></strong>
+  <strong><a href="{{ url('collection', [collection.id]) }}">{{ collection.name|translate(collection) }}</a></strong>
   {% if collection.description %}
-    <p>{{ collection.description|translate }}</p>
+    <p>{{ collection.description|translate(collection) }}</p>
   {% endif %}
   <p class="labels">
   	{% if collection.region %}
