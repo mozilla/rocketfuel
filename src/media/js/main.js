@@ -83,10 +83,12 @@ require.config({
         helpers.model_lookup = function(model, key) {
             return models(model).lookup(key);
         };
-        filters.translate = function(data, lang) {
+        filters.translate = function(data, default_language, lang) {
             if (typeof data === 'string') {
                 return data;
             }
+            // TODO: Make this a setting somewhere.
+            default_language = default_language || 'en-US';
             lang = lang || helpers.language;
             if (lang in data) {
                 return data[lang];
@@ -95,8 +97,11 @@ require.config({
             if (short_lang in data) {
                 return data[short_lang];
             }
-            if ('en-US' in data) {
-                return data['en-US'];
+            if (typeof default_language === 'string') {
+                return data[default_language];
+            } else if (typeof default_language === 'object' &&
+                       'default_language' in default_language) {
+                return data[default_language.default_language];
             }
             for (var x in data) { return data[x]; }
             return ''
