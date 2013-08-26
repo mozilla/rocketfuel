@@ -25,7 +25,7 @@
   {% if show_thumbs %}
     <div class="thumbs">
       {% for app in collection.apps %}
-      <img src="{{ app.icons['16'] }}" alt="" width="24" height="24">
+        <img src="{{ app.icons['16'] }}" alt="" width="24" height="24" title="{{ app.name }}">
       {% endfor %}
     </div>
   {% endif %}
