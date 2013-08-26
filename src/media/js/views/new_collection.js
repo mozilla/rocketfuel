@@ -45,6 +45,11 @@ define('views/new_collection',
         value = value.replace(/[^-\w]/g, '');
         value = value.replace(/^[0-9]+/g, '');
         $slug_field.val(value);
+        if (value) {
+            $slug_field.attr('value', value);
+        } else {
+            $slug_field.removeAttribute('value');
+        }
 
     }).on('keypress', '#new_collection input[name=slug]', function(e) {
         $(this).data('modified', true);
