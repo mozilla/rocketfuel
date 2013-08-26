@@ -6,6 +6,14 @@ define('views/collection',
     var collection_model = models('collection');
     var app_model = models('app');
 
+    function get_collection() {
+        return collection_model.lookup($('.main').data('id'));
+    }
+
+    function update_sort() {
+        $('ul.apps').sortable({handle: '.handle'});
+    }
+
     z.page.on('click', 'a.add_app', function(e) {
         e.preventDefault();
         $('#app_search').removeClass('hidden');
@@ -22,11 +30,15 @@ define('views/collection',
             list.html('');
             data.objects.forEach(function(v) {
                 app_model.cast(v);
+                if ($('#app-list .app[data-id="' + v.id + '"]').length) {
+                    // Don't show apps that have already been added.
+                    return;
+                }
                 list.append('<li>' + nunjucks.env.getTemplate('helpers/app.html').render(
                     {'this': v, 'allow_delete': false}));
             });
 
-            var collection = collection_model.lookup($('.main').data('id'));
+            var collection = get_collection();
             apply_incompat(collection.region, data.objects);
         }).fail(function() {
             notification.notification({message: gettext('Search failed :-(')});
@@ -42,15 +54,15 @@ define('views/collection',
         var $app = $(this).parent();
         $app.hide();
         var app_id = $app.data('id');
-        var collection_id = $app.closest('.main').data('id');
+        var collection = get_collection();
         var app = app_model.lookup(app_id + '', 'id');
 
         requests.post(
-            urls.api.url('remove_app', [collection_id]),
+            urls.api.url('remove_app', [collection.id]),
             {app: app.id}
         ).done(function() {
             // Do some cache rewriting.
-            var collection = collection_model.lookup(collection_id);
+            
             collection.apps = collection.apps.filter(function(coll_app) {
                 return coll_app.id != app.id;
             });
@@ -69,10 +81,10 @@ define('views/collection',
         $('#app_search .close').trigger('click');
 
         var app = $(this).data('id');
-        var collection = collection_model.lookup($('.main').data('id'));
+        var collection = get_collection();
         var app_data = app_model.lookup(app + '', 'id');
-        var $app = nunjucks.env.getTemplate('helpers/app.html').render(
-            {'this': app_data, 'allow_delete': true, 'allow_reorder': true, 'tag': 'li'});
+        var $app = $(nunjucks.env.getTemplate('helpers/app.html').render(
+            {'this': app_data, 'allow_delete': true, 'allow_reorder': true, 'tag': 'li'}));
         $('.main ul.apps').append($app);
 
         requests.post(
@@ -82,6 +94,7 @@ define('views/collection',
             // A bit of cache rewriting.
             collection.apps.push(app_data);
 
+            update_sort();
             notification.notification({message: gettext('App added to collection.')});
 
         }).fail(function() {
@@ -92,19 +105,19 @@ define('views/collection',
     }).on('click', '.delete_collection', function(e) {
         e.preventDefault();
 
-        var collection_id = $(this).data('id');
+        var collection = get_collection();
 
-        requests.del(urls.api.url('collection', [collection_id])).done(function() {
+        requests.del(urls.api.url('collection', [collection.id])).done(function() {
             // Rewrite the cache to remove the collection.
-            collection_model.del(collection_id);
-            cache.bust(urls.api.url('collection', [collection_id]));
+            collection_model.del(collection.id);
+            cache.bust(urls.api.url('collection', [collection.id]));
             cache.attemptRewrite(
                 function(key) {
                     return utils.baseurl(key) == urls.api.unsigned.url('collections');
                 },
                 function(entry, key) {
                     for (var coll in entry.objects) {
-                        if (entry.objects[coll].id === collection_id) {
+                        if (entry.objects[coll].id === collection.id) {
                             entry.objects.splice(coll, 1);
                             break;
                         }
@@ -120,6 +133,19 @@ define('views/collection',
             notification.notification({message: gettext('Failed to delete collection.')});
         });
 
+    }).on('sortupdate', 'ul.apps', function(e) {
+        var app_elements = document.querySelectorAll('#app-list .app');
+        var apps = Array.prototype.slice.call(app_elements).map(function(v) {
+            return parseInt(v.getAttribute('data-id'), 10);
+        });
+        requests.post(
+            urls.api.url('reorder_apps', [get_collection().id]),
+            apps
+        ).done(function() {
+            notification.notification({message: gettext('Order updated')});
+        }).fail(function() {
+            notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
+        });
     });
 
     function apply_incompat(base_region, app_list) {
@@ -161,22 +187,7 @@ define('views/collection',
         builder.z('title', gettext('Collection')); 
 
         builder.done(function() {
-            $('ul.apps').sortable({
-                handle: '.handle'
-            }).on('sortupdate', function() {
-                var app_elements = document.querySelectorAll('#app-list .app');
-                var apps = Array.prototype.slice.call(app_elements).map(function(v) {
-                    return parseInt(v.getAttribute('data-id'), 10);
-                });
-                requests.post(
-                    urls.api.url('reorder_apps', [params[0]]),
-                    apps
-                ).done(function() {
-                    notification.notification({message: gettext('Order updated.')});
-                }).fail(function() {
-                    notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
-                });
-            });
+            update_sort();
         });
     };
 });

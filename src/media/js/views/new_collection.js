@@ -48,7 +48,7 @@ define('views/new_collection',
         if (value) {
             $slug_field.attr('value', value);
         } else {
-            $slug_field.removeAttribute('value');
+            $slug_field.removeAttr('value');
         }
 
     }).on('keypress', '#new_collection input[name=slug]', function(e) {
