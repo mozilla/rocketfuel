@@ -1,7 +1,7 @@
-{% macro category_dropdown(default=None, name=None, value='id') %}
+{% macro category_dropdown(default=None, name=None, value='id', pretty=True) %}
   {% set default_ = default %}
   {% set value_ = value %}
-  {% defer (url=api('categories'), pluck='objects', as='category', pretty=True) %}
+  {% defer (url=api('categories'), pluck='objects', as='category') %}
     {% if pretty %}<div class="pretty-select">{% endif %}
     <select id="filter_category" class="full"{% if name %} name="{{ name }}"{% endif %}>
       <option value="" {{ 'selected' if not default }}>{{ _('All Categories (Homepage)') }}</option>
