@@ -1,53 +1,53 @@
 {% macro category_dropdown(default=None, name=None, value='id') %}
   {% set default_ = default %}
   {% set value_ = value %}
-  {% defer (url=api('categories'), pluck='objects', as='category') %}
-    <div class="pretty-select">
-      <select id="filter_category" class="full"{% if name %} name="{{ name }}"{% endif %}>
-        <option value="" {{ 'selected' if not default }}>{{ _('All Categories (Homepage)') }}</option>
-        {% for category in this %}
-          <option value="{{ category[value_] }}" {{ 'selected' if category.id == default_ }}>{{ category.name }}</option>
-        {% endfor %}
-      </select>
-    </div>
+  {% defer (url=api('categories'), pluck='objects', as='category', pretty=True) %}
+    {% if pretty %}<div class="pretty-select">{% endif %}
+    <select id="filter_category" class="full"{% if name %} name="{{ name }}"{% endif %}>
+      <option value="" {{ 'selected' if not default }}>{{ _('All Categories (Homepage)') }}</option>
+      {% for category in this %}
+        <option value="{{ category[value_] }}" {{ 'selected' if category.id == default_ }}>{{ category.name }}</option>
+      {% endfor %}
+    </select>
+    {% if pretty %}</div>{% endif %}
   {% placeholder %}
     {{ _('Loading categories...') }}
   {% except %}
   {% end %}
 {% endmacro %}
 
-{% macro region_dropdown(default='worldwide', name=None, value='id', allow_null=False) %}
+{% macro region_dropdown(default='worldwide', name=None, value='id', allow_null=False, pretty=True) %}
   {% set default_ = default %}
   {% set value_ = value %}
   {% defer (url=api('regions'), pluck='objects', as='region') %}
-    <div class="pretty-select">
-      <select id="filter_region" class="full"{% if name %} name="{{ name }}"{% endif %}>
-        {% if allow_null %}
-          <option value="">{{ _('-- None --') }}</option>
-        {% endif %}
-        {% for region in this %}
-          <option value="{{ region[value_] }}" {{ 'selected' if region.id == default_ }}>{{ region.name }}</option>
-        {% endfor %}
-      </select>
-    </div>
+    {% if pretty %}<div class="pretty-select">{% endif %}
+    <select id="filter_region" class="full"{% if name %} name="{{ name }}"{% endif %}>
+      {% if allow_null %}
+        <option value="">{{ _('-- None --') }}</option>
+      {% endif %}
+      {% for region in this %}
+        <option value="{{ region[value_] }}" {{ 'selected' if region.id == default_ }}>{{ region.name }}</option>
+      {% endfor %}
+    </select>
+    {% if pretty %}</div>{% endif %}
   {% placeholder %}
     {{ _('Loading regions...') }}
   {% except %}
   {% end %}
 {% endmacro %}
 
-{% macro carrier_dropdown(default='carrierless', name=None, value='id') %}
+{% macro carrier_dropdown(default='carrierless', name=None, value='id', pretty=True) %}
   {% set default_ = default %}
   {% set value_ = value %}
   {% defer (url=api('carriers'), pluck='objects', as='carrier') %}
-    <div class="pretty-select">
-      <select id="filter_carrier" class="full"{% if name %} name="{{ name }}"{% endif %}>
-        {% for carrier in this %}
-          <option value="{{ carrier[value_] }}" {{ 'selected' if carrier.id == default_ }}>
-            {{ carrier.name or '--' }}</option>
-        {% endfor %}
-      </select>
-    </div>
+    {% if pretty %}<div class="pretty-select">{% endif %}
+    <select id="filter_carrier" class="full"{% if name %} name="{{ name }}"{% endif %}>
+      {% for carrier in this %}
+        <option value="{{ carrier[value_] }}" {{ 'selected' if carrier.id == default_ }}>
+          {{ carrier.name or '--' }}</option>
+      {% endfor %}
+    </select>
+    {% if pretty %}</div>{% endif %}
   {% placeholder %}
     {{ _('Loading carriers...') }}
   {% except %}

@@ -94,7 +94,7 @@ define('views/collection',
             // A bit of cache rewriting.
             collection.apps.push(app_data);
 
-            update_sort();
+            update_sort();  // Add event handlers for sorting.
             notification.notification({message: gettext('App added to collection.')});
 
         }).fail(function() {
@@ -145,6 +145,53 @@ define('views/collection',
             notification.notification({message: gettext('Order updated')});
         }).fail(function() {
             notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
+        });
+    });
+
+    z.page.on('updated', '.main .field', function(e, value) {
+        var collection = get_collection();
+        var $field = $(this);
+        var $label = $field.find('p');
+        var field = $field.data('field');
+        var orig_text = $field.text();
+
+        var data = {};
+        data[field] = value;
+
+        switch (field) {
+            case 'region':
+            case 'carrier':
+            case 'category':
+                // Look up the name of the new value and update the field.
+                var model = models(field).lookup(data[field]);
+                $label.text(model ? model.name : '--');
+                break;
+            case 'description':
+                if (navigator.l10n.language in value) {
+                    $label.text(value[navigator.l10n.language]);
+                } else {
+                    $label.text(value[value.keys()[0]]);
+                }
+                break;
+            default:
+                $label.text(value);
+        }
+        $field.addClass('saving');
+
+        requests.patch(
+            urls.api.url('collection', collection.id),
+            data
+        ).done(function(data) {
+            notification.notification(
+                {message: gettext('Saved {field}', {'field': field})});
+
+        }).fail(function() {
+            $label.text(orig_text);  // Reset the field text.
+            notification.notification(
+                {message: gettext('Failed to update {field}', {'field': field})});
+
+        }).always(function() {
+            $field.removeClass('saving');
         });
     });
 

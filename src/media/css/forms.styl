@@ -99,6 +99,49 @@ label [value]:invalid ~ [reason=invalid] {
     display: block;
 }
 
+.pretty-select,
+.pretty-select select {
+    cursor: pointer;
+}
+
+.pretty-select {
+    gradient-two-color(#fff, $seavan-salt-white);
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        dropdown();
+        z-index: 2;
+    }
+    &:after {
+        // Hide the native `<select>` arrow so we can overlay our
+        // dropdown arrow in `:before`.
+        border-left: 1px solid $cement-gray;
+        box-shadow: 0 1px 0 #fff, 0 1px 1px $seavan-salt-white inset;
+        content: "";
+        display: block;
+        gradient-two-color(#fff, $seavan-salt-white);
+        height: 100%;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45px;
+        z-index: 1;
+    }
+    &:hover:before, &:active:before {
+        background-image: url(../img/pretty/dropdown_active.svg);
+    }
+    select {
+        -moz-padding-start: 10px;
+        appearance-none();
+        background: none;
+        border: 0;
+        padding: 4px 8px;
+    }
+}
+
 .form-grid {
     background: #fff;
     border: 1px solid $seavan-salt-white;
@@ -114,49 +157,6 @@ label [value]:invalid ~ [reason=invalid] {
         width: 50%;
     }
 
-    .pretty-select,
-    .pretty-select select {
-        cursor: pointer;
-    }
-    .pretty-select {
-        gradient-two-color(#fff, $seavan-salt-white);
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-
-        &:before {
-            dropdown();
-            z-index: 2;
-        }
-        &:after {
-            // Hide the native `<select>` arrow so we can overlay our
-            // dropdown arrow in `:before`.
-            border-left: 1px solid $cement-gray;
-            box-shadow: 0 1px 0 #fff, 0 1px 1px $seavan-salt-white inset;
-            content: "";
-            display: block;
-            gradient-two-color(#fff, $seavan-salt-white);
-            height: 100%;
-            pointer-events: none;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 45px;
-            z-index: 1;
-        }
-        &:hover, &:active {
-            &:before {
-                background-image: url(../img/pretty/dropdown_active.svg);
-            }
-        }
-        select {
-            -moz-padding-start: 10px;
-            appearance-none();
-            background: none;
-            border: 0;
-            padding: 10px 12px;
-        }
-    }
     footer {
         margin-top: 10px;
         position: absolute;
@@ -174,6 +174,97 @@ label [value]:invalid ~ [reason=invalid] {
         button {
             width: 100%;
         }
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from { background-position: 40px 0; }
+    to { background-position: 0 0; }
+}
+
+.field,
+.field:not(.text) {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ddd;
+    margin-bottom: 5px;
+
+    > * {
+        padding: 6px 12px;
+    }
+
+    label {
+        background: $salt-flat-white;
+    }
+
+    p {
+        cursor: pointer;
+    }
+    &:not(.active) form,
+    &.active p {
+        display: none;
+    }
+    &.saving {
+        background-color: $pineapple-yellow;
+        transition: unquote('background-color 0.2s');
+        p {
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-size: 40px 40px;
+            animation: unquote('progress-bar-stripes 2s linear infinite');
+        }
+    }
+}
+
+.field:not(.text) {
+    > * {
+        display: table-cell;
+        width: 100%
+    }
+
+    label {
+        border-right: 1px solid #bbb;
+        border-radius: 3px 0 0 3px;
+        margin-right: 12px;
+        width: auto;
+    }
+    form {
+        display: none;
+        padding: 0;
+
+        > * {
+            border: 0;
+            padding: 0 12px;
+        }
+
+        input:not([type=radio]):not([type=checkbox]) {
+            border: 0;
+            box-shadow: none;
+            padding: 0 12px;
+        }
+
+        select {
+            border: 0;
+            box-shadow: none;
+        }
+    }
+
+    form, p {
+        display: table-cell;
+    }
+}
+
+.text.field {
+    label {
+        border-bottom: 1px solid #bbb;
+        display: block;
+    }
+
+    p, textarea {
+        border: 0;
+        box-shadow: none;
+        line-height: 1.2em;
+        padding: 6px 12px;
     }
 }
 

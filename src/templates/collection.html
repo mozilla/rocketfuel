@@ -1,4 +1,5 @@
 {% from "_macros/app.html" import app %}
+{% from "_macros/dropdowns.html" import category_dropdown, region_dropdown, carrier_dropdown %}
 
 <section class="main" data-id="{{ id }}">
 {% defer (url=api('collection', [id]), as='collection', key=id, id='main') %}
@@ -16,26 +17,41 @@
       <div class="well">
         <h1>{{ this.name|translate(this) }}</h1>
         {% if this.author and this.author != 'nobody' %}
-          <p>{{ _('Created by {author}', author=this.author) }}</p>
+          <div class="field" data-field="author">
+            <label>{{ _('Author:') }}</label>
+            <p>{{ this.author }}</p>
+            <form><input type="text" required value="{{ this.author }}"></form>
+          </div>
         {% endif %}
 
-        <div class="row restrictions">
-          <div class="third">
-            {{ _('Region:') }}
-            <span>{{ model_lookup('region', this.region).name if this.region else '--' }}</span>
-          </div>
-          <div class="third">
-            {{ _('Carrier:') }}
-            <span>{{ model_lookup('carrier', this.carrier).name if this.carrier else '--' }}</span>
-          </div>
-          <div class="third">
-            {{ _('Category:') }}
-            <span>{{ model_lookup('category', this.category).name if this.category else '--' }}</span>
-          </div>
+        <div class="field" data-field="region">
+          <label>{{ _('Region:') }}</label>
+          <p>{{ model_lookup('region', this.region).name if this.region else '--' }}</p>
+          <form>{{ region_dropdown(name='region', value='id', default=this.region, allow_null=(this.collection_type != 0), pretty=False) }}</form>
         </div>
+        {% if type != 0 %}
+          <div class="field" data-field="carrier">
+            <label>{{ _('Carrier:') }}</label>
+            <p>{{ model_lookup('carrier', this.carrier).name if this.carrier else '--' }}</p>
+            <form>{{ carrier_dropdown(name='carrier', value='id', default=this.carrier or 0, pretty=False) }}</form>
+          </div>
+        {% endif %}
+        {% if type != 2 %}
+          <div class="field" data-field="category">
+            <label>{{ _('Category:') }}</label>
+            <p>{{ model_lookup('category', this.category).name if this.category else '--' }}</p>
+            <form>{{ category_dropdown(name='category', value='id', default=this.category, pretty=False) }}</form>
+          </div>
+        {% endif %}
 
-        <h2>{{ _('Description') }}</h2>
-        <p>{{ this.description|translate(this) }}</p>
+        <div class="text field" data-field="description">
+          <label>{{ _('Description') }}</label>
+          <p>{{ this.description|translate(this) }}</p>
+          <form>
+            <textarea translated data-value="{{ this.description|stringify|escape }}"></textarea>
+            <button type="submit">{{ _('Save') }}</button>
+          </form>
+        </div>
       </div>
       <div class="well">
         <h2>{{ _('Apps') }}</h2>
