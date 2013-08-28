@@ -16,7 +16,37 @@ define('views/collection',
 
     z.page.on('click', 'a.add_app', function(e) {
         e.preventDefault();
+        $('.dialog').addClass('hidden');
         $('#app_search').removeClass('hidden');
+
+    }).on('click', 'a.duplicate_collection', function(e) {
+        e.preventDefault();
+        $('.dialog').addClass('hidden');
+        $('#duplicate_collection').removeClass('hidden');
+
+    }).on('submit', '#duplicate_collection form', function(e) {
+        var $this = $(this);
+        e.preventDefault();
+        var data = utils.getVars($this.serialize());
+
+        var $button = $this.find('.button');
+        var button_text = $button.text();
+        $button.addClass('disabled').html('<div class="spin spinner">');
+
+        requests.post(
+            urls.api.url('duplicate', [get_collection().id]),
+            data
+        ).done(function(data) {
+            collection_model.cast(data);
+
+            notification.notification({message: gettext('Successfully duplicated')});
+            z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
+
+        }).fail(function() {
+            notification.notification({message: gettext('Failed to duplicate collection')})
+            $button.removeClass('disabled').text(button_text);
+        });
+
     }).on('submit', '#app_search form', function(e) {
         e.preventDefault();
         var list = $('#app_search_results');
@@ -44,9 +74,9 @@ define('views/collection',
             notification.notification({message: gettext('Search failed :-(')});
         });
 
-    }).on('click', '#app_search .close', function(e) {
+    }).on('click', '.dialog .close', function(e) {
         e.preventDefault();
-        $('#app_search').addClass('hidden');
+        $('.dialog').addClass('hidden');
 
     }).on('click', '.app .delete', function(e) {
         e.preventDefault();

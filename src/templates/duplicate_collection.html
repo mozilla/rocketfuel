@@ -1,0 +1,23 @@
+<div class="hidden dialog" id="duplicate_collection">
+  <a class="close" href="#">&times;</a>
+  <h2>{{ _('Duplicate Collection') }}</h2>
+
+  <form class="form-grid only-logged-in" id="duplicate_collection">
+    <label>
+      {{ _('Name') }}
+      <input type="text" name="name" required value="{{ this.name|translate(this) }}">
+      <p reason="required">{{ _('A name is required') }}</p>
+    </label>
+
+    <label>
+      {{ _('Slug') }}
+      <input type="text" name="slug" required pattern="[a-zA-Z][\w\-]*" value="{{ this.slug }}">
+      <p reason="required">{{ _('A slug is required') }}</p>
+      <p reason="invalid">{{ _('Slugs must start with a letter and can only contain letters, numbers, and hyphens.') }}</p>
+    </label>
+
+    <footer>
+      <p><button type="submit" class="button">{{ _("Duplicate") }}</button></p>
+    </footer>
+  </form>
+</div>

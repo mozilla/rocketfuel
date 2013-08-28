@@ -11,6 +11,7 @@
     </form>
     <ul id="app_search_results"></ul>
   </div>
+  {% include "duplicate_collection.html" %}
 
   <section class="row gutter">
     <div class="two-thirds">
@@ -93,6 +94,10 @@
     </div>
     <div class="third">
       <div class="well">
+      </div>
+      <div class="well only-logged-in">
+        <a href="#" class="duplicate_collection" data-id="{{ id }}">
+          <b&#9802;</b> {{ _('Duplicate collection') }}</a>
       </div>
       <div class="well only-logged-in">
         <a href="#" class="delete_collection" data-id="{{ id }}">
