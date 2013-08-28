@@ -62,7 +62,7 @@ define('views/collection',
             {app: app.id}
         ).done(function() {
             // Do some cache rewriting.
-            
+
             collection.apps = collection.apps.filter(function(coll_app) {
                 return coll_app.id != app.id;
             });
@@ -153,7 +153,7 @@ define('views/collection',
         var $field = $(this);
         var $label = $field.find('p');
         var field = $field.data('field');
-        var orig_text = $field.text();
+        var orig_html = $field.html();
 
         var data = {};
         data[field] = value;
@@ -173,6 +173,15 @@ define('views/collection',
                     $label.text(value[value.keys()[0]]);
                 }
                 break;
+            case 'background_color':
+            case 'text_color':
+                $label.html(
+                    '<span class="chiclet" style="background-color:' +
+                    utils.escape_(value) +
+                    '"></span> ' +
+                    utils.escape_(value)
+                );
+                break;
             default:
                 $label.text(value);
         }
@@ -186,7 +195,7 @@ define('views/collection',
                 {message: gettext('Saved {field}', {'field': field})});
 
         }).fail(function() {
-            $label.text(orig_text);  // Reset the field text.
+            $label.html(orig_html);  // Reset the field text.
             notification.notification(
                 {message: gettext('Failed to update {field}', {'field': field})});
 
@@ -231,7 +240,7 @@ define('views/collection',
         });
 
         builder.z('type', 'leaf');
-        builder.z('title', gettext('Collection')); 
+        builder.z('title', gettext('Collection'));
 
         builder.done(function() {
             update_sort();

@@ -68,6 +68,7 @@ require.config({
         }
 
         // Add some helpful functions.
+        helpers.COLOR_PATTERN = '#[0-9a-fA-F]{6}';
         helpers.color_cycle = function() {
             var cache = {};
             var n = 0;

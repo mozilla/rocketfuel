@@ -23,6 +23,11 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
     function reset_field(e) {
         e.preventDefault();
         var $this = $(this);
+        var $form = $this.is('form') ? $this : $this.closest('form');
+        if (!$form[0].checkValidity()) {
+            // TODO: Show validation errors.
+            return;
+        }
         var $field = $this.closest('.field');
         $field.removeClass('active');
         var value = $this.val();  // Select boxes
@@ -40,6 +45,7 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
         form.addClass('active');
         form.find('input, textarea, select').trigger('focus');
     }).on('change', '.field select:not(.locale)', reset_field)
+      .on('change', '.field.active input[type=color]', reset_field)
       .on('submit', '.field form', reset_field);
 
     // Add support for localized fields.

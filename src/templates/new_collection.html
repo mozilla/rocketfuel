@@ -4,7 +4,6 @@
 <form class="form-grid only-logged-in" id="new_collection">
   <input type="hidden" name="collection_type" value="{{ type }}">
 
-  
   <label>
     {{ _('Name') }}
     <input type="text" name="name" required>
@@ -14,7 +13,6 @@
     <p reason="required">{{ _('A name is required') }}</p>
   </label>
 
-  
   <label>
     {{ _('Collection Slug') }}
     <input type="text" name="slug" required pattern="[a-zA-Z][\w\-]*">
@@ -63,6 +61,23 @@
       </label>
     {% endif %}
   </div>
+
+  {# Only curated collections get color values #}
+  {% if type == 0 %}
+    <label>
+      {{ _('Background Color') }}
+      <input type="color" name="background_color" required pattern="{{ COLOR_PATTERN }}" value="#3399FF">
+      <p reason="required">{{ _('A background color is required') }}</p>
+      <p reason="invalid">{{ _('Please enter a hex color (e.g.: "#AB78EF")') }}</p>
+    </label>
+
+    <label>
+      {{ _('Text Color') }}
+      <input type="color" name="text_color" required pattern="{{ COLOR_PATTERN }}" value="#FFFFFF">
+      <p reason="required">{{ _('A text color is required') }}</p>
+      <p reason="invalid">{{ _('Please enter a hex color (e.g.: "#AB78EF")') }}</p>
+    </label>
+  {% endif %}
 
   <footer>
     <p><button type="submit" class="button">{{ _('Create') }}</button></p>

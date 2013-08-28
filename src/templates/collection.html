@@ -53,6 +53,28 @@
           </form>
         </div>
       </div>
+      {# Curated collection customization fields #}
+      {% if type == 0 %}
+        <div class="well">
+          <h2>{{ _('Customization') }}</h2>
+          <div class="field" data-field="background_color">
+            <label>{{ _('Background Color:') }}</label>
+            <p>
+              <span class="chiclet" style="background-color:{{ this.background_color }}"></span>
+              {{ this.background_color }}
+            </p>
+            <form><input type="color" required pattern="{{ COLOR_PATTERN }}" value="{{ this.background_color }}"></form>
+          </div>
+          <div class="field" data-field="text_color">
+            <label>{{ _('Text Color:') }}</label>
+            <p>
+              <span class="chiclet" style="background-color:{{ this.text_color }}"></span>
+              {{ this.text_color }}
+            </p>
+            <form><input type="color" required pattern="{{ COLOR_PATTERN }}" value="{{ this.text_color }}"></form>
+          </div>
+        </div>
+      {% endif %}
       <div class="well">
         <h2>{{ _('Apps') }}</h2>
         <ul class="apps" id="app-list">

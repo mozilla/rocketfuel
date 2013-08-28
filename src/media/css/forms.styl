@@ -200,6 +200,16 @@ label [value]:invalid ~ [reason=invalid] {
 
     p {
         cursor: pointer;
+        .chiclet {
+            border: 1px solid #000;
+            border-radius: 3px;
+            box-shadow: inset 0 0 1px 1px #fff;
+            display: inline-block;
+            height: 1em;
+            margin-bottom: -2px;
+            vertical-align: baseline;
+            width: 1em;
+        }
     }
     &:not(.active) form,
     &.active p {
