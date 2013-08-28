@@ -57,7 +57,7 @@
     {% if show_carrier %}
       <label class="{{ colmode }}">
         {{ _('Carrier') }}
-        {{ carrier_dropdown(name='carrier', value='id', default=carrier or 0) }}
+        {{ carrier_dropdown(name='carrier', value='id', default=carrier or 0, allow_null=(type != 2)) }}
       </label>
     {% endif %}
   </div>

@@ -36,7 +36,7 @@
   <div class="two-thirds">
     {% defer (url=api('collections'), pluck='objects', as='collection', id='collection_list') %}
       <section class="group">
-        <h2>Collections</h2>
+        <h2>{{ _('Collections') }}</h2>
         {% set results = this|filter(collection_type=0, category=category or None, region=[region, None]) %}
         {% if results.length %}
           {% for collection in results %}
@@ -50,7 +50,7 @@
           <b>+</b> {{ _('Add a new collection' )}}</a>
       </section>
       <section class="group">
-        <h2>Featured Apps</h2>
+        <h2>{{ _('Featured Apps') }}</h2>
         {% set results = this|filter(collection_type=1, category=category or None, region=[region, None], carrier=[carrier, None]) %}
         {% if results.length %}
           {% for collection in results %}
@@ -66,18 +66,22 @@
       {# Only show OSCs if we're on the homepage. #}
       {% if not category %}
         <section class="group">
-          <h2>Operator Shelves</h2>
-          {% set results = this|filter(collection_type=2, region=[region, None], carrier=carrier) %}
-          {% if results.length %}
-            {% for collection in results %}
-              {{ collection_overview(collection, show_thumbs=True) }}
-            {% endfor %}
+          <h2>{{ _('Operator Shelves') }}</h2>
+          {% if carrier %}
+            {% set results = this|filter(collection_type=2, region=[region, None], carrier=[carrier, None]) %}
+            {% if results.length %}
+              {% for collection in results %}
+                {{ collection_overview(collection, show_thumbs=True) }}
+              {% endfor %}
+            {% else %}
+              <p>{{ _('No operator shelves have been created.') }}</p>
+            {% endif %}
+            <a class="new_collection only-logged-in"
+               href="{{ get_url_params(url('new_collection'), 'operator') }}">
+              <b>+</b> {{ _('Add a new operator shelf' )}}</a>
           {% else %}
-            <p>{{ _('No operator shelves have been created.') }}</p>
+            <p>{{ _('Please select a carrier to see operator shelves.') }}</p>
           {% endif %}
-          <a class="new_collection only-logged-in"
-             href="{{ get_url_params(url('new_collection'), 'operator') }}">
-            <b>+</b> {{ _('Add a new operator shelf' )}}</a>
         </section>
       {% endif %}
     {% placeholder %}
