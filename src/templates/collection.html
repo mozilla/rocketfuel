@@ -24,6 +24,12 @@
           </div>
         {% endif %}
 
+        <div class="field" data-field="slug">
+          <label>{{ _('Slug:') }}</label>
+          <p>{{ this.slug }}</p>
+          <form><input type="text" required pattern="[a-zA-Z][\w\-]*" value="{{ this.slug }}"></form>
+        </div>
+
         <div class="field" data-field="region">
           <label>{{ _('Region:') }}</label>
           <p>{{ model_lookup('region', this.region).name if this.region else '--' }}</p>
@@ -45,7 +51,7 @@
         {% endif %}
 
         <div class="text field" data-field="description">
-          <label>{{ _('Description') }}</label>
+          <label>{{ _('Description:') }}</label>
           <p>{{ this.description|translate(this) }}</p>
           <form>
             <textarea translated data-value="{{ this.description|stringify|escape }}"></textarea>
@@ -63,7 +69,7 @@
               <span class="chiclet" style="background-color:{{ this.background_color }}"></span>
               {{ this.background_color }}
             </p>
-            <form><input type="color" required pattern="{{ COLOR_PATTERN }}" value="{{ this.background_color }}"></form>
+            <form><input type="text" required pattern="{{ COLOR_PATTERN }}" value="{{ this.background_color }}"></form>
           </div>
           <div class="field" data-field="text_color">
             <label>{{ _('Text Color:') }}</label>
@@ -71,7 +77,7 @@
               <span class="chiclet" style="background-color:{{ this.text_color }}"></span>
               {{ this.text_color }}
             </p>
-            <form><input type="color" required pattern="{{ COLOR_PATTERN }}" value="{{ this.text_color }}"></form>
+            <form><input type="text" required pattern="{{ COLOR_PATTERN }}" value="{{ this.text_color }}"></form>
           </div>
         </div>
       {% endif %}
