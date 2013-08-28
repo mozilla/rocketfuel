@@ -29,14 +29,14 @@
           <p>{{ model_lookup('region', this.region).name if this.region else '--' }}</p>
           <form>{{ region_dropdown(name='region', value='id', default=this.region, allow_null=(this.collection_type != 0), pretty=False) }}</form>
         </div>
-        {% if type != 0 %}
+        {% if this.collection_type != 0 %}
           <div class="field" data-field="carrier">
             <label>{{ _('Carrier:') }}</label>
             <p>{{ model_lookup('carrier', this.carrier).name if this.carrier else '--' }}</p>
             <form>{{ carrier_dropdown(name='carrier', value='id', default=this.carrier or 0, pretty=False) }}</form>
           </div>
         {% endif %}
-        {% if type != 2 %}
+        {% if this.collection_type != 2 %}
           <div class="field" data-field="category">
             <label>{{ _('Category:') }}</label>
             <p>{{ model_lookup('category', this.category).name if this.category else '--' }}</p>
@@ -54,7 +54,7 @@
         </div>
       </div>
       {# Curated collection customization fields #}
-      {% if type == 0 %}
+      {% if this.collection_type == 0 %}
         <div class="well">
           <h2>{{ _('Customization') }}</h2>
           <div class="field" data-field="background_color">
