@@ -105,7 +105,19 @@ require.config({
                 return data[default_language.default_language];
             }
             for (var x in data) { return data[x]; }
-            return ''
+            return '';
+        };
+        var regex_chars = '\\()[]{}-.*?!+^$|=';
+        // TODO: Consider adding this to commonplace helpers.
+        filters.make_regex_safe = function(data) {
+            if (typeof data !== 'string') {
+                return data;
+            }
+            for (var i = 0; i < regex_chars.length; i++) {
+                data = data.replace(
+                    new RegExp('\\' + regex_chars[i], 'g'), '\\' + regex_chars[i]);
+            }
+            return data;
         };
 
         // Do some last minute template compilation.

@@ -33,27 +33,33 @@ define('views/new_collection',
         });
     });
 
-    z.page.on('keyup', '#new_collection input[name=name]', function(e) {
-        var $slug_field = $('#new_collection input[name=slug]');
-        if ($slug_field.data('modified')) {
-            return;
-        }
+    z.page.on(
+        'keyup',
+        '#new_collection input[name=name], #duplicate_collection input[name=name]',
+        function(e) {
+            var $slug_field = $(this).closest('form').find('input[name=slug]');
+            if ($slug_field.data('modified')) {
+                return;
+            }
 
-        var $this = $(this);
-        var value = $this.val().toLowerCase();
-        value = value.replace(/[ _]/g, '-');
-        value = value.replace(/[^-\w]/g, '');
-        value = value.replace(/^[0-9]+/g, '');
-        $slug_field.val(value);
-        if (value) {
-            $slug_field.attr('value', value);
-        } else {
-            $slug_field.removeAttr('value');
-        }
+            var $this = $(this);
+            var value = $this.val().toLowerCase();
+            value = value.replace(/[ _]/g, '-');
+            value = value.replace(/[^-\w]/g, '');
+            value = value.replace(/^[0-9]+/g, '');
+            $slug_field.val(value);
+            if (value) {
+                $slug_field.attr('value', value);
+            } else {
+                $slug_field.removeAttr('value');
+            }
 
-    }).on('keypress', '#new_collection input[name=slug]', function(e) {
-        $(this).data('modified', true);
-    });
+        }
+    ).on(
+        'keypress',
+        '#new_collection input[name=slug], #duplicate_collection input[name=slug]',
+        function(e) { $(this).data('modified', true); }
+    );
 
     var types = {
         'basic': 0,
@@ -75,6 +81,6 @@ define('views/new_collection',
         );
 
         builder.z('type', 'leaf');
-        builder.z('title', gettext('New Collection')); 
+        builder.z('title', gettext('New Collection'));
     };
 });

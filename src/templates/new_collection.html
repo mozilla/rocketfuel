@@ -15,7 +15,7 @@
 
   <label>
     {{ _('Collection Slug') }}
-    <input type="text" name="slug" required pattern="[a-zA-Z][\w\-]*">
+    <input type="text" name="slug" required pattern="[a-zA-Z][\w\-]*" maxlength="30">
     <p reason="required">{{ _('A slug is required') }}</p>
     <p reason="invalid">{{ _('Slugs must start with a letter and can only contain letters, numbers, and hyphens.') }}</p>
   </label>
