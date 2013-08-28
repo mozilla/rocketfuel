@@ -47,6 +47,7 @@ define('views/new_collection',
             value = value.replace(/[ _]/g, '-');
             value = value.replace(/[^-\w]/g, '');
             value = value.replace(/^[0-9]+/g, '');
+            value = value.substr(0, 30);  // Cap the slug at 30 chars
             $slug_field.val(value);
             if (value) {
                 $slug_field.attr('value', value);
