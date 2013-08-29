@@ -136,12 +136,12 @@ define('views/collection',
         e.preventDefault();
 
         var $this = $(this);
-        var $spinner = ('<div class="spinner">');
+        var $spinner = $('<div class="spinner">');
         $this.replaceWith($spinner);
 
         notification.confirmation({
             message: gettext('Are you sure you want to delete this collection?')
-        }).done(function() {
+        }).then(function() {
             var collection = get_collection();
 
             requests.del(urls.api.url('collection', [collection.id])).done(function() {
@@ -170,7 +170,7 @@ define('views/collection',
                 notification.notification({message: gettext('Failed to delete collection.')});
             });
 
-        }).fail(function() {
+        }, function() {
             $spinner.replaceWith($this);
         });
 
