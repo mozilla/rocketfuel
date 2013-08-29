@@ -108,9 +108,10 @@ define('views/collection',
 
     }).on('click', '#app_search a.app', function(e) {
         e.preventDefault();
-        $('#app_search .close').trigger('click');
 
-        var app = $(this).data('id');
+        var $this = $(this);
+        var app = $this.data('id');
+        $this.parent().remove();
         var collection = get_collection();
         var app_data = app_model.lookup(app + '', 'id');
         var $app = $(nunjucks.env.getTemplate('helpers/app.html').render(
@@ -135,32 +136,37 @@ define('views/collection',
     }).on('click', '.delete_collection', function(e) {
         e.preventDefault();
 
-        var collection = get_collection();
+        notification.confirmation({
+            message: gettext('Are you sure you want to delete this collection?')
+        }).done(function() {
+            var collection = get_collection();
 
-        requests.del(urls.api.url('collection', [collection.id])).done(function() {
-            // Rewrite the cache to remove the collection.
-            collection_model.del(collection.id);
-            cache.bust(urls.api.url('collection', [collection.id]));
-            cache.attemptRewrite(
-                function(key) {
-                    return utils.baseurl(key) == urls.api.unsigned.url('collections');
-                },
-                function(entry, key) {
-                    for (var coll in entry.objects) {
-                        if (entry.objects[coll].id === collection.id) {
-                            entry.objects.splice(coll, 1);
-                            break;
+            requests.del(urls.api.url('collection', [collection.id])).done(function() {
+                // Rewrite the cache to remove the collection.
+                collection_model.del(collection.id);
+                cache.bust(urls.api.url('collection', [collection.id]));
+                cache.attemptRewrite(
+                    function(key) {
+                        return utils.baseurl(key) == urls.api.unsigned.url('collections');
+                    },
+                    function(entry, key) {
+                        for (var coll in entry.objects) {
+                            if (entry.objects[coll].id === collection.id) {
+                                entry.objects.splice(coll, 1);
+                                break;
+                            }
                         }
+                        return entry;
                     }
-                    return entry;
-                }
-            );
+                );
 
-            notification.notification({message: gettext('Collection deleted.')});
-            z.page.trigger('navigate', [urls.reverse('homepage')]);
+                notification.notification({message: gettext('Collection deleted.')});
+                z.page.trigger('navigate', [urls.reverse('homepage')]);
 
-        }).fail(function() {
-            notification.notification({message: gettext('Failed to delete collection.')});
+            }).fail(function() {
+                notification.notification({message: gettext('Failed to delete collection.')});
+            });
+
         });
 
     }).on('sortupdate', 'ul.apps', function(e) {
@@ -178,6 +184,7 @@ define('views/collection',
         });
     });
 
+    // Code to update fields as they're edited by the user.
     z.page.on('updated', '.main .field', function(e, value) {
         var collection = get_collection();
         var $field = $(this);
