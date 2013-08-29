@@ -225,43 +225,64 @@ label [value]:invalid ~ [reason=invalid] {
             animation: unquote('progress-bar-stripes 2s linear infinite');
         }
     }
+
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
 }
 
 .field:not(.text) {
-    > * {
-        display: table-cell;
-        width: 100%
-    }
 
     label {
         border-right: 1px solid #bbb;
         border-radius: 3px 0 0 3px;
-        margin-right: 12px;
-        width: auto;
+        float: left;
+        width: 20%;
     }
+
     form {
         display: none;
-        padding: 0;
+        padding: 0 12px;
 
-        > * {
+        > :not(.placeholder),
+        > .placeholder > * {
             border: 0;
-            padding: 0 12px;
+            padding: 6px 0;
+            width: 90%;
         }
 
         input:not([type=radio]):not([type=checkbox]) {
             border: 0;
             box-shadow: none;
-            padding: 0 12px;
+            line-height: 1em;
         }
 
         select {
             border: 0;
             box-shadow: none;
         }
+
+        button[type=submit] {
+            background: $cement-gray;
+            border: 1px solid $easy-peasy-gray;
+            border-bottom-width: 2px;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 1em;
+            width: 10%;
+
+            &:hover {
+                background: $cloud-gray;
+            }
+        }
     }
 
     form, p {
-        display: table-cell;
+        display: block;
+        width: 80%;
+        margin-left: 20%;
     }
 }
 

@@ -195,7 +195,7 @@ define('views/collection',
         var $field = $(this);
         var $label = $field.find('p');
         var field = $field.data('field');
-        var orig_html = $field.html();
+        var orig_html = $label.html();
 
         var data = {};
         data[field] = value;

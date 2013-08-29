@@ -1,5 +1,7 @@
 define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
 
+    var gettext = l10n.gettext;
+
     function checkValid(form) {
         if (form) {
             $(form).filter(':not([novalidate])').find('button[type=submit]').attr('disabled', !form.checkValidity());
@@ -36,13 +38,16 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
             value = input.data('value') || input.val();
         }
         $field.trigger('updated', [value]);
+
+        $form.find('button[type=submit]').remove();
     }
 
     z.body.on('click', '.field p', function(e) {
         e.preventDefault();
         var form = $(this).parent();
         form.addClass('active');
-        form.find('input, textarea, select').trigger('focus');
+        var field = form.find('input, textarea, select').trigger('focus');
+        $('<button type="submit">').text(gettext('Save')).insertAfter(field.last());
     }).on('change', '.field select:not(.locale)', reset_field)
       .on('submit', '.field form', reset_field);
 
@@ -83,7 +88,7 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
                 data[previous_value] = $elem.val();
                 $elem.data(data);
                 // Set the new value and update previous_value.
-                $elem.val(data[previous_value = $(this).val()]);
+                $elem.val(data[previous_value = locale_picker.val()]);
                 // Give the element focus.
                 $elem.trigger('focus');
             }

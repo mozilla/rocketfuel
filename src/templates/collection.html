@@ -3,14 +3,7 @@
 
 <section class="main" data-id="{{ id }}">
 {% defer (url=api('collection', [id]), as='collection', key=id, id='main') %}
-  <div class="hidden dialog" id="app_search">
-    <a class="close" href="#">&times;</a>
-    <h2>{{ _('Add Apps') }}</h2>
-    <form>
-      <input type="search" placeholder="{{ _('Search') }}">
-    </form>
-    <ul id="app_search_results"></ul>
-  </div>
+  {% include "app_search.html" %}
   {% include "duplicate_collection.html" %}
 
   <section class="row gutter">
@@ -54,10 +47,7 @@
         <div class="text field" data-field="description">
           <label>{{ _('Description:') }}</label>
           <p>{{ this.description|translate(this) }}</p>
-          <form>
-            <textarea translated data-value="{{ this.description|stringify|escape }}"></textarea>
-            <button type="submit">{{ _('Save') }}</button>
-          </form>
+          <form><textarea translated data-value="{{ this.description|stringify|escape }}"></textarea></form>
         </div>
       </div>
       {# Curated collection customization fields #}
@@ -65,7 +55,7 @@
         <div class="well">
           <h2>{{ _('Customization') }}</h2>
           <div class="field" data-field="background_color">
-            <label>{{ _('Background Color:') }}</label>
+            <label>{{ _('Background:') }}</label>
             <p>
               <span class="chiclet" style="background-color:{{ this.background_color }}"></span>
               {{ this.background_color }}
@@ -73,7 +63,7 @@
             <form><input type="text" required pattern="{{ COLOR_PATTERN }}" value="{{ this.background_color }}"></form>
           </div>
           <div class="field" data-field="text_color">
-            <label>{{ _('Text Color:') }}</label>
+            <label>{{ _('Text:') }}</label>
             <p>
               <span class="chiclet" style="background-color:{{ this.text_color }}"></span>
               {{ this.text_color }}
