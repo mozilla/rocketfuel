@@ -209,38 +209,3 @@ main {
 .logged-in .only-logged-in {
     display: block !important;
 }
-
-.spinner {
-    spinner();
-    &.alt {
-        spinner-alt-image();
-    }
-    &.btn-replace {
-        spinner-abs();
-        top: 24px;
-    }
-    &.spaced {
-        margin: 70px auto;
-    }
-    &.padded {
-        padding: 70px 0;
-    }
-}
-
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0turn); }
-    to { -webkit-transform: rotate(1turn); }
-}
-@keyframes spin {
-    from { transform: rotate(0turn); }
-    to { transform: rotate(1turn); }
-}
-
-@media $retina {
-    .spinner {
-        spinner-base-image('retina');
-        &.alt {
-            spinner-alt-image('retina');
-        }
-    }
-}

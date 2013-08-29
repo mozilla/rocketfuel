@@ -31,7 +31,7 @@ define('views/collection',
 
         var $button = $this.find('.button');
         var button_text = $button.text();
-        $button.addClass('disabled').html('<div class="spin spinner">');
+        $button.addClass('disabled').html('<div class="spinner">');
 
         requests.post(
             urls.api.url('duplicate', [get_collection().id]),
@@ -92,7 +92,6 @@ define('views/collection',
             {app: app.id}
         ).done(function() {
             // Do some cache rewriting.
-
             collection.apps = collection.apps.filter(function(coll_app) {
                 return coll_app.id != app.id;
             });
@@ -136,6 +135,10 @@ define('views/collection',
     }).on('click', '.delete_collection', function(e) {
         e.preventDefault();
 
+        var $this = $(this);
+        var $spinner = ('<div class="spinner">');
+        $this.replaceWith($spinner);
+
         notification.confirmation({
             message: gettext('Are you sure you want to delete this collection?')
         }).done(function() {
@@ -167,6 +170,8 @@ define('views/collection',
                 notification.notification({message: gettext('Failed to delete collection.')});
             });
 
+        }).fail(function() {
+            $spinner.replaceWith($this);
         });
 
     }).on('sortupdate', 'ul.apps', function(e) {

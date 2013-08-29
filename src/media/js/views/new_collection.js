@@ -12,7 +12,7 @@ define('views/new_collection',
         var data = utils.getVars($this.serialize());
         var $button = $this.find('.button');
         var button_text = $button.text();
-        $button.addClass('disabled').html('<div class="spin spinner">');
+        $button.addClass('disabled').html('<div class="spinner">');
         requests.post(urls.api.url('collections'), data).done(function(data) {
             collection_model.cast(data);
             cache.attemptRewrite(

@@ -66,16 +66,6 @@
             alt-btn-active();
         }
     }
-    // Waiting/Loading spinner.
-    &.loading-submit {
-        position: relative;
-        &:after {
-            content: "";
-            display: block;
-            spinner('absolute alt');
-            top: 8px;
-        }
-    }
     &.product {
         fatten();
     }
@@ -84,8 +74,7 @@
         pointer-events: none;
     }
 
-    .spin {
-        spinner-alt-image('retina');
+    .spinner {
         height: 30px;
         width: 30px;
         margin: auto;
@@ -94,17 +83,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-    }
-}
-
-@media $retina {
-    .button {
-        &.loading-submit:after {
-            spinner-alt-image('retina');
-        }
-        .spin {
-            spinner-install-image('retina');
-        }
     }
 }
 
