@@ -70,8 +70,8 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
             // Select the user's current language.
             var previous_value = navigator.l10n.language;
             // If the user's locale isn't one of the values, use a valid value.
-            if (!(previous_value in values) && values.keys()) {
-                previous_value = values.keys()[0];
+            if (!(previous_value in values) && Object.keys && Object.keys(values).length) {
+                previous_value = Object.keys(values)[0];
             }
             locale_picker.val(previous_value);
             $elem.val(values[previous_value] || '');
