@@ -39,7 +39,7 @@
         {% if this.collection_type != 2 %}
           <div class="field" data-field="category">
             <label>{{ _('Category:') }}</label>
-            <p>{{ model_lookup('category', this.category).name if this.category else '--' }}</p>
+            <p>{{ model_lookup('category', this.category).name if this.category else _('All Categories (Homepage)') }}</p>
             <form>{{ category_dropdown(name='category', value='id', default=this.category, pretty=False) }}</form>
           </div>
         {% endif %}
