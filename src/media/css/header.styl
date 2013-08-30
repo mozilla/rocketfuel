@@ -6,11 +6,9 @@
 // usable on any header
 .header {
     background: #fff;
-    border-top: 1px solid $salt-flat-white;
-    border-bottom: 1px solid $seavan-salt-white;
     display-flex();
-    height: 48px;
-    max-height: 48px;
+    height: 60px;
+    max-height: 60px;
     position: relative;
     width: 100%;
     > * {
@@ -24,19 +22,19 @@
         color: $castle-skull-gray;
         font-size: 18px;
         font-weight: 400;
-        line-height: 48px;
+        line-height: 60px;
         z-index: 10;
     }
 }
 
 .project {
-    border-left: 1px dotted $seavan-salt-white;
+    border-left: 1px dotted $cloud-gray;
     color: darken($flamin-hot-cheetos-orange, 20%);
     font-size: 24px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 30px;
     margin-left: 15px;
-    padding: 5px 0 0 15px;
+    padding: 0 0 0 15px;
 }
 
 header .email {
@@ -47,13 +45,15 @@ header .email {
 }
 
 .header, .secondary-header {
-    border-bottom: 1px solid darken($cement-gray, 5%);
+    border-bottom: 1px solid $cloud-gray;
 }
 
 // # for the primary site header *only*. If you need to generalize a style in here, move it.
 
 .site-header {
     display: block;
+    height: 60px;
+    max-height: 60px;
     position: relative;
     text-align: center;
     top: 0;
@@ -66,35 +66,41 @@ header .email {
         display: block;
     }
     > nav {
-        height: 48px;
+        height: 60px;
         display-flex();
+        margin: 0 auto;
+        max-width: 1024px;
         position: relative;
         text-align: left;
         width: 100%;
+
         > * {
             flex-center();
             display: block;
         }
     }
     .site {
-        height: 48px;
-        margin: 0 5px;
-        width: 200px;
+        height: 60px;
+        margin: 0;
+        width: 232px;
+
         a {
             display: block;
-            height: 47px;
+            height: 60px;
             hidetext();
             width: 100%;
         }
     }
     .wordmark {
         background: url(../img/pretty/marketplace_logo.png) -5px 50% no-repeat;
-        background-size: 245px auto;
+        background-size: auto 46px;
         display: block;
         height: 47px;
+        max-width: 232px;
+        width: 232px;
     }
     .site, .site a, .wordmark {
-        height: 47px;
+        height: 60px;
     }
     .header-button {
         display: none;
@@ -119,8 +125,8 @@ header .email {
 .header-button {
     color: $castle-skull-gray;
     display: block;
-    height: 48px;
-    line-height: 48px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     width: 48px;
 
