@@ -89,6 +89,11 @@ fi
     #podebug --rewrite=unicode locale/templates/LC_MESSAGES/messages.pot locale/dbg/LC_MESSAGES/messages.po
 #fi
 
+if [ -z "$(git status --porcelain)" ]; then
+    echo "Looks like there are no new strings to commit."
+    exit 0
+fi
+
 if confirm "Commit your changes?"; then
     git commit locale -m "L10n Extract/compile script. Today's lucky number is $RANDOM."
     git push mozilla master
