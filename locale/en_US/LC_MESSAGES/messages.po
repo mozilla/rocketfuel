@@ -1,24 +1,24 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Rocketfuel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-30T23:53:56.676Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Fireplace L10n Tools 1.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
 msgstr ""
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
+#: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr ""
 
@@ -30,24 +30,19 @@ msgstr ""
 msgid "Slug:"
 msgstr ""
 
-#: /templates/collection.html:32
-#: /templates/_macros/collections.html:13
+#: /templates/collection.html:32 /templates/_macros/collections.html:13
 msgid "Region:"
 msgstr ""
 
-#: /templates/collection.html:38
-#: /templates/_macros/collections.html:17
+#: /templates/collection.html:38 /templates/_macros/collections.html:17
 msgid "Carrier:"
 msgstr ""
 
-#: /templates/collection.html:45
-#: /templates/_macros/collections.html:21
+#: /templates/collection.html:45 /templates/_macros/collections.html:21
 msgid "Category:"
 msgstr ""
 
-#: /templates/collection.html:46
-#: /templates/_macros/dropdowns.html:6
-#: /media/js/views/collection.js:212
+#: /templates/collection.html:46 /templates/_macros/dropdowns.html:6 /media/js/views/collection.js:212
 msgid "All Categories (Homepage)"
 msgstr ""
 
@@ -103,13 +98,11 @@ msgstr ""
 msgid "Duplicate Collection"
 msgstr ""
 
-#: /templates/duplicate_collection.html:6
-#: /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
 msgid "Name"
 msgstr ""
 
-#: /templates/duplicate_collection.html:8
-#: /templates/new_collection.html:12
+#: /templates/duplicate_collection.html:8 /templates/new_collection.html:12
 msgid "A name is required"
 msgstr ""
 
@@ -117,8 +110,7 @@ msgstr ""
 msgid "Slug"
 msgstr ""
 
-#: /templates/duplicate_collection.html:14
-#: /templates/new_collection.html:18
+#: /templates/duplicate_collection.html:14 /templates/new_collection.html:18
 msgid "A slug is required"
 msgstr ""
 
@@ -150,18 +142,15 @@ msgstr ""
 msgid "In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool."
 msgstr ""
 
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:47
+#: /templates/homepage.html:13 /templates/new_collection.html:47
 msgid "Category"
 msgstr ""
 
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:52
+#: /templates/homepage.html:19 /templates/new_collection.html:52
 msgid "Region"
 msgstr ""
 
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:58
+#: /templates/homepage.html:25 /templates/new_collection.html:58
 msgid "Carrier"
 msgstr ""
 
@@ -241,8 +230,7 @@ msgstr ""
 msgid "A background color is required"
 msgstr ""
 
-#: /templates/new_collection.html:71
-#: /templates/new_collection.html:78
+#: /templates/new_collection.html:71 /templates/new_collection.html:78
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr ""
 
