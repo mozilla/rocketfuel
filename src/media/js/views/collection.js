@@ -50,6 +50,7 @@ define('views/collection',
     }).on('submit', '#app_search form', function(e) {
         e.preventDefault();
         var list = $('#app_search_results');
+        list.html('<li class="spinner with-some-padding">');
         requests.get(
             utils.urlparams(
                 urls.api.url('search'),
