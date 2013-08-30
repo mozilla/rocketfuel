@@ -11,18 +11,10 @@ $retina-wide = $retina unquote('and (min-width: 1024px)');
 
 // Colors
 // TODO: Have Michael take a peek at these!
-$medium-gray = #666;
 $gray = #888;
-$bg-gray = #bbb;
 $light-gray = #ccc;
-$faint-gray = #eee;
 $barely-gray = #fcfcfc;
 $white = #fff;
-$bg = #eff1f3;
-$black-border = #14171a;
-$bg-lite = lighten($bg, 2%);
-$faint-blue = #ECF5FE;
-$grain = #394C58;
 
 // New design.
 $flamin-hot-cheetos-orange = #ff9500;
@@ -226,12 +218,8 @@ btn-shadow() {
     box-shadow: 0, 0 -2px 0 0 rgba(255,255,255,.1) inset;
 }
 
-alt-btn-shadow() {
-    box-shadow: 0 1px 0 #fff, 0 1px 1px $salt-flat-white inset;
-}
-
 btn-shadow-active() {
-    box-shadow: 0 2px 0 0 rgba(0,0,0,.2) inset, 0 12px 24px 6px rgba(0,0,0,.2) inset, 0 0 2px 2px rgba(0,0,0,.2) inset;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2) inset, 0 12px 24px 6px rgba(0,0,0,.2) inset, 0 0 2px 2px rgba(0,0,0,.2) inset;
 }
 
 fatten() {
@@ -239,18 +227,6 @@ fatten() {
     padding: 0 32px;
 }
 
-alt-btn-hover-focus() {
-    gradient-two-color(darken(#fff, 10%), darken($seavan-salt-white, 10%));
-}
-
-alt-btn-hover-focus-active() {
-    color: darken($london-fog-gray, 10%);
-}
-
-alt-btn-active() {
-    btn-shadow-active();
-    border: 1px solid darken($primer-gray, 10%);
-}
 
 dropdown() {
     background: url(../img/pretty/dropdown.svg) 0 10% no-repeat;
