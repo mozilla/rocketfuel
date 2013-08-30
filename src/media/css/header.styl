@@ -6,7 +6,8 @@
 // usable on any header
 .header {
     background: #fff;
-    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid $salt-flat-white;
+    border-bottom: 1px solid $seavan-salt-white;
     display-flex();
     height: 48px;
     max-height: 48px;
@@ -53,20 +54,20 @@ header .email {
 
 .site-header {
     display: block;
-    height: 90px;
-    max-height: 90px;
     position: relative;
     text-align: center;
     top: 0;
     z-index: 20;
+
+    &:before {
+        display: none;
+    }
     > * {
         display: block;
     }
     > nav {
-        height: 90px;
+        height: 48px;
         display-flex();
-        margin: 0 auto;
-        max-width: 1024px;
         position: relative;
         text-align: left;
         width: 100%;
@@ -76,10 +77,12 @@ header .email {
         }
     }
     .site {
-        margin: 0;
-        width: 232px;
+        height: 48px;
+        margin: 0 5px;
+        width: 200px;
         a {
             display: block;
+            height: 47px;
             hidetext();
             width: 100%;
         }
@@ -88,11 +91,10 @@ header .email {
         background: url(../img/pretty/marketplace_logo.png) -5px 50% no-repeat;
         background-size: 245px auto;
         display: block;
-        max-width: 232px;
-        width: 232px;
+        height: 47px;
     }
     .site, .site a, .wordmark {
-        height: 60px;
+        height: 47px;
     }
     .header-button {
         display: none;
@@ -100,12 +102,6 @@ header .email {
     .persona {
         display: block;
     }
-}
-
-.act-tray {
-    height: 47px;
-    position: relative;
-    width: 34px;  // 24px + 10px margin
 }
 
 .close {
@@ -135,6 +131,7 @@ header .email {
         margin-right: 2px;
         position: relative;
         width: 50px;
+
         &:after {
             background-repeat: no-repeat;
             content: "";
