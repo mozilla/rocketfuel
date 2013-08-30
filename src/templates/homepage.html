@@ -34,7 +34,7 @@
     <iframe class="full" src="" height="480" id="filter_preview"></iframe>
   </div>
   <div class="two-thirds">
-    {% defer (url=api('collections'), pluck='objects', as='collection', id='collection_list') %}
+    {% defer (url=apiParams('collections', cat=category), pluck='objects', as='collection', id='collection_list') %}
       <section class="group">
         <h2>{{ _('Collections') }}</h2>
         {% set results = this|filter(collection_type=0, category=category or None, region=[region, None]) %}

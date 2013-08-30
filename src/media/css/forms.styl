@@ -281,6 +281,9 @@ label [value]:invalid ~ [reason=invalid] {
 
     form, p {
         display: block;
+    }
+    label + form,
+    label + p {
         width: 80%;
         margin-left: 20%;
     }
@@ -297,6 +300,30 @@ label [value]:invalid ~ [reason=invalid] {
         box-shadow: none;
         line-height: 1.2em;
         padding: 6px 12px;
+    }
+}
+
+.fat.field:not(.text) {
+    &.active form {
+        line-height: 1em;
+        padding-left: 0;
+    }
+    form > * {
+        display: inline-block;
+        font-size: 0.8em;
+        width: auto;
+    }
+    form > select.locale {
+        width: 20%;
+
+        + input {
+            padding: 0 6px;
+            width: 70%;
+
+            + button[type=submit] {
+                width: 10%;
+            }
+        }
     }
 }
 

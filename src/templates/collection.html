@@ -9,7 +9,12 @@
   <section class="row gutter">
     <div class="two-thirds">
       <div class="well">
-        <h1>{{ this.name|translate(this) }}</h1>
+        <h1>
+          <div class="fat field" data-field="name">
+            <p>{{ this.name|translate(this) }}</p>
+            <form><input type="translated" required data-value="{{ this.name|stringify|escape }}"></form>
+          </div>
+        </h1>
         {% if this.author and this.author != 'nobody' %}
           <div class="field" data-field="author">
             <label>{{ _('Author:') }}</label>

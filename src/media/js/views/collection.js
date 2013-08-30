@@ -211,6 +211,7 @@ define('views/collection',
                             (field === 'category' ?
                              gettext('All Categories (Homepage)') : '--'));
                 break;
+            case 'name':
             case 'description':
                 if (navigator.l10n.language in value) {
                     $label.text(value[navigator.l10n.language]);
