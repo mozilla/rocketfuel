@@ -207,7 +207,9 @@ define('views/collection',
             case 'category':
                 // Look up the name of the new value and update the field.
                 var model = models(field).lookup(data[field]);
-                $label.text(model && model.name || '--');
+                $label.text(model && model.name ||
+                            (field === 'category' ?
+                             gettext('All Categories (Homepage)') : '--'));
                 break;
             case 'description':
                 if (navigator.l10n.language in value) {
