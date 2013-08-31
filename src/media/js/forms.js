@@ -91,6 +91,17 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
                 $elem.val(data[previous_value = locale_picker.val()]);
                 // Give the element focus.
                 $elem.trigger('focus');
+
+                // 
+                locale_picker.find('option').each(function(i, opt) {
+                    opt = $(opt);
+                    if (opt.text() !== previous_value) return;
+                    var parent = opt.parent();
+                    if (parent.is('optgroup')) {
+                        opt.remove();
+                        opt.insertBefore(parent);
+                    }
+                });
             }
             locale_picker.on('change', save);
             locale_picker.closest('form').on('submit', save);

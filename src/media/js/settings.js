@@ -13,15 +13,11 @@ define('settings', ['l10n', 'settings_local', 'underscore'], function(l10n, sett
         api_param_blacklist: ['region'],
 
         model_prototypes: {
-            // Dummy prototypes to facilitate testing
-            'dummy': 'id',
-            'dummy2': 'id',
-
             'collection': 'id',
 
-            'region': 'id',
-            'category': 'id',
-            'carrier': 'id',
+            'region': 'slug',
+            'category': 'slug',
+            'carrier': 'slug',
 
             'app': 'slug'
         },

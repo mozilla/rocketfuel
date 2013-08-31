@@ -26,9 +26,12 @@ define('views/homepage',
             'homepage.html',
             {
                 'get_url_params': get_url_params,
-                'region': parseInt(args.region, 10) || 1,
-                'category': parseInt(args.category, 10) || null,
-                'carrier': parseInt(args.carrier, 10) || 0
+                'category_id': args.category ? models('category').lookup(args.category).id : undefined,
+                'region_id': models('region').lookup(args.region || 'worldwide').id,
+                'carrier_id': models('carrier').lookup(args.carrier || 'carrierless').id,
+                'region': args.region || 'worldwide',
+                'category': args.category || null,
+                'carrier': args.carrier || 'carrierless'
             }
         );
 
@@ -39,12 +42,12 @@ define('views/homepage',
         builder.done(function() {
             var url = settings.api_url;
             if (args.category) {
-                url += '/category/' + models('category').lookup(args.category).slug;
+                url += '/category/' + args.category;
             }
 
             url = utils.urlparams(url, {
-                'region': args.region ? models('region').lookup(args.region).slug : undefined,
-                'carrier': args.carrier ? models('carrier').lookup(args.carrier).slug : undefined,
+                'region': args.region || undefined,
+                'carrier': args.carrier || undefined,
                 'lang': navigator.l10n ? navigator.l10n.language : 'en-US'
             });
 

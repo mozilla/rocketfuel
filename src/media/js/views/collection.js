@@ -251,7 +251,7 @@ define('views/collection',
     });
 
     function apply_incompat(base_region, app_list) {
-        var region_slug = models('region').lookup(base_region).slug;
+        var region_slug = models('region').lookup(base_region, 'id').slug;
         app_list.forEach(function(v) {
             for (var r in v.regions) {
                 if (v.regions[r].slug === region_slug) {

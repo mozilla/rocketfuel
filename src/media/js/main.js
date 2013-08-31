@@ -82,8 +82,8 @@ require.config({
                 return cache[value] = 'hsla(' + h + ', 50%, ' + l + '%, 0.7)';
             };
         }
-        helpers.model_lookup = function(model, key) {
-            return models(model).lookup(key);
+        helpers.model_lookup = function(model, key, by) {
+            return models(model).lookup(key, by);
         };
         filters.translate = function(data, default_language, lang) {
             if (typeof data === 'string') {
