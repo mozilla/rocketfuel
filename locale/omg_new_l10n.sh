@@ -15,10 +15,10 @@
 
 EMAIL_FROM="Marketplace Developers <dev-l10n-web@lists.mozilla.org>"
 EMAIL_TO="Awesome Localizers <dev-l10n-web@lists.mozilla.org>"
-EMAIL_SUBJECT="[Mkt Frontend] .po files updated"
+EMAIL_SUBJECT="[Mkt/rocketfuel] .po files updated"
 
 # A link to the .po files
-EMAIL_SOURCE="https://github.com/mozilla/fireplace/tree/master/locale"
+EMAIL_SOURCE="https://github.com/mozilla/rocketfuel/tree/master/locale"
 
 # gettext flags
 CLEAN_FLAGS="--no-obsolete --width=200"
@@ -135,7 +135,7 @@ echo "-----------------------------------------------"
 #fi
 
 #if confirm "Do you want to email Milos? :D"; then
-    #echo "Please update Marketplace Frontend in Verbatim. Thanks." | mail -s "Verbatim update for mkt frontend" milos@mozilla.com
+    #echo "$EMAIL_SUBJECT . Thanks!" | mail -s "$EMAIL_SUBJECT" milos@mozilla.com
 #fi
 
 unset DOALLTHETHINGS
