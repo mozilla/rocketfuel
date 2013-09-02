@@ -206,7 +206,8 @@ define('views/collection',
             case 'carrier':
             case 'category':
                 // Look up the name of the new value and update the field.
-                var model = models(field).lookup(data[field]);
+                var model = models(field).lookup(data[field], 'slug');
+                data[field] = model.id;  // Region/carrier/cat only accept IDs for now.
                 $label.text(model && model.name ||
                             (field === 'category' ?
                              gettext('All Categories (Homepage)') : '--'));
