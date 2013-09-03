@@ -10,6 +10,8 @@ define('views/new_collection',
         var $this = $(this);
         e.preventDefault();
         var data = utils.getVars($this.serialize());
+        data.is_public = false; // Collections are not public by default.
+
         var $button = $this.find('.button');
         var button_text = $button.text();
         $button.addClass('disabled').html('<div class="spinner">');
