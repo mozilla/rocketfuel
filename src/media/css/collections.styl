@@ -137,3 +137,27 @@ ul.apps {
 a.delete_collection {
     color: #b00;
 }
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0turn); }
+    to { -webkit-transform: rotate(1turn); }
+}
+@keyframes spin {
+    from { transform: rotate(0turn); }
+    to { transform: rotate(1turn); }
+}
+
+.toggle-public {
+    color: $disabled-brown;
+    outline: 0;
+    &.nonpublic {
+        color: green;
+    }
+    &.saving {
+        pointer-events: none;
+        b {
+            display: inline-block;
+            animation(unquote('0.9s spin infinite steps(30)'));
+        }
+    }
+}

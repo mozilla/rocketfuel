@@ -5,6 +5,12 @@ define('views/collection',
     var gettext = l10n.gettext;
     var collection_model = models('collection');
     var app_model = models('app');
+    var collStrings = {
+        makeHidden: gettext('Make Collection Hidden'),
+        makePublic: gettext('Make Collection Public'),
+        nowHidden: gettext('Collection is now hidden'),
+        nowPublic: gettext('Collection is now public')
+    };
 
     function get_collection() {
         return collection_model.lookup($('.main').data('id'));
@@ -12,6 +18,16 @@ define('views/collection',
 
     function update_sort() {
         $('ul.apps').sortable({handle: '.handle'});
+    }
+
+    function update_public_toggle(data) {
+        var $link = $('.toggle-public');
+        var $b = $link.find('b').detach();
+        if (data.is_public) {
+            $link.removeClass('nonpublic').text(' ' + collStrings.makeHidden).prepend($b);
+        } else {
+            $link.addClass('nonpublic').text(' ' + collStrings.makePublic).prepend($b);
+        }
     }
 
     z.page.on('click', 'a.add_app', function(e) {
@@ -188,6 +204,35 @@ define('views/collection',
         }).fail(function() {
             notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
         });
+    }).on('click', '.toggle-public', function(e) {
+        // TODO: Spinner for 'saving'.
+        e.preventDefault();
+        var collection = get_collection();
+        var $this = $(this);
+        var successMsg = collStrings.nowPublic;
+
+        var data = {is_public: false};
+
+        $this.addClass('saving');
+
+        if ($this.hasClass('nonpublic')) { // Make collection public.
+            data.is_public = true;
+        } else { // Make collection hidden.
+            successMsg = collStrings.nowHidden;
+        }
+
+        requests.patch(
+            urls.api.url('collection', collection.id),
+            data
+        ).done(function() {
+            update_public_toggle(data);
+            notification.notification({message: successMsg});
+        }).fail(function() {
+            notification.notification(
+                {message: gettext('Setting collection public property failed')});
+        }).always(function() {
+            $this.removeClass('saving');
+        });
     });
 
     // Code to update fields as they're edited by the user.
@@ -284,6 +329,8 @@ define('views/collection',
             if (data.region) {
                 apply_incompat(data.region, data.apps);
             }
+
+            update_public_toggle(data);
         });
 
         builder.z('type', 'leaf');
