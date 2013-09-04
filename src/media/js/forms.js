@@ -32,7 +32,7 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
         var $field = $this.closest('.field');
         $field.removeClass('active');
         var value = $this.val() || $this.find('select:not(.locale)').val();  // Select boxes
-        if (!value) {
+        if (value === undefined) {
             var input = $this.find('input, textarea');
             // Translated fields, text boxes
             value = input.data('value') || input.val();
