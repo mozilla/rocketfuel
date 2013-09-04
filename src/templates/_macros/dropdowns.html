@@ -6,7 +6,7 @@
     <select id="filter_category" class="full"{% if name %} name="{{ name }}"{% endif %}>
       <option value="" {{ 'selected' if not default }}>{{ _('All Categories (Homepage)') }}</option>
       {% for category in this %}
-        <option value="{{ category[value_] }}" {{ 'selected' if category.slug == default_ }}>{{ category.name }}</option>
+        <option value="{{ category[value_] }}" {{ 'selected' if category[value_] == default_ }}>{{ category.name }}</option>
       {% endfor %}
     </select>
     {% if pretty %}</div>{% endif %}
@@ -26,7 +26,7 @@
         <option value="">{{ _('-- None --') }}</option>
       {% endif %}
       {% for region in this %}
-        <option value="{{ region[value_] }}" {{ 'selected' if region.slug == default_ }}>{{ region.name }}</option>
+        <option value="{{ region[value_] }}" {{ 'selected' if region[value_] == default_ }}>{{ region.name }}</option>
       {% endfor %}
     </select>
     {% if pretty %}</div>{% endif %}
@@ -43,7 +43,7 @@
     {% if pretty %}<div class="pretty-select">{% endif %}
     <select id="filter_carrier" class="full"{% if name %} name="{{ name }}"{% endif %}>
       {% for carrier in this %}
-        <option value="{{ carrier[value_] }}" {{ 'selected' if carrier.slug == default_ }}>
+        <option value="{{ carrier[value_] }}" {{ 'selected' if carrier[value_] == default_ }}>
           {{ carrier.name or '--' }}</option>
       {% endfor %}
     </select>
