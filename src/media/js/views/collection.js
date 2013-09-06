@@ -56,7 +56,7 @@ define('views/collection',
             collection_model.cast(data);
 
             notification.notification({message: gettext('Successfully duplicated')});
-            z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
+            z.page.trigger('navigate', [urls.reverse('collection', [data.slug])]);
 
         }).fail(function() {
             notification.notification({message: gettext('Failed to duplicate collection')})
@@ -85,8 +85,7 @@ define('views/collection',
                     {'this': v, 'allow_delete': false}));
             });
 
-            var collection = get_collection();
-            apply_incompat(collection.region, data.objects);
+            apply_incompat(get_collection().region, data.objects);
         }).fail(function() {
             notification.notification({message: gettext('Search failed :-(')});
         });
@@ -283,8 +282,19 @@ define('views/collection',
             urls.api.url('collection', collection.id),
             data
         ).done(function(data) {
+            // Update the cache.
+            collection_model.cast(data);
+
             notification.notification(
                 {message: gettext('Saved {field}', {'field': field})});
+
+            if (field === 'slug') {
+                // If we changed the slug, go to the new URL.
+                z.page.trigger('divert', [urls.reverse('collection', [data.slug])]);
+                // Remove the old slug from the cache.
+                collection_model.del(collection.slug);
+            }
+            // TODO: Trigger a views.reload() here?
 
         }).fail(function() {
             $label.html(orig_html);  // Reset the field text.
@@ -296,8 +306,7 @@ define('views/collection',
         });
     });
 
-    function apply_incompat(base_region, app_list) {
-        var region_slug = models('region').lookup(base_region, 'id').slug;
+    function apply_incompat(region_slug, app_list) {
         app_list.forEach(function(v) {
             for (var r in v.regions) {
                 if (v.regions[r].slug === region_slug) {

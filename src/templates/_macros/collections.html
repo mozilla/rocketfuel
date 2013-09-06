@@ -4,28 +4,28 @@
 
 {% macro collection_overview(collection, show_thumbs=False) %}
 <div class="collection overview">
-  <strong><a href="{{ url('collection', [collection.id]) }}">{{ collection.name|translate(collection) }}</a></strong>
+  <strong><a href="{{ url('collection', [collection.slug]) }}">{{ collection.name|translate(collection) }}</a></strong>
   {% if collection.description %}
     <p>{{ collection.description|translate(collection)|safe }}</p>
   {% endif %}
   <p class="labels">
   	{% if collection.region %}
   		<span class="label" style="background:{{ region_color(collection.region) }}">
-  			{{ _('Region:') }} <b>{{ model_lookup('region', collection.region, 'id').name }}</b></span>
+  			{{ _('Region:') }} <b>{{ model_lookup('region', collection.region).name }}</b></span>
   	{% endif %}
   	{% if collection.carrier %}
   		<span class="label" style="background:{{ carrier_color(collection.carrier) }}">
-  			{{ _('Carrier:') }} <b>{{ model_lookup('carrier', collection.carrier, 'id').name }}</b></span>
+  			{{ _('Carrier:') }} <b>{{ model_lookup('carrier', collection.carrier).name }}</b></span>
   	{% endif %}
   	{% if collection.category %}
   		<span class="label" style="background:{{ category_color(collection.category) }}">
-  			{{ _('Category:') }} <b>{{ model_lookup('category', collection.category, 'id').name }}</b></span>
+  			{{ _('Category:') }} <b>{{ model_lookup('category', collection.category).name }}</b></span>
   	{% endif %}
   </p>
   {% if show_thumbs %}
     <div class="thumbs">
       {% for app in collection.apps %}
-        <img src="{{ app.icons['16'] }}" alt="" width="24" height="24" title="{{ app.name }}">
+        <img src="{{ app.icons['16'] }}" alt="" width="24" height="24" title="{{ app.name|translate(app) }}">
       {% endfor %}
     </div>
   {% endif %}

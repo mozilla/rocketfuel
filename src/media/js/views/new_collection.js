@@ -28,7 +28,7 @@ define('views/new_collection',
             );
 
             notification.notification({message: gettext('New collection created.')});
-            z.page.trigger('navigate', [urls.reverse('collection', [data.id])]);
+            z.page.trigger('navigate', [urls.reverse('collection', [data.slug])]);
         }).fail(function() {
             notification.notification({message: gettext('Failed to create new collection.')})
             $button.removeClass('disabled').text(button_text);
@@ -78,9 +78,9 @@ define('views/new_collection',
         builder.start(
             'new_collection.html',
             {
-                'region': parseInt(args.region, 10) || null,
-                'category': parseInt(args.category, 10) || null,
-                'carrier': parseInt(args.carrier, 10) || null,
+                'region': args.region || null,
+                'category': args.category || null,
+                'carrier': args.carrier || null,
                 'type': types[args.type || 'basic']
             }
         );

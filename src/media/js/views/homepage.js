@@ -26,9 +26,6 @@ define('views/homepage',
             'homepage.html',
             {
                 'get_url_params': get_url_params,
-                'category_id': args.category ? models('category').lookup(args.category).id : undefined,
-                'region_id': models('region').lookup(args.region || 'worldwide').id,
-                'carrier_id': models('carrier').lookup(args.carrier || 'carrierless').id,
                 'region': args.region || 'worldwide',
                 'category': args.category || null,
                 'carrier': args.carrier || 'carrierless'

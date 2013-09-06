@@ -46,18 +46,18 @@
     {% if show_cat %}
       <label class="{{ colmode }}">
         {{ _('Category') }}
-        {{ category_dropdown(name='category', value='id', default=category) }}
+        {{ category_dropdown(name='category', default=category) }}
       </label>
     {% endif %}
     <label class="{{ colmode }}">
       {{ _('Region') }}
       {# Non-basic collections should allow null regions. #}
-      {{ region_dropdown(name='region', value='id', default=region, allow_null=(type != 0)) }}
+      {{ region_dropdown(name='region', default=region, allow_null=(type != 0)) }}
     </label>
     {% if show_carrier %}
       <label class="{{ colmode }}">
         {{ _('Carrier') }}
-        {{ carrier_dropdown(name='carrier', value='id', default=carrier or 0, allow_null=(type != 2)) }}
+        {{ carrier_dropdown(name='carrier', default=carrier or 0, allow_null=(type != 2)) }}
       </label>
     {% endif %}
   </div>
