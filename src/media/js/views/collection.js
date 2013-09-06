@@ -328,6 +328,9 @@ define('views/collection',
         );
 
         builder.onload('main', function(data) {
+            // This might be/probably will be a slug, so change it to ID.
+            $('.main').data('id', data.id);
+
             data.apps.forEach(function(v) {
                 app_model.cast(v);
             });
