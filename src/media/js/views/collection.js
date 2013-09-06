@@ -250,8 +250,7 @@ define('views/collection',
             case 'carrier':
             case 'category':
                 // Look up the name of the new value and update the field.
-                var model = models(field).lookup(data[field], 'slug');
-                data[field] = model ? model.id : '';  // Region/carrier/cat only accept IDs for now.
+                var model = models(field).lookup(data[field]);
                 $label.text(model && model.name ||
                             (field === 'category' ?
                              gettext('All Categories (Homepage)') : '--'));
@@ -291,8 +290,6 @@ define('views/collection',
             if (field === 'slug') {
                 // If we changed the slug, go to the new URL.
                 z.page.trigger('divert', [urls.reverse('collection', [data.slug])]);
-                // Remove the old slug from the cache.
-                collection_model.del(collection.slug);
             }
             // TODO: Trigger a views.reload() here?
 
