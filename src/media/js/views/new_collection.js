@@ -9,13 +9,17 @@ define('views/new_collection',
     z.body.on('submit', 'form#new_collection', function(e) {
         var $this = $(this);
         e.preventDefault();
-        var data = utils.getVars($this.serialize());
-        data.is_public = false; // Collections are not public by default.
+        var orig_data = utils.getVars($this.serialize());
+        orig_data.is_public = false; // Collections are not public by default.
 
         var $button = $this.find('.button');
         var button_text = $button.text();
         $button.addClass('disabled').html('<div class="spinner">');
-        requests.post(urls.api.url('collections'), data).done(function(data) {
+        requests.post(urls.api.url('collections'), orig_data).done(function(data) {
+            // TODO: Remove this once 905887 gets fixed.
+            data.name[navigator.l10n.language] = orig_data.name;
+            data.description[navigator.l10n.language] = orig_data.description;
+
             collection_model.cast(data);
             cache.attemptRewrite(
                 function(key) {
