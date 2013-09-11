@@ -37,6 +37,7 @@ define('login',
         // gets fixed.
         if (!z.context.dont_reload_on_login) {
             require('views').reload().done(function(){
+                z.page.trigger('logged_out');
                 signOutNotification();
             });
         } else {
@@ -53,6 +54,7 @@ define('login',
         var opt = {
             termsOfService: '/terms-of-use',
             privacyPolicy: '/privacy-policy',
+            siteLogo: settings.persona_site_logo,
             oncancel: function() {
                 console.log('Persona login cancelled');
                 z.page.trigger('login_cancel');
@@ -60,13 +62,15 @@ define('login',
                 pending_logins = [];
             }
         };
+        if (settings.persona_unverified_issuer) {
+            // We always need to force a specific issuer because bridged IdPs don't work with verified/unverified.
+            // See bug 910938.
+            opt.experimental_forceIssuer = settings.persona_unverified_issuer;
+        }
         if (!navigator.id._shimmed) {
             // When on B2G (i.e. no shim), we don't require new accounts to verify their email
             // address. When on desktop, we do require verification.
-            _.extend(opt, {
-                experimental_forceIssuer: settings.persona_unverified_issuer || null,
-                experimental_allowUnverified: true
-            });
+            opt.experimental_allowUnverified = true;
         }
 
         if (!capabilities.phantom) {
@@ -142,9 +146,6 @@ define('login',
 
     if (!capabilities.phantom) {
         console.log('Calling navigator.id.watch');
-        if (!navigator.id) {
-            return;
-        }
         navigator.id.watch({
             loggedInUser: email,
             onlogin: gotVerifiedEmail,

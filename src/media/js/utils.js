@@ -61,12 +61,12 @@ define('utils', ['jquery', 'underscore'], function($, _) {
         return url.split('?')[0];
     }
 
-    function encodeURIComponent() {
-        return window.encodeURIComponent.apply(this, arguments).replace(/%20/g, '+');
+    function encodeURIComponent(uri) {
+        return window.encodeURIComponent(uri).replace(/%20/g, '+');
     }
 
-    function decodeURIComponent() {
-        return window.decodeURIComponent.apply(this, arguments).replace(/\+/g, ' ');
+    function decodeURIComponent(uri) {
+        return window.decodeURIComponent(uri.replace(/\+/g, ' '));
     }
 
     function urlencode(kwargs) {
@@ -108,13 +108,11 @@ define('utils', ['jquery', 'underscore'], function($, _) {
     }
 
     function getVars(qs, excl_undefined) {
-        if (typeof qs === 'undefined') {
-            qs = location.search;
-        }
+        if (!qs) qs = location.search;
+        if (!qs || qs === '?') return {};
         if (qs && qs[0] == '?') {
             qs = qs.substr(1);  // Filter off the leading ? if it's there.
         }
-        if (!qs) return {};
 
         return _.chain(qs.split('&'))  // ['a=b', 'c=d']
                 .map(function(c) {return c.split('=').map(decodeURIComponent);}) //  [['a', 'b'], ['c', 'd']]
@@ -122,6 +120,31 @@ define('utils', ['jquery', 'underscore'], function($, _) {
                     return !!p[0] && (!excl_undefined || !_.isUndefined(p[1]));
                 }).object()  // {'a': 'b', 'c': 'd'}
                 .value();
+    }
+
+    function translate(data, default_language, lang) {
+        if (typeof data === 'string') {
+            return data;
+        }
+        // TODO: Make this a setting somewhere.
+        default_language = default_language || 'en-US';
+        lang = lang || (window.navigator.l10n ? window.navigator.l10n.language : 'en-US');
+        if (lang in data) {
+            return data[lang];
+        }
+        var short_lang = lang.split('-')[0];
+        if (short_lang in data) {
+            return data[short_lang];
+        }
+        if (typeof default_language === 'string') {
+            return data[default_language];
+        } else if (typeof default_language === 'object' &&
+                   'default_language' in default_language &&
+                   default_language.default_language in data) {
+            return data[default_language.default_language];
+        }
+        for (var x in data) { return data[x]; }
+        return '';
     }
 
     var osStrings = {
@@ -152,7 +175,8 @@ define('utils', ['jquery', 'underscore'], function($, _) {
         'querystring': querystring,
         'urlencode': urlencode,
         'urlparams': urlparams,
-        'urlunparam': urlunparam
+        'urlunparam': urlunparam,
+        'translate': translate
     };
 
 });

@@ -48,7 +48,7 @@ define('navigation',
     function canNavigate() {
         if (!navigator.onLine && !capabilities.phantom) {
             notification.notification({message: gettext('No internet connection')});
-            //return false;
+            return false;
         }
         return true;
     }
@@ -59,6 +59,11 @@ define('navigation',
         console.log('Navigation started: ', href);
         var view = views.match(href);
         if (view === null) {
+            return;
+        }
+
+        if (!view[1] && initialized) {
+            window.location.href = href;
             return;
         }
 
