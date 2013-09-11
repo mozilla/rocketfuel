@@ -314,6 +314,7 @@ define('views/collection',
             if ($app.data('incompatible')) {
                 return;
             }
+            $app.data('incompatible', true);
             $app.append(
                 '<p class="incompatible">' +
                 gettext("Incompatible: App not available in the collection's region."));
