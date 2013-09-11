@@ -132,6 +132,7 @@ define('views/collection',
         var $app = $(nunjucks.env.getTemplate('helpers/app.html').render(
             {'this': app_data, 'allow_delete': true, 'allow_reorder': true, 'tag': 'li'}));
         $('.main ul.apps').append($app);
+        apply_incompat(collection.region, [app_data]);
 
         requests.post(
             urls.api.url('add_app', [collection.id]),
