@@ -19,14 +19,8 @@
 .virtualenvs
 .zsh/cache
 TAGS
-build
+build_*
 dist
-src/locales/*.js
-src/media/css/include.css
-src/media/include.css
-src/media/include.js
-src/media/js/include.js
-src/templates.js
 node_modules
 npm-debug.log
 smokealarm/captures/
@@ -34,3 +28,11 @@ tags
 yulelog_*
 .node-version
 settings_local.py
+
+locale/
+src/locales/*
+src/media/css/include.css
+src/media/include.css
+src/media/include.js
+src/media/js/include.js
+src/templates.js
