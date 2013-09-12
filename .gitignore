@@ -29,7 +29,6 @@ src/media/js/include.js
 src/templates.js
 node_modules
 npm-debug.log
-settings_local.js
 smokealarm/captures/
 tags
 yulelog_*
