@@ -160,6 +160,11 @@ require.config({
             z.page.trigger('navigate', [window.location.pathname + window.location.search]);
         });
 
+        // Add a body class when rocketfuel is disabled.
+        if (!require('settings').flags.rocketfuel) {
+            z.body.addClass('rocketfuel-disabled');
+        }
+
         // Debug page
         (function() {
             var to = false;
