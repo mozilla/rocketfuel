@@ -6,7 +6,7 @@
 
   <label>
     <span class="required">{{ _('Name') }}</span>
-    <input type="text" name="name" required>
+    <input type="text" name="name" required pattern="[^\s].*|\s+\S.+">
     {% if type == 1 %}
       <p class="hint">{{ _('The name is not shown to users, it is only for convenience.') }}</p>
     {% endif %}
@@ -22,13 +22,13 @@
   {% if type == 0 %}
     <label>
       <span class="required">{{ _('Author Name') }}</span>
-      <input type="text" name="author">
+      <input type="text" name="author" maxlength="255">
     </label>
   {% endif %}
 
   <label>
     <span class="required">{{ _('Description') }}</span>
-    <textarea name="description" required></textarea>
+    <textarea name="description" required pattern="[^\s].*|\s+\S.+"></textarea>
   </label>
 
   <div class="row gutter">

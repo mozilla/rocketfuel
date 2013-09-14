@@ -12,14 +12,14 @@
         <h1>
           <div class="fat field" data-field="name">
             <p>{{ this.name|translate(this) }}</p>
-            <form><input type="translated" required data-value="{{ this.name|stringify|escape }}"></form>
+            <form><input type="translated" required data-value="{{ this.name|stringify|escape }}" pattern="[^\s].*|\s+\S.+"></form>
           </div>
         </h1>
         {% if this.author and this.author != 'nobody' %}
           <div class="field" data-field="author">
             <label>{{ _('Author:') }}</label>
             <p>{{ this.author }}</p>
-            <form><input type="text" required value="{{ this.author }}"></form>
+            <form><input type="text" required value="{{ this.author }}" maxlength="255"></form>
           </div>
         {% endif %}
 
@@ -52,7 +52,7 @@
         <div class="text field" data-field="description">
           <label>{{ _('Description:') }}</label>
           <p>{{ this.description|translate(this) }}</p>
-          <form><textarea translated data-value="{{ this.description|stringify|escape }}"></textarea></form>
+          <form><textarea translated data-value="{{ this.description|stringify|escape }}" pattern="[^\s].*|\s+\S.+"></textarea></form>
         </div>
       </div>
       {# Curated collection customization fields #}
