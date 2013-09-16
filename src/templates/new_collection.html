@@ -21,8 +21,8 @@
   {# Only curated collections get authors #}
   {% if type == 0 %}
     <label>
-      <span class="required">{{ _('Author Name') }}</span>
-      <input type="text" name="author" maxlength="255">
+      <span>{{ _('Author Name') }}</span>
+      <input type="text" name="author" maxlength="255" value="{{ user.get_setting('display_name') or '' }}">
     </label>
   {% endif %}
 
