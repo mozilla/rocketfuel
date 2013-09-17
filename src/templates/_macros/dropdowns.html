@@ -42,10 +42,12 @@
   {% defer (url=api('carriers'), pluck='objects', as='carrier') %}
     {% if pretty %}<div class="pretty-select">{% endif %}
     <select id="filter_carrier" class="full"{% if name %} name="{{ name }}"{% endif %}>
+      {% if allow_null %}
+        <option value="carrierless"{{ ' selected' if default_ == 'carrierless' or not default_ }}>{{ _('-- None --') }}</option>
+      {% endif %}
       {% for carrier in this %}
-        {% if carrier.slug != 'carrierless' or allow_null %}
-          <option value="{{ carrier[value_] }}" {{ 'selected' if carrier[value_] == default_ }}>
-            {{ carrier.name or '--' }}</option>
+        {% if carrier.slug != 'carrierless' %}
+          <option value="{{ carrier[value_] }}" {{ 'selected' if carrier[value_] == default_ }}>{{ carrier.name }}</option>
         {% endif %}
       {% endfor %}
     </select>
