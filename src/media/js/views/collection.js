@@ -247,11 +247,15 @@ define('views/collection',
         data[field] = value;
 
         switch (field) {
-            case 'region':
             case 'carrier':
+                // "carrierless" -> NULL
+                if (value === 'carrierless') {
+                    data[field] = null;
+                }
+            case 'region':
             case 'category':
                 // Look up the name of the new value and update the field.
-                var model = models(field).lookup(data[field]);
+                var model = models(field).lookup(value);
                 $label.text(model && model.name ||
                             (field === 'category' ?
                              gettext('All Categories (Homepage)') : '--'));

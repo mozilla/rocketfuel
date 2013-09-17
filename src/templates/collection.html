@@ -38,7 +38,7 @@
           <div class="field" data-field="carrier">
             <label>{{ _('Carrier:') }}</label>
             <p>{{ model_lookup('carrier', this.carrier).name if this.carrier else '--' }}</p>
-            <form>{{ carrier_dropdown(name='carrier', default=this.carrier or 0, pretty=False) }}</form>
+            <form>{{ carrier_dropdown(name='carrier', default=this.carrier or 0, pretty=False, allow_null=(this.collection_type != 2)) }}</form>
           </div>
         {% endif %}
         {% if this.collection_type != 2 %}

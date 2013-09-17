@@ -12,6 +12,11 @@ define('views/new_collection',
         var orig_data = utils.getVars($this.serialize());
         orig_data.is_public = false; // Collections are not public by default.
 
+        // Turn 'carrierless' into NULL
+        if ('carrier' in orig_data && orig_data.carrier === 'carrierless') {
+            delete orig_data.carrier;
+        }
+
         var $button = $this.find('.button');
         var button_text = $button.text();
         $button.addClass('disabled').html('<div class="spinner">');

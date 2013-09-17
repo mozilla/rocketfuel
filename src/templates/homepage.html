@@ -67,7 +67,7 @@
       {% if not category %}
         <section class="group">
           <h2>{{ _('Operator Shelves') }}</h2>
-          {% if carrier %}
+          {% if carrier and carrier != 'carrierless' %}
             {% set results = this|filter(collection_type=2, region=[region, None], carrier=[carrier, None]) %}
             {% if results.length %}
               {% for collection in results %}
