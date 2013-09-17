@@ -199,7 +199,7 @@ label [value]:invalid ~ [reason=invalid] {
 }
 
 .field,
-.field:not(.text) {
+.field:not(.text):not(.wide) {
     background: #fff;
     border: 1px solid #bbb;
     border-radius: 3px;
@@ -250,7 +250,7 @@ label [value]:invalid ~ [reason=invalid] {
     }
 }
 
-.field:not(.text) {
+.field:not(.text):not(.wide) {
 
     label {
         border-right: 1px solid #bbb;
@@ -309,7 +309,10 @@ label [value]:invalid ~ [reason=invalid] {
     }
 }
 
-.text.field {
+.text.field,
+.wide.field {
+    position: relative;
+
     label {
         border-bottom: 1px solid #bbb;
         display: block;
@@ -323,7 +326,7 @@ label [value]:invalid ~ [reason=invalid] {
     }
 }
 
-.fat.field:not(.text) {
+.fat.field:not(.text):not(.wide) {
     &.active form {
         line-height: 1em;
         padding-left: 0;
@@ -343,6 +346,72 @@ label [value]:invalid ~ [reason=invalid] {
             + button[type=submit] {
                 width: 10%;
             }
+        }
+    }
+}
+
+.image-upload {
+    input.stealthy[type=file] {
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+        height: 1em;
+        left: 0;
+        opacity: 0.01;
+        position: absolute;
+        right: 0;
+        top: 3em;
+
+        + p span {
+            color: $sailor-blue;
+        }
+        &:hover + p span {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+    menu {
+        font-size: 0.8em;
+        padding: 5px 0;
+    }
+
+    .drop-target {
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+
+        &:before, &:after {
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &.hover:before {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 3px;
+            box-shadow: inset 0 0 40px #000;
+            content: "";
+            display: block;
+        }
+        &.hover:after {
+            color: #fff;
+            content: "⇧";
+            display: block;
+            font-size: 80px;
+            height: 80px;
+            margin: auto;
+            text-align: center;
+            text-shadow: 0 0.03em #000;
+        }
+        img, canvas {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
         }
     }
 }

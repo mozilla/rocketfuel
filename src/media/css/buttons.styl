@@ -9,10 +9,10 @@
     border-radius: 3px;
     color: #fff;
     display: inline-block;
-    font: 400 15px/32px $open-stack;
-    min-width: 100px;
+    font: 400 1em/2em $open-stack;
+    min-width: 7em;
     white-space: nowrap;
-    padding: 0 20px;
+    padding: 0 1em;
     text-align: center;
     text-decoration: none;
 
@@ -27,7 +27,7 @@
 }
 .button {
     ellipsis();
-    min-height: 32px;  // This is the line-height.
+    min-height: 2em;  // This is the line-height.
     position: relative;
 
     // Grayish.
@@ -72,15 +72,5 @@
         left: 0;
         right: 0;
         bottom: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .button {
-        padding: 0 15px;
-        &.fat {
-            display: block;
-            width: 100%;
-        }
     }
 }
