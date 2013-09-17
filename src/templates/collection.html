@@ -26,7 +26,7 @@
         <div class="field" data-field="slug">
           <label>{{ _('Slug:') }}</label>
           <p>{{ this.slug }}</p>
-          <form><input type="text" required pattern="[a-zA-Z][\w\-]*" value="{{ this.slug }}"></form>
+          <form><input type="text" required pattern="[a-zA-Z][\w\-]*" value="{{ this.slug }}" maxlength="30"></form>
         </div>
 
         <div class="field" data-field="region">
