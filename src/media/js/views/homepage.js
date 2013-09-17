@@ -43,7 +43,7 @@ define('views/homepage',
             }
 
             url = utils.urlparams(url, {
-                'region': args.region || undefined,
+                'region': args.region || 'worldwide',
                 'carrier': args.carrier || undefined,
                 'lang': navigator.l10n ? navigator.l10n.language : 'en-US'
             });
