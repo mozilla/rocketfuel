@@ -5,10 +5,11 @@ define('views/homepage',
     var gettext = l10n.gettext;
 
     z.page.on('change', '.home_filters select', function(e) {
+        var carrier_val = $('#filter_carrier').val() || undefined;
         var filters = {
             'category': $('#filter_category').val() || undefined,
             'region': $('#filter_region').val() || undefined,
-            'carrier': $('#filter_carrier').val() || undefined
+            'carrier': carrier_val === 'carrierless' ? null : carrier_val
         };
         z.page.trigger('divert', [utils.urlparams('', filters)]);
     });
