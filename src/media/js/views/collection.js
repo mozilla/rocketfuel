@@ -250,7 +250,7 @@ define('views/collection',
             case 'carrier':
                 // "carrierless" -> NULL
                 if (value === 'carrierless') {
-                    data[field] = null;
+                    data[field] = '';
                 }
             case 'region':
             case 'category':
