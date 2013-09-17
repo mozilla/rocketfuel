@@ -9,7 +9,7 @@ define('views/homepage',
         var filters = {
             'category': $('#filter_category').val() || undefined,
             'region': $('#filter_region').val() || undefined,
-            'carrier': carrier_val === 'carrierless' ? null : carrier_val
+            'carrier': carrier_val === 'carrierless' ? '' : carrier_val
         };
         z.page.trigger('divert', [utils.urlparams('', filters)]);
     });
