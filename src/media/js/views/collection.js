@@ -1,6 +1,8 @@
 define('views/collection',
-    ['cache', 'jquery', 'l10n', 'models', 'notification', 'requests', 'templates', 'urls', 'utils', 'z', 'lib/html5sortable.jquery'],
-    function(cache, $, l10n, models, notification, requests, nunjucks, urls, utils, z) {
+    ['cache', 'jquery', 'l10n', 'log', 'models', 'notification', 'requests', 'templates', 'urls', 'utils', 'z', 'lib/html5sortable.jquery'],
+    function(cache, $, l10n, log, models, notification, requests, nunjucks, urls, utils, z) {
+
+    var console = log('collection');
 
     var gettext = l10n.gettext;
     var collection_model = models('collection');
@@ -41,8 +43,9 @@ define('views/collection',
         $('#duplicate_collection').removeClass('hidden');
 
     }).on('submit', '#duplicate_collection form', function(e) {
-        var $this = $(this);
         e.preventDefault();
+
+        var $this = $(this);
         var data = utils.getVars($this.serialize());
 
         var $button = $this.find('.button');
@@ -52,19 +55,20 @@ define('views/collection',
         requests.post(
             urls.api.url('duplicate', [get_collection().id]),
             data
-        ).done(function(data) {
+        ).then(function(data) {
             collection_model.cast(data);
 
             notification.notification({message: gettext('Successfully duplicated')});
             z.page.trigger('navigate', [urls.reverse('collection', [data.slug])]);
 
-        }).fail(function() {
+        }, function() {
             notification.notification({message: gettext('Failed to duplicate collection')})
             $button.removeClass('disabled').text(button_text);
         });
 
     }).on('submit', '#app_search form', function(e) {
         e.preventDefault();
+
         var list = $('#app_search_results');
         list.html('<li class="spinner with-some-padding">');
         requests.get(
@@ -73,7 +77,7 @@ define('views/collection',
                 {'q': $('#app_search input[type=search]').val(),
                  'region': 'None'}
             )
-        ).done(function(data) {
+        ).then(function(data) {
             list.html('');
             data.objects.forEach(function(v) {
                 app_model.cast(v);
@@ -86,7 +90,7 @@ define('views/collection',
             });
 
             apply_incompat(get_collection().region, data.objects);
-        }).fail(function() {
+        }, function() {
             notification.notification({message: gettext('Search failed :-(')});
         });
 
@@ -106,7 +110,7 @@ define('views/collection',
         requests.post(
             urls.api.url('remove_app', [collection.id]),
             {app: app.id}
-        ).done(function() {
+        ).then(function() {
             // Do some cache rewriting.
             collection.apps = collection.apps.filter(function(coll_app) {
                 return coll_app.id != app.id;
@@ -116,7 +120,7 @@ define('views/collection',
 
             notification.notification({message: gettext('Removed {app} from collection.', {app: app.name})});
 
-        }).fail(function() {
+        }, function() {
             $app.show();
             notification.notification({message: gettext('Could not delete app from collection.')});
         });
@@ -137,14 +141,14 @@ define('views/collection',
         requests.post(
             urls.api.url('add_app', [collection.id]),
             {'app': app}
-        ).done(function(data) {
+        ).then(function(data) {
             // A bit of cache rewriting.
             collection.apps.push(app_data);
 
             update_sort();  // Add event handlers for sorting.
             notification.notification({message: gettext('App added to collection.')});
 
-        }).fail(function() {
+        }, function() {
             $app.remove();
             notification.notification({message: gettext('Failed to add app.')});
         });
@@ -161,7 +165,7 @@ define('views/collection',
         }).then(function() {
             var collection = get_collection();
 
-            requests.del(urls.api.url('collection', [collection.id])).done(function() {
+            requests.del(urls.api.url('collection', [collection.id])).then(function() {
                 // Rewrite the cache to remove the collection.
                 collection_model.del(collection.id);
                 cache.bust(urls.api.url('collection', [collection.id]));
@@ -183,7 +187,7 @@ define('views/collection',
                 notification.notification({message: gettext('Collection deleted.')});
                 z.page.trigger('navigate', [urls.reverse('homepage')]);
 
-            }).fail(function() {
+            }, function() {
                 notification.notification({message: gettext('Failed to delete collection.')});
             });
 
@@ -199,11 +203,12 @@ define('views/collection',
         requests.post(
             urls.api.url('reorder_apps', [get_collection().id]),
             apps
-        ).done(function() {
+        ).then(function() {
             notification.notification({message: gettext('Order updated')});
-        }).fail(function() {
+        }, function() {
             notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
         });
+
     }).on('click', '.toggle-public', function(e) {
         // TODO: Spinner for 'saving'.
         e.preventDefault();
@@ -224,10 +229,10 @@ define('views/collection',
         requests.patch(
             urls.api.url('collection', collection.id),
             data
-        ).done(function() {
+        ).then(function() {
             update_public_toggle(data);
             notification.notification({message: successMsg});
-        }).fail(function() {
+        }, function() {
             notification.notification(
                 {message: gettext('Setting collection public property failed')});
         }).always(function() {
@@ -285,7 +290,7 @@ define('views/collection',
         requests.patch(
             urls.api.url('collection', collection.id),
             data
-        ).done(function(data) {
+        ).then(function(data) {
             // Update the cache.
             collection_model.cast(data);
 
@@ -298,7 +303,7 @@ define('views/collection',
             }
             // TODO: Trigger a views.reload() here?
 
-        }).fail(function() {
+        }, function() {
             $label.html(orig_html);  // Reset the field text.
             notification.notification(
                 {message: gettext('Failed to update {field}', {'field': field})});
@@ -324,14 +329,129 @@ define('views/collection',
                 '<p class="incompatible">' +
                 gettext("Incompatible: App not available in the collection's region."));
         });
-
     }
 
+    z.body.on('change', '.image-upload input[type=file]', function(e) {
+        apply_uploaded_file(e.target.files);
+
+    }).on('dragover', '.drop-target', function(e) {
+        e.preventDefault();
+        $(this).addClass('hover');
+
+    }).on('dragleave', '.drop-target', function(e) {
+        e.preventDefault();
+        $(this).removeClass('hover');
+
+    }).on('drop', '.drop-target', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).removeClass('hover');
+        apply_uploaded_file(e.originalEvent.dataTransfer.files);
+    });
+
+    function get_image(src, callback) {
+        var img = new Image();
+        img.onload = function() {
+            callback(img);
+        };
+        img.src = src;
+    }
+
+    function apply_uploaded_file(files) {
+        var file = files[0];
+        console.log('Got file change event: ', file.name, file.size);
+        if (!file) {
+            console.log('No file selected');
+            return;
+        }
+        var extension = file.name.substr(-4);
+        if (extension !== '.jpg' && extension !== '.png') {
+            console.warn('File not of proper type');
+            notification.notification({
+                message: gettext('Image uploads must be JPG or PNG.')
+            });
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            get_image(
+                e.target.result,
+                function(img) {
+                    draw_image(img, show_uploader(), true);
+                }
+            );
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function show_uploader() {
+        var uploader = $('.main .image-upload');
+        uploader.find('.spinner').addClass('hidden');
+        uploader.find('.loaded').removeClass('hidden');
+        return uploader;
+    }
+
+    function draw_image(img, uploader, user) {
+        console.log('Redrawing collection image');
+        var old_canvas_el = uploader.find('canvas')[0];
+        var canvas_el = document.createElement('canvas');
+        canvas_el.innerHTML = old_canvas_el.innerHTML;
+        var cw = canvas_el.width = old_canvas_el.width;
+        var ch = canvas_el.height = old_canvas_el.height;
+        old_canvas_el.parentNode.replaceChild(canvas_el, old_canvas_el);
+
+        var canvas = canvas_el.getContext('2d');
+        if (img) {
+            // Hark! The logic for `background-size: cover`
+            if (img.width / cw < img.height / ch) {
+                var temp = cw / img.width * img.height;
+                canvas.drawImage(img, 0, ch / 2 - temp / 2, cw, temp);
+            } else {
+                var temp = ch / img.height * img.width;
+                canvas.drawImage(img, cw / 2 - temp / 2, 0, temp, ch);
+            }
+        } else {
+            canvas.clearRect(0, 0, canvas_el.width, canvas_el.height);
+            canvas.fillStyle = '#bbb';
+            canvas.fillRect(0, 0, canvas_el.width, canvas_el.height);
+            canvas.textAlign = 'center';
+            canvas.fillStyle = '#000';
+            canvas.font = '24px Arial, Helvetica, sans-serif';
+            canvas.fillText(gettext('No Image Provided'), canvas_el.width / 2, canvas_el.height / 2 - 12);
+        }
+
+        uploader.find('.user').toggleClass('hidden', !user);
+        uploader.find('.server').toggleClass('hidden', user || !img);
+    }
+
+    z.page.on('click', '.clear-image', function(e) {
+        draw_image(null, show_uploader(), false);
+        requests.del(
+            urls.api.url('collection_image', [get_collection().id])
+        ).then(function() {
+            notification.notification({message: gettext('Image cleared')});
+        }, function() {
+            notification.notification({message: gettext('Could not clear image, probably bug 917081')});
+        });
+
+    }).on('click', '.save-image', function(e) {
+        $('.image-upload .spinner').removeClass('hidden');
+        $('.image-upload .loaded').addClass('hidden');
+
+        requests.put(
+            urls.api.url('collection_image', [get_collection().id]),
+            new requests.RawData($('.image-upload canvas').get(0).toDataURL('image/png'))
+        ).then(function() {
+            notification.notification({message: gettext('Image saved')});
+            show_uploader().find('.user, .server').addClass('hidden');
+        }, function() {
+            notification.notification({message: gettext('Could not save image')});
+            show_uploader();
+        });
+    });
+
     return function(builder, params) {
-        builder.start(
-            'collection.html',
-            {id: params[0]}
-        );
+        builder.start('collection.html', {id: params[0]});
 
         builder.onload('main', function(data) {
             // This might be/probably will be a slug, so change it to ID.
@@ -346,13 +466,33 @@ define('views/collection',
             }
 
             update_public_toggle(data);
+
+            // Load in the collection image.
+            if (data.image) {
+                get_image(
+                    urls.api.url('collection_image', [data.id]),
+                    function(img) {
+                        draw_image(img, show_uploader(), false);
+
+                        // In general, you shouldn't do this, but this turns
+                        // out to be OK because the nodes involved will be
+                        // collected and the events are bound exactly once.
+                        $('.image-upload button.revert').on('click', function() {
+                            draw_image(img, show_uploader(), false);
+                        });
+                        $('.image-upload button.clear-image').on('click', function() {
+                            img = null;
+                        });
+                    }
+                );
+            } else {
+                draw_image(null, show_uploader(), false);
+            }
         });
 
         builder.z('type', 'leaf');
         builder.z('title', gettext('Collection'));
 
-        builder.done(function() {
-            update_sort();
-        });
+        builder.done(update_sort);
     };
 });

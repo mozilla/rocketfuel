@@ -59,6 +59,26 @@
       {% if this.collection_type == 0 %}
         <div class="well">
           <h2>{{ _('Customization') }}</h2>
+          <div class="image-upload field wide">
+            <label>{{ _('Background Image:') }}</label>
+            <div class="spinner with-some-padding{{ ' hidden' if not data.image }}" title="{{ _('Loading preview image') }}"></div>
+            <div class="loaded{{ ' hidden' if this.image }}">
+              <input type="file" accept="image/*" class="stealthy">
+              <p>
+                {{ _('Drag a PNG or JPG image below or <span>select a file</span> to upload an image.') }}
+              </p>
+              <div class="drop-target">
+                <canvas height="324" width="690">{{ _('Your browser does not support canvas.') }}</canvas>
+              </div>
+              <menu class="server hidden">
+                <button class="button clear-image">{{ _('Clear Saved Image') }}</button>
+              </menu>
+              <menu class="user hidden">
+                <button class="button save-image">{{ _('Save Image') }}</button>
+                <button class="button revert alt">{{ _('Cancel and Revert') }}</button>
+              </menu>
+            </div>
+          </div>
           <div class="field" data-field="background_color">
             <label>{{ _('Background:') }}</label>
             <p>
@@ -88,8 +108,6 @@
       </div>
     </div>
     <div class="third">
-      <div class="well">
-      </div>
       <div class="well only-logged-in">
         <a href="#" class="toggle-public nonpublic" data-id="{{ id }}">
           <b>&diams;</b> {{ _('Make Collection Public') }}</a>
