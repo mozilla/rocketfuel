@@ -1,0 +1,438 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12T16:21:18.130Z\n"
+"PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Fireplace L10n Tools 1.0\n"
+"Language: it\n"
+"Content-Type: text/plain; charset=ASCII\n"
+
+#: /templates/collection.html:19
+msgid "Author:"
+msgstr ""
+
+#: /templates/collection.html:26
+msgid "Slug:"
+msgstr ""
+
+#: /templates/collection.html:32 /templates/_macros/collections.html:13
+msgid "Region:"
+msgstr ""
+
+#: /templates/collection.html:38 /templates/_macros/collections.html:17
+msgid "Carrier:"
+msgstr ""
+
+#: /templates/collection.html:45 /templates/_macros/collections.html:21
+msgid "Category:"
+msgstr ""
+
+#: /templates/collection.html:46 /templates/_macros/dropdowns.html:6 /media/js/views/collection.js:257
+msgid "All Categories (Homepage)"
+msgstr ""
+
+#: /templates/collection.html:52
+msgid "Description:"
+msgstr ""
+
+#: /templates/collection.html:60
+msgid "Customization"
+msgstr ""
+
+#: /templates/collection.html:62
+msgid "Background:"
+msgstr ""
+
+#: /templates/collection.html:70
+msgid "Text:"
+msgstr ""
+
+#: /templates/collection.html:80
+msgid "Apps"
+msgstr ""
+
+#: /templates/collection.html:86
+msgid "Add app to collection"
+msgstr ""
+
+#: /templates/collection.html:94 /media/js/views/collection.js:10
+msgid "Make Collection Public"
+msgstr ""
+
+#: /templates/collection.html:98
+msgid "Duplicate collection"
+msgstr ""
+
+#: /templates/collection.html:102
+msgid "Delete collection"
+msgstr ""
+
+#: /templates/collection.html:109
+msgid "Error loading the collection."
+msgstr ""
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr ""
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr ""
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr ""
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr ""
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr ""
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr ""
+
+#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+msgid "Name"
+msgstr ""
+
+#: /templates/duplicate_collection.html:8 /templates/new_collection.html:12
+msgid "A name is required"
+msgstr ""
+
+#: /templates/duplicate_collection.html:12
+msgid "Slug"
+msgstr ""
+
+#: /templates/duplicate_collection.html:14 /templates/new_collection.html:18
+msgid "A slug is required"
+msgstr ""
+
+#: /templates/duplicate_collection.html:15
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+
+#: /templates/duplicate_collection.html:19
+msgid "Duplicate"
+msgstr ""
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr ""
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr ""
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr ""
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Marketplace Publisher"
+msgstr ""
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool."
+msgstr ""
+
+#: /templates/homepage.html:13 /templates/new_collection.html:47
+msgid "Category"
+msgstr ""
+
+#: /templates/homepage.html:19 /templates/new_collection.html:52
+msgid "Region"
+msgstr ""
+
+#: /templates/homepage.html:25 /templates/new_collection.html:58
+msgid "Carrier"
+msgstr ""
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr ""
+
+#: /templates/homepage.html:45
+msgid "No collections have been created."
+msgstr ""
+
+#: /templates/homepage.html:49
+msgid "Add a new collection"
+msgstr ""
+
+#: /templates/homepage.html:52
+msgid "Featured Apps"
+msgstr ""
+
+#: /templates/homepage.html:59
+msgid "No featured app sections have been created."
+msgstr ""
+
+#: /templates/homepage.html:63
+msgid "Add a new featured app collection"
+msgstr ""
+
+#: /templates/homepage.html:68
+msgid "Operator Shelves"
+msgstr ""
+
+#: /templates/homepage.html:76
+msgid "No operator shelves have been created."
+msgstr ""
+
+#: /templates/homepage.html:80
+msgid "Add a new operator shelf"
+msgstr ""
+
+#: /templates/homepage.html:82
+msgid "Please select a carrier to see operator shelves."
+msgstr ""
+
+#: /templates/new_collection.html:2
+msgid "New {collection_type}"
+msgstr ""
+
+#: /templates/new_collection.html:10
+msgid "The name is not shown to users, it is only for convenience."
+msgstr ""
+
+#: /templates/new_collection.html:16
+msgid "Collection Slug"
+msgstr ""
+
+#: /templates/new_collection.html:19
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
+msgstr ""
+
+#: /templates/new_collection.html:25
+msgid "Author Name"
+msgstr ""
+
+#: /templates/new_collection.html:31
+msgid "Description"
+msgstr ""
+
+#: /templates/new_collection.html:33
+msgid "A description is required"
+msgstr ""
+
+#: /templates/new_collection.html:68
+msgid "Background Color"
+msgstr ""
+
+#: /templates/new_collection.html:70
+msgid "A background color is required"
+msgstr ""
+
+#: /templates/new_collection.html:71 /templates/new_collection.html:78
+msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
+msgstr ""
+
+#: /templates/new_collection.html:75
+msgid "Text Color"
+msgstr ""
+
+#: /templates/new_collection.html:77
+msgid "A text color is required"
+msgstr ""
+
+#: /templates/new_collection.html:84
+msgid "Create"
+msgstr ""
+
+#: /templates/new_collection.html:89
+msgid "Unauthorized"
+msgstr ""
+
+#: /templates/new_collection.html:90
+msgid "You must be logged in to create collections."
+msgstr ""
+
+#: /templates/_macros/dropdowns.html:13
+msgid "Loading categories..."
+msgstr ""
+
+#: /templates/_macros/dropdowns.html:25
+msgid "-- None --"
+msgstr ""
+
+#: /templates/_macros/dropdowns.html:33
+msgid "Loading regions..."
+msgstr ""
+
+#: /templates/_macros/dropdowns.html:51
+msgid "Loading carriers..."
+msgstr ""
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr ""
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr ""
+
+#: /templates/errors/pagination.html:1
+msgid "Error loading more"
+msgstr ""
+
+#: /templates/errors/pagination.html:2
+msgid "Try Again"
+msgstr ""
+
+#: /media/js/login.js:8
+msgid "You have been signed out"
+msgstr ""
+
+#: /media/js/login.js:12
+msgid "You have been signed in"
+msgstr ""
+
+#: /media/js/login.js:125
+msgid "Persona login failed. Maybe you don't have an account under that email address?"
+msgstr ""
+
+#: /media/js/login.js:130
+msgid "Persona login failed. A server error was encountered."
+msgstr ""
+
+#: /media/js/forms.js:50
+msgid "Save"
+msgstr ""
+
+#: /media/js/forms.js:65
+msgid "Other Locales"
+msgstr ""
+
+#: /media/js/settings.js:38
+msgid "Basic Collection"
+msgstr ""
+
+#: /media/js/settings.js:39
+msgid "Featured App Collection"
+msgstr ""
+
+#: /media/js/settings.js:40
+msgid "Operator Shelf"
+msgstr ""
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr ""
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] ""
+msgstr[1] ""
+
+#: /media/js/views/collection.js:9
+msgid "Make Collection Hidden"
+msgstr ""
+
+#: /media/js/views/collection.js:11
+msgid "Collection is now hidden"
+msgstr ""
+
+#: /media/js/views/collection.js:12
+msgid "Collection is now public"
+msgstr ""
+
+#: /media/js/views/collection.js:58
+msgid "Successfully duplicated"
+msgstr ""
+
+#: /media/js/views/collection.js:62
+msgid "Failed to duplicate collection"
+msgstr ""
+
+#: /media/js/views/collection.js:90
+msgid "Search failed :-("
+msgstr ""
+
+#: /media/js/views/collection.js:117
+msgid "Removed {app} from collection."
+msgstr ""
+
+#: /media/js/views/collection.js:121
+msgid "Could not delete app from collection."
+msgstr ""
+
+#: /media/js/views/collection.js:145
+msgid "App added to collection."
+msgstr ""
+
+#: /media/js/views/collection.js:149
+msgid "Failed to add app."
+msgstr ""
+
+#: /media/js/views/collection.js:160
+msgid "Are you sure you want to delete this collection?"
+msgstr ""
+
+#: /media/js/views/collection.js:183
+msgid "Collection deleted."
+msgstr ""
+
+#: /media/js/views/collection.js:187
+msgid "Failed to delete collection."
+msgstr ""
+
+#: /media/js/views/collection.js:203
+msgid "Order updated"
+msgstr ""
+
+#: /media/js/views/collection.js:205
+msgid "Failed to update collection order. Try refreshing the page."
+msgstr ""
+
+#: /media/js/views/collection.js:232
+msgid "Setting collection public property failed"
+msgstr ""
+
+#: /media/js/views/collection.js:289
+msgid "Saved {field}"
+msgstr ""
+
+#: /media/js/views/collection.js:300
+msgid "Failed to update {field}"
+msgstr ""
+
+#: /media/js/views/collection.js:321
+msgid "Incompatible: App not available in the collection's region."
+msgstr ""
+
+#: /media/js/views/collection.js:348
+msgid "Collection"
+msgstr ""
+
+#: /media/js/views/homepage.js:36
+msgid "Overview"
+msgstr ""
+
+#: /media/js/views/new_collection.js:34
+msgid "New collection created."
+msgstr ""
+
+#: /media/js/views/new_collection.js:37
+msgid "Failed to create new collection."
+msgstr ""
+
+#: /media/js/views/new_collection.js:93
+msgid "New Collection"
+msgstr ""
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr ""
