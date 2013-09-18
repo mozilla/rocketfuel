@@ -30,7 +30,6 @@ require.config({
             'navigation',
             'requests',
             'templates',
-            //'tracking',
             'urls',
             'user',
             'views',
@@ -70,15 +69,17 @@ require.config({
 
         // Add some helpful functions.
         helpers.COLOR_PATTERN = '#[0-9a-fA-F]{6}';
-        helpers.color_cycle = function() {
+        helpers.color_cycle = function(alpha) {
+            alpha = alpha || 1;
             var cache = {};
             var n = 0;
             return function(value) {
                 if (value in cache) return cache[value];
-                var h = (Math.pow(n, 2) * 25 + 40) % 349 | 0;
-                var l = (n * 49 + 20) % 31 + 60 | 0;
-                n++
-                return cache[value] = 'hsla(' + h + ', 50%, ' + l + '%, 0.7)';
+                var h = (Math.pow(n, 2) * 50 + 40) % 349 | 0;
+                var l = (n * 49 + 20) % 31 + 40 | 0;
+                n++;
+                console.error(value, 'hsla(' + h + ', 50%, ' + l + '%, ' + alpha + ')');
+                return cache[value] = 'hsla(' + h + ', 50%, ' + l + '%, ' + alpha + ')';
             };
         }
         helpers.model_lookup = function(model, key, by) {

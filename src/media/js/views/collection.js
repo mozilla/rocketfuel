@@ -32,17 +32,17 @@ define('views/collection',
         }
     }
 
-    z.page.on('click', 'a.add_app', function(e) {
+    z.page.on('click', 'a.show-dialog', function(e) {
         e.preventDefault();
         $('.dialog').addClass('hidden');
-        $('#app_search').removeClass('hidden');
+        $('#' + $(this).data('dialog')).removeClass('hidden');
 
-    }).on('click', 'a.duplicate_collection', function(e) {
+    }).on('click', '.dialog .close', function(e) {
         e.preventDefault();
         $('.dialog').addClass('hidden');
-        $('#duplicate_collection').removeClass('hidden');
+    });
 
-    }).on('submit', '#duplicate_collection form', function(e) {
+    z.page.on('submit', '#duplicate_collection form', function(e) {
         e.preventDefault();
 
         var $this = $(this);
@@ -63,6 +63,8 @@ define('views/collection',
 
         }, function() {
             notification.notification({message: gettext('Failed to duplicate collection')})
+
+        }).always(function() {
             $button.removeClass('disabled').text(button_text);
         });
 
@@ -94,9 +96,72 @@ define('views/collection',
             notification.notification({message: gettext('Search failed :-(')});
         });
 
-    }).on('click', '.dialog .close', function(e) {
+    }).on('submit', '#add-curator form', function(e) {
         e.preventDefault();
-        $('.dialog').addClass('hidden');
+
+        var $this = $(this);
+
+        var $button = $this.find('.button');
+        var button_text = $button.text();
+        $button.addClass('disabled').html('<div class="spinner">');
+
+        var uid = $this.find('[name=uid]').val();
+        requests.post(
+            urls.api.url('add_curator', [get_collection().id]),
+            {user: uid}
+        ).then(function(data) {
+            $this.find('input').val('');
+
+            var curator;
+            for(var i = 0; i < data.length; i++) {
+                if (data[i].id == uid) {
+                    curator = data[i];
+                    break;
+                }
+            }
+            if (!curator) {
+                // Uh oh, pinning issues!
+                notification.notification({message: gettext('Curator added; check back in a bit')});
+                return;
+            }
+
+            notification.notification({message: gettext('Added curator')});
+
+            var $curators = $('.curators');
+            var $sorry = $curators.find('.sorry');
+            if ($sorry.length) {
+                $sorry.remove();
+                $curators.find('h2').after('<ul>');
+            }
+            $curators.find('ul').append(
+                nunjucks.env.getTemplate('helpers/curator.html').render({
+                    'curator': data,
+                    'curator_color': function() {return 'black';}
+                })
+            );
+        }, function() {
+            notification.notification({message: gettext('Failed to add curator')});
+        }).always(function() {
+            $button.removeClass('disabled').text(button_text);
+        });
+
+    }).on('click', '.curators li .delete', function(e) {
+        e.preventDefault();
+        var $curator = $(this).parent();
+        $curator.hide();
+        var curator_id = $curator.data('id');
+
+        requests.post(
+            urls.api.url('remove_curator', [get_collection().id]),
+            {user: curator_id}
+        ).then(function() {
+            $curator.remove();
+            notification.notification({message: gettext('Removed curator')});
+
+        }, function() {
+            $curator.show();
+            notification.notification({message: gettext('Failed to remove curator')});
+        });
 
     }).on('click', '.app .delete', function(e) {
         e.preventDefault();
@@ -362,14 +427,6 @@ define('views/collection',
         console.log('Got file change event: ', file.name, file.size);
         if (!file) {
             console.log('No file selected');
-            return;
-        }
-        var extension = file.name.substr(-4);
-        if (extension !== '.jpg' && extension !== '.png') {
-            console.warn('File not of proper type');
-            notification.notification({
-                message: gettext('Image uploads must be JPG or PNG.')
-            });
             return;
         }
         var reader = new FileReader();

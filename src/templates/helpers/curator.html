@@ -1,0 +1,5 @@
+<li data-id="{{ curator.id }}" title="{{ _('ID: {id}', id=curator.id) }}">
+  <a class="delete">&times;</a>
+  <b style="color:{{ curator_color(curator.id) }}">{{ curator.display_name }}</b><br>
+  {{ curator.email }}
+</li>

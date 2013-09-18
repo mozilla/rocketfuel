@@ -9,18 +9,18 @@
     <p>{{ collection.description|translate(collection)|safe }}</p>
   {% endif %}
   <p class="labels">
-  	{% if collection.region %}
-  		<span class="label" style="background:{{ region_color(collection.region) }}">
-  			{{ _('Region:') }} <b>{{ model_lookup('region', collection.region).name }}</b></span>
-  	{% endif %}
-  	{% if collection.carrier %}
-  		<span class="label" style="background:{{ carrier_color(collection.carrier) }}">
-  			{{ _('Carrier:') }} <b>{{ model_lookup('carrier', collection.carrier).name }}</b></span>
-  	{% endif %}
-  	{% if collection.category %}
-  		<span class="label" style="background:{{ category_color(collection.category) }}">
-  			{{ _('Category:') }} <b>{{ model_lookup('category', collection.category).name }}</b></span>
-  	{% endif %}
+    {% if collection.region %}
+      <span class="label" style="background:{{ region_color(collection.region) }}">
+        {{ _('Region:') }} <b>{{ model_lookup('region', collection.region).name }}</b></span>
+    {% endif %}
+    {% if collection.carrier %}
+      <span class="label" style="background:{{ carrier_color(collection.carrier) }}">
+        {{ _('Carrier:') }} <b>{{ model_lookup('carrier', collection.carrier).name }}</b></span>
+    {% endif %}
+    {% if collection.category %}
+      <span class="label" style="background:{{ category_color(collection.category) }}">
+        {{ _('Category:') }} <b>{{ model_lookup('category', collection.category).name }}</b></span>
+    {% endif %}
   </p>
   {% if show_thumbs %}
     <div class="thumbs">
