@@ -78,7 +78,6 @@ require.config({
                 var h = (Math.pow(n, 2) * 50 + 40) % 349 | 0;
                 var l = (n * 49 + 20) % 31 + 40 | 0;
                 n++;
-                console.error(value, 'hsla(' + h + ', 50%, ' + l + '%, ' + alpha + ')');
                 return cache[value] = 'hsla(' + h + ', 50%, ' + l + '%, ' + alpha + ')';
             };
         }
@@ -110,12 +109,6 @@ require.config({
             z.body.toggleClass('logged-in', require('user').logged_in());
             z.page.trigger('reloaded_chrome');
         }).trigger('reload_chrome');
-
-        z.body.on('click', '.site-header .back', function(e) {
-            e.preventDefault();
-            console.log('← button pressed');
-            require('navigation').back();
-        });
 
         function do_model_cache(model, url) {
             return require('requests').get(url).done(function(data) {

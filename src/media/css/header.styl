@@ -131,23 +131,6 @@ header .email {
     text-align: center;
     width: 48px;
 
-    &.back {
-        hidetext();
-        background: url(../img/pretty/back_arrow.svg) center no-repeat;
-        background-size: 12px 24px;
-        margin-right: 2px;
-        position: relative;
-        width: 50px;
-
-        &:after {
-            background-repeat: no-repeat;
-            content: "";
-            display: block;
-        }
-        &:hover {
-            background-image: url(../img/pretty/back_arrow_active.svg);
-        }
-    }
     // 'Sign In'
     &.persona {
         display: none;
@@ -171,40 +154,12 @@ header .email {
     pointer-events: none;
 }
 
-[data-page-type~=search],
-[data-page-type~=leaf] {
-    .back, .expand, .flex-span {
-        display: block;
-    }
-    .site, .flex-shift {
-        display: none;
-    }
-    .flex-span {
-        flex(1);
-    }
-}
-
 main {
     padding: 48px 0;
 }
 
 .logged-in .site-header .persona {
     display: none;
-}
-
-// How does the header look for the various page "types"?
-[data-page-type~=search],
-[data-page-type~=leaf] {
-    .back, .site {
-        display: block;
-    }
-    .back, .site-header .expand-toggle,
-    .flex-span {
-        display: none;
-    }
-    .flex-shift {
-        display: block;
-    }
 }
 
 .nav-overlay.show {

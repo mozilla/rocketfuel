@@ -29,5 +29,8 @@
       {% endfor %}
     </div>
   {% endif %}
+  {% if collection.is_public %}
+    <b class="public" title="{{ _('Collection is Public') }}"></b>
+  {% endif %}
 </div>
 {% endmacro %}
