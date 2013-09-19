@@ -531,14 +531,8 @@ define('views/collection',
                     urls.api.url('collection_image', [data.id]),
                     function(img) {
                         draw_image(img, show_uploader(), false);
-
-                        // In general, you shouldn't do this, but this turns
-                        // out to be OK because the nodes involved will be
-                        // collected and the events are bound exactly once.
-                        $('.image-upload button.revert').on('click', function() {
-                            draw_image(img, show_uploader(), false);
-                        });
                         $('.image-upload button.clear-image').on('click', function() {
+                            data.image = null;
                             img = null;
                         });
                     }
@@ -546,6 +540,20 @@ define('views/collection',
             } else {
                 draw_image(null, show_uploader(), false);
             }
+            // In general, you shouldn't do this, but this turns
+            // out to be OK because the nodes involved will be
+            // collected and the events are bound exactly once.
+            $('.image-upload button.revert').on('click', function() {
+                var img;
+                function revert(img) {
+                    draw_image(img, show_uploader(), false);
+                }
+                if (data.image) {
+                    getImage(urls.api.url('collection_image', [data.id]), revert);
+                } else {
+                    revert(null);
+                }
+            });
         });
 
         builder.z('type', 'leaf');
