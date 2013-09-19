@@ -1,7 +1,7 @@
 {% from "_macros/collections.html" import collection_overview %}
 {% from "_macros/dropdowns.html" import category_dropdown, region_dropdown, carrier_dropdown %}
 
-{% if not user.get_permission('publisher') %}
+{% if not user.get_permission('curator') %}
 <section class="alert only-logged-in">
   <h1>{{ _('You are not logged in as a Marketplace Publisher') }}</h1>
   <p>{{ _('In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool.') }}</p>
