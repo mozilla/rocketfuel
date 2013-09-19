@@ -26,9 +26,19 @@ define('views/new_collection',
             data.description[navigator.l10n.language] = orig_data.description;
 
             collection_model.cast(data);
+            var list_endpoint = urls.api.unsigned.url('collections');
             cache.attemptRewrite(
                 function(key) {
-                    return utils.baseurl(key) == urls.api.unsigned.url('collections');
+                    if (utils.baseurl(key) !== list_endpoint) return false;
+                    var params = utils.querystring(key);
+                    // The category must match.
+                    if (params.cat != (data.category || undefined)) return false;
+                    // The region must match if both the key and the collection have a region.
+                    if (data.region && params.region && params.region != data.region) return false;
+                    // The carrier must match if both the key and the collection have a carrier.
+                    if (data.carrier && params.carrier && params.carrier != data.carrier) return false;
+                    // Otherwise it's good to go.
+                    return true;
                 },
                 function(entry, key) {
                     entry.objects.unshift(data);
