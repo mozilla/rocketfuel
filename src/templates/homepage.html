@@ -1,4 +1,4 @@
-{% from "_macros/collections.html" import collection_overview %}
+{% from "_macros/collections.html" import collection_overview, public_warning %}
 {% from "_macros/dropdowns.html" import category_dropdown, region_dropdown, carrier_dropdown %}
 
 {% if not user.get_permission('curator') %}
@@ -38,6 +38,7 @@
       <section class="group">
         <h2>{{ _('Collections') }}</h2>
         {% set results = this|filter(collection_type=0)|sort(true, true, 'is_public') %}
+        {{ public_warning(results) }}
         {% if results.length %}
           {% for collection in results %}
             {{ collection_overview(collection, show_thumbs=True) }}
@@ -45,13 +46,14 @@
         {% else %}
           <p>{{ _('No collections have been created.') }}</p>
         {% endif %}
-        <a class="new_collection only-logged-in"
+        <a class="new_collection only-logged-in only-is-curator"
            href="{{ get_url_params(url('new_collection'), 'basic') }}">
           <b>+</b> {{ _('Add a new collection' )}}</a>
       </section>
       <section class="group">
         <h2>{{ _('Featured Apps') }}</h2>
         {% set results = this|filter(collection_type=1)|sort(true, true, 'is_public') %}
+        {{ public_warning(results) }}
         {% if results.length %}
           {% for collection in results %}
             {{ collection_overview(collection, show_thumbs=True) }}
@@ -59,7 +61,7 @@
         {% else %}
           <p>{{ _('No featured app sections have been created.') }}</p>
         {% endif %}
-        <a class="new_collection only-logged-in"
+        <a class="new_collection only-logged-in only-is-curator"
            href="{{ get_url_params(url('new_collection'), 'featured') }}">
           <b>+</b> {{ _('Add a new featured app collection' )}}</a>
       </section>
@@ -69,6 +71,7 @@
           <h2>{{ _('Operator Shelves') }}</h2>
           {% if carrier and carrier != 'carrierless' %}
             {% set results = this|filter(collection_type=2)|sort(true, true, 'is_public') %}
+            {{ public_warning(results) }}
             {% if results.length %}
               {% for collection in results %}
                 {{ collection_overview(collection, show_thumbs=True) }}
@@ -76,7 +79,7 @@
             {% else %}
               <p>{{ _('No operator shelves have been created.') }}</p>
             {% endif %}
-            <a class="new_collection only-logged-in"
+            <a class="new_collection only-logged-in only-is-curator"
                href="{{ get_url_params(url('new_collection'), 'operator') }}">
               <b>+</b> {{ _('Add a new operator shelf' )}}</a>
           {% else %}

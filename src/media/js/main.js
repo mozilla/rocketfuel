@@ -107,6 +107,7 @@ require.config({
                 nunjucks.env.getTemplate('footer.html').render(context));
 
             z.body.toggleClass('logged-in', require('user').logged_in());
+            z.body.toggleClass('is-curator', require('user').get_permission('curator'));
             z.page.trigger('reloaded_chrome');
         }).trigger('reload_chrome');
 
