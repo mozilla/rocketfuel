@@ -34,7 +34,8 @@
 {% endmacro %}
 
 {% macro public_warning(sets) %}
-  {% if sets.length and not len(sets|filter(is_public=True)) %}
+  {% set filtered = sets|filter(is_public=True) %}
+  {% if sets.length and not filtered.length %}
     <p class="notice no_public">
       {{ _('There are no public collections of this type.') }}
     </p>
