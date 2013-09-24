@@ -46,7 +46,7 @@
         {% else %}
           <p>{{ _('No collections have been created.') }}</p>
         {% endif %}
-        <a class="new_collection only-logged-in only-is-curator"
+        <a class="new_collection only-is-curator"
            href="{{ get_url_params(url('new_collection'), 'basic') }}">
           <b>+</b> {{ _('Add a new collection' )}}</a>
       </section>
@@ -61,7 +61,7 @@
         {% else %}
           <p>{{ _('No featured app sections have been created.') }}</p>
         {% endif %}
-        <a class="new_collection only-logged-in only-is-curator"
+        <a class="new_collection only-is-curator"
            href="{{ get_url_params(url('new_collection'), 'featured') }}">
           <b>+</b> {{ _('Add a new featured app collection' )}}</a>
       </section>
@@ -79,7 +79,7 @@
             {% else %}
               <p>{{ _('No operator shelves have been created.') }}</p>
             {% endif %}
-            <a class="new_collection only-logged-in only-is-curator"
+            <a class="new_collection only-is-curator"
                href="{{ get_url_params(url('new_collection'), 'operator') }}">
               <b>+</b> {{ _('Add a new operator shelf' )}}</a>
           {% else %}
