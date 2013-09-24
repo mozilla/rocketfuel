@@ -380,6 +380,10 @@ define('views/collection',
     });
 
     function apply_incompat(region_slug, app_list) {
+        if (!region_slug) {
+            // Don't show incompat if the region is null.
+            return;
+        }
         app_list.forEach(function(v) {
             for (var r in v.regions) {
                 if (v.regions[r].slug === region_slug) {
@@ -519,9 +523,7 @@ define('views/collection',
                 app_model.cast(v);
             });
 
-            if (data.region) {
-                apply_incompat(data.region, data.apps);
-            }
+            apply_incompat(data.region, data.apps);
 
             update_public_toggle(data);
 
