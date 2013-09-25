@@ -46,7 +46,8 @@ define('views/homepage',
             url = utils.urlparams(url, {
                 'region': args.region || 'worldwide',
                 'carrier': args.carrier || undefined,
-                'lang': navigator.l10n ? navigator.l10n.language : 'en-US'
+                'lang': navigator.l10n ? navigator.l10n.language : 'en-US',
+                'preview': 'true'
             });
 
             $('iframe#filter_preview').attr('src', url);
