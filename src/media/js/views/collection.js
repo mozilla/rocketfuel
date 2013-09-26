@@ -135,7 +135,7 @@ define('views/collection',
             }
             $curators.find('ul').append(
                 nunjucks.env.getTemplate('helpers/curator.html').render({
-                    'curator': data,
+                    'curator': curator,
                     'curator_color': function() {return 'black';}
                 })
             );
