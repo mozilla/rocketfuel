@@ -110,7 +110,7 @@ define('requests',
             }
 
             var data = xhr.responseText;
-            if (xhr.getResponseHeader('Content-Type').split(';', 1)[0] === 'application/json') {
+            if ((xhr.getResponseHeader('Content-Type') || '').split(';', 1)[0] === 'application/json') {
                 try {
                     data = JSON.parse(data);
                 } catch(e) {
