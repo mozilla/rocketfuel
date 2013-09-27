@@ -6,12 +6,12 @@ msgstr ""
 "PO-Revision-Date: 2013-09-26 12:56+0100\n"
 "Last-Translator: Michael Köhler <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
-"MIME-Version: 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
 "Language: de\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Fireplace L10n Tools 1.0\n"
 
 #: /templates/collection.html:19
 msgid "Author:"
@@ -21,24 +21,19 @@ msgstr "Autor:"
 msgid "Slug:"
 msgstr "Adressname:"
 
-#: /templates/collection.html:32
-#: /templates/_macros/collections.html:13
+#: /templates/collection.html:32 /templates/_macros/collections.html:13
 msgid "Region:"
 msgstr "Region:"
 
-#: /templates/collection.html:38
-#: /templates/_macros/collections.html:17
+#: /templates/collection.html:38 /templates/_macros/collections.html:17
 msgid "Carrier:"
 msgstr "Mobilfunkanbieter:"
 
-#: /templates/collection.html:45
-#: /templates/_macros/collections.html:21
+#: /templates/collection.html:45 /templates/_macros/collections.html:21
 msgid "Category:"
 msgstr "Kategorie:"
 
-#: /templates/collection.html:46
-#: /templates/_macros/dropdowns.html:6
-#: /media/js/views/collection.js:257
+#: /templates/collection.html:46 /templates/_macros/dropdowns.html:6 /media/js/views/collection.js:257
 msgid "All Categories (Homepage)"
 msgstr "Alle Kategorien (Startseite)"
 
@@ -66,8 +61,7 @@ msgstr "Apps"
 msgid "Add app to collection"
 msgstr "App zur Sammlung hinzufügen"
 
-#: /templates/collection.html:94
-#: /media/js/views/collection.js:10
+#: /templates/collection.html:94 /media/js/views/collection.js:10
 msgid "Make Collection Public"
 msgstr "Sammlung veröffentlichen"
 
@@ -87,8 +81,7 @@ msgstr "Fehler beim Laden der Sammlung."
 msgid "Add Apps"
 msgstr "Apps hinzufügen"
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
+#: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Suchen"
 
@@ -108,13 +101,11 @@ msgstr "Ja"
 msgid "Duplicate Collection"
 msgstr "Sammlung duplizieren"
 
-#: /templates/duplicate_collection.html:6
-#: /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Name"
 
-#: /templates/duplicate_collection.html:8
-#: /templates/new_collection.html:12
+#: /templates/duplicate_collection.html:8 /templates/new_collection.html:12
 msgid "A name is required"
 msgstr "Ein Name ist erforderlich"
 
@@ -122,14 +113,15 @@ msgstr "Ein Name ist erforderlich"
 msgid "Slug"
 msgstr "Adressname"
 
-#: /templates/duplicate_collection.html:14
-#: /templates/new_collection.html:18
+#: /templates/duplicate_collection.html:14 /templates/new_collection.html:18
 msgid "A slug is required"
 msgstr "Ein Adressname ist erforderlich"
 
 #: /templates/duplicate_collection.html:15
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung übereinstimmen. "
+msgstr ""
+"Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung "
+"übereinstimmen. "
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
@@ -155,18 +147,15 @@ msgstr "Sie sind nicht als Marketplace-Veröffentlicher angemeldet"
 msgid "In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool."
 msgstr "Um Sammlungen erstellen oder bearbeiten zu können, müssen Sie als Marketplace-Veröffentlicher angemeldet sein, um dieses Werkzeug sinnvoll nutzen zu können."
 
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:47
+#: /templates/homepage.html:13 /templates/new_collection.html:47
 msgid "Category"
 msgstr "Kategorie"
 
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:52
+#: /templates/homepage.html:19 /templates/new_collection.html:52
 msgid "Region"
 msgstr "Region"
 
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:58
+#: /templates/homepage.html:25 /templates/new_collection.html:58
 msgid "Carrier"
 msgstr "Mobilfunkanbieter"
 
@@ -246,8 +235,7 @@ msgstr "Hintergrundfarbe"
 msgid "A background color is required"
 msgstr "Eine Hintergrundfarbe ist erforderlich"
 
-#: /templates/new_collection.html:71
-#: /templates/new_collection.html:78
+#: /templates/new_collection.html:71 /templates/new_collection.html:78
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Bitte geben Sie eine Farbe im Hexadezimalformat (z.B.: \"#AB78EF\") ein"
 
@@ -450,4 +438,3 @@ msgstr "Neue Sammlung"
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
 msgstr "Nicht gefunden"
-
