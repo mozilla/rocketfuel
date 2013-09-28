@@ -15,424 +15,424 @@ msgstr ""
 
 #: /templates/collection.html:19
 msgid "Author:"
-msgstr ""
+msgstr "Συντάκτης:"
 
 #: /templates/collection.html:26
 msgid "Slug:"
-msgstr ""
+msgstr "Ψευδώνυμο:"
 
 #: /templates/collection.html:32 /templates/_macros/collections.html:13
 msgid "Region:"
-msgstr ""
+msgstr "Περιοχή:"
 
 #: /templates/collection.html:38 /templates/_macros/collections.html:17
 msgid "Carrier:"
-msgstr ""
+msgstr "Πάροχος:"
 
 #: /templates/collection.html:45 /templates/_macros/collections.html:21
 msgid "Category:"
-msgstr ""
+msgstr "Κατηγορία:"
 
 #: /templates/collection.html:46 /templates/_macros/dropdowns.html:6 /media/js/views/collection.js:257
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Όλες οι κατηγορίες (Αρχική)"
 
 #: /templates/collection.html:52
 msgid "Description:"
-msgstr ""
+msgstr "Περιγραφή:"
 
 #: /templates/collection.html:60
 msgid "Customization"
-msgstr ""
+msgstr "Παραμετροποίηση"
 
 #: /templates/collection.html:62
 msgid "Background:"
-msgstr ""
+msgstr "Φόντο:"
 
 #: /templates/collection.html:70
 msgid "Text:"
-msgstr ""
+msgstr "Κείμενο:"
 
 #: /templates/collection.html:80
 msgid "Apps"
-msgstr ""
+msgstr "Εφαρμογές"
 
 #: /templates/collection.html:86
 msgid "Add app to collection"
-msgstr ""
+msgstr "Προσθήκη εφαρμογής σε συλλογή"
 
 #: /templates/collection.html:94 /media/js/views/collection.js:10
 msgid "Make Collection Public"
-msgstr ""
+msgstr "Δημοσιοποίηση συλλογής"
 
 #: /templates/collection.html:98
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Αντιγραφή συλλογής"
 
 #: /templates/collection.html:102
 msgid "Delete collection"
-msgstr ""
+msgstr "Διαγραφή συλλογής"
 
 #: /templates/collection.html:109
 msgid "Error loading the collection."
-msgstr ""
+msgstr "Σφάλμα κατά τη φόρτωση της συλλογής."
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Προσθήκη εφαρμογών"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Αναζήτηση"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "Κλείσιμο"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Αντιγραφή συλλογής"
 
 #: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #: /templates/duplicate_collection.html:8 /templates/new_collection.html:12
 msgid "A name is required"
-msgstr ""
+msgstr "Απαιτείται ένα όνομα"
 
 #: /templates/duplicate_collection.html:12
 msgid "Slug"
-msgstr ""
+msgstr "Ψευδώνυμο"
 
 #: /templates/duplicate_collection.html:14 /templates/new_collection.html:18
 msgid "A slug is required"
-msgstr ""
+msgstr "Απαιτείται ψευδώνυμο"
 
 #: /templates/duplicate_collection.html:15
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
+msgstr "Τα ψευδώνυμα πρέπει να αρχίζουν με γράμμα και περιέχουν μόνο γράμματα, αριθμούς, και κάτω παύλες. Πρέπει να είναι ως 30 χαρακτήρες και δε μπορούν να είναι τα ίδια με την υπάρχουσα συλλογή."
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
-msgstr ""
+msgstr "Αντιγραφή"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Εργαλείο επιμέλειας"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Αποσύνδεση"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Marketplace Publisher"
-msgstr ""
+msgstr "Δεν είστε συνδεδεμένοι σαν Εκδότης Marketplace"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool."
-msgstr ""
+msgstr "Για να δημιουργήσετε ή να τροποποιήσετε συλλογές, πρέπει να είστε συνδεδεμένοι ως Εκδότης Marketplace ώστε να χρησιμοποιήσετε το εργαλείο αποτελεσματικά."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:47
 msgid "Category"
-msgstr ""
+msgstr "Κατηγορία"
 
 #: /templates/homepage.html:19 /templates/new_collection.html:52
 msgid "Region"
-msgstr ""
+msgstr "Περιοχή"
 
 #: /templates/homepage.html:25 /templates/new_collection.html:58
 msgid "Carrier"
-msgstr ""
+msgstr "Πάροχος"
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Συλλογές"
 
 #: /templates/homepage.html:45
 msgid "No collections have been created."
-msgstr ""
+msgstr "Δεν έχουν δημιουργηθεί συλλογές."
 
 #: /templates/homepage.html:49
 msgid "Add a new collection"
-msgstr ""
+msgstr "Προσθήκη νέας συλλογής"
 
 #: /templates/homepage.html:52
 msgid "Featured Apps"
-msgstr ""
+msgstr "Προβεβλημένες εφαρμογές"
 
 #: /templates/homepage.html:59
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "Δεν έχουν δημιουργηθεί κατηγορίες προβεβλημένων εφαρμογών."
 
 #: /templates/homepage.html:63
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Προσθήκη νέας συλλογής προβεβλημένων εφαρμογών"
 
 #: /templates/homepage.html:68
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Ράφια διαχειριστή"
 
 #: /templates/homepage.html:76
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "Δεν έχουν δημιουργηθεί ράφια διαχειριστή."
 
 #: /templates/homepage.html:80
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "Πρόσθεσε νέο ράφι διαχειριστή"
 
 #: /templates/homepage.html:82
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "Επιλέξτε πάροχο για να δείτε ράφια διαχειριστή."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Νέα {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "Το όνομα δεν είναι εμφανές στους χρήστες, είναι μόνο για ευκολία."
 
 #: /templates/new_collection.html:16
 msgid "Collection Slug"
-msgstr ""
+msgstr "Ψευδώνυμο συλλογής"
 
 #: /templates/new_collection.html:19
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
+msgstr "Τα ψευδώνυμα πρέπει να αρχίζουν με γράμμα και περιέχουν μόνο γράμματα, αριθμούς, και κάτω παύλες. Πρέπει να είναι ως 30 χαρακτήρες."
 
 #: /templates/new_collection.html:25
 msgid "Author Name"
-msgstr ""
+msgstr "Όνομα συντάκτη"
 
 #: /templates/new_collection.html:31
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #: /templates/new_collection.html:33
 msgid "A description is required"
-msgstr ""
+msgstr "Απαιτείται μια περιγραφή"
 
 #: /templates/new_collection.html:68
 msgid "Background Color"
-msgstr ""
+msgstr "Χρώμα φόντου"
 
 #: /templates/new_collection.html:70
 msgid "A background color is required"
-msgstr ""
+msgstr "Απαιτείται ένα χρώμα φόντου"
 
 #: /templates/new_collection.html:71 /templates/new_collection.html:78
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Παρακαλώ εισάγετε ένα δεκαεξαδικό χρώμα (π.χ.: \"#AB78EF\")"
 
 #: /templates/new_collection.html:75
 msgid "Text Color"
-msgstr ""
+msgstr "Χρώμα κειμένου"
 
 #: /templates/new_collection.html:77
 msgid "A text color is required"
-msgstr ""
+msgstr "Απαιτείται χρώμα κειμένου"
 
 #: /templates/new_collection.html:84
 msgid "Create"
-msgstr ""
+msgstr "Δημιουργία"
 
 #: /templates/new_collection.html:89
 msgid "Unauthorized"
-msgstr ""
+msgstr "Μη εγκεκριμένο"
 
 #: /templates/new_collection.html:90
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "Πρέπει να είστε συνδεδεμένοι για να δημιουργήσετε συλλογές."
 
 #: /templates/_macros/dropdowns.html:13
 msgid "Loading categories..."
-msgstr ""
+msgstr "Φόρτωση κατηγοριών..."
 
 #: /templates/_macros/dropdowns.html:25
 msgid "-- None --"
-msgstr ""
+msgstr "-- Τίποτα --"
 
 #: /templates/_macros/dropdowns.html:33
 msgid "Loading regions..."
-msgstr ""
+msgstr "Φόρτωση περιοχών..."
 
 #: /templates/_macros/dropdowns.html:51
 msgid "Loading carriers..."
-msgstr ""
+msgstr "Φόρτωση παρόχων..."
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "Ωχ όχι!"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "Παρουσιάστηκε κάποιο σφάλμα."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "Σφάλμα κατά τη φόρτωση περισσότερων"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "Προσπαθήστε ξανά"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "Έχετε αποσυνδεθεί"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "Έχετε συνδεθεί"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
+msgstr "Η σύνδεση persona απέτυχε. Μήπως δεν έχετε λογαριασμό με αυτή τη διεύθυνση email;"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "Η σύνδεση persona απέτυχε. Παρουσιάστηκε ένα σφάλμα διακομιστή."
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "Αποθήκευση"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Άλλες τοποθεσίες"
 
 #: /media/js/settings.js:38
 msgid "Basic Collection"
-msgstr ""
+msgstr "Βασική συλλογή"
 
 #: /media/js/settings.js:39
 msgid "Featured App Collection"
-msgstr ""
+msgstr "Προβεβλημένες συλλογές εφαρμογών"
 
 #: /media/js/settings.js:40
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Ράφι διαχειριστή"
 
 #: /media/js/navigation.js:50
 msgid "No internet connection"
-msgstr ""
+msgstr "Χωρις σύνδεση"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:25
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<b>{n}</b> χαρακτήρας απέμεινε."
+msgstr[1] "<b>{n}</b> χαρακτήρες απέμειναν."
 
 #: /media/js/views/collection.js:9
 msgid "Make Collection Hidden"
-msgstr ""
+msgstr "Συλλογή κρυφή"
 
 #: /media/js/views/collection.js:11
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "Η συλλογή είναι τώρα κρυφή"
 
 #: /media/js/views/collection.js:12
 msgid "Collection is now public"
-msgstr ""
+msgstr "Η συλλογή είναι τώρα δημόσια"
 
 #: /media/js/views/collection.js:58
 msgid "Successfully duplicated"
-msgstr ""
+msgstr "Αντιγράφηκε επιτυχώς"
 
 #: /media/js/views/collection.js:62
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "η αντιγραφή της συλλογής απέτυχε"
 
 #: /media/js/views/collection.js:90
 msgid "Search failed :-("
-msgstr ""
+msgstr "Η αναζήτηση απέτυχε :-("
 
 #: /media/js/views/collection.js:117
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "Αφαίρεση {app} από συλλογή."
 
 #: /media/js/views/collection.js:121
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "Δεν ήταν δυνατή η διαγραφή της εφαρμογής από τη συλλογή."
 
 #: /media/js/views/collection.js:145
 msgid "App added to collection."
-msgstr ""
+msgstr "Η εφαρμογή προστέθηκε στη συλλογή."
 
 #: /media/js/views/collection.js:149
 msgid "Failed to add app."
-msgstr ""
+msgstr "Η προσθήκη της συλλογής απέτυχε."
 
 #: /media/js/views/collection.js:160
 msgid "Are you sure you want to delete this collection?"
-msgstr ""
+msgstr "Είστε βέβαιοι πως θέλετε να διαγράψετε τη συλλογή;"
 
 #: /media/js/views/collection.js:183
 msgid "Collection deleted."
-msgstr ""
+msgstr "Συλλογή διαγράφηκε."
 
 #: /media/js/views/collection.js:187
 msgid "Failed to delete collection."
-msgstr ""
+msgstr "Η διαγραφή της συλλογής απέτυχε."
 
 #: /media/js/views/collection.js:203
 msgid "Order updated"
-msgstr ""
+msgstr "Η σειρά ενημερώθηκε"
 
 #: /media/js/views/collection.js:205
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "Απέτυχε να ενημερωθεί η σειρά της συλλογής. Δοκιμάστε να ανανεώσετε τη σελίδα."
 
 #: /media/js/views/collection.js:232
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "Απέτυχε ο ορισμός της δημόσιας ιδιότητας της συλλογής"
 
 #: /media/js/views/collection.js:289
 msgid "Saved {field}"
-msgstr ""
+msgstr "Αποθηκεύτηκε {field}"
 
 #: /media/js/views/collection.js:300
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "Αποτυχία ενημέρωσης {field}"
 
 #: /media/js/views/collection.js:321
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "Μη συμβατή: Η εφαρμογή δεν είναι διαθέσιμη στην περιοχή της συλλογής."
 
 #: /media/js/views/collection.js:348
 msgid "Collection"
-msgstr ""
+msgstr "Συλλογή"
 
 #: /media/js/views/homepage.js:36
 msgid "Overview"
-msgstr ""
+msgstr "Περίληψη"
 
 #: /media/js/views/new_collection.js:34
 msgid "New collection created."
-msgstr ""
+msgstr "Δημιουργήθηκε νέα συλλογή."
 
 #: /media/js/views/new_collection.js:37
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "Απέτυχε να δημιουργηθεί νέα συλλογή."
 
 #: /media/js/views/new_collection.js:93
 msgid "New Collection"
-msgstr ""
+msgstr "Νέα συλλογή"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "Δε βρέθηκε"
