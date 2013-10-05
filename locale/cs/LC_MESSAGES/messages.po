@@ -3,11 +3,12 @@ msgstr ""
 "Project-Id-Version: Rockfuel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-12T16:21:18.130Z\n"
-"PO-Revision-Date: 2013-09-28 23:30+0100\n"
+"PO-Revision-Date: 2013-10-02 10:41+0100\n"
 "Last-Translator: Pavel Cvrček <pcvrcek@mozilla.cz>\n"
 "Language-Team: Czech Mozilla <info@mozilla.cz>\n"
 "MIME-Version: 1.0\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 "Language: cs\n"
@@ -152,6 +153,8 @@ msgid ""
 "In order to create or modify collections, you must be logged in as a "
 "Marketplace Publisher to effectively use this tool."
 msgstr ""
+"Pro použití tohoto nástroje pro vytváření či úpravu sbírek musíte být "
+"přihlášen(a) jako Marketplace Publisher."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:47
 msgid "Category"
@@ -183,11 +186,11 @@ msgstr "Propagované aplikace"
 
 #: /templates/homepage.html:59
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "Nebyla vytvořena žádná sekce propagovaných aplikací."
 
 #: /templates/homepage.html:63
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Přidat novou propagovanou sbírku aplikací"
 
 #: /templates/homepage.html:68
 msgid "Operator Shelves"
@@ -314,10 +317,12 @@ msgid ""
 "Persona login failed. Maybe you don't have an account under that email "
 "address?"
 msgstr ""
+"Nastala chyba při přihlášení pomocí Persona.  Možná nemáte účet pod touto e-"
+"mailovou adresou?"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "Nastala chyba při přihlášení pomocí Persona. Nastala chyba na serveru."
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -325,15 +330,15 @@ msgstr "Uložit"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Ostatní jazyky"
 
 #: /media/js/settings.js:38
 msgid "Basic Collection"
-msgstr ""
+msgstr "Základní sbírka"
 
 #: /media/js/settings.js:39
 msgid "Featured App Collection"
-msgstr ""
+msgstr "Doporučovaná sbírka aplikací"
 
 #: /media/js/settings.js:40
 msgid "Operator Shelf"
@@ -369,7 +374,7 @@ msgstr "Úspěšně zduplikováno."
 
 #: /media/js/views/collection.js:62
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "Chyba při duplikování sbírky"
 
 #: /media/js/views/collection.js:90
 msgid "Search failed :-("
@@ -377,7 +382,7 @@ msgstr "Vyhledávání selhalo :("
 
 #: /media/js/views/collection.js:117
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "Ze sbírky byla odebrána aplikace {app}."
 
 #: /media/js/views/collection.js:121
 msgid "Could not delete app from collection."
@@ -405,15 +410,15 @@ msgstr "Chyba při mazání sbírky."
 
 #: /media/js/views/collection.js:203
 msgid "Order updated"
-msgstr ""
+msgstr "Pořadí aktualizováno"
 
 #: /media/js/views/collection.js:205
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "Selhalo nastavení pořadí sbírky. Zkuste obnovit stránku."
 
 #: /media/js/views/collection.js:232
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "Nastavení veřejnosti sbírky selhalo"
 
 #: /media/js/views/collection.js:289
 msgid "Saved {field}"
@@ -421,11 +426,11 @@ msgstr "Uloženo {field}"
 
 #: /media/js/views/collection.js:300
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "Chyba při aktualizaci {field}"
 
 #: /media/js/views/collection.js:321
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "Nekompatibilita: Aplikace není dostupná ve sbírce pro region."
 
 #: /media/js/views/collection.js:348
 msgid "Collection"
@@ -451,4 +456,3 @@ msgstr "Nová sbírka"
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
 msgstr "Nebylo nalezeno"
-
