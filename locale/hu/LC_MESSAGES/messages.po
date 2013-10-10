@@ -3,143 +3,147 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-12T16:21:18.130Z\n"
-"PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2013-10-10 00:03+0000\n"
+"Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n !=1);\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1381363400.0\n"
 
 #: /templates/collection.html:19
 msgid "Author:"
-msgstr ""
+msgstr "Szerző:"
 
 #: /templates/collection.html:26
 msgid "Slug:"
-msgstr ""
+msgstr "Slug:"
 
 #: /templates/collection.html:32 /templates/_macros/collections.html:13
 msgid "Region:"
-msgstr ""
+msgstr "Régió:"
 
 #: /templates/collection.html:38 /templates/_macros/collections.html:17
 msgid "Carrier:"
-msgstr ""
+msgstr "Szolgáltató:"
 
 #: /templates/collection.html:45 /templates/_macros/collections.html:21
 msgid "Category:"
-msgstr ""
+msgstr "Kategória:"
 
 #: /templates/collection.html:46 /templates/_macros/dropdowns.html:6 /media/js/views/collection.js:257
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Minden kategória (kezdőoldal)"
 
 #: /templates/collection.html:52
 msgid "Description:"
-msgstr ""
+msgstr "Leírás:"
 
 #: /templates/collection.html:60
 msgid "Customization"
-msgstr ""
+msgstr "Személyre szabás"
 
 #: /templates/collection.html:62
 msgid "Background:"
-msgstr ""
+msgstr "Háttér:"
 
 #: /templates/collection.html:70
 msgid "Text:"
-msgstr ""
+msgstr "Szöveg:"
 
 #: /templates/collection.html:80
 msgid "Apps"
-msgstr ""
+msgstr "Appok"
 
 #: /templates/collection.html:86
 msgid "Add app to collection"
-msgstr ""
+msgstr "App gyűjteményhez adása"
 
 #: /templates/collection.html:94 /media/js/views/collection.js:10
 msgid "Make Collection Public"
-msgstr ""
+msgstr "Gyűjtemény nyilvánossá tétele"
 
 #: /templates/collection.html:98
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Gyűjtemény másolása"
 
 #: /templates/collection.html:102
 msgid "Delete collection"
-msgstr ""
+msgstr "Gyűjtemény törlése"
 
 #: /templates/collection.html:109
 msgid "Error loading the collection."
-msgstr ""
+msgstr "Hiba a gyűjtemény betöltésekor."
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Appok hozzáadása"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Keresés"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "Nem"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Igen"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Gyűjtemény másolása"
 
 #: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: /templates/duplicate_collection.html:8 /templates/new_collection.html:12
 msgid "A name is required"
-msgstr ""
+msgstr "Egy név szükséges"
 
 #: /templates/duplicate_collection.html:12
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: /templates/duplicate_collection.html:14 /templates/new_collection.html:18
 msgid "A slug is required"
-msgstr ""
+msgstr "Egy slug szükséges"
 
 #: /templates/duplicate_collection.html:15
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
+"A slug betűvel kezdődik, és csak betűket, számokat és kötőjeleket tartalmaz. "
+"Legfeljebb 30 karakter lehet, és nem lehet azonos egy meglévő "
+"gyűjteményével."
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
-msgstr ""
+msgstr "Megkettőzés"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Gondozói eszköz"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Kijelentkezés"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Marketplace Publisher"
-msgstr ""
+msgstr "Nincs bejelentkezve Marketplace közzétevőként"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool."
@@ -147,19 +151,19 @@ msgstr ""
 
 #: /templates/homepage.html:13 /templates/new_collection.html:47
 msgid "Category"
-msgstr ""
+msgstr "Kategória"
 
 #: /templates/homepage.html:19 /templates/new_collection.html:52
 msgid "Region"
-msgstr ""
+msgstr "Régió"
 
 #: /templates/homepage.html:25 /templates/new_collection.html:58
 msgid "Carrier"
-msgstr ""
+msgstr "Szolgáltató"
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Gyűjtemények"
 
 #: /templates/homepage.html:45
 msgid "No collections have been created."
@@ -171,7 +175,7 @@ msgstr ""
 
 #: /templates/homepage.html:52
 msgid "Featured Apps"
-msgstr ""
+msgstr "Kiemelt appok"
 
 #: /templates/homepage.html:59
 msgid "No featured app sections have been created."
@@ -183,7 +187,7 @@ msgstr ""
 
 #: /templates/homepage.html:68
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Operátori polcok"
 
 #: /templates/homepage.html:76
 msgid "No operator shelves have been created."
@@ -199,7 +203,7 @@ msgstr ""
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Új {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
@@ -207,111 +211,115 @@ msgstr ""
 
 #: /templates/new_collection.html:16
 msgid "Collection Slug"
-msgstr ""
+msgstr "Gyűjtemény slug"
 
 #: /templates/new_collection.html:19
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
 msgstr ""
+"A slug betűvel kezdődik, és csak betűket, számokat és kötőjeleket tartalmaz. "
+"Legfeljebb 30 karakter lehet."
 
 #: /templates/new_collection.html:25
 msgid "Author Name"
-msgstr ""
+msgstr "A szerző neve"
 
 #: /templates/new_collection.html:31
 msgid "Description"
-msgstr ""
+msgstr "Leírás"
 
 #: /templates/new_collection.html:33
 msgid "A description is required"
-msgstr ""
+msgstr "Egy leírás szükséges"
 
 #: /templates/new_collection.html:68
 msgid "Background Color"
-msgstr ""
+msgstr "Háttérszín"
 
 #: /templates/new_collection.html:70
 msgid "A background color is required"
-msgstr ""
+msgstr "Egy háttérszín szükséges"
 
 #: /templates/new_collection.html:71 /templates/new_collection.html:78
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Adjon meg egy hexa színt (pl. „#AB78EF”)"
 
 #: /templates/new_collection.html:75
 msgid "Text Color"
-msgstr ""
+msgstr "Szövegszín"
 
 #: /templates/new_collection.html:77
 msgid "A text color is required"
-msgstr ""
+msgstr "Egy szövegszín szükséges"
 
 #: /templates/new_collection.html:84
 msgid "Create"
-msgstr ""
+msgstr "Létrehozás"
 
 #: /templates/new_collection.html:89
 msgid "Unauthorized"
-msgstr ""
+msgstr "Jogosulatlan"
 
 #: /templates/new_collection.html:90
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "A gyűjtemények létrehozásához be kell jelentkeznie."
 
 #: /templates/_macros/dropdowns.html:13
 msgid "Loading categories..."
-msgstr ""
+msgstr "Kategóriák betöltése…"
 
 #: /templates/_macros/dropdowns.html:25
 msgid "-- None --"
-msgstr ""
+msgstr "-- Nincs --"
 
 #: /templates/_macros/dropdowns.html:33
 msgid "Loading regions..."
-msgstr ""
+msgstr "Régiók betöltése…"
 
 #: /templates/_macros/dropdowns.html:51
 msgid "Loading carriers..."
-msgstr ""
+msgstr "Szolgáltatók betöltése…"
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "Jaj ne!"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "Hiba történt."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "Hiba több betöltésekor"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "Próbálja újra"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "Kijelentkezett"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "Bejelentkezett"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
 msgstr ""
+"A Persona bejelentkezés sikertelen. Talán nincs fiókja ehhez az e-mail "
+"címhez?"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "A Persona bejelentkezés sikertelen. Kiszolgálóhiba történt."
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Más területek"
 
 #: /media/js/settings.js:38
 msgid "Basic Collection"
@@ -327,14 +335,14 @@ msgstr ""
 
 #: /media/js/navigation.js:50
 msgid "No internet connection"
-msgstr ""
+msgstr "Nincs internetkapcsolat"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:25
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<b>{n}</b> karakter maradt."
+msgstr[1] "<b>{n}</b> karakter maradt."
 
 #: /media/js/views/collection.js:9
 msgid "Make Collection Hidden"
@@ -358,7 +366,7 @@ msgstr ""
 
 #: /media/js/views/collection.js:90
 msgid "Search failed :-("
-msgstr ""
+msgstr "A keresés sikertelen :-("
 
 #: /media/js/views/collection.js:117
 msgid "Removed {app} from collection."
@@ -414,25 +422,25 @@ msgstr ""
 
 #: /media/js/views/collection.js:348
 msgid "Collection"
-msgstr ""
+msgstr "Gyűjtemény"
 
 #: /media/js/views/homepage.js:36
 msgid "Overview"
-msgstr ""
+msgstr "Áttekintés"
 
 #: /media/js/views/new_collection.js:34
 msgid "New collection created."
-msgstr ""
+msgstr "Új gyűjtemény létrehozva."
 
 #: /media/js/views/new_collection.js:37
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "Az új gyűjtemény létrehozása meghiúsult."
 
 #: /media/js/views/new_collection.js:93
 msgid "New Collection"
-msgstr ""
+msgstr "Új gyűjtemény"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "Nem található"
