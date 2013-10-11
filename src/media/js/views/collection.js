@@ -7,11 +7,23 @@ define('views/collection',
     var gettext = l10n.gettext;
     var collection_model = models('collection');
     var app_model = models('app');
-    var collStrings = {
-        makeHidden: gettext('Make Collection Hidden'),
-        makePublic: gettext('Make Collection Public'),
-        nowHidden: gettext('Collection is now hidden'),
-        nowPublic: gettext('Collection is now public')
+
+    // msgs.boolean_key_name.state
+    var msgs = {
+        is_public: {
+            disable: gettext('Make Collection Hidden'),
+            enable: gettext('Make Collection Public'),
+            nowDisabled: gettext('Collection is now hidden'),
+            nowEnabled: gettext('Collection is now public'),
+            failed: gettext('Setting collection public property failed')
+        },
+        can_be_hero: {
+            enable: gettext('Enable "hero" flag'),
+            disable: gettext('Disable "hero" flag'),
+            nowEnabled: gettext('The "hero" flag is now enabled'),
+            nowDisabled: gettext('The "hero" flag is now disabled'),
+            failed: gettext('Setting collection "hero" property failed')
+        }
     };
 
     function get_collection() {
@@ -22,13 +34,14 @@ define('views/collection',
         $('ul.apps').sortable({handle: '.handle'});
     }
 
-    function update_public_toggle(data) {
-        var $link = $('.toggle-public');
-        var $b = $link.find('b').detach();
-        if (data.is_public) {
-            $link.removeClass('nonpublic').text(' ' + collStrings.makeHidden).prepend($b);
+    function update_toggle($elm, data) {
+        var $b = $elm.find('b').detach();
+        var key = $elm.data('key');
+
+        if (data[key]) {
+            $elm.removeClass('offstate').text(' ' + msgs[key].disable).prepend($b);
         } else {
-            $link.addClass('nonpublic').text(' ' + collStrings.makePublic).prepend($b);
+            $elm.addClass('offstate').text(' ' + msgs[key].enable).prepend($b);
         }
     }
 
@@ -275,32 +288,33 @@ define('views/collection',
             notification.notification({message: gettext('Failed to update collection order. Try refreshing the page.')});
         });
 
-    }).on('click', '.toggle-public', function(e) {
-        // TODO: Spinner for 'saving'.
+    }).on('click', '.toggle-flag', function(e) {
         e.preventDefault();
         var collection = get_collection();
         var $this = $(this);
-        var successMsg = collStrings.nowPublic;
+        var key = $this.data('key');
+        var successMsg = msgs[key].nowEnabled;
+        var data = {};
 
-        var data = {is_public: false};
+        data[key] = false;
 
         $this.addClass('saving');
 
-        if ($this.hasClass('nonpublic')) { // Make collection public.
-            data.is_public = true;
-        } else { // Make collection hidden.
-            successMsg = collStrings.nowHidden;
+        if ($this.hasClass('offstate')) { // Enable flag.
+            data[key] = true;
+        } else { // Disable flag.
+            successMsg = msgs[key].nowDisabled;
         }
 
         requests.patch(
             urls.api.url('collection', collection.id),
             data
         ).then(function() {
-            update_public_toggle(data);
+            update_toggle($this, data);
             notification.notification({message: successMsg});
         }, function() {
             notification.notification(
-                {message: gettext('Setting collection public property failed')});
+                {message: msgs[key].failed});
         }).always(function() {
             $this.removeClass('saving');
         });
@@ -525,7 +539,9 @@ define('views/collection',
 
             apply_incompat(data.region, data.apps);
 
-            update_public_toggle(data);
+            $('.toggle-flag').each(function() {
+                update_toggle($(this), data);
+            });
 
             // Load in the collection image.
             if (data.image) {

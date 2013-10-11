@@ -110,9 +110,13 @@
       </div>
     </div>
     <div class="third">
-      <div class="well only-logged-in">
-        <a href="#" class="toggle-public nonpublic" data-id="{{ id }}">
+      <div class="well only-logged-in only-is-curator">
+        <a href="#" class="toggle-flag offstate" data-id="{{ id }}" data-key="is_public">
           <b>&diams;</b> {{ _('Make Collection Public') }}</a>
+      </div>
+      <div class="well only-logged-in only-is-curator">
+        <a href="#" class="toggle-flag offstate" data-id="{{ id }}" data-key="can_be_hero">
+          <b>&dagger;</b> {{ _('Enable "hero" flag') }}</a>
       </div>
       <div class="well only-logged-in">
         <a href="#" class="duplicate_collection show-dialog" data-id="{{ id }}" data-dialog="duplicate_collection">
