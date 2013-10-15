@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-12T16:21:18.130Z\n"
-"PO-Revision-Date: 2013-10-08 10:48+0000\n"
+"PO-Revision-Date: 2013-10-15 16:32+0000\n"
 "Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: none\n"
 "Language: nl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1381229322.0\n"
+"X-POOTLE-MTIME: 1381854764.0\n"
 
 #: /templates/collection.html:19
 msgid "Author:"
@@ -188,27 +188,22 @@ msgid "Add a new featured app collection"
 msgstr "Nieuwe collectie voor aanbevolen apps toevoegen"
 
 #: /templates/homepage.html:68
-#, fuzzy
 msgid "Operator Shelves"
 msgstr "Operatorplanken"
 
 #: /templates/homepage.html:76
-#, fuzzy
 msgid "No operator shelves have been created."
 msgstr "Er zijn geen operatorplanken aangemaakt."
 
 #: /templates/homepage.html:80
-#, fuzzy
 msgid "Add a new operator shelf"
 msgstr "Nieuwe operatorplank toevoegen"
 
 #: /templates/homepage.html:82
-#, fuzzy
 msgid "Please select a carrier to see operator shelves."
 msgstr "Kies een provider om operatorplanken te zien."
 
 #: /templates/new_collection.html:2
-#, fuzzy
 msgid "New {collection_type}"
 msgstr "Nieuw(e) {collection_type}"
 
@@ -338,7 +333,6 @@ msgid "Featured App Collection"
 msgstr "Collectie Aanbevolen apps"
 
 #: /media/js/settings.js:40
-#, fuzzy
 msgid "Operator Shelf"
 msgstr "Operatorplank"
 
