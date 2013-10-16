@@ -4,9 +4,9 @@
 
   <form class="form-grid">
     <label>
-      <span class="required">{{ _('User ID') }}</span>
-      <input type="number" name="uid" required pattern="[1-9][0-9]*">
-      <p class="hint">{{ _('Enter the ID of a user. User IDs can be found in <a href="{url}" rel="external">the lookup tool</a>.', url='/lookup/') }}</p>
+      <span class="required">{{ _('User Email Address') }}</span>
+      <input type="email" name="uid" required>
+      <p class="hint">{{ _('Enter the email address of a user that you wish to make a curator for this collection.') }}</p>
     </label>
 
     <label><button type="submit" class="button">{{ _("Namaste") }}</label>
