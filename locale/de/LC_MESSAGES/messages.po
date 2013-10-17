@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-03 07:27+0000\n"
-"Last-Translator: Matjaž <m@owca.info>\n"
+"PO-Revision-Date: 2013-10-17 15:36+0000\n"
+"Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -12,23 +12,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1380785229.0\n"
+"X-POOTLE-MTIME: 1382024167.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Einen Verwalter hinzufügen"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "E-Mail-Adresse des Benutzers"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie zum Verwalter dieser "
+"Sammlung machen möchten."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -64,31 +66,33 @@ msgstr "Anpassung"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Hintergrundgrafik:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Vorschaugrafik wird geladen"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Ziehen Sie in das folgende Feld eine PNG- oder JPG-Grafik, oder <span>wählen "
+"Sie eine Datei aus</span>, um eine Grafik hochzuladen."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Ihr Browser unterstützt Canvas nicht."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Gespeicherte Grafik löschen"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Grafik speichern"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Abbrechen und Zurücksetzen"
 
 #: /templates/collection.html:83
 msgid "Background:"
@@ -120,15 +124,15 @@ msgstr "Sammlung löschen"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Verwalter"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Es gibt keine Verwalter für diese Sammlung."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Verwalter hinzufügen"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -199,14 +203,18 @@ msgstr "Anmelden"
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr ""
+"Die Rocketfuel-Kennzeichnung ist deaktiviert. Im Verwaltungswerkzeug "
+"durchgeführte Änderungen werden nicht auf der öffentlichen Seite erscheinen."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "Sie sind nicht als App-Verwalter angemeldet"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter "
+"anmelden, um dieses Werkzeug effektiv verwenden zu können."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -350,15 +358,15 @@ msgstr "Versuchen Sie es erneut"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "Sammlung ist öffentlich"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Es gibt keine öffentlichen Sammlungen dieses Typs."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -425,23 +433,23 @@ msgstr "Veröffentlichung der Sammlung fehlgeschlagen"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "„Hero“-Markierung aktivieren"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "„Hero“-Markierung deaktivieren"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "Die „Hero“-Markierung ist jetzt aktiviert"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "Die „Hero“-Markierung ist jetzt deaktiviert"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Setzen der „Hero“-Eigenschaft für die Sammlung ist fehlgeschlagen"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -457,23 +465,23 @@ msgstr "Suche fehlgeschlagen :-("
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Verwalter hinzugefügt; schauen Sie in Kürze wieder vorbei"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "Verwalter hinzugefügt"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Verwalter konnte nicht hinzugefügt werden"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "Verwalter entfernt"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Verwalter konnte nicht entfernt werden"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
@@ -525,23 +533,23 @@ msgstr "Inkompatibel: App nicht in der Region der Sammlung verfügbar."
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "Keine Grafik angegeben"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "Grafik gelöscht"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Grafik konnte nicht gelöscht werden, vermutlich Bug 917081"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "Grafik gespeichert"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "Grafik konnte nicht gespeichert werden"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
