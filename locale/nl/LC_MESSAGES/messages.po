@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12T16:21:18.130Z\n"
+"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
 "PO-Revision-Date: 2013-10-15 16:32+0000\n"
 "Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: none\n"
@@ -14,77 +14,125 @@ msgstr ""
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1381854764.0\n"
 
-#: /templates/collection.html:19
+#: /templates/add_curator.html:2
+msgid "Add a Curator"
+msgstr ""
+
+#: /templates/add_curator.html:6
+msgid "User Email Address"
+msgstr ""
+
+#: /templates/add_curator.html:8
+msgid "Enter the email address of a user that you wish to make a curator for this collection."
+msgstr ""
+
+#: /templates/add_curator.html:11
+msgid "Namaste"
+msgstr ""
+
+#: /templates/collection.html:20
 msgid "Author:"
 msgstr "Auteur:"
 
-#: /templates/collection.html:26
+#: /templates/collection.html:27
 msgid "Slug:"
 msgstr "Slug:"
 
-#: /templates/collection.html:32 /templates/_macros/collections.html:13
+#: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
 msgstr "Regio:"
 
-#: /templates/collection.html:38 /templates/_macros/collections.html:17
+#: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
 msgstr "Provider:"
 
-#: /templates/collection.html:45 /templates/_macros/collections.html:21
+#: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
 msgstr "Categorie:"
 
-#: /templates/collection.html:46 /templates/_macros/dropdowns.html:6 /media/js/views/collection.js:257
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
 msgstr "Alle categorieën (Startpagina)"
 
-#: /templates/collection.html:52
+#: /templates/collection.html:53
 msgid "Description:"
 msgstr "Beschrijving:"
 
-#: /templates/collection.html:60
+#: /templates/collection.html:61
 msgid "Customization"
 msgstr "Aanpassing"
 
-#: /templates/collection.html:62
+#: /templates/collection.html:63
+msgid "Background Image:"
+msgstr ""
+
+#: /templates/collection.html:64
+msgid "Loading preview image"
+msgstr ""
+
+#: /templates/collection.html:68
+msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
+msgstr ""
+
+#: /templates/collection.html:71
+msgid "Your browser does not support canvas."
+msgstr ""
+
+#: /templates/collection.html:74
+msgid "Clear Saved Image"
+msgstr ""
+
+#: /templates/collection.html:77
+msgid "Save Image"
+msgstr ""
+
+#: /templates/collection.html:78
+msgid "Cancel and Revert"
+msgstr ""
+
+#: /templates/collection.html:83
 msgid "Background:"
 msgstr "Achtergrond:"
 
-#: /templates/collection.html:70
+#: /templates/collection.html:91
 msgid "Text:"
 msgstr "Tekst:"
 
-#: /templates/collection.html:80
+#: /templates/collection.html:101
 msgid "Apps"
 msgstr "Apps"
 
-#: /templates/collection.html:86
+#: /templates/collection.html:108
 msgid "Add app to collection"
 msgstr "App toevoegen aan collectie"
 
-#: /templates/collection.html:94 /media/js/views/collection.js:10
+#: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
 msgstr "Collectie openbaar maken"
 
-#: /templates/collection.html:98
+#: /templates/collection.html:118
 msgid "Duplicate collection"
 msgstr "Collectie dupliceren"
 
-#: /templates/collection.html:102
+#: /templates/collection.html:122
 msgid "Delete collection"
 msgstr "Collectie verwijderen"
 
-#: /templates/collection.html:109
+#: /templates/collection.html:127
+msgid "Curators"
+msgstr ""
+
+#: /templates/collection.html:136
+msgid "There are no curators for this collection."
+msgstr ""
+
+#: /templates/collection.html:139
+msgid "Add Curator"
+msgstr ""
+
+#: /templates/collection.html:148
 msgid "Error loading the collection."
 msgstr "Fout tijdens laden van de collectie."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Apps toevoegen"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Zoeken"
 
 #: /templates/confirmation.html:0
 msgid "Close"
@@ -98,6 +146,14 @@ msgstr "Nee"
 msgid "Yes"
 msgstr "Ja"
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Apps toevoegen"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Zoeken"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Collectie dupliceren"
@@ -106,7 +162,7 @@ msgstr "Collectie dupliceren"
 msgid "Name"
 msgstr "Naam"
 
-#: /templates/duplicate_collection.html:8 /templates/new_collection.html:12
+#: /templates/duplicate_collection.html:8
 msgid "A name is required"
 msgstr "Een naam is vereist"
 
@@ -114,16 +170,14 @@ msgstr "Een naam is vereist"
 msgid "Slug"
 msgstr "Slug"
 
-#: /templates/duplicate_collection.html:14 /templates/new_collection.html:18
+#: /templates/duplicate_collection.html:14
 msgid "A slug is required"
 msgstr "Een slug is vereist"
 
 #: /templates/duplicate_collection.html:15
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
-"Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en "
-"koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan en kan "
-"niet hetzelfde zijn als de bestaande collectie."
+"Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan en kan niet hetzelfde zijn als de bestaande collectie."
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
@@ -141,25 +195,27 @@ msgstr "Afmelden"
 msgid "Sign In"
 msgstr "Aanmelden"
 
+#: /templates/header.html:11
+msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
+msgstr ""
+
 #: /templates/homepage.html:5
-msgid "You are not logged in as a Marketplace Publisher"
-msgstr "U bent niet aangemeld als een Marketplace-uitgever."
+msgid "You are not logged in as an App Curator"
+msgstr ""
 
 #: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Marketplace Publisher to effectively use this tool."
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
-"Voor het aanmaken of aanpassen van collecties moet u aangemeld zijn als een "
-"Marketplace-uitgever om dit hulpmiddel effectief te kunnen gebruiken."
 
-#: /templates/homepage.html:13 /templates/new_collection.html:47
+#: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "Categorie"
 
-#: /templates/homepage.html:19 /templates/new_collection.html:52
+#: /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "Regio"
 
-#: /templates/homepage.html:25 /templates/new_collection.html:58
+#: /templates/homepage.html:25 /templates/new_collection.html:55
 msgid "Carrier"
 msgstr "Provider"
 
@@ -167,39 +223,39 @@ msgstr "Provider"
 msgid "Collections"
 msgstr "Collecties"
 
-#: /templates/homepage.html:45
+#: /templates/homepage.html:46
 msgid "No collections have been created."
 msgstr "Er zijn geen collecties aangemaakt."
 
-#: /templates/homepage.html:49
+#: /templates/homepage.html:50
 msgid "Add a new collection"
 msgstr "Een nieuwe collectie toevoegen"
 
-#: /templates/homepage.html:52
+#: /templates/homepage.html:53
 msgid "Featured Apps"
 msgstr "Aanbevolen apps"
 
-#: /templates/homepage.html:59
+#: /templates/homepage.html:61
 msgid "No featured app sections have been created."
 msgstr "Er zijn geen collecties voor aanbevolen apps aangemaakt."
 
-#: /templates/homepage.html:63
+#: /templates/homepage.html:65
 msgid "Add a new featured app collection"
 msgstr "Nieuwe collectie voor aanbevolen apps toevoegen"
 
-#: /templates/homepage.html:68
+#: /templates/homepage.html:70
 msgid "Operator Shelves"
 msgstr "Operatorplanken"
 
-#: /templates/homepage.html:76
+#: /templates/homepage.html:79
 msgid "No operator shelves have been created."
 msgstr "Er zijn geen operatorplanken aangemaakt."
 
-#: /templates/homepage.html:80
+#: /templates/homepage.html:83
 msgid "Add a new operator shelf"
 msgstr "Nieuwe operatorplank toevoegen"
 
-#: /templates/homepage.html:82
+#: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
 msgstr "Kies een provider om operatorplanken te zien."
 
@@ -209,76 +265,69 @@ msgstr "Nieuw(e) {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
-"De naam is niet zichtbaar voor gebruikers, maar dient alleen voor het gemak."
+msgstr "De naam is niet zichtbaar voor gebruikers, maar dient alleen voor het gemak."
 
-#: /templates/new_collection.html:16
+#: /templates/new_collection.html:15
 msgid "Collection Slug"
 msgstr "Collectieslug"
 
-#: /templates/new_collection.html:19
+#: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en "
-"koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan."
+msgstr "Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan."
 
-#: /templates/new_collection.html:25
+#: /templates/new_collection.html:23
 msgid "Author Name"
 msgstr "Naam van auteur"
 
-#: /templates/new_collection.html:31
+#: /templates/new_collection.html:29
 msgid "Description"
 msgstr "Beschrijving"
 
-#: /templates/new_collection.html:33
-msgid "A description is required"
-msgstr "Een beschrijving is vereist."
-
-#: /templates/new_collection.html:68
+#: /templates/new_collection.html:65
 msgid "Background Color"
 msgstr "Achtergrondkleur"
 
-#: /templates/new_collection.html:70
+#: /templates/new_collection.html:67
 msgid "A background color is required"
 msgstr "Een achtergrondkleur is vereist."
 
-#: /templates/new_collection.html:71 /templates/new_collection.html:78
+#: /templates/new_collection.html:68 /templates/new_collection.html:75
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Voer een hex-kleur in (bv. “#AB78EF”)"
 
-#: /templates/new_collection.html:75
+#: /templates/new_collection.html:72
 msgid "Text Color"
 msgstr "Tekstkleur"
 
-#: /templates/new_collection.html:77
+#: /templates/new_collection.html:74
 msgid "A text color is required"
 msgstr "Een tekstkleur is vereist"
 
-#: /templates/new_collection.html:84
+#: /templates/new_collection.html:81
 msgid "Create"
 msgstr "Aanmaken"
 
-#: /templates/new_collection.html:89
+#: /templates/new_collection.html:86
 msgid "Unauthorized"
 msgstr "Niet geautoriseerd"
 
-#: /templates/new_collection.html:90
+#: /templates/new_collection.html:87
 msgid "You must be logged in to create collections."
 msgstr "U moet aangemeld zijn om collecties aan te maken."
 
-#: /templates/_macros/dropdowns.html:13
+#: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Categorieën laden…"
 
-#: /templates/_macros/dropdowns.html:25
+#: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
 msgstr "-- Geen --"
 
-#: /templates/_macros/dropdowns.html:33
+#: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
 msgstr "Regio’s laden…"
 
-#: /templates/_macros/dropdowns.html:51
+#: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
 msgstr "Providers laden…"
 
@@ -298,6 +347,26 @@ msgstr "Fout bij laden van meer"
 msgid "Try Again"
 msgstr "Opnieuw proberen"
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr ""
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr ""
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr ""
+
+#: /media/js/forms.js:50
+msgid "Save"
+msgstr "Opslaan"
+
+#: /media/js/forms.js:65
+msgid "Other Locales"
+msgstr "Andere locales"
+
 #: /media/js/login.js:8
 msgid "You have been signed out"
 msgstr "U bent afgemeld"
@@ -308,33 +377,11 @@ msgstr "U bent aangemeld"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
-"Persona-aanmelding mislukt. Misschien hebt u geen account onder dat "
-"e-mailadres?"
+msgstr "Persona-aanmelding mislukt. Misschien hebt u geen account onder dat e-mailadres?"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
 msgstr "Persona-aanmelding mislukt. Er is een serverfout opgetreden."
-
-#: /media/js/forms.js:50
-msgid "Save"
-msgstr "Opslaan"
-
-#: /media/js/forms.js:65
-msgid "Other Locales"
-msgstr "Andere locales"
-
-#: /media/js/settings.js:38
-msgid "Basic Collection"
-msgstr "Basiscollectie"
-
-#: /media/js/settings.js:39
-msgid "Featured App Collection"
-msgstr "Collectie Aanbevolen apps"
-
-#: /media/js/settings.js:40
-msgid "Operator Shelf"
-msgstr "Operatorplank"
 
 #: /media/js/navigation.js:50
 msgid "No internet connection"
@@ -347,103 +394,173 @@ msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "<b>{n}</b> teken resterend."
 msgstr[1] "<b>{n}</b> tekens resterend."
 
-#: /media/js/views/collection.js:9
+#: /media/js/settings.js:46
+msgid "Basic Collection"
+msgstr "Basiscollectie"
+
+#: /media/js/settings.js:47
+msgid "Featured App Collection"
+msgstr "Collectie Aanbevolen apps"
+
+#: /media/js/settings.js:48
+msgid "Operator Shelf"
+msgstr "Operatorplank"
+
+#: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
 msgstr "Collectie verborgen maken"
 
-#: /media/js/views/collection.js:11
+#: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
 msgstr "Collectie is nu verborgen"
 
-#: /media/js/views/collection.js:12
+#: /media/js/views/collection.js:17
 msgid "Collection is now public"
 msgstr "Collectie is nu openbaar"
 
-#: /media/js/views/collection.js:58
-msgid "Successfully duplicated"
-msgstr "Met succes gedupliceerd"
-
-#: /media/js/views/collection.js:62
-msgid "Failed to duplicate collection"
-msgstr "Dupliceren van collectie is mislukt"
-
-#: /media/js/views/collection.js:90
-msgid "Search failed :-("
-msgstr "Zoekopdracht mislukt :-("
-
-#: /media/js/views/collection.js:117
-msgid "Removed {app} from collection."
-msgstr "{app} uit collectie verwijderd."
-
-#: /media/js/views/collection.js:121
-msgid "Could not delete app from collection."
-msgstr "Kon app niet uit collectie verwijderen."
-
-#: /media/js/views/collection.js:145
-msgid "App added to collection."
-msgstr "App aan collectie toegevoegd."
-
-#: /media/js/views/collection.js:149
-msgid "Failed to add app."
-msgstr "App toevoegen is mislukt."
-
-#: /media/js/views/collection.js:160
-msgid "Are you sure you want to delete this collection?"
-msgstr "Weet u zeker dat u deze collectie wilt verwijderen?"
-
-#: /media/js/views/collection.js:183
-msgid "Collection deleted."
-msgstr "Collectie verwijderd."
-
-#: /media/js/views/collection.js:187
-msgid "Failed to delete collection."
-msgstr "Collectie verwijderen is mislukt."
-
-#: /media/js/views/collection.js:203
-msgid "Order updated"
-msgstr "Volgorde bijgewerkt"
-
-#: /media/js/views/collection.js:205
-msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
-"Bijwerken van collectievolgorde is mislukt. Probeer de pagina opnieuw te "
-"laden."
-
-#: /media/js/views/collection.js:232
+#: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
 msgstr "Openbare eigenschap van collectie instellen is mislukt"
 
-#: /media/js/views/collection.js:289
+#: /media/js/views/collection.js:21
+msgid "Enable \"hero\" flag"
+msgstr ""
+
+#: /media/js/views/collection.js:22
+msgid "Disable \"hero\" flag"
+msgstr ""
+
+#: /media/js/views/collection.js:23
+msgid "The \"hero\" flag is now enabled"
+msgstr ""
+
+#: /media/js/views/collection.js:24
+msgid "The \"hero\" flag is now disabled"
+msgstr ""
+
+#: /media/js/views/collection.js:25
+msgid "Setting collection \"hero\" property failed"
+msgstr ""
+
+#: /media/js/views/collection.js:74
+msgid "Successfully duplicated"
+msgstr "Met succes gedupliceerd"
+
+#: /media/js/views/collection.js:78
+msgid "Failed to duplicate collection"
+msgstr "Dupliceren van collectie is mislukt"
+
+#: /media/js/views/collection.js:109
+msgid "Search failed :-("
+msgstr "Zoekopdracht mislukt :-("
+
+#: /media/js/views/collection.js:137
+msgid "Curator added; check back in a bit"
+msgstr ""
+
+#: /media/js/views/collection.js:141
+msgid "Added curator"
+msgstr ""
+
+#: /media/js/views/collection.js:156
+msgid "Failed to add curator"
+msgstr ""
+
+#: /media/js/views/collection.js:172
+msgid "Removed curator"
+msgstr ""
+
+#: /media/js/views/collection.js:176
+msgid "Failed to remove curator"
+msgstr ""
+
+#: /media/js/views/collection.js:199
+msgid "Removed {app} from collection."
+msgstr "{app} uit collectie verwijderd."
+
+#: /media/js/views/collection.js:203
+msgid "Could not delete app from collection."
+msgstr "Kon app niet uit collectie verwijderen."
+
+#: /media/js/views/collection.js:227
+msgid "App added to collection."
+msgstr "App aan collectie toegevoegd."
+
+#: /media/js/views/collection.js:231
+msgid "Failed to add app."
+msgstr "App toevoegen is mislukt."
+
+#: /media/js/views/collection.js:242
+msgid "Are you sure you want to delete this collection?"
+msgstr "Weet u zeker dat u deze collectie wilt verwijderen?"
+
+#: /media/js/views/collection.js:266
+msgid "Collection deleted."
+msgstr "Collectie verwijderd."
+
+#: /media/js/views/collection.js:270
+msgid "Failed to delete collection."
+msgstr "Collectie verwijderen is mislukt."
+
+#: /media/js/views/collection.js:286
+msgid "Order updated"
+msgstr "Volgorde bijgewerkt"
+
+#: /media/js/views/collection.js:288
+msgid "Failed to update collection order. Try refreshing the page."
+msgstr "Bijwerken van collectievolgorde is mislukt. Probeer de pagina opnieuw te laden."
+
+#: /media/js/views/collection.js:378
 msgid "Saved {field}"
 msgstr "{field} opgeslagen"
 
-#: /media/js/views/collection.js:300
+#: /media/js/views/collection.js:389
 msgid "Failed to update {field}"
 msgstr "Bijwerken van {field} is mislukt"
 
-#: /media/js/views/collection.js:321
+#: /media/js/views/collection.js:414
 msgid "Incompatible: App not available in the collection's region."
 msgstr "Niet compatibel: app niet beschikbaar in regio van de collectie."
 
-#: /media/js/views/collection.js:348
+#: /media/js/views/collection.js:496
+msgid "No Image Provided"
+msgstr ""
+
+#: /media/js/views/collection.js:508
+msgid "Image cleared"
+msgstr ""
+
+#: /media/js/views/collection.js:510
+msgid "Could not clear image, probably bug 917081"
+msgstr ""
+
+#: /media/js/views/collection.js:521
+msgid "Image saved"
+msgstr ""
+
+#: /media/js/views/collection.js:524
+msgid "Could not save image"
+msgstr ""
+
+#: /media/js/views/collection.js:578
 msgid "Collection"
 msgstr "Collectie"
 
-#: /media/js/views/homepage.js:36
-msgid "Overview"
-msgstr "Overzicht"
-
-#: /media/js/views/new_collection.js:34
+#: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Nieuwe collectie aangemaakt."
 
-#: /media/js/views/new_collection.js:37
+#: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
 msgstr "Aanmaken van nieuwe collectie is mislukt."
 
-#: /media/js/views/new_collection.js:93
+#: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nieuwe collectie"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Overzicht"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
