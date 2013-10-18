@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-18 14:18+0000\n"
+"PO-Revision-Date: 2013-10-18 14:30+0000\n"
 "Last-Translator: Shaohua <shaohua.wen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382105934.0\n"
+"X-POOTLE-MTIME: 1382106601.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -24,7 +24,7 @@ msgstr "用户电子邮件地址"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr "请输入此集合馆长帐号的电子邮件地址"
+msgstr "请输入此收藏集的馆长帐号的电子邮件地址"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -72,147 +72,147 @@ msgstr "正在载入预览图"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
+msgstr "拖拽 PNG 或者 JPG 图片到下面，或<span>选择</span>要上传的文件。"
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "您的浏览器不支持 canvas。"
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "清除已保存的图片"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "保存图片"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "取消并还原"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "背景："
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "文字："
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "应用程序"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "将应用程序添加至收藏集"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr ""
+msgstr "公开收藏集"
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "复制收藏集"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "删除收藏集"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "馆长"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "此收藏集目前没有馆长。"
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "添加馆长"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
-msgstr ""
+msgstr "载入收藏集时发生错误。"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "添加应用程序"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "复制收藏集"
 
 #: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: /templates/duplicate_collection.html:8
 msgid "A name is required"
-msgstr ""
+msgstr "名称是必填的"
 
 #: /templates/duplicate_collection.html:12
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: /templates/duplicate_collection.html:14
 msgid "A slug is required"
-msgstr ""
+msgstr "Slug 是必填的"
 
 #: /templates/duplicate_collection.html:15
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
+msgstr "Slug 必须以字母开始，只能包含字母、数字、连接符。必须少于30个字符，且不能与已有收藏集重名。"
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
-msgstr ""
+msgstr "复制"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "策展工具"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "登出"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "登录"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
+msgstr "Rocketfuel 旗标已停用，在策展工具中所作的修改将不会反应在现实网站。"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "您并未登录成应用程序馆长"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
+msgstr "您必须先登录为馆长才能有效的使用此工具来建立或修改收藏集。"
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "分类"
 
 #: /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "区域"
 
 #: /templates/homepage.html:25 /templates/new_collection.html:55
 msgid "Carrier"
