@@ -3,31 +3,32 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-09-28 16:30+0800\n"
-"Last-Translator: Peter Pin-Guang Chen <petercpg@mail.moztw.org>\n"
+"PO-Revision-Date: 2013-10-18 04:54+0000\n"
+"Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: none\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1382072070.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "新增策展人"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "使用者電子郵件地址"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
+msgstr "輸入此收藏集策展人帳號的電子郵件地址"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "你好"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -63,31 +64,31 @@ msgstr "自訂"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "背景圖:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "正在載入預覽圖"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
+msgstr "拖曳 PNG 或 JPG 圖片到下面，或 <span>選擇</span> 要上傳的檔案。"
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "您的瀏覽器不支援 canvas。"
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "清除已存圖片"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "儲存圖片"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "取消並還原"
 
 #: /templates/collection.html:83
 msgid "Background:"
@@ -119,15 +120,15 @@ msgstr "刪除收藏集"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "策展人"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "此收藏級目前沒有策展人。"
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "新增策展人"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -195,15 +196,15 @@ msgstr "登入"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
+msgstr "Rocketfuel 旗標已停用，在策展工具中所作的修改將不會反應在現實網站。"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "您並未登入為應用程式策展人"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
+msgstr "您必須先登入為策展人才能有效地使用此工具來建立或修改收藏集。"
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -347,15 +348,15 @@ msgstr "再試一次"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "收藏集是公開的"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "目前沒有此類型的公開收藏集。"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -421,23 +422,23 @@ msgstr "收藏集公開屬性設定失敗"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "啟用「hero」旗標"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "停用「hero」旗標"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "已啟用「hero」旗標"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "已停用「hero」旗標"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "收藏集的「hero」旗標設定失敗"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -453,23 +454,23 @@ msgstr "搜尋失敗 :-("
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "已新增收藏集，請稍候再試看看"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "已新增策展人"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "策展人新增失敗"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "已移除策展人"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "策展人移除失敗"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
@@ -521,23 +522,23 @@ msgstr "不相容: 應用程式在收藏集的區域中無法使用。"
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "未提供圖片"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "已清除圖片"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "可能是因為 bug 917081 的關係，無法清除圖片。"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "已儲存圖片"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "無法儲存圖片"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
