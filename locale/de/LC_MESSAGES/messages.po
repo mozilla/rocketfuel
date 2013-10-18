@@ -24,9 +24,7 @@ msgstr "E-Mail-Adresse des Benutzers"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie zum Verwalter dieser "
-"Sammlung machen möchten."
+msgstr "Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie zum Verwalter dieser Sammlung machen möchten."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -74,9 +72,7 @@ msgstr "Vorschaugrafik wird geladen"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Ziehen Sie in das folgende Feld eine PNG- oder JPG-Grafik, oder <span>wählen "
-"Sie eine Datei aus</span>, um eine Grafik hochzuladen."
+msgstr "Ziehen Sie in das folgende Feld eine PNG- oder JPG-Grafik, oder <span>wählen Sie eine Datei aus</span>, um eine Grafik hochzuladen."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -202,9 +198,7 @@ msgstr "Anmelden"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-"Die Rocketfuel-Kennzeichnung ist deaktiviert. Im Verwaltungswerkzeug "
-"durchgeführte Änderungen werden nicht auf der öffentlichen Seite erscheinen."
+msgstr "Die Rocketfuel-Kennzeichnung ist deaktiviert. Im Verwaltungswerkzeug durchgeführte Änderungen werden nicht auf der öffentlichen Seite erscheinen."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
@@ -212,9 +206,7 @@ msgstr "Sie sind nicht als App-Verwalter angemeldet"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter "
-"anmelden, um dieses Werkzeug effektiv verwenden zu können."
+msgstr "Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter anmelden, um dieses Werkzeug effektiv verwenden zu können."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
