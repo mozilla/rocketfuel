@@ -3,27 +3,30 @@ msgstr ""
 "Project-Id-Version: Rockfuel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-02 10:41+0100\n"
-"Last-Translator: Pavel Cvrček <pcvrcek@mozilla.cz>\n"
+"PO-Revision-Date: 2013-10-18 13:13+0000\n"
+"Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: Czech Mozilla <info@mozilla.cz>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1382101992.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Přidat správce"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "E-mailová adresa uživatele"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Vložte e-mailovou adresu uživatele, u kterého chcete, aby se stal správcem "
+"této sbírky."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -63,31 +66,33 @@ msgstr "Přizpůsobení"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Obrázek pozadí:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Načítání náhledu obrázku"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Přetáhněte níže obrázek ve formátu PNG nebo JPG nebo <span>zvolte "
+"soubor</span> s obrázkem, který bude nahrán."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Váš prohlížeč nepodporuje canvas."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Vymazat uložený obrázek"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Uložit obrázek"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Zrušit a obnovit"
 
 #: /templates/collection.html:83
 msgid "Background:"
@@ -119,15 +124,15 @@ msgstr "Smazání sbírky"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Správci"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "U této sbírky není žádný správce."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Přidat správce"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -183,7 +188,7 @@ msgstr "Duplicitní"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Nástroje správců"
 
 #: /templates/header.html:7
 msgid "Sign Out"
@@ -199,11 +204,13 @@ msgstr ""
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "Nejste přihlášen(a) jako správce aplikace"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"Pokud si přejete vytvářet či upravovat sbírky, musíte být přihlášen jako "
+"správce, jinak nebudete moci efektivně používat tento nástroj."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -347,15 +354,15 @@ msgstr "Zkusit znovu"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "Sbírka je veřejná"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Neexistují veřejné sbírky tohoto typu."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -459,19 +466,19 @@ msgstr ""
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "Správce přidán"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Chyba při přidávání správce"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "Správce odebrán"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Chyba při odebírání správce"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
@@ -523,23 +530,23 @@ msgstr "Nekompatibilita: Aplikace není dostupná ve sbírce pro region."
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "Není žádný obrázek"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "Obrázek vymazán"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Nepodařilo se vymazat obrázek, pravděpodobně chyba 917081"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "Obrázek uložen"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "Nepodařilo se uložit obrázek"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
