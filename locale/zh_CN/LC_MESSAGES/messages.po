@@ -1,73 +1,74 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-10-18 14:18+0000\n"
+"Last-Translator: Shaohua <shaohua.wen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; charset=UTF-8\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1382105934.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "添加馆长"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "用户电子邮件地址"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
+msgstr "请输入此集合馆长帐号的电子邮件地址"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "你好"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "作者："
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "Slug:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "区域："
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "递送员："
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "分类"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "所有分类（首页）"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "描述："
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "定制"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "背景图片："
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "正在载入预览图"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
@@ -390,7 +391,6 @@ msgstr ""
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] ""
-msgstr[1] ""
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
