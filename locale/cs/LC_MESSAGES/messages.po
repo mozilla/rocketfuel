@@ -24,9 +24,7 @@ msgstr "E-mailová adresa uživatele"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Vložte e-mailovou adresu uživatele, u kterého chcete, aby se stal správcem "
-"této sbírky."
+msgstr "Vložte e-mailovou adresu uživatele, u kterého chcete, aby se stal správcem této sbírky."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -74,9 +72,7 @@ msgstr "Načítání náhledu obrázku"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Přetáhněte níže obrázek ve formátu PNG nebo JPG nebo <span>zvolte "
-"soubor</span> s obrázkem, který bude nahrán."
+msgstr "Přetáhněte níže obrázek ve formátu PNG nebo JPG nebo <span>zvolte soubor</span> s obrázkem, který bude nahrán."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -208,9 +204,7 @@ msgstr "Nejste přihlášen(a) jako správce aplikace"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Pokud si přejete vytvářet či upravovat sbírky, musíte být přihlášen jako "
-"správce, jinak nebudete moci efektivně používat tento nástroj."
+msgstr "Pokud si přejete vytvářet či upravovat sbírky, musíte být přihlášen jako správce, jinak nebudete moci efektivně používat tento nástroj."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
