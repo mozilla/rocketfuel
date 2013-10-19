@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-18 14:30+0000\n"
+"PO-Revision-Date: 2013-10-19 01:25+0000\n"
 "Last-Translator: Shaohua <shaohua.wen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382106601.0\n"
+"X-POOTLE-MTIME: 1382145903.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr "添加馆长"
+msgstr "添加策展人"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
@@ -24,7 +24,7 @@ msgstr "用户电子邮件地址"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr "请输入此收藏集的馆长帐号的电子邮件地址"
+msgstr "请输入此收藏集的策展人帐号的电子邮件地址"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -44,7 +44,7 @@ msgstr "区域："
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr "递送员："
+msgstr "运营商："
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
@@ -120,15 +120,15 @@ msgstr "删除收藏集"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr "馆长"
+msgstr "策展人"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr "此收藏集目前没有馆长。"
+msgstr "此收藏集目前没有策展人。"
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr "添加馆长"
+msgstr "添加策展人"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -200,11 +200,11 @@ msgstr "Rocketfuel 旗标已停用，在策展工具中所作的修改将不会�
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr "您并未登录成应用程序馆长"
+msgstr "您并未登录成应用程序策展人"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "您必须先登录为馆长才能有效的使用此工具来建立或修改收藏集。"
+msgstr "您必须先登录为策展人才能有效的使用此工具来建立或修改收藏集。"
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -216,351 +216,351 @@ msgstr "区域"
 
 #: /templates/homepage.html:25 /templates/new_collection.html:55
 msgid "Carrier"
-msgstr ""
+msgstr "运营商"
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "收藏集"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "尚未创建收藏集。"
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "添加新的收藏集"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr ""
+msgstr "精选应用程序"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "尚未创建精选应用程序分类。"
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "添加新的精选应用程序收藏集"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "电信运营商展示架"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "尚未创建电信运营商展示架"
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "添加新的电信运营商展示架"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "请选择一家电信运营商来查看他们的展示架"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "新 {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "该名称仅为了方便，而不会显示给用户。"
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr ""
+msgstr "收藏集 Slug"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
+msgstr "Slug 必须以字母开头，且只能包含字母、数字、连字符，还必须少于30个字符。"
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "作者姓名"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: /templates/new_collection.html:65
 msgid "Background Color"
-msgstr ""
+msgstr "背景色"
 
 #: /templates/new_collection.html:67
 msgid "A background color is required"
-msgstr ""
+msgstr "背景色是必须的"
 
 #: /templates/new_collection.html:68 /templates/new_collection.html:75
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "请输入 16 进制颜色代码（例如：“#AB78EF”）"
 
 #: /templates/new_collection.html:72
 msgid "Text Color"
-msgstr ""
+msgstr "文本颜色"
 
 #: /templates/new_collection.html:74
 msgid "A text color is required"
-msgstr ""
+msgstr "文本颜色是必须的"
 
 #: /templates/new_collection.html:81
 msgid "Create"
-msgstr ""
+msgstr "创建"
 
 #: /templates/new_collection.html:86
 msgid "Unauthorized"
-msgstr ""
+msgstr "未授权"
 
 #: /templates/new_collection.html:87
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "您必须登录才能创建收藏集。"
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "正在载入分类…"
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- 无 --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr ""
+msgstr "正在载入区域列表..."
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr ""
+msgstr "正在载入运营商列表..."
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "哦，不！"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "出错了。"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "载入更多时出错"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "重试"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "收藏集是公开的"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "目前没有此类型的公开收藏集。"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "其他语言"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "您已经登出"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "您已经登录"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
+msgstr "Persona 登录失败，也许您尚未使用该邮箱注册过帐号？"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "Persona 登录失败，发生服务端错误。"
 
 #: /media/js/navigation.js:50
 msgid "No internet connection"
-msgstr ""
+msgstr "无互联网连接"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:25
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
+msgstr[0] "还剩 <b>{n}</b> 个字符。"
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
-msgstr ""
+msgstr "基本收藏集"
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr ""
+msgstr "精选应用程序收藏集"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "电信运营商展示架"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr ""
+msgstr "隐藏收藏集"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "已隐藏收藏集"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
-msgstr ""
+msgstr "已公开收藏集"
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "收藏集公开属性设置失败"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "启用 “hero” 旗标"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "禁用“hero”旗标"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "已启用“hero”旗标"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "已禁用“hero”旗标"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "收藏集的“hero”属性设置失败"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr ""
+msgstr "已成功复制"
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "收藏集复制失败"
 
 #: /media/js/views/collection.js:109
 msgid "Search failed :-("
-msgstr ""
+msgstr "搜索失败:-("
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "已新增策展人，请稍后检查"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "已添加策展人"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "策展人添加失败"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "已移除策展人"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "策展人移除失败"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "已从收藏集移除 {app}。"
 
 #: /media/js/views/collection.js:203
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "无法从收藏集移除应用程序。"
 
 #: /media/js/views/collection.js:227
 msgid "App added to collection."
-msgstr ""
+msgstr "已添加应用程序至收藏集。"
 
 #: /media/js/views/collection.js:231
 msgid "Failed to add app."
-msgstr ""
+msgstr "应用程序添加失败。"
 
 #: /media/js/views/collection.js:242
 msgid "Are you sure you want to delete this collection?"
-msgstr ""
+msgstr "您确定要删除此收藏集吗？"
 
 #: /media/js/views/collection.js:266
 msgid "Collection deleted."
-msgstr ""
+msgstr "已删除收藏集。"
 
 #: /media/js/views/collection.js:270
 msgid "Failed to delete collection."
-msgstr ""
+msgstr "收藏集删除失败。"
 
 #: /media/js/views/collection.js:286
 msgid "Order updated"
-msgstr ""
+msgstr "已更新排列顺序"
 
 #: /media/js/views/collection.js:288
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "收藏集排列顺序更新失败，请尝试刷新页面。"
 
 #: /media/js/views/collection.js:378
 msgid "Saved {field}"
-msgstr ""
+msgstr "已保存 {field}"
 
 #: /media/js/views/collection.js:389
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "{field} 更新失败"
 
 #: /media/js/views/collection.js:414
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "不兼容：应用程序在收藏集的区域无法使用。"
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "未提供图片"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "已清除图片"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "可能是因为 Bug 917081 的关系，无法清除图片。"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "已保存图片"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "无法保存图片"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
-msgstr ""
+msgstr "收藏集"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
-msgstr ""
+msgstr "已新建收藏集。"
 
 #: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "无法创建新的收藏集。"
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
+msgstr "新建收藏集"
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
-msgstr ""
+msgstr "概观"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "未找到"
