@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-19 23:37+0400\n"
+"PO-Revision-Date: 2013-10-20 00:36+0400\n"
 "Last-Translator: Alexander L. Slovesnik <unghost@mozilla-russia.org>\n"
 "Language-Team: none\n"
 "Language: ru\n"
@@ -27,10 +27,12 @@ msgid ""
 "Enter the email address of a user that you wish to make a curator for this "
 "collection."
 msgstr ""
+"Введите адрес эл. почты пользователя, которого вы хотите сделать куратором "
+"этой подборки."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Намасте"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -46,7 +48,7 @@ msgstr "Регион:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "Оператор:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
@@ -63,11 +65,11 @@ msgstr "Описание:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Настройка"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr "Фоновое изображение"
+msgstr "Фоновое изображение:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
@@ -78,6 +80,8 @@ msgid ""
 "Drag a PNG or JPG image below or <span>select a file</span> to upload an "
 "image."
 msgstr ""
+"Перетащите ниже изображение PNG или JPG или <span>выберите файл</span>, "
+"чтобы загрузить изображение."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -97,7 +101,7 @@ msgstr "Отменить и вернуть"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Фон:"
 
 #: /templates/collection.html:91
 msgid "Text:"
@@ -109,7 +113,7 @@ msgstr "Приложения"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "Добавить приложение в подборку"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
@@ -125,7 +129,7 @@ msgstr "Удалить подборку"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Кураторы"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
@@ -177,7 +181,7 @@ msgstr "Короткий url"
 
 #: /templates/duplicate_collection.html:14
 msgid "A slug is required"
-msgstr "Требуется короткий URL"
+msgstr "Требуется короткий url"
 
 #: /templates/duplicate_collection.html:15
 msgid ""
@@ -185,10 +189,13 @@ msgid ""
 "hyphens. It must be 30 characters or less and cannot be the same as the "
 "existing collection."
 msgstr ""
+"Короткие url должны начинаться с буквы и могут содержать только буквы, цифры "
+"и дефисы. Их длина не должна превышать 30 символов и они не могут совпадать "
+"с существующей подборкой."
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
-msgstr ""
+msgstr "Дублировать"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
@@ -207,16 +214,20 @@ msgid ""
 "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not "
 "be reflected on the live site."
 msgstr ""
+"Флаг Rocketfuel отключён. Изменения, сделанные в Инструменте Куратора, не "
+"будут отражены на живом сайте."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "Вы не вошли в качестве куратора приложения"
 
 #: /templates/homepage.html:6
 msgid ""
 "In order to create or modify collections, you must be logged in as a Curator "
 "to effectively use this tool."
 msgstr ""
+"Для того, чтобы создавать или изменять подборки, необходимо войти в качестве "
+"Куратора для эффективного использования этого инструмента."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -228,11 +239,11 @@ msgstr "Регион"
 
 #: /templates/homepage.html:25 /templates/new_collection.html:55
 msgid "Carrier"
-msgstr ""
+msgstr "Оператор"
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Подборки"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
@@ -248,27 +259,27 @@ msgstr "Избранные приложения"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "Ни одного раздела избранных приложений не создано."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Добавить новую подборку избранных приложений"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Полки Оператора"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "Ни одной полки оператора не создано."
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "Добавить новую полку оператора"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "Пожалуйста, выберите оператора, чтобы увидеть полки оператора."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -276,17 +287,19 @@ msgstr "Новая {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "Имя не видно пользователям, оно только для удобства."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr "Короткий URL подборки"
+msgstr "Короткий url подборки"
 
 #: /templates/new_collection.html:17
 msgid ""
 "Slugs must start with a letter and can only contain letters, numbers, and "
 "hyphens. It must be 30 characters or less."
 msgstr ""
+"Короткие URL должны начинаться с буквы и могут содержать только буквы, цифры "
+"и дефисы. Их длина не должна превышать 30 символов."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -298,7 +311,7 @@ msgstr "Описание"
 
 #: /templates/new_collection.html:65
 msgid "Background Color"
-msgstr ""
+msgstr "Цвет фона"
 
 #: /templates/new_collection.html:67
 msgid "A background color is required"
@@ -306,7 +319,7 @@ msgstr "Требуется цвет фона"
 
 #: /templates/new_collection.html:68 /templates/new_collection.html:75
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Пожалуйста, введите 16-ричный цвет (например: «#AB78EF»)"
 
 #: /templates/new_collection.html:72
 msgid "Text Color"
@@ -322,11 +335,11 @@ msgstr "Создать"
 
 #: /templates/new_collection.html:86
 msgid "Unauthorized"
-msgstr ""
+msgstr "Не авторизован"
 
 #: /templates/new_collection.html:87
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "Вы должны войти для создания подборок."
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
@@ -354,7 +367,7 @@ msgstr "Произошла ошибка."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr "Ошибка загрузки большего"
+msgstr "Ошибка загрузки другого"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
@@ -366,7 +379,7 @@ msgstr "Подборка публична"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Нет публичных подборок этого типа."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -422,7 +435,7 @@ msgstr "Подборка избранных приложений"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Полка оператора"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -430,7 +443,7 @@ msgstr "Сделать подборку скрытой"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "Подборка теперь скрыта"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
@@ -438,35 +451,35 @@ msgstr "Подборка теперь публична"
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "Настройка свойства подборки Публичная не удалась"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr "Включить флаг \"герой\"."
+msgstr "Включить флаг «герой»."
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr "Отключить флаг \"герой\"."
+msgstr "Отключить флаг «герой»."
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "Флаг «герой» теперь включён"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "Флаг «герой» теперь отключён"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Установка свойства подборки «герой» не удалась"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr "Успешно дублировано"
+msgstr "Успешно дублирована"
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "Не удалось дублировать подборку"
 
 #: /media/js/views/collection.js:109
 msgid "Search failed :-("
@@ -474,7 +487,7 @@ msgstr "Поиск не удался :-("
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Куратор добавлен; проверьте снова через минутку"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
@@ -482,7 +495,7 @@ msgstr "Добавлен куратор"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Не удалось добавить куратора"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
@@ -490,15 +503,15 @@ msgstr "Удалён куратор"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Не удалось удалить куратора"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
-msgstr "{app} удалённое из подборки."
+msgstr "{app} удалено из подборки."
 
 #: /media/js/views/collection.js:203
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "Не удалось удалить приложение из подборки."
 
 #: /media/js/views/collection.js:227
 msgid "App added to collection."
@@ -506,7 +519,7 @@ msgstr "Приложение добавлено в подборку."
 
 #: /media/js/views/collection.js:231
 msgid "Failed to add app."
-msgstr ""
+msgstr "Не удалось добавить приложение."
 
 #: /media/js/views/collection.js:242
 msgid "Are you sure you want to delete this collection?"
@@ -526,7 +539,7 @@ msgstr "Порядок обновлён"
 
 #: /media/js/views/collection.js:288
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "Не удалось обновить порядок подборки. Попробуйте обновить страницу."
 
 #: /media/js/views/collection.js:378
 msgid "Saved {field}"
@@ -538,7 +551,7 @@ msgstr "Не удалось обновить {field}"
 
 #: /media/js/views/collection.js:414
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "Несовместимо: Приложение не доступно в регионе подборки."
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
@@ -550,7 +563,7 @@ msgstr "Изображение очищено"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Не удалось очистить изображение, вероятно bug 917081"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
@@ -583,4 +596,4 @@ msgstr "Обзор"
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr "Не найдено"
+msgstr "Не найдена"
