@@ -16,19 +16,19 @@ msgstr ""
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Een curator toevoegen"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "E-mailadres gebruiker"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
+msgstr "Voer het e-mailadres van een gebruiker die u curator van deze collectie wilt maken in."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -64,31 +64,31 @@ msgstr "Aanpassing"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Achtergrondafbeelding:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Voorbeeld laden"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
+msgstr "Sleep hieronder een PNG- of JPG-bestand of <span>selecteer een bestand</span> om een afbeelding te uploaden."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Uw browser ondersteunt geen canvas."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Opgeslagen afbeelding wissen"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Afbeelding opslaan"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Annuleren en terug"
 
 #: /templates/collection.html:83
 msgid "Background:"
@@ -120,15 +120,15 @@ msgstr "Collectie verwijderen"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Curatoren"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Er zijn geen curatoren voor deze collectie"
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Curator toevoegen"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -197,15 +197,15 @@ msgstr "Aanmelden"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
+msgstr "De Rocketfuel-vlag is uitgeschakeld. Wijzigingen middels het curatiehulpmiddel worden niet weergegeven op de live-website."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "U bent niet aangemeld als een app-curator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
+msgstr "Om collecties te maken of aan te passen dient u aangemeld te zijn als curator om dit hulpmiddel effectief te kunnen gebruiken."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -349,15 +349,15 @@ msgstr "Opnieuw proberen"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "Collectie is openbaar"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Er zijn geen openbare collecties van dit type."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -424,23 +424,23 @@ msgstr "Openbare eigenschap van collectie instellen is mislukt"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "Vlag “held” inschakelen"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "Vlag “held” uitschakelen"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "De vlag “held” is nu ingeschakeld"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "De vlag “held” is nu uitgeschakeld"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Eigenschap “held” van collectie mislukt"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -456,23 +456,23 @@ msgstr "Zoekopdracht mislukt :-("
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Curator toegevoegd; kom straks terug"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "Curator toegevoegd"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Curator toevoegen mislukt"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "Curator verwijderd"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Verwijdering curator mislukt"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
@@ -524,23 +524,23 @@ msgstr "Niet compatibel: app niet beschikbaar in regio van de collectie."
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "Geen afbeelding aangeleverd"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "Afbeelding verwijderd"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Kan afbeelding niet verwijderen, waarschijnlijk bug 917081"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "Afbeelding opgeslagen"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "Kan afbeelding niet opslaan"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
