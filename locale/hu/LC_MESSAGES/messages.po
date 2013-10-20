@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-20 20:44+0000\n"
+"PO-Revision-Date: 2013-10-20 20:48+0000\n"
 "Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
 "Language: hu\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n !=1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382301897.0\n"
+"X-POOTLE-MTIME: 1382302105.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -300,7 +300,7 @@ msgstr "Egy háttérszín szükséges"
 
 #: /templates/new_collection.html:68 /templates/new_collection.html:75
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr "Adjon meg egy hexa színt (pl. „#AB78EF”)"
+msgstr "Adjon meg egy hexa színt (pl.: „#AB78EF”)"
 
 #: /templates/new_collection.html:72
 msgid "Text Color"
