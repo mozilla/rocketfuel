@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-13 03:15+0000\n"
+"PO-Revision-Date: 2013-10-20 20:44+0000\n"
 "Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
 "Language: hu\n"
@@ -12,23 +12,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n !=1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1381634103.0\n"
+"X-POOTLE-MTIME: 1382301897.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Karbantartó hozzáadása"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Felhasználó e-mail címe"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Adja meg a felhasználó e-mail címét, akit a gyűjtemény karbantartójává "
+"szeretne tenni."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -64,31 +66,33 @@ msgstr "Személyre szabás"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Háttérkép:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Előnézeti kép betöltése"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Húzzon ide egy PNG vagy JPG képet, vagy <span>válasszon egy fájlt</span> a "
+"kép feltöltéséhez."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "A böngészője nem támogatja a vászon elemet."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Mentett kép törlése"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Kép mentése"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Megszakítás és visszavonás"
 
 #: /templates/collection.html:83
 msgid "Background:"
@@ -120,15 +124,15 @@ msgstr "Gyűjtemény törlése"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Karbantartók"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Nincsenek karbantartók a gyűjteményhez."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Karbantartó hozzáadása"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -197,14 +201,18 @@ msgstr "Bejelentkezés"
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr ""
+"A Rocketfuel jelző kikapcsolva. A karbantartói eszközben végzett "
+"változtatások nem lépnek életbe az éles oldalon."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "Nincs bejelentkezve app karbantartóként"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"Gyűjtemények létrehozásához vagy módosításához be kell jelentkeznie "
+"karbantartóként ezen eszköz hatásos használatához."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -348,15 +356,15 @@ msgstr "Próbálja újra"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "A gyűjtemény nyilvános"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Nincsenek ilyen típusú nyilvános gyűjtemények."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "Azonosító: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -423,23 +431,23 @@ msgstr "A gyűjtemény nyilvános tulajdonságának beállítása sikertelen"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "A „hős” jelző bekapcsolása"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "A „hős” jelző kikapcsolása"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "A „hős” jelző mostantól bekapcsolva"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "A „hős” jelző mostantól kikapcsolva"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "A gyűjtemény „hős” tulajdonságának beállítása sikertelen"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -451,27 +459,27 @@ msgstr "A gyűjtemény megkettőzése sikertelen"
 
 #: /media/js/views/collection.js:109
 msgid "Search failed :-("
-msgstr "A keresés sikertelen :-("
+msgstr "Karbantartó hozzáadva, később jöjjön vissza"
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Karbantartó hozzáadva, később jöjjön vissza"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "Karbantartó hozzáadva"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Karbantartó hozzáadása sikertelen"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "Karbantartó eltávolítva"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "A karbantartó eltávolítása sikertelen"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
@@ -523,23 +531,23 @@ msgstr "Inkompatibilitás: az app nem érhető el a gyűjtemény régiójában."
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "Nincs megadva kép"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "Kép törölve"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "A kép nem törölhető, valószínűleg a 917081-es bug miatt"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "Kép mentve"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "A kép nem menthető"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
