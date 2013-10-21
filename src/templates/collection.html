@@ -33,7 +33,7 @@
         <div class="field" data-field="region">
           <label>{{ _('Region:') }}</label>
           <p>{{ model_lookup('region', this.region).name if this.region else '--' }}</p>
-          <form>{{ region_dropdown(name='region', default=this.region, allow_null=(this.collection_type != 0), pretty=False) }}</form>
+          <form>{{ region_dropdown(name='region', default=this.region, allow_null=True, pretty=False) }}</form>
         </div>
         {% if this.collection_type != 0 %}
           <div class="field" data-field="carrier">
@@ -42,7 +42,7 @@
             <form>{{ carrier_dropdown(name='carrier', default=this.carrier or 0, pretty=False, allow_null=(this.collection_type != 2)) }}</form>
           </div>
         {% endif %}
-        {% if this.collection_type != 2 %}
+        {% if this.collection_type == 1 %}
           <div class="field" data-field="category">
             <label>{{ _('Category:') }}</label>
             <p>{{ model_lookup('category', this.category).name if this.category else _('All Categories (Homepage)') }}</p>

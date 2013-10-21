@@ -170,7 +170,6 @@ label [value]:invalid ~ [reason=invalid] {
     label {
         margin-bottom: 5px;
         padding: 10px 10px 0;
-        width: 50%;
     }
 
     footer {
@@ -192,6 +191,10 @@ label [value]:invalid ~ [reason=invalid] {
         }
     }
 }
+.form-grid:not(.row) label {
+    width: 50%;
+}
+
 
 @keyframes progress-bar-stripes {
     from { background-position: 40px 0; }
