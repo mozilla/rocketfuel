@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-15 16:32+0000\n"
-"Last-Translator: Ton <tonnes.mb@gmail.com>\n"
+"PO-Revision-Date: 2013-10-21 06:03+0000\n"
+"Last-Translator: Mark <markh@babelzilla.org>\n"
 "Language-Team: none\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1381854764.0\n"
+"X-POOTLE-MTIME: 1382335430.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -124,7 +124,7 @@ msgstr "Curatoren"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr "Er zijn geen curatoren voor deze collectie"
+msgstr "Er zijn geen curatoren voor deze collectie."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
@@ -289,7 +289,7 @@ msgstr "Achtergrondkleur"
 
 #: /templates/new_collection.html:67
 msgid "A background color is required"
-msgstr "Een achtergrondkleur is vereist."
+msgstr "Een achtergrondkleur is vereist"
 
 #: /templates/new_collection.html:68 /templates/new_collection.html:75
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
