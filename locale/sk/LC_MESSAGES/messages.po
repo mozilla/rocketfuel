@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-10-21 12:09+0000\n"
+"PO-Revision-Date: 2013-10-21 12:18+0000\n"
 "Last-Translator: Branislav <sektormaster@atlas.sk>\n"
 "Language-Team: none\n"
 "Language: sk\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382357394.0\n"
+"X-POOTLE-MTIME: 1382357932.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -48,27 +48,27 @@ msgstr ""
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "Kategória:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Všetky kategórie (Domovská stránka)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "Popis:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Prispôsobenie"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Obrázok pozadia:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Načítanie náhľadu obrázka"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
@@ -80,19 +80,19 @@ msgstr ""
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Odobrať uložený obrázok"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Uložiť obrázok"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Zrušiť a obnoviť"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Pozadie:"
 
 #: /templates/collection.html:91
 msgid "Text:"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "Kategória"
 
 #: /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
@@ -276,11 +276,11 @@ msgstr ""
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "Meno autora"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: /templates/new_collection.html:65
 msgid "Background Color"
@@ -316,11 +316,11 @@ msgstr ""
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "Načítanie kategórií..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- Nič --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
@@ -452,7 +452,7 @@ msgstr ""
 
 #: /media/js/views/collection.js:109
 msgid "Search failed :-("
-msgstr ""
+msgstr "Vyhľadávanie zlyhalo :-("
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
@@ -536,11 +536,11 @@ msgstr ""
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "Obrázok bol uložený"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "Obrázok sa nepodarilo uložiť"
 
 #: /media/js/views/collection.js:578
 msgid "Collection"
