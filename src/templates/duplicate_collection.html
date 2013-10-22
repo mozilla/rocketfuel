@@ -2,21 +2,42 @@
   <a class="close" href="#">&times;</a>
   <h2>{{ _('Duplicate Collection') }}</h2>
 
-  <form class="form-grid">
-    <label>
-      {{ _('Name') }}
-      <input type="text" name="name" required value="{{ this.name|translate(this) }}">
-      <p reason="required">{{ _('A name is required') }}</p>
-    </label>
+  <form class="form-grid row">
+    <div class="half">
+      <label>
+        {{ _('Name') }}
+        <input type="text" name="name" required value="{{ this.name|translate(this) }}">
+        <p reason="required">{{ _('A name is required') }}</p>
+      </label>
 
-    <label>
-      {{ _('Slug') }}
-      <input type="text" name="slug" required pattern="(?!{{ this.slug|make_regex_safe }}$)[a-zA-Z][\w\-]*" maxlength="30" value="{{ this.slug }}">
-      <p reason="required">{{ _('A slug is required') }}</p>
-      <p reason="invalid">{{ _('Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection.') }}</p>
-    </label>
+      <label>
+        {{ _('Slug') }}
+        <input type="text" name="slug" required pattern="(?!{{ this.slug|make_regex_safe }}$)[a-zA-Z][\w\-]*" maxlength="30" value="{{ this.slug }}">
+        <p reason="required">{{ _('A slug is required') }}</p>
+        <p reason="invalid">{{ _('Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection.') }}</p>
+      </label>
+    </div>
+    <div class="half">
+      {% if this.collection_type == 1 %}
+        <label>
+          {{ _('Category') }}
+          {{ category_dropdown(name='category', default=this.category, allow_null=False) }}
+        </label>
+      {% endif %}
+      <label>
+        {{ _('Region') }}
+        {{ region_dropdown(name='region', default=this.region, allow_null=(this.collection_type != 0)) }}
+      </label>
+      {% if this.collection_type != 0 %}
+        <label>
+          {{ _('Carrier') }}
+          {{ carrier_dropdown(name='carrier', default=this.carrier or 0, allow_null=(this.collection_type == 1)) }}
+        </label>
+      {% endif %}
+    </div>
+
 
     {# TODO(cvan): If only we had a sea-based CSS framework that would eliminate the need for silly markup... #}
-    <label><button type="submit" class="button">{{ _("Duplicate") }}</label>
+    <label class="full"><button type="submit" class="button">{{ _("Duplicate") }}</button></label>
   </form>
 </div>

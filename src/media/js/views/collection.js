@@ -543,6 +543,9 @@ define('views/collection',
                 update_toggle($(this), data);
             });
 
+            // Everything from here down is image related, which doesn't apply to FACs.
+            if (data.collection_type === 1) return;
+
             // Load in the collection image.
             if (data.image) {
                 get_image(
