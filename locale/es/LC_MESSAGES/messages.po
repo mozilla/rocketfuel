@@ -3,311 +3,326 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
-"PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2013-10-22 11:13+0000\n"
+"Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1382440431.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Agregar un administrador"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Correo electrónico del usuario"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Introduce el correo electrónico del usuario que quieres hacer administrador "
+"de esta colección."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namasté"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "Autor:"
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "Título breve:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "Región:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "Proveedor:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "Categoría:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Todas las categorías (página de inicio)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "Descripción:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Personalización"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Imagen de fondo:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Cargando imagen preliminar"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Arrastra una imagen PNG o JPG abajo o <span>selecciona un archivo</span> "
+"para cargar una imagen."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Tu navegador no admite lienzos."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Borrar la imagen guardada"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Guardar imagen"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Cancelar y revertir"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Fondo:"
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "Texto:"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "Agregar aplicación a la colección"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr ""
+msgstr "Hacer pública la colección"
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Duplicar colección"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "Borrar colección"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Administradores"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "No hay administradores para esta colección."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Agregar administrador"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
-msgstr ""
+msgstr "Error al cargar la colección."
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Agregar aplicaciones"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Duplicar colección"
 
 #: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: /templates/duplicate_collection.html:8
 msgid "A name is required"
-msgstr ""
+msgstr "Se necesita un nombre"
 
 #: /templates/duplicate_collection.html:12
 msgid "Slug"
-msgstr ""
+msgstr "Título breve (slug)"
 
 #: /templates/duplicate_collection.html:14
 msgid "A slug is required"
-msgstr ""
+msgstr "Se necesita un título breve"
 
 #: /templates/duplicate_collection.html:15
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
+"Los títulos breves (o slugs) deben empezar con una letra y solo pueden "
+"contener letras, números y guiones. Deben tener un máximo de 30 caracteres o "
+"menos y no pueden ser iguales a la colección existente."
 
 #: /templates/duplicate_collection.html:19
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicar"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Herramienta de administración"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Salir"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Identificarse"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr ""
+"El indicador de Rocketfuel está desactivado. Cualquier cambio que se haga en "
+"la Herramienta del administrador no se reflejará en el sitio activo."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "No te has identificado como administrador de la aplicación"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"A fin de crear o modificar las colecciones, debes identificarte como "
+"administrador para usar eficazmente esta herramienta."
 
 #: /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "Categoría"
 
 #: /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "Región"
 
 #: /templates/homepage.html:25 /templates/new_collection.html:55
 msgid "Carrier"
-msgstr ""
+msgstr "Proveedor"
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Colecciones"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "No se ha creado ninguna colección."
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "Agregar una nueva colección"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr ""
+msgstr "Aplicaciones destacadas"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "No se han creado secciones para aplicaciones destacadas."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Agrega una nueva colección para aplicaciones destacadas"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Estantes del operador"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "No se ha creado ningún estante del operador."
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "Agregar un nuevo estante del operador"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "Selecciona un proveedor para ver los estantes del operador."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Nuevo {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "El nombre no se muestra a los usuarios, es solo por comodidad."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr ""
+msgstr "Título breve de la colección"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
 msgstr ""
+"Los títulos breves (o slugs) deben empezar con una letra y pueden contener "
+"solo letras, números y guiones. Deben tener un máximo de 30 caracteres o "
+"menos."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "Nombre del autor"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: /templates/new_collection.html:65
 msgid "Background Color"
-msgstr ""
+msgstr "Color de fondo"
 
 #: /templates/new_collection.html:67
 msgid "A background color is required"
-msgstr ""
+msgstr "Se requiere un color de fondo"
 
 #: /templates/new_collection.html:68 /templates/new_collection.html:75
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Introduce un color hexadecimal (p.ej. \"#AB78EF\")"
 
 #: /templates/new_collection.html:72
 msgid "Text Color"
-msgstr ""
+msgstr "Color del texto"
 
 #: /templates/new_collection.html:74
 msgid "A text color is required"
-msgstr ""
+msgstr "Se requiere un color de texto"
 
 #: /templates/new_collection.html:81
 msgid "Create"
-msgstr ""
+msgstr "Crear"
 
 #: /templates/new_collection.html:86
 msgid "Unauthorized"
-msgstr ""
+msgstr "No autorizado"
 
 #: /templates/new_collection.html:87
 msgid "You must be logged in to create collections."
@@ -315,75 +330,79 @@ msgstr ""
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "Cargando categorías..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- Ninguno --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr ""
+msgstr "Cargando regiones..."
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr ""
+msgstr "Cargando proveedores..."
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "¡Oh no!"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "Ha ocurrido un error."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "Error al cargar más"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "Probar de nuevo"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "La colección es pública"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "No hay colecciones públicas de este tipo."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Otros idiomas"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "Has salido"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "Te has identificado"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
 msgstr ""
+"Hubo un error al identificarte con Mozilla Persona. ¿Será que no tienes una "
+"cuenta con esta dirección de correo?"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
 msgstr ""
+"Hubo un error al identificarte con Mozilla Persona. Se encontró un error del "
+"servidor."
 
 #: /media/js/navigation.js:50
 msgid "No internet connection"
-msgstr ""
+msgstr "Sin conexión a internet"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:25
@@ -402,7 +421,7 @@ msgstr ""
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Estante del operador"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
