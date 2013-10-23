@@ -168,8 +168,17 @@ label [value]:invalid ~ [reason=invalid] {
     width: 100%;
 
     label {
-        margin-bottom: 5px;
-        padding: 10px 10px 0;
+        margin-bottom: 0.5em;
+        padding: 1em 1em 0;
+    }
+
+    .row > label {
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
     }
 
     footer {
