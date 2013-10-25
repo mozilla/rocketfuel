@@ -48,7 +48,6 @@
     {% endif %}
     <label class="{{ colmode }}">
       {{ _('Region') }}
-      {# Non-basic collections should allow null regions. #}
       {{ region_dropdown(name='region', default=region, allow_null=true) }}
     </label>
     {% if show_carrier %}
