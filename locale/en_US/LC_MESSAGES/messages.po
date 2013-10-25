@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rocketfuel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Enter the email address of a user that you wish to make a curator for th
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr ""
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr ""
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -146,39 +154,43 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr ""
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr ""
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr ""
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr ""
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr ""
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr ""
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr ""
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr ""
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr ""
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr ""
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr ""
 
@@ -205,18 +217,6 @@ msgstr "You are not logged in as an App Curator"
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr ""
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr ""
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr ""
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -314,6 +314,14 @@ msgstr ""
 msgid "You must be logged in to create collections."
 msgstr ""
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "Collection is Public"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "There are no public collections of this type."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr ""
@@ -345,14 +353,6 @@ msgstr ""
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr ""
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "Collection is Public"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "There are no public collections of this type."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -386,13 +386,6 @@ msgstr ""
 msgid "No internet connection"
 msgstr ""
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr ""
@@ -404,6 +397,13 @@ msgstr ""
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr ""
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] ""
+msgstr[1] ""
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -541,8 +541,12 @@ msgstr "Image saved"
 msgid "Could not save image"
 msgstr "Could not save image"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
+msgstr ""
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
 msgstr ""
 
 #: /media/js/views/new_collection.js:49
@@ -555,10 +559,6 @@ msgstr ""
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
 msgstr ""
 
 #. Page not found (404)

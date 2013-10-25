@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
 "Last-Translator: Αλέξανδρος Μιόγλου <alexandros@mioglou.me>\n"
 "Language-Team: none\n"
@@ -28,6 +28,14 @@ msgstr "Εισάγετε τη διεύθυνση email ενός χρήστη π�
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Προσθήκη εφαρμογών"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Αναζήτηση"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -145,39 +153,43 @@ msgstr "Όχι"
 msgid "Yes"
 msgstr "Ναι"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Προσθήκη εφαρμογών"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Αναζήτηση"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Αντιγραφή συλλογής"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Όνομα"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "Απαιτείται ένα όνομα"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Ψευδώνυμο"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Απαιτείται ψευδώνυμο"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Τα ψευδώνυμα πρέπει να αρχίζουν με γράμμα και περιέχουν μόνο γράμματα, αριθμούς, και κάτω παύλες. Πρέπει να είναι ως 30 χαρακτήρες και δε μπορούν να είναι τα ίδια με την υπάρχουσα συλλογή."
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Κατηγορία"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Χώρα"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Πάροχος"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Αντιγραφή"
 
@@ -204,18 +216,6 @@ msgstr "Δεν έχετε συνδεθεί σαν Επιμελητής Εφαρ�
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr "Για να δημιουργήσετε ή να τροποποιήσετε συλλογές, πρέπει να έχετε συνδεθεί σαν Επιμελητής ώστε να χρησιμοποιήσετε αποτελεσματικά αυτό το εργαλείο."
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Κατηγορία"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Χώρα"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Πάροχος"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -313,6 +313,14 @@ msgstr "Μη εγκεκριμένο"
 msgid "You must be logged in to create collections."
 msgstr "Πρέπει να είστε συνδεδεμένοι για να δημιουργήσετε συλλογές."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "Η συλλογή είναι δημόσια"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "Δεν υπάρχουν δημόσιες συλλογές αυτού του τύπου."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Φόρτωση κατηγοριών..."
@@ -344,14 +352,6 @@ msgstr "Σφάλμα κατά τη φόρτωση περισσότερων"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Προσπαθήστε ξανά"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "Η συλλογή είναι δημόσια"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "Δεν υπάρχουν δημόσιες συλλογές αυτού του τύπου."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -385,13 +385,6 @@ msgstr "Η σύνδεση persona απέτυχε. Παρουσιάστηκε έ�
 msgid "No internet connection"
 msgstr "Χωρις σύνδεση"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> χαρακτήρας απέμεινε."
-msgstr[1] "<b>{n}</b> χαρακτήρες απέμειναν."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Βασική συλλογή"
@@ -403,6 +396,13 @@ msgstr "Προβεβλημένες συλλογές εφαρμογών"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Ράφι διαχειριστή"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> χαρακτήρας απέμεινε."
+msgstr[1] "<b>{n}</b> χαρακτήρες απέμειναν."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -540,9 +540,13 @@ msgstr "Η εικόνα αποθηκεύτηκε"
 msgid "Could not save image"
 msgstr "Δεν ήταν δυνατή η αποθήκευση της εικόνας"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Συλλογή"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Περίληψη"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -555,10 +559,6 @@ msgstr "Απέτυχε να δημιουργηθεί νέα συλλογή."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Νέα συλλογή"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Περίληψη"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9

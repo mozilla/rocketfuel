@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-10-20 20:48+0000\n"
 "Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
@@ -24,13 +24,19 @@ msgstr "Felhasználó e-mail címe"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Adja meg a felhasználó e-mail címét, akit a gyűjtemény karbantartójává "
-"szeretne tenni."
+msgstr "Adja meg a felhasználó e-mail címét, akit a gyűjtemény karbantartójává szeretne tenni."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Appok hozzáadása"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Keresés"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -74,9 +80,7 @@ msgstr "Előnézeti kép betöltése"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Húzzon ide egy PNG vagy JPG képet, vagy <span>válasszon egy fájlt</span> a "
-"kép feltöltéséhez."
+msgstr "Húzzon ide egy PNG vagy JPG képet, vagy <span>válasszon egy fájlt</span> a kép feltöltéséhez."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -150,39 +154,43 @@ msgstr "Nem"
 msgid "Yes"
 msgstr "Igen"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Appok hozzáadása"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Keresés"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Gyűjtemény másolása"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Név"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "Egy név szükséges"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Slug"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Egy slug szükséges"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "A slug betűvel kezdődik, és csak betűket, számokat és kötőjeleket tartalmaz. Legfeljebb 30 karakter lehet, és nem lehet azonos egy meglévő gyűjteményével."
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategória"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Régió"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Szolgáltató"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Megkettőzés"
 
@@ -200,9 +208,7 @@ msgstr "Bejelentkezés"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-"A Rocketfuel jelző kikapcsolva. A karbantartói eszközben végzett "
-"változtatások nem lépnek életbe az éles oldalon."
+msgstr "A Rocketfuel jelző kikapcsolva. A karbantartói eszközben végzett változtatások nem lépnek életbe az éles oldalon."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
@@ -210,21 +216,7 @@ msgstr "Nincs bejelentkezve app karbantartóként"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Gyűjtemények létrehozásához vagy módosításához be kell jelentkeznie "
-"karbantartóként ezen eszköz hatásos használatához."
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategória"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Régió"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Szolgáltató"
+msgstr "Gyűjtemények létrehozásához vagy módosításához be kell jelentkeznie karbantartóként ezen eszköz hatásos használatához."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -322,6 +314,14 @@ msgstr "Jogosulatlan"
 msgid "You must be logged in to create collections."
 msgstr "A gyűjtemények létrehozásához be kell jelentkeznie."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "A gyűjtemény nyilvános"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "Nincsenek ilyen típusú nyilvános gyűjtemények."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Kategóriák betöltése…"
@@ -353,14 +353,6 @@ msgstr "Hiba több betöltésekor"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Próbálja újra"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "A gyűjtemény nyilvános"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "Nincsenek ilyen típusú nyilvános gyűjtemények."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -394,13 +386,6 @@ msgstr "A Persona bejelentkezés sikertelen. Kiszolgálóhiba történt."
 msgid "No internet connection"
 msgstr "Nincs internetkapcsolat"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> karakter maradt."
-msgstr[1] "<b>{n}</b> karakter maradt."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Alap gyűjtemény"
@@ -412,6 +397,13 @@ msgstr "Kiemelt app gyűjtemény"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Operátori polc"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> karakter maradt."
+msgstr[1] "<b>{n}</b> karakter maradt."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -549,9 +541,13 @@ msgstr "Kép mentve"
 msgid "Could not save image"
 msgstr "A kép nem menthető"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Gyűjtemény"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Áttekintés"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -564,10 +560,6 @@ msgstr "Az új gyűjtemény létrehozása meghiúsult."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Új gyűjtemény"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Áttekintés"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,15 @@ msgstr ""
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Ƞȧḿȧşŧḗ"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ȧḓḓ Ȧƥƥş"
+
+#: /templates/app_search.html:4
+#: /templates/app_search.html:5
+msgid "Search"
+msgstr "Şḗȧřƈħ"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -155,44 +164,53 @@ msgstr "Ƞǿ"
 msgid "Yes"
 msgstr "Ẏḗş"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ȧḓḓ Ȧƥƥş"
-
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
-msgid "Search"
-msgstr "Şḗȧřƈħ"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Ḓŭƥŀīƈȧŧḗ Ƈǿŀŀḗƈŧīǿƞ"
 
-#: /templates/duplicate_collection.html:6
+#: /templates/duplicate_collection.html:7
 #: /templates/new_collection.html:7
 msgid "Name"
 msgstr "Ƞȧḿḗ"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "Ȧ ƞȧḿḗ īş řḗɋŭīřḗḓ"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Şŀŭɠ"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Ȧ şŀŭɠ īş řḗɋŭīřḗḓ"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 "Şŀŭɠş ḿŭşŧ şŧȧřŧ ẇīŧħ ȧ ŀḗŧŧḗř ȧƞḓ ƈȧƞ ǿƞŀẏ ƈǿƞŧȧīƞ ŀḗŧŧḗřş, ƞŭḿƀḗřş, ȧƞḓ "
 "ħẏƥħḗƞş. Īŧ ḿŭşŧ ƀḗ 30 ƈħȧřȧƈŧḗřş ǿř ŀḗşş ȧƞḓ ƈȧƞƞǿŧ ƀḗ ŧħḗ şȧḿḗ ȧş ŧħḗ "
 "ḗẋīşŧīƞɠ ƈǿŀŀḗƈŧīǿƞ."
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22
+#: /templates/homepage.html:13
+#: /templates/new_collection.html:44
+msgid "Category"
+msgstr "Ƈȧŧḗɠǿřẏ"
+
+#: /templates/duplicate_collection.html:27
+#: /templates/homepage.html:19
+#: /templates/new_collection.html:49
+msgid "Region"
+msgstr "Řḗɠīǿƞ"
+
+#: /templates/duplicate_collection.html:32
+#: /templates/homepage.html:25
+#: /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Ƈȧřřīḗř"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Ḓŭƥŀīƈȧŧḗ"
 
@@ -223,21 +241,6 @@ msgid "In order to create or modify collections, you must be logged in as a Cura
 msgstr ""
 "Īƞ ǿřḓḗř ŧǿ ƈřḗȧŧḗ ǿř ḿǿḓīƒẏ ƈǿŀŀḗƈŧīǿƞş, ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř "
 "ŧǿ ḗƒƒḗƈŧīṽḗŀẏ ŭşḗ ŧħīş ŧǿǿŀ."
-
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:44
-msgid "Category"
-msgstr "Ƈȧŧḗɠǿřẏ"
-
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:49
-msgid "Region"
-msgstr "Řḗɠīǿƞ"
-
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Ƈȧřřīḗř"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -338,6 +341,14 @@ msgstr "Ŭƞȧŭŧħǿřīzḗḓ"
 msgid "You must be logged in to create collections."
 msgstr "Ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ŧǿ ƈřḗȧŧḗ ƈǿŀŀḗƈŧīǿƞş."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "Ƈǿŀŀḗƈŧīǿƞ īş Ƥŭƀŀīƈ"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "Ŧħḗřḗ ȧřḗ ƞǿ ƥŭƀŀīƈ ƈǿŀŀḗƈŧīǿƞş ǿƒ ŧħīş ŧẏƥḗ."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Ŀǿȧḓīƞɠ ƈȧŧḗɠǿřīḗş..."
@@ -370,14 +381,6 @@ msgstr "Ḗřřǿř ŀǿȧḓīƞɠ ḿǿřḗ"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Ŧřẏ Ȧɠȧīƞ"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "Ƈǿŀŀḗƈŧīǿƞ īş Ƥŭƀŀīƈ"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "Ŧħḗřḗ ȧřḗ ƞǿ ƥŭƀŀīƈ ƈǿŀŀḗƈŧīǿƞş ǿƒ ŧħīş ŧẏƥḗ."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -413,13 +416,6 @@ msgstr "Ƥḗřşǿƞȧ ŀǿɠīƞ ƒȧīŀḗḓ. Ȧ şḗřṽḗř ḗřřǿ�
 msgid "No internet connection"
 msgstr "Ƞǿ īƞŧḗřƞḗŧ ƈǿƞƞḗƈŧīǿƞ"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{ƞ}</b> ƈħȧřȧƈŧḗř ŀḗƒŧ."
-msgstr[1] "<b>{ƞ}</b> ƈħȧřȧƈŧḗřş ŀḗƒŧ."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Ɓȧşīƈ Ƈǿŀŀḗƈŧīǿƞ"
@@ -431,6 +427,13 @@ msgstr "Ƒḗȧŧŭřḗḓ Ȧƥƥ Ƈǿŀŀḗƈŧīǿƞ"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Ǿƥḗřȧŧǿř Şħḗŀƒ"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{ƞ}</b> ƈħȧřȧƈŧḗř ŀḗƒŧ."
+msgstr[1] "<b>{ƞ}</b> ƈħȧřȧƈŧḗřş ŀḗƒŧ."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -568,9 +571,13 @@ msgstr "Īḿȧɠḗ şȧṽḗḓ"
 msgid "Could not save image"
 msgstr "Ƈǿŭŀḓ ƞǿŧ şȧṽḗ īḿȧɠḗ"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Ƈǿŀŀḗƈŧīǿƞ"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Ǿṽḗřṽīḗẇ"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -583,10 +590,6 @@ msgstr "Ƒȧīŀḗḓ ŧǿ ƈřḗȧŧḗ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Ƞḗẇ Ƈǿŀŀḗƈŧīǿƞ"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Ǿṽḗřṽīḗẇ"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9

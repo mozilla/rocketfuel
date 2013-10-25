@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-10-09 15:24+0000\n"
 "Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr ""
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr ""
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ajouter des apps"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Rechercher"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -146,41 +154,45 @@ msgstr "Non"
 msgid "Yes"
 msgstr "Oui"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ajouter des apps"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Rechercher"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Dupliquer la collection"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Nom"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "Le nom est obligatoire"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Raccourci"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Le raccourci est obligatoire"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 "Les raccourcis doivent commencer par une lettre et ne peuvent contenir que des lettres, des chiffres et des tirets. Leur longueur ne peut pas dépasser 30 caractères et ils ne peuvent pas être "
 "identiques à celui d'une autre collection existante."
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Catégorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Région"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Opérateur"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliquer"
 
@@ -207,18 +219,6 @@ msgstr ""
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Catégorie"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Région"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Opérateur"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -316,6 +316,14 @@ msgstr "Non autorisé"
 msgid "You must be logged in to create collections."
 msgstr "Vous devez vous connecter pour créer des collections."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr ""
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr ""
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Chargement des catégories…"
@@ -347,14 +355,6 @@ msgstr "Erreur de chargement du contenu supplémentaire"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Veuillez réessayer"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr ""
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr ""
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -388,13 +388,6 @@ msgstr "Échec de la connexion avec Persona. Une erreur du serveur s'est produit
 msgid "No internet connection"
 msgstr "Aucune connexion Internet"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> caractère restant."
-msgstr[1] "<b>{n}</b> caractères restants."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Collection de base"
@@ -406,6 +399,13 @@ msgstr "Collection d'apps mises en avant"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Rayon d'opérateur"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> caractère restant."
+msgstr[1] "<b>{n}</b> caractères restants."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -543,9 +543,13 @@ msgstr ""
 msgid "Could not save image"
 msgstr ""
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Collection"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Aperçu"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -558,10 +562,6 @@ msgstr "Impossible de créer la nouvelle collection."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nouvelle collection"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Aperçu"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9

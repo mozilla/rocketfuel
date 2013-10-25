@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-10-21 06:03+0000\n"
 "Last-Translator: Mark <markh@babelzilla.org>\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Voer het e-mailadres van een gebruiker die u curator van deze collectie 
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Apps toevoegen"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Zoeken"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -146,40 +154,44 @@ msgstr "Nee"
 msgid "Yes"
 msgstr "Ja"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Apps toevoegen"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Zoeken"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Collectie dupliceren"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Naam"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "Een naam is vereist"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Slug"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Een slug is vereist"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 "Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan en kan niet hetzelfde zijn als de bestaande collectie."
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Regio"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Provider"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliceren"
 
@@ -206,18 +218,6 @@ msgstr "U bent niet aangemeld als een app-curator"
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr "Om collecties te maken of aan te passen dient u aangemeld te zijn als curator om dit hulpmiddel effectief te kunnen gebruiken."
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categorie"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Regio"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Provider"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -315,6 +315,14 @@ msgstr "Niet geautoriseerd"
 msgid "You must be logged in to create collections."
 msgstr "U moet aangemeld zijn om collecties aan te maken."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "Collectie is openbaar"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "Er zijn geen openbare collecties van dit type."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Categorieën laden…"
@@ -346,14 +354,6 @@ msgstr "Fout bij laden van meer"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Opnieuw proberen"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "Collectie is openbaar"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "Er zijn geen openbare collecties van dit type."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -387,13 +387,6 @@ msgstr "Persona-aanmelding mislukt. Er is een serverfout opgetreden."
 msgid "No internet connection"
 msgstr "Geen internetverbinding"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> teken resterend."
-msgstr[1] "<b>{n}</b> tekens resterend."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Basiscollectie"
@@ -405,6 +398,13 @@ msgstr "Collectie Aanbevolen apps"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Operatorplank"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> teken resterend."
+msgstr[1] "<b>{n}</b> tekens resterend."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -542,9 +542,13 @@ msgstr "Afbeelding opgeslagen"
 msgid "Could not save image"
 msgstr "Kan afbeelding niet opslaan"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Collectie"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Overzicht"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -557,10 +561,6 @@ msgstr "Aanmaken van nieuwe collectie is mislukt."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nieuwe collectie"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Overzicht"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
