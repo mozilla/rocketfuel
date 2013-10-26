@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rocketfuel in italiano\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-10-21 20:28+0000\n"
 "Last-Translator: Sara <sara.todaro@mozillaitalia.org>\n"
 "Language-Team: MozillaItalia <gialloporpora@gmail.com>\n"
@@ -25,13 +25,19 @@ msgstr "Indirizzo email dell'utente"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Inserisci l'indirizzo email dell'utente a cui vuoi assegnare il ruolo di "
-"curatore della collezione."
+msgstr "Inserisci l'indirizzo email dell'utente a cui vuoi assegnare il ruolo di curatore della collezione."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Aggiungi app"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Cerca"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -75,9 +81,7 @@ msgstr "Caricamento dell'anteprima in corso…"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Per caricare un'immagine trascina un file PNG o JPG qui sotto oppure "
-"<span>seleziona un file</span> dal tuo computer."
+msgstr "Per caricare un'immagine trascina un file PNG o JPG qui sotto oppure <span>seleziona un file</span> dal tuo computer."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -151,41 +155,45 @@ msgstr "No"
 msgid "Yes"
 msgstr "Si"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Aggiungi app"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Cerca"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Clona raccolta"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Nome"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "È obbligatorio scegliere un nome per la raccolta"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Slug"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "È obbligatorio scegliere uno slug per la raccolta"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 "Gli slug devono iniziare con una lettera e devono contenere solo caratteri alfanumerici e trattini. Sono composti da non più di 30 caratteri e non è possibile scegliere slum utilizzati da altre "
 "raccolte."
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categoria"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Regione"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Operatore telefonico"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Clona"
 
@@ -203,9 +211,7 @@ msgstr "Accedi"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-"Il flag di Rocketfuel è disattivato. Le modifiche effettuate tramite lo "
-"Strumento curatori non verranno applicate sul sito di produzione."
+msgstr "Il flag di Rocketfuel è disattivato. Le modifiche effettuate tramite lo Strumento curatori non verranno applicate sul sito di produzione."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
@@ -213,21 +219,7 @@ msgstr "Non sei identificato come curatore di una raccolta."
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Al fine di utilizzare effettivamente questo strumento per creare o "
-"modificare una raccolta devi essere identificato come curatore."
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categoria"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Regione"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Operatore telefonico"
+msgstr "Al fine di utilizzare effettivamente questo strumento per creare o modificare una raccolta devi essere identificato come curatore."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -283,9 +275,7 @@ msgstr "Slug raccolta"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"Gli slum sono stringhe di al più 30 caratteri, devono iniziare con una "
-"lettera e contenere solo caratteri alfanumerici e trattini."
+msgstr "Gli slum sono stringhe di al più 30 caratteri, devono iniziare con una lettera e contenere solo caratteri alfanumerici e trattini."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -327,6 +317,14 @@ msgstr "Operazione non consentita"
 msgid "You must be logged in to create collections."
 msgstr "È necessario effettuare l'accesso per creare una raccolta."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "Questa raccolta è pubblica"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "Non esistono raccolte pubbliche di questo tipo."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Caricamento delle categorie in corso…"
@@ -358,14 +356,6 @@ msgstr "Errore durante il caricamento di altri contenuti"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Riprova"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "Questa raccolta è pubblica"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "Non esistono raccolte pubbliche di questo tipo."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -399,13 +389,6 @@ msgstr "È fallita l'identificazione tramite Persona. Si è verificato un errore
 msgid "No internet connection"
 msgstr "Connessione Internet non disponibile"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> carattere rimasto."
-msgstr[1] "<b>{n}</b> caratteri rimasti."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Raccolta base"
@@ -417,6 +400,13 @@ msgstr "Raccolta di app consigliate"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Scaffale operatore"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> carattere rimasto."
+msgstr[1] "<b>{n}</b> caratteri rimasti."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -452,8 +442,7 @@ msgstr "il flag \"hero\" è stato disattivato"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
-"Non è riuscita l'impostazione della proprietà \"hero\" per questa raccolta"
+msgstr "Non è riuscita l'impostazione della proprietà \"hero\" per questa raccolta"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -555,9 +544,13 @@ msgstr "Immagine salvata"
 msgid "Could not save image"
 msgstr "Impossibile salvare l'immagine"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Raccolta"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Panoramica"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -570,10 +563,6 @@ msgstr "Creazione della nuova raccolta non riuscita."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nuova raccolta"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Panoramica"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9

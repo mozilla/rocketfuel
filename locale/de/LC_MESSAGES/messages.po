@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-10-17 15:36+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie zum Verwalter di
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Apps hinzufügen"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Suchen"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -146,41 +154,45 @@ msgstr "Nein"
 msgid "Yes"
 msgstr "Ja"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Apps hinzufügen"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Suchen"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Sammlung duplizieren"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Name"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "Ein Name ist erforderlich"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Adressname"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Ein Adressname ist erforderlich"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 "Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung "
 "übereinstimmen. "
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "Mobilfunkanbieter"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplizieren"
 
@@ -207,18 +219,6 @@ msgstr "Sie sind nicht als App-Verwalter angemeldet"
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr "Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter anmelden, um dieses Werkzeug effektiv verwenden zu können."
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategorie"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Mobilfunkanbieter"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -316,6 +316,14 @@ msgstr "Nicht autorisiert"
 msgid "You must be logged in to create collections."
 msgstr "Sie müssen angemeldet sein, um Sammlungen zu erstellen."
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "Sammlung ist öffentlich"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "Es gibt keine öffentlichen Sammlungen dieses Typs."
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "Kategorien werden geladen…"
@@ -347,14 +355,6 @@ msgstr "Fehler beim Laden weiterer Daten"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Versuchen Sie es erneut"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "Sammlung ist öffentlich"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "Es gibt keine öffentlichen Sammlungen dieses Typs."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -388,13 +388,6 @@ msgstr "Persona-Anmeldung fehlgeschlagen. Ein Server-Fehler ist aufgetreten."
 msgid "No internet connection"
 msgstr "Keine Internet-Verbindung"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Noch <b>{n}</b> Zeichen übrig"
-msgstr[1] "Noch <b>{n}</b> Zeichen übrig"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Basissammlung"
@@ -406,6 +399,13 @@ msgstr "Sammlung vorgestellter Apps"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "Regal für Mobilfunkanbieter"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "Noch <b>{n}</b> Zeichen übrig"
+msgstr[1] "Noch <b>{n}</b> Zeichen übrig"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -543,9 +543,13 @@ msgstr "Grafik gespeichert"
 msgid "Could not save image"
 msgstr "Grafik konnte nicht gespeichert werden"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "Sammlung"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Übersicht"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -558,10 +562,6 @@ msgstr "Erstellen einer neuen Sammlung fehlgeschlagen."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Neue Sammlung"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Übersicht"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9

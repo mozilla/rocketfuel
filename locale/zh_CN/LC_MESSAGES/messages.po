@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
+"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
 "PO-Revision-Date: 2013-10-19 01:25+0000\n"
 "Last-Translator: Shaohua <shaohua.wen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,14 @@ msgstr "请输入此收藏集的策展人帐号的电子邮件地址"
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "你好"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "添加应用程序"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "搜索"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -146,39 +154,43 @@ msgstr "否"
 msgid "Yes"
 msgstr "是"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "添加应用程序"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "搜索"
-
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "复制收藏集"
 
-#: /templates/duplicate_collection.html:6 /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "名称"
 
-#: /templates/duplicate_collection.html:8
+#: /templates/duplicate_collection.html:9
 msgid "A name is required"
 msgstr "名称是必填的"
 
-#: /templates/duplicate_collection.html:12
+#: /templates/duplicate_collection.html:13
 msgid "Slug"
 msgstr "Slug"
 
-#: /templates/duplicate_collection.html:14
+#: /templates/duplicate_collection.html:15
 msgid "A slug is required"
 msgstr "Slug 是必填的"
 
-#: /templates/duplicate_collection.html:15
+#: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Slug 必须以字母开始，只能包含字母、数字、连接符。必须少于30个字符，且不能与已有收藏集重名。"
 
-#: /templates/duplicate_collection.html:19
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "分类"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "区域"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
+msgid "Carrier"
+msgstr "运营商"
+
+#: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "复制"
 
@@ -205,18 +217,6 @@ msgstr "您并未登录成应用程序策展人"
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr "您必须先登录为策展人才能有效的使用此工具来建立或修改收藏集。"
-
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "分类"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "区域"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "运营商"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -314,6 +314,14 @@ msgstr "未授权"
 msgid "You must be logged in to create collections."
 msgstr "您必须登录才能创建收藏集。"
 
+#: /templates/_macros/collections.html:30
+msgid "Collection is Public"
+msgstr "收藏集是公开的"
+
+#: /templates/_macros/collections.html:39
+msgid "There are no public collections of this type."
+msgstr "目前没有此类型的公开收藏集。"
+
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
 msgstr "正在载入分类…"
@@ -345,14 +353,6 @@ msgstr "载入更多时出错"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "重试"
-
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "收藏集是公开的"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "目前没有此类型的公开收藏集。"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -386,12 +386,6 @@ msgstr "Persona 登录失败，发生服务端错误。"
 msgid "No internet connection"
 msgstr "无互联网连接"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:25
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "还剩 <b>{n}</b> 个字符。"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "基本收藏集"
@@ -403,6 +397,12 @@ msgstr "精选应用程序收藏集"
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
 msgstr "电信运营商展示架"
+
+#. {n} is the number of characters left.
+#: /media/js/utils.js:25
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "还剩 <b>{n}</b> 个字符。"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -540,9 +540,13 @@ msgstr "已保存图片"
 msgid "Could not save image"
 msgstr "无法保存图片"
 
-#: /media/js/views/collection.js:578
+#: /media/js/views/collection.js:581
 msgid "Collection"
 msgstr "收藏集"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "概观"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
@@ -555,10 +559,6 @@ msgstr "无法创建新的收藏集。"
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "新建收藏集"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "概观"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
