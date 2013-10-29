@@ -2,15 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2013-10-17T15:26:57.293Z\n"
 "PO-Revision-Date: 2013-10-22 11:13+0000\n"
 "Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
-=======
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
-"PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
-"Last-Translator: Automatically generated\n"
->>>>>>> e795dc196903141c6d2a99acc5334de633cb2379
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -164,17 +158,6 @@ msgstr "No"
 msgid "Yes"
 msgstr "Sí"
 
-<<<<<<< HEAD
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Agregar aplicaciones"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Buscar"
-
-=======
->>>>>>> e795dc196903141c6d2a99acc5334de633cb2379
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Duplicar colección"
@@ -246,21 +229,6 @@ msgstr ""
 "A fin de crear o modificar las colecciones, debes identificarte como "
 "administrador para usar eficazmente esta herramienta."
 
-<<<<<<< HEAD
-#: /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categoría"
-
-#: /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Región"
-
-#: /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Proveedor"
-
-=======
->>>>>>> e795dc196903141c6d2a99acc5334de633cb2379
 #: /templates/homepage.html:38
 msgid "Collections"
 msgstr "Colecciones"
@@ -400,18 +368,6 @@ msgstr "Error al cargar más"
 msgid "Try Again"
 msgstr "Probar de nuevo"
 
-<<<<<<< HEAD
-#: /templates/_macros/collections.html:30
-msgid "Collection is Public"
-msgstr "La colección es pública"
-
-#: /templates/_macros/collections.html:39
-msgid "There are no public collections of this type."
-msgstr "No hay colecciones públicas de este tipo."
-
-=======
->>>>>>> e795dc196903141c6d2a99acc5334de633cb2379
-#: /templates/helpers/curator.html:0
 msgid "ID: {id}"
 msgstr "ID: {id}"
 
