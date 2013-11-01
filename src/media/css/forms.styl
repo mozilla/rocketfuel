@@ -439,3 +439,37 @@ label [value]:invalid ~ [reason=invalid] {
 .logged-in .only-logged-in.button {
     display: block;
 }
+
+.is-not-curator .field,
+.is-not-curator .field:not(.text):not(.wide) {
+    border-color: #e7e7e7;
+    box-shadow: none;
+    pointer-events: none;
+
+    p {
+        cursor: none;
+    }
+    label {
+        background: #fff;
+    }
+}
+
+.is-not-curator .field:not(.text):not(.wide) label {
+    border-right: 1px solid #e7e7e7;
+}
+
+.is-not-curator .field.text label,
+.is-not-curator .field.wide label {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.is-not-curator .image-upload {
+    input[type=file], p, menu {
+        display: none;
+    }
+}
+
+.is-not-curator .apps .app .delete,
+.is-not-curator .apps .app .handle {
+    display: none;
+}

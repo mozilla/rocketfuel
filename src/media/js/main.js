@@ -108,6 +108,7 @@ require.config({
 
             z.body.toggleClass('logged-in', require('user').logged_in());
             z.body.toggleClass('is-curator', require('user').get_permission('curator'));
+            z.body.toggleClass('is-not-curator', !require('user').get_permission('curator'));
             z.page.trigger('reloaded_chrome');
         }).trigger('reload_chrome');
 
