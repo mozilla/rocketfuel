@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
-"PO-Revision-Date: 2013-11-03 17:49+0000\n"
+"PO-Revision-Date: 2013-11-03 17:50+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1383500998.0\n"
+"X-POOTLE-MTIME: 1383501041.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -412,7 +412,7 @@ msgstr "Koleksion Zbatimesh të Zgjedhura"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Raft Operatori"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:25
