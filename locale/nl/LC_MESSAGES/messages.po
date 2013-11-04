@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
-"PO-Revision-Date: 2013-10-21 06:03+0000\n"
-"Last-Translator: Mark <markh@babelzilla.org>\n"
+"PO-Revision-Date: 2013-11-04 16:25+0000\n"
+"Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: none\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382335430.0\n"
+"X-POOTLE-MTIME: 1383582353.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -20,7 +20,7 @@ msgstr "Een curator toevoegen"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr "E-mailadres gebruiker"
+msgstr "E-mailadres van gebruiker"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
@@ -76,7 +76,7 @@ msgstr "Achtergrondafbeelding:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr "Voorbeeld laden"
+msgstr "Voorbeeldafbeelding laden"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
@@ -96,7 +96,7 @@ msgstr "Afbeelding opslaan"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr "Annuleren en terug"
+msgstr "Annuleren en terugkeren"
 
 #: /templates/collection.html:83
 msgid "Background:"
@@ -209,7 +209,9 @@ msgstr "Aanmelden"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr "De Rocketfuel-vlag is uitgeschakeld. Wijzigingen middels het curatiehulpmiddel worden niet weergegeven op de live-website."
+msgstr ""
+"De Rocketfuel-vlag is uitgeschakeld. Wijzigingen die met het "
+"curatiehulpmiddel zijn gemaakt worden niet op de live-website weergegeven."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
@@ -217,7 +219,9 @@ msgstr "U bent niet aangemeld als een app-curator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Om collecties te maken of aan te passen dient u aangemeld te zijn als curator om dit hulpmiddel effectief te kunnen gebruiken."
+msgstr ""
+"Voor het aanmaken of aanpassen van collecties moet u aangemeld zijn als een "
+"curator om dit hulpmiddel effectief te kunnen gebruiken."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -440,7 +444,7 @@ msgstr "De vlag “held” is nu uitgeschakeld"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr "Eigenschap “held” van collectie mislukt"
+msgstr "Eigenschap “held” van collectie instellen mislukt"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -472,7 +476,7 @@ msgstr "Curator verwijderd"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr "Verwijdering curator mislukt"
+msgstr "Verwijderen van curator mislukt"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
@@ -532,7 +536,7 @@ msgstr "Afbeelding verwijderd"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr "Kan afbeelding niet verwijderen, waarschijnlijk bug 917081"
+msgstr "Kon afbeelding niet verwijderen, waarschijnlijk bug 917081"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
@@ -540,7 +544,7 @@ msgstr "Afbeelding opgeslagen"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr "Kan afbeelding niet opslaan"
+msgstr "Kon afbeelding niet opslaan"
 
 #: /media/js/views/collection.js:581
 msgid "Collection"
