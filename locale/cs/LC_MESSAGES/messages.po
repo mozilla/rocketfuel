@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rockfuel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-10-18 13:13+0000\n"
 "Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: Czech Mozilla <info@mozilla.cz>\n"
@@ -37,6 +37,58 @@ msgstr "Přidat aplikace"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Vyhledávání"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Zavřít"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Ne"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ano"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Duplicitní sbírka"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Název"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Název je vyžadován"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "URL"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "URL je vyžadováno"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr "URL musí začít znakem a může obsahovat pouze znaky, čísla a pomlčky. Může mít maximální délku 30 znaků a nemůže být stejná jako existující sbírka."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operátor"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Duplicitní"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,58 +194,6 @@ msgstr "Přidat správce"
 msgid "Error loading the collection."
 msgstr "Chyba při načítání sbírky."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Zavřít"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Ne"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ano"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Duplicitní sbírka"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Název"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Název je vyžadován"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "URL"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "URL je vyžadováno"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "URL musí začít znakem a může obsahovat pouze znaky, čísla a pomlčky. Může mít maximální délku 30 znaků a nemůže být stejná jako existující sbírka."
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategorie"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Operátor"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Duplicitní"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Nástroje správců"
@@ -282,35 +282,35 @@ msgstr "Jméno autora"
 msgid "Description"
 msgstr "Popis"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Barva pozadí"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Barva pozadí je vyžadována"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Vložte prosím barvu ve formátu hexa (např.: \"#AB78EF\")"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Barva textu"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Barva textu je vyžadována"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Vytvořit"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Neautorizováno"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Pro vytváření sbírek musíte být přihlášen(a)."
 
@@ -338,14 +338,6 @@ msgstr "Načítání regionů..."
 msgid "Loading carriers..."
 msgstr "Načítání operátorů..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Ale ne!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Nastala chyba."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Chyba při načítání"
@@ -353,6 +345,14 @@ msgstr "Chyba při načítání"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Zkusit znovu"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Ale ne!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Nastala chyba."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -382,10 +382,6 @@ msgstr "Nastala chyba při přihlášení pomocí Persona.  Možná nemáte úč
 msgid "Persona login failed. A server error was encountered."
 msgstr "Nastala chyba při přihlášení pomocí Persona. Nastala chyba na serveru."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Není k dispozici připojení k internetu"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Základní sbírka"
@@ -405,6 +401,19 @@ msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "Zbývá <b>{n}</b> znak."
 msgstr[1] "Zbývají <b>{n}</b> znaky."
 msgstr[2] "Zbývá <b>{n}</b> znaků."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Není k dispozici připojení k internetu"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nebylo nalezeno"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Přehled"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -546,10 +555,6 @@ msgstr "Nepodařilo se uložit obrázek"
 msgid "Collection"
 msgstr "Sbírka"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Přehled"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Nová sbírka byla vytvořena."
@@ -561,8 +566,3 @@ msgstr "Chyba při vytváření nové sbírky."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nová sbírka"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nebylo nalezeno"

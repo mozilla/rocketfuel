@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-10-20 20:48+0000\n"
 "Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
@@ -37,6 +37,58 @@ msgstr "Appok hozzáadása"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Keresés"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Bezárás"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nem"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Igen"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Gyűjtemény másolása"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Név"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Egy név szükséges"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Slug"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Egy slug szükséges"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr "A slug betűvel kezdődik, és csak betűket, számokat és kötőjeleket tartalmaz. Legfeljebb 30 karakter lehet, és nem lehet azonos egy meglévő gyűjteményével."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategória"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Régió"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Szolgáltató"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Megkettőzés"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,58 +194,6 @@ msgstr "Karbantartó hozzáadása"
 msgid "Error loading the collection."
 msgstr "Hiba a gyűjtemény betöltésekor."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Bezárás"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nem"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Igen"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Gyűjtemény másolása"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Név"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Egy név szükséges"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Slug"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Egy slug szükséges"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "A slug betűvel kezdődik, és csak betűket, számokat és kötőjeleket tartalmaz. Legfeljebb 30 karakter lehet, és nem lehet azonos egy meglévő gyűjteményével."
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategória"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Régió"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Szolgáltató"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Megkettőzés"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Gondozói eszköz"
@@ -282,35 +282,35 @@ msgstr "A szerző neve"
 msgid "Description"
 msgstr "Leírás"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Háttérszín"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Egy háttérszín szükséges"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Adjon meg egy hexa színt (pl.: „#AB78EF”)"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Szövegszín"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Egy szövegszín szükséges"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Létrehozás"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Jogosulatlan"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "A gyűjtemények létrehozásához be kell jelentkeznie."
 
@@ -338,14 +338,6 @@ msgstr "Régiók betöltése…"
 msgid "Loading carriers..."
 msgstr "Szolgáltatók betöltése…"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Jaj ne!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Hiba történt."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Hiba több betöltésekor"
@@ -353,6 +345,14 @@ msgstr "Hiba több betöltésekor"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Próbálja újra"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Jaj ne!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Hiba történt."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -382,10 +382,6 @@ msgstr "A Persona bejelentkezés sikertelen. Talán nincs fiókja ehhez az e-mai
 msgid "Persona login failed. A server error was encountered."
 msgstr "A Persona bejelentkezés sikertelen. Kiszolgálóhiba történt."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Nincs internetkapcsolat"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Alap gyűjtemény"
@@ -404,6 +400,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "<b>{n}</b> karakter maradt."
 msgstr[1] "<b>{n}</b> karakter maradt."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Nincs internetkapcsolat"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nem található"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Áttekintés"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -545,10 +554,6 @@ msgstr "A kép nem menthető"
 msgid "Collection"
 msgstr "Gyűjtemény"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Áttekintés"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Új gyűjtemény létrehozva."
@@ -560,8 +565,3 @@ msgstr "Az új gyűjtemény létrehozása meghiúsult."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Új gyűjtemény"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nem található"

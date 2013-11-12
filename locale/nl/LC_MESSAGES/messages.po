@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-11-04 16:25+0000\n"
 "Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: none\n"
@@ -37,6 +37,59 @@ msgstr "Apps toevoegen"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Zoeken"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Sluiten"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nee"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ja"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Collectie dupliceren"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Naam"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Een naam is vereist"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Slug"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Een slug is vereist"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+"Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan en kan niet hetzelfde zijn als de bestaande collectie."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Regio"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Provider"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Dupliceren"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,59 +195,6 @@ msgstr "Curator toevoegen"
 msgid "Error loading the collection."
 msgstr "Fout tijdens laden van de collectie."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Sluiten"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nee"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ja"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Collectie dupliceren"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Naam"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Een naam is vereist"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Slug"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Een slug is vereist"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan en kan niet hetzelfde zijn als de bestaande collectie."
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categorie"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Regio"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Provider"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Dupliceren"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Beheerhulpmiddel"
@@ -209,9 +209,7 @@ msgstr "Aanmelden"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-"De Rocketfuel-vlag is uitgeschakeld. Wijzigingen die met het "
-"curatiehulpmiddel zijn gemaakt worden niet op de live-website weergegeven."
+msgstr "De Rocketfuel-vlag is uitgeschakeld. Wijzigingen die met het curatiehulpmiddel zijn gemaakt worden niet op de live-website weergegeven."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
@@ -219,9 +217,7 @@ msgstr "U bent niet aangemeld als een app-curator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Voor het aanmaken of aanpassen van collecties moet u aangemeld zijn als een "
-"curator om dit hulpmiddel effectief te kunnen gebruiken."
+msgstr "Voor het aanmaken of aanpassen van collecties moet u aangemeld zijn als een curator om dit hulpmiddel effectief te kunnen gebruiken."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -287,35 +283,35 @@ msgstr "Naam van auteur"
 msgid "Description"
 msgstr "Beschrijving"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Achtergrondkleur"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Een achtergrondkleur is vereist"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Voer een hex-kleur in (bv. “#AB78EF”)"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Tekstkleur"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Een tekstkleur is vereist"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Aanmaken"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Niet geautoriseerd"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "U moet aangemeld zijn om collecties aan te maken."
 
@@ -343,14 +339,6 @@ msgstr "Regio’s laden…"
 msgid "Loading carriers..."
 msgstr "Providers laden…"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Oh nee!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Er is een fout opgetreden."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Fout bij laden van meer"
@@ -358,6 +346,14 @@ msgstr "Fout bij laden van meer"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Opnieuw proberen"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Oh nee!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Er is een fout opgetreden."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -387,10 +383,6 @@ msgstr "Persona-aanmelding mislukt. Misschien hebt u geen account onder dat e-ma
 msgid "Persona login failed. A server error was encountered."
 msgstr "Persona-aanmelding mislukt. Er is een serverfout opgetreden."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Geen internetverbinding"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Basiscollectie"
@@ -409,6 +401,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "<b>{n}</b> teken resterend."
 msgstr[1] "<b>{n}</b> tekens resterend."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Geen internetverbinding"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Niet gevonden"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Overzicht"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -550,10 +555,6 @@ msgstr "Kon afbeelding niet opslaan"
 msgid "Collection"
 msgstr "Collectie"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Overzicht"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Nieuwe collectie aangemaakt."
@@ -565,8 +566,3 @@ msgstr "Aanmaken van nieuwe collectie is mislukt."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nieuwe collectie"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Niet gevonden"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-10-21 12:18+0000\n"
 "Last-Translator: Branislav <sektormaster@atlas.sk>\n"
 "Language-Team: none\n"
@@ -37,6 +37,58 @@ msgstr "Pridať aplikácie"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Vyhľadávanie"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Zavrieť"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nie"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Áno"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr ""
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Názov"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Názov je požadovaný"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "URL"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "URL adresa je požadovaná"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategória"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr ""
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr ""
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr ""
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,58 +194,6 @@ msgstr ""
 msgid "Error loading the collection."
 msgstr ""
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Zavrieť"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nie"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Áno"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr ""
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Názov"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Názov je požadovaný"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "URL"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "URL adresa je požadovaná"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategória"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr ""
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr ""
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr ""
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr ""
@@ -282,35 +282,35 @@ msgstr "Meno autora"
 msgid "Description"
 msgstr "Popis"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Farba pozadia"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Farba pozadia je požadovaná"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Zadajte prosím farbu vo formáte (napr.: \"#AB78EF\")"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Farba textu"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Farba textu je požadovaná"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Vytvoriť"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Neautorizované"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr ""
 
@@ -338,14 +338,6 @@ msgstr ""
 msgid "Loading carriers..."
 msgstr ""
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Ale nie!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Nastala chyba."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Chyba pri načítaní"
@@ -353,6 +345,14 @@ msgstr "Chyba pri načítaní"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Skúsiť znova"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Ale nie!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Nastala chyba."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -382,10 +382,6 @@ msgstr ""
 msgid "Persona login failed. A server error was encountered."
 msgstr ""
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr ""
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr ""
@@ -405,6 +401,19 @@ msgid_plural "<b>{n}</b> characters left."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr ""
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr ""
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr ""
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -546,10 +555,6 @@ msgstr "Obrázok sa nepodarilo uložiť"
 msgid "Collection"
 msgstr ""
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr ""
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr ""
@@ -560,9 +565,4 @@ msgstr ""
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
 msgstr ""

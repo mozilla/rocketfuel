@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-10-19 01:25+0000\n"
 "Last-Translator: Shaohua <shaohua.wen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,58 @@ msgstr "添加应用程序"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "搜索"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "关闭"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "否"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "是"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "复制收藏集"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "名称"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "名称是必填的"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Slug"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Slug 是必填的"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr "Slug 必须以字母开始，只能包含字母、数字、连接符。必须少于30个字符，且不能与已有收藏集重名。"
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "分类"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "区域"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "运营商"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "复制"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,58 +194,6 @@ msgstr "添加策展人"
 msgid "Error loading the collection."
 msgstr "载入收藏集时发生错误。"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "关闭"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "否"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "是"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "复制收藏集"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "名称"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "名称是必填的"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Slug"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Slug 是必填的"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "Slug 必须以字母开始，只能包含字母、数字、连接符。必须少于30个字符，且不能与已有收藏集重名。"
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "分类"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "区域"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "运营商"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "复制"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "策展工具"
@@ -282,35 +282,35 @@ msgstr "作者姓名"
 msgid "Description"
 msgstr "描述"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "背景色"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "背景色是必须的"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "请输入 16 进制颜色代码（例如：“#AB78EF”）"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "文本颜色"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "文本颜色是必须的"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "创建"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "未授权"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "您必须登录才能创建收藏集。"
 
@@ -338,14 +338,6 @@ msgstr "正在载入区域列表..."
 msgid "Loading carriers..."
 msgstr "正在载入运营商列表..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "哦，不！"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "出错了。"
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "载入更多时出错"
@@ -353,6 +345,14 @@ msgstr "载入更多时出错"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "重试"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "哦，不！"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "出错了。"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -382,10 +382,6 @@ msgstr "Persona 登录失败，也许您尚未使用该邮箱注册过帐号？"
 msgid "Persona login failed. A server error was encountered."
 msgstr "Persona 登录失败，发生服务端错误。"
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "无互联网连接"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "基本收藏集"
@@ -403,6 +399,19 @@ msgstr "电信运营商展示架"
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "还剩 <b>{n}</b> 个字符。"
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "无互联网连接"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "未找到"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "概观"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -544,10 +553,6 @@ msgstr "无法保存图片"
 msgid "Collection"
 msgstr "收藏集"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "概观"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "已新建收藏集。"
@@ -559,8 +564,3 @@ msgstr "无法创建新的收藏集。"
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "新建收藏集"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "未找到"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-11-08 19:08+0000\n"
 "Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,9 +24,7 @@ msgstr "Correo electrónico del usuario"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Introduce el correo electrónico del usuario que quieres hacer administrador "
-"de esta colección."
+msgstr "Introduce el correo electrónico del usuario que quieres hacer administrador de esta colección."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -36,10 +34,63 @@ msgstr "Namasté"
 msgid "Add Apps"
 msgstr "Agregar aplicaciones"
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
+#: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Buscar"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Cerrar"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "No"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Sí"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Duplicar la colección"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Nombre"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Se necesita un nombre"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Título breve (slug)"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Se necesita un título breve"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+"Los títulos breves (o slugs) deben empezar con una letra y solo pueden contener letras, números y guiones. Deben tener un máximo de 30 caracteres o menos y no pueden ser iguales a la colección "
+"existente."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categoría"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Región"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Proveedor"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Duplicar"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -49,24 +100,19 @@ msgstr "Autor:"
 msgid "Slug:"
 msgstr "Título breve:"
 
-#: /templates/collection.html:33
-#: /templates/_macros/collections.html:11
+#: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
 msgstr "Región:"
 
-#: /templates/collection.html:39
-#: /templates/_macros/collections.html:15
+#: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
 msgstr "Proveedor:"
 
-#: /templates/collection.html:46
-#: /templates/_macros/collections.html:19
+#: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
 msgstr "Categoría:"
 
-#: /templates/collection.html:47
-#: /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:346
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
 msgstr "Todas las categorías (página de inicio)"
 
@@ -88,9 +134,7 @@ msgstr "Cargando imagen preliminar"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Arrastra una imagen PNG o JPG abajo o <span>selecciona un archivo</span> "
-"para cargar una imagen."
+msgstr "Arrastra una imagen PNG o JPG abajo o <span>selecciona un archivo</span> para cargar una imagen."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -124,8 +168,7 @@ msgstr "Aplicaciones"
 msgid "Add app to collection"
 msgstr "Agregar la aplicación a la colección"
 
-#: /templates/collection.html:114
-#: /media/js/views/collection.js:15
+#: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
 msgstr "Hacer pública la colección"
 
@@ -153,68 +196,6 @@ msgstr "Agregar un administrador"
 msgid "Error loading the collection."
 msgstr "Error al cargar la colección."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Cerrar"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "No"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Sí"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Duplicar la colección"
-
-#: /templates/duplicate_collection.html:7
-#: /templates/new_collection.html:7
-msgid "Name"
-msgstr "Nombre"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Se necesita un nombre"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Título breve (slug)"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Se necesita un título breve"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Los títulos breves (o slugs) deben empezar con una letra y solo pueden "
-"contener letras, números y guiones. Deben tener un máximo de 30 caracteres o "
-"menos y no pueden ser iguales a la colección existente."
-
-#: /templates/duplicate_collection.html:22
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categoría"
-
-#: /templates/duplicate_collection.html:27
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:49
-msgid "Region"
-msgstr "Región"
-
-#: /templates/duplicate_collection.html:32
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Proveedor"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Duplicar"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Herramienta de administración"
@@ -229,9 +210,7 @@ msgstr "Iniciar sesión"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-"El indicador de Rocketfuel está desactivado. Cualquier cambio que se haga en "
-"la Herramienta del administrador no se reflejará en el sitio activo."
+msgstr "El indicador de Rocketfuel está desactivado. Cualquier cambio que se haga en la Herramienta del administrador no se reflejará en el sitio activo."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
@@ -239,9 +218,7 @@ msgstr "No te has identificado como administrador de la aplicación"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"A fin de crear o modificar las colecciones, debes identificarte como "
-"administrador para usar eficazmente esta herramienta."
+msgstr "A fin de crear o modificar las colecciones, debes identificarte como administrador para usar eficazmente esta herramienta."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -297,10 +274,7 @@ msgstr "Título breve de la colección"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"Los títulos breves (o slugs) deben empezar con una letra y pueden contener "
-"solo letras, números y guiones. Deben tener un máximo de 30 caracteres o "
-"menos."
+msgstr "Los títulos breves (o slugs) deben empezar con una letra y pueden contener solo letras, números y guiones. Deben tener un máximo de 30 caracteres o menos."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -310,36 +284,35 @@ msgstr "Nombre del autor"
 msgid "Description"
 msgstr "Descripción"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Color de fondo"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Se requiere un color de fondo"
 
-#: /templates/new_collection.html:68
-#: /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Introduce un color en hexadecimal (p.ej. \"#AB78EF\")"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Color del texto"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Se requiere un color de texto"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Crear"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "No autorizado"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Tienes que iniciar la sesión para crear colecciones."
 
@@ -355,8 +328,7 @@ msgstr "No hay colecciones públicas de este tipo."
 msgid "Loading categories..."
 msgstr "Cargando categorías..."
 
-#: /templates/_macros/dropdowns.html:30
-#: /templates/_macros/dropdowns.html:53
+#: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
 msgstr "-- Ninguno --"
 
@@ -368,14 +340,6 @@ msgstr "Cargando regiones..."
 msgid "Loading carriers..."
 msgstr "Cargando proveedores..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "¡Oh no!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Ha ocurrido un error."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Error al cargar más"
@@ -383,6 +347,14 @@ msgstr "Error al cargar más"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Probar de nuevo"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "¡Oh no!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Ha ocurrido un error."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -406,19 +378,11 @@ msgstr "Te has identificado"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
-"Hubo un error al identificarte con Mozilla Persona. ¿Será que no tienes una "
-"cuenta con esta dirección de correo?"
+msgstr "Hubo un error al identificarte con Mozilla Persona. ¿Será que no tienes una cuenta con esta dirección de correo?"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
-"Hubo un error al identificarte con Mozilla Persona. Se encontró un error en "
-"el servidor."
-
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "No hay conexión a internet"
+msgstr "Hubo un error al identificarte con Mozilla Persona. Se encontró un error en el servidor."
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
@@ -438,6 +402,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "Queda <b>{n}</b> carácter."
 msgstr[1] "Quedan <b>{n}</b> caracteres."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "No hay conexión a internet"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "No se ha encontrado"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Información general"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -541,8 +518,7 @@ msgstr "Se ha actualizado el orden"
 
 #: /media/js/views/collection.js:288
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
-"Error al actualizar el orden de la colección. Intenta actualizar la página."
+msgstr "Error al actualizar el orden de la colección. Intenta actualizar la página."
 
 #: /media/js/views/collection.js:378
 msgid "Saved {field}"
@@ -554,8 +530,7 @@ msgstr "No se pudo actualizar {field}"
 
 #: /media/js/views/collection.js:414
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
-"Incompatible: la aplicación no está disponible en la región de la colección."
+msgstr "Incompatible: la aplicación no está disponible en la región de la colección."
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
@@ -581,10 +556,6 @@ msgstr "No se pudo guardar la imagen"
 msgid "Collection"
 msgstr "Colección"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Información general"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Se ha creado una colección nueva."
@@ -596,8 +567,3 @@ msgstr "No se pudo crear una colección nueva."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Colección nueva"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "No se ha encontrado"

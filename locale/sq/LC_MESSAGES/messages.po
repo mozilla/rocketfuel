@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-11-03 17:50+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,10 +34,63 @@ msgstr "Namaste"
 msgid "Add Apps"
 msgstr "Shtoni Zbatime"
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
+#: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Kërko"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Mbylle"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Jo"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Po"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Bëj Një Kopje të Koleksionit"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Emër"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Lypset një emër"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Identifikues"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Lypset një identifikues"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+"Identifikuesit duhet të fillojnë me një shkronjë dhe mund të përmbajnë vetëm shkronja, numra dhe vija ndarëse. Duhet të jetë 30 ose më pak shenja dhe nuk mund të jetë i njëjtë me atë të koleksionit "
+"ekzistues."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategori"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Rajon"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operator"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Bëje Kopjen"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -47,24 +100,19 @@ msgstr "Autor:"
 msgid "Slug:"
 msgstr "Identifikues:"
 
-#: /templates/collection.html:33
-#: /templates/_macros/collections.html:11
+#: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
 msgstr "Rajon:"
 
-#: /templates/collection.html:39
-#: /templates/_macros/collections.html:15
+#: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
 msgstr "Operator:"
 
-#: /templates/collection.html:46
-#: /templates/_macros/collections.html:19
+#: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
 msgstr "Kategori:"
 
-#: /templates/collection.html:47
-#: /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:346
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
 msgstr "Krejt Kategoritë (Faqja Hyrëse)"
 
@@ -120,8 +168,7 @@ msgstr "Zbatime"
 msgid "Add app to collection"
 msgstr "Shtoni zbatim te koleksioni"
 
-#: /templates/collection.html:114
-#: /media/js/views/collection.js:15
+#: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
 msgstr "Bëje Koleksionin Publik"
 
@@ -148,65 +195,6 @@ msgstr "Shtoni Kujdestar"
 #: /templates/collection.html:148
 msgid "Error loading the collection."
 msgstr "Gabim gjatë ngarkimit të koleksionit."
-
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Mbylle"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Jo"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Po"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Bëj Një Kopje të Koleksionit"
-
-#: /templates/duplicate_collection.html:7
-#: /templates/new_collection.html:7
-msgid "Name"
-msgstr "Emër"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Lypset një emër"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Identifikues"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Lypset një identifikues"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "Identifikuesit duhet të fillojnë me një shkronjë dhe mund të përmbajnë vetëm shkronja, numra dhe vija ndarëse. Duhet të jetë 30 ose më pak shenja dhe nuk mund të jetë i njëjtë me atë të koleksionit ekzistues."
-
-#: /templates/duplicate_collection.html:22
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategori"
-
-#: /templates/duplicate_collection.html:27
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:49
-msgid "Region"
-msgstr "Rajon"
-
-#: /templates/duplicate_collection.html:32
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Operator"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Bëje Kopjen"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
@@ -296,36 +284,35 @@ msgstr "Emër Autori"
 msgid "Description"
 msgstr "Përshkrim"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Ngjyrë Sfondi"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Ngjyra e sfondit është e domosdoshme"
 
-#: /templates/new_collection.html:68
-#: /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Ju lutemi, jepni një ngjyrë me kod gjashtësh (p.sh.: \"#AB78EF\")"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Ngjyrë Teksti"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Ngjyra e tekstit është e domosdoshme"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Krijoje"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "I paautorizuar"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Duhet të keni bërë hyrjen që të krijoni koleksione."
 
@@ -341,8 +328,7 @@ msgstr "Nuk ka koleksione publikë të këtij lloji."
 msgid "Loading categories..."
 msgstr "Po ngarkohen kategoritë..."
 
-#: /templates/_macros/dropdowns.html:30
-#: /templates/_macros/dropdowns.html:53
+#: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
 msgstr "-- Asnjë --"
 
@@ -354,14 +340,6 @@ msgstr "Po ngarkohen rajonet..."
 msgid "Loading carriers..."
 msgstr "Po ngarkohen operatorët..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Mooos!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Ndodhi një gabim."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Gabim gjatë ngarkimit të më tepër"
@@ -369,6 +347,14 @@ msgstr "Gabim gjatë ngarkimit të më tepër"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Riprovoni"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Mooos!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Ndodhi një gabim."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -398,10 +384,6 @@ msgstr "Hyrja me Persona dështoi. Ndoshta nuk keni llogari me këtë adresë em
 msgid "Persona login failed. A server error was encountered."
 msgstr "Hyrja me Persona dështoi. U has një gabim shërbyesi."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Pa lidhje internet"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Koleksion Bazë"
@@ -420,6 +402,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "edhe <b>{n}</b> shenjë."
 msgstr[1] "edhe <b>{n}</b> shenja."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Pa lidhje internet"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nuk u Gjet"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Përmbledhje"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -561,10 +556,6 @@ msgstr "Nuk ruajti dot figurën"
 msgid "Collection"
 msgstr "Koleksion"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Përmbledhje"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Koleksioni i ri u krijua."
@@ -576,8 +567,3 @@ msgstr "Dështoi në krijim koleksioni të ri."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Koleksion i Ri"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nuk u Gjet"

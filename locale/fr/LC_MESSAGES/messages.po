@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-10-09 15:24+0000\n"
 "Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
 "Language-Team: none\n"
@@ -37,6 +37,60 @@ msgstr "Ajouter des apps"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Rechercher"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Fermer"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Non"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Oui"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Dupliquer la collection"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Nom"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Le nom est obligatoire"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Raccourci"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Le raccourci est obligatoire"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+"Les raccourcis doivent commencer par une lettre et ne peuvent contenir que des lettres, des chiffres et des tirets. Leur longueur ne peut pas dépasser 30 caractères et ils ne peuvent pas être "
+"identiques à celui d'une autre collection existante."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Catégorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Région"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Opérateur"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Dupliquer"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,60 +196,6 @@ msgstr ""
 msgid "Error loading the collection."
 msgstr "Erreur au chargement de la collection."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Fermer"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Non"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Oui"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Dupliquer la collection"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Nom"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Le nom est obligatoire"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Raccourci"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Le raccourci est obligatoire"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Les raccourcis doivent commencer par une lettre et ne peuvent contenir que des lettres, des chiffres et des tirets. Leur longueur ne peut pas dépasser 30 caractères et ils ne peuvent pas être "
-"identiques à celui d'une autre collection existante."
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Catégorie"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Région"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Opérateur"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Dupliquer"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Outil de curation"
@@ -284,35 +284,35 @@ msgstr "Nom de l'auteur"
 msgid "Description"
 msgstr "Description"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Couleur d'arrière-plan"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Une couleur d'arrière-plan est nécessaire"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Veuillez saisir une couleur hexadécimale (par exemple « #AB78EF »)"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Couleur du texte"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "La couleur de texte est obligatoire"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Créer"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Non autorisé"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Vous devez vous connecter pour créer des collections."
 
@@ -340,14 +340,6 @@ msgstr "Chargement des régions…"
 msgid "Loading carriers..."
 msgstr "Chargement des opérateurs…"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Oh non !"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Une erreur s'est produite."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Erreur de chargement du contenu supplémentaire"
@@ -355,6 +347,14 @@ msgstr "Erreur de chargement du contenu supplémentaire"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Veuillez réessayer"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Oh non !"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Une erreur s'est produite."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -384,10 +384,6 @@ msgstr "Échec de la connexion avec Persona. Peut-être n'avez-vous pas de compt
 msgid "Persona login failed. A server error was encountered."
 msgstr "Échec de la connexion avec Persona. Une erreur du serveur s'est produite."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Aucune connexion Internet"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Collection de base"
@@ -406,6 +402,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "<b>{n}</b> caractère restant."
 msgstr[1] "<b>{n}</b> caractères restants."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Aucune connexion Internet"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Introuvable"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Aperçu"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -547,10 +556,6 @@ msgstr ""
 msgid "Collection"
 msgstr "Collection"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Aperçu"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Nouvelle collection créée."
@@ -562,8 +567,3 @@ msgstr "Impossible de créer la nouvelle collection."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Nouvelle collection"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Introuvable"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-10-17 15:36+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
@@ -37,6 +37,60 @@ msgstr "Apps hinzufügen"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Suchen"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Schließen"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nein"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ja"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Sammlung duplizieren"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Name"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Ein Name ist erforderlich"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Adressname"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Ein Adressname ist erforderlich"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr ""
+"Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung "
+"übereinstimmen. "
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Mobilfunkanbieter"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Duplizieren"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -142,60 +196,6 @@ msgstr "Verwalter hinzufügen"
 msgid "Error loading the collection."
 msgstr "Fehler beim Laden der Sammlung."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Schließen"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nein"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ja"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Sammlung duplizieren"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Name"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Ein Name ist erforderlich"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Adressname"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Ein Adressname ist erforderlich"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung "
-"übereinstimmen. "
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategorie"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Mobilfunkanbieter"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Duplizieren"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Kurations-Werkzeug"
@@ -284,35 +284,35 @@ msgstr "Name des Autors"
 msgid "Description"
 msgstr "Beschreibung"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Hintergrundfarbe"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Eine Hintergrundfarbe ist erforderlich"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Bitte geben Sie eine Farbe im Hexadezimalformat (z.B.: \"#AB78EF\") ein"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Textfarbe"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Eine Textfarbe ist erforderlich"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Erstellen"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Nicht autorisiert"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Sie müssen angemeldet sein, um Sammlungen zu erstellen."
 
@@ -340,14 +340,6 @@ msgstr "Regionen werden geladen…"
 msgid "Loading carriers..."
 msgstr "Mobilfunkanbieter werden geladen…"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Oh, nein!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Ein Fehler ist aufgetreten."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Fehler beim Laden weiterer Daten"
@@ -355,6 +347,14 @@ msgstr "Fehler beim Laden weiterer Daten"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Versuchen Sie es erneut"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Oh, nein!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Ein Fehler ist aufgetreten."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -384,10 +384,6 @@ msgstr "Persona-Anmeldung vorgeschlagen. Vielleicht haben Sie unter dieser E-Mai
 msgid "Persona login failed. A server error was encountered."
 msgstr "Persona-Anmeldung fehlgeschlagen. Ein Server-Fehler ist aufgetreten."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Keine Internet-Verbindung"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Basissammlung"
@@ -406,6 +402,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "Noch <b>{n}</b> Zeichen übrig"
 msgstr[1] "Noch <b>{n}</b> Zeichen übrig"
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Keine Internet-Verbindung"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Übersicht"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -547,10 +556,6 @@ msgstr "Grafik konnte nicht gespeichert werden"
 msgid "Collection"
 msgstr "Sammlung"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Übersicht"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Neue Sammlung erstellt."
@@ -562,8 +567,3 @@ msgstr "Erstellen einer neuen Sammlung fehlgeschlagen."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Neue Sammlung"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nicht gefunden"

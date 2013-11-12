@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25T20:53:03.338Z\n"
+"POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
 "PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
 "Last-Translator: Αλέξανδρος Μιόγλου <alexandros@mioglou.me>\n"
 "Language-Team: none\n"
@@ -36,6 +36,58 @@ msgstr "Προσθήκη εφαρμογών"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Αναζήτηση"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Όχι"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ναι"
+
+#: /templates/duplicate_collection.html:2
+msgid "Duplicate Collection"
+msgstr "Αντιγραφή συλλογής"
+
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
+msgid "Name"
+msgstr "Όνομα"
+
+#: /templates/duplicate_collection.html:9
+msgid "A name is required"
+msgstr "Απαιτείται ένα όνομα"
+
+#: /templates/duplicate_collection.html:13
+msgid "Slug"
+msgstr "Ψευδώνυμο"
+
+#: /templates/duplicate_collection.html:15
+msgid "A slug is required"
+msgstr "Απαιτείται ψευδώνυμο"
+
+#: /templates/duplicate_collection.html:16
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr "Τα ψευδώνυμα πρέπει να αρχίζουν με γράμμα και περιέχουν μόνο γράμματα, αριθμούς, και κάτω παύλες. Πρέπει να είναι ως 30 χαρακτήρες και δε μπορούν να είναι τα ίδια με την υπάρχουσα συλλογή."
+
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Κατηγορία"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Χώρα"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Πάροχος"
+
+#: /templates/duplicate_collection.html:40
+msgid "Duplicate"
+msgstr "Αντιγραφή"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -141,58 +193,6 @@ msgstr "Προσθήκε Επιμελητή"
 msgid "Error loading the collection."
 msgstr "Σφάλμα κατά τη φόρτωση της συλλογής."
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Κλείσιμο"
-
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Όχι"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ναι"
-
-#: /templates/duplicate_collection.html:2
-msgid "Duplicate Collection"
-msgstr "Αντιγραφή συλλογής"
-
-#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
-msgid "Name"
-msgstr "Όνομα"
-
-#: /templates/duplicate_collection.html:9
-msgid "A name is required"
-msgstr "Απαιτείται ένα όνομα"
-
-#: /templates/duplicate_collection.html:13
-msgid "Slug"
-msgstr "Ψευδώνυμο"
-
-#: /templates/duplicate_collection.html:15
-msgid "A slug is required"
-msgstr "Απαιτείται ψευδώνυμο"
-
-#: /templates/duplicate_collection.html:16
-msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "Τα ψευδώνυμα πρέπει να αρχίζουν με γράμμα και περιέχουν μόνο γράμματα, αριθμούς, και κάτω παύλες. Πρέπει να είναι ως 30 χαρακτήρες και δε μπορούν να είναι τα ίδια με την υπάρχουσα συλλογή."
-
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Κατηγορία"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Χώρα"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:55
-msgid "Carrier"
-msgstr "Πάροχος"
-
-#: /templates/duplicate_collection.html:40
-msgid "Duplicate"
-msgstr "Αντιγραφή"
-
 #: /templates/header.html:2
 msgid "Curation Tool"
 msgstr "Εργαλείο επιμέλειας"
@@ -281,35 +281,35 @@ msgstr "Όνομα συντάκτη"
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: /templates/new_collection.html:65
+#: /templates/new_collection.html:64
 msgid "Background Color"
 msgstr "Χρώμα φόντου"
 
-#: /templates/new_collection.html:67
+#: /templates/new_collection.html:66
 msgid "A background color is required"
 msgstr "Απαιτείται ένα χρώμα φόντου"
 
-#: /templates/new_collection.html:68 /templates/new_collection.html:75
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Παρακαλώ εισάγετε ένα δεκαεξαδικό χρώμα (π.χ.: \"#AB78EF\")"
 
-#: /templates/new_collection.html:72
+#: /templates/new_collection.html:71
 msgid "Text Color"
 msgstr "Χρώμα κειμένου"
 
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:73
 msgid "A text color is required"
 msgstr "Απαιτείται χρώμα κειμένου"
 
-#: /templates/new_collection.html:81
+#: /templates/new_collection.html:80
 msgid "Create"
 msgstr "Δημιουργία"
 
-#: /templates/new_collection.html:86
+#: /templates/new_collection.html:85
 msgid "Unauthorized"
 msgstr "Μη εγκεκριμένο"
 
-#: /templates/new_collection.html:87
+#: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Πρέπει να είστε συνδεδεμένοι για να δημιουργήσετε συλλογές."
 
@@ -337,14 +337,6 @@ msgstr "Φόρτωση περιοχών..."
 msgid "Loading carriers..."
 msgstr "Φόρτωση παρόχων..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Ωχ όχι!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Παρουσιάστηκε κάποιο σφάλμα."
-
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
 msgstr "Σφάλμα κατά τη φόρτωση περισσότερων"
@@ -352,6 +344,14 @@ msgstr "Σφάλμα κατά τη φόρτωση περισσότερων"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Προσπαθήστε ξανά"
+
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Ωχ όχι!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Παρουσιάστηκε κάποιο σφάλμα."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
@@ -381,10 +381,6 @@ msgstr "Η σύνδεση persona απέτυχε. Μήπως δεν έχετε �
 msgid "Persona login failed. A server error was encountered."
 msgstr "Η σύνδεση persona απέτυχε. Παρουσιάστηκε ένα σφάλμα διακομιστή."
 
-#: /media/js/navigation.js:50
-msgid "No internet connection"
-msgstr "Χωρις σύνδεση"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Βασική συλλογή"
@@ -403,6 +399,19 @@ msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] "<b>{n}</b> χαρακτήρας απέμεινε."
 msgstr[1] "<b>{n}</b> χαρακτήρες απέμειναν."
+
+#: /media/js/navigation.js:50
+msgid "No internet connection"
+msgstr "Χωρις σύνδεση"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Δεν βρέθηκε"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Περίληψη"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -544,10 +553,6 @@ msgstr "Δεν ήταν δυνατή η αποθήκευση της εικόνα
 msgid "Collection"
 msgstr "Συλλογή"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Περίληψη"
-
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
 msgstr "Δημιουργήθηκε νέα συλλογή."
@@ -559,8 +564,3 @@ msgstr "Απέτυχε να δημιουργηθεί νέα συλλογή."
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
 msgstr "Νέα συλλογή"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Δεν βρέθηκε"
