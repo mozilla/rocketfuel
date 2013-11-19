@@ -3,7 +3,7 @@
 
 {% if not user.get_permission('curator') %}
 <section class="alert only-logged-in">
-  <h1>{{ _('You are not logged in as an App Curator') }}</h1>
+  <h1>{{ _('You are not logged in as a Curator') }}</h1>
   <p>{{ _('In order to create or modify collections, you must be logged in as a Curator to effectively use this tool.') }}</p>
 </section>
 {% endif %}
