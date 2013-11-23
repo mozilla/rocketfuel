@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-12T23:28:36.539Z\n"
-"PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2013-11-22 21:02-0500\n"
+"Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
+"Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,551 +15,551 @@ msgstr ""
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "管理者を追加"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "ユーザのメールアドレス"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
+msgstr "このコレクションの管理者にしたいユーザのメールアドレスを入力してください。"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "アプリを追加"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "閉じる"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "いいえ"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "はい"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "コレクションを複製"
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: /templates/duplicate_collection.html:9
 msgid "A name is required"
-msgstr ""
+msgstr "名前は必須です"
 
 #: /templates/duplicate_collection.html:13
 msgid "Slug"
-msgstr ""
+msgstr "スラグ"
 
 #: /templates/duplicate_collection.html:15
 msgid "A slug is required"
-msgstr ""
+msgstr "スラグは必須です"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
+msgstr "スラグは、最初の文字をアルファベットにする必要があり、英数字とハイフンのみ使用できます。最大 30 文字で、既存のコレクションと同じものは使用できません。"
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "カテゴリ"
 
 #: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "地域"
 
 #: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
-msgstr ""
+msgstr "キャリア"
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr ""
+msgstr "複製"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "作者:"
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "スラグ:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "地域:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "キャリア:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "カテゴリ:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:346
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "すべてのカテゴリ (ホームページ)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "説明:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "カスタマイズ"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "背景画像:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "プレビュー画像を読み込んでいます"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
+msgstr "画像をアップロードするには、PNG もしくは JPEG 形式の画像を下の枠内にドラッグするか <span>ファイルを選択</span> してください。"
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "あなたのブラウザは Canvas に対応していません。"
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "保存された画像を削除"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "画像を保存"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "キャンセルして取り消す"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "背景:"
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "テキスト:"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "アプリ"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "コレクションにアプリを追加"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr ""
+msgstr "コレクションを公開"
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "コレクションを複製"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "コレクションを削除"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "管理者"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "このコレクションには管理者がいません。"
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "管理者を追加"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
-msgstr ""
+msgstr "コレクションの読み込み中に問題が発生しました。"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "管理者ツール"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "ログアウト"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "ログイン"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
+msgstr "Rocketfuel フラグは無効化されています。管理者ツール上で行われてた変更は実際のサイトに反映されません。"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as an App Curator"
-msgstr ""
+msgstr "あなたはアプリ管理者としてログインしています"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
+msgstr "コレクションを作成、編集するには、管理者としてログインし、このツールを効果的に使用する必要があります。"
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "コレクション"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "コレクションはまだ作成されていません。"
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "新しいコレクションを追加"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr ""
+msgstr "おすすめアプリ"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "おすすめアプリの項目はまだ作成されていません。"
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "新しいおすすめアプリコレクションを追加"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "オペレーターのコレクション"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "オペレーターのコレクションはまだ作成されていません。"
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "新しいオペレーターのコレクションを追加"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "オペレーターのコレクションを見るにはキャリアを選択してください。"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "新しい {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "名前はユーザには表示されません。単なる便宜的なものです。"
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr ""
+msgstr "コレクションのスラグ"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
+msgstr "スラグは、最初の文字をアルファベットにする必要があり、英数字とハイフンのみ使用できます。最大 30 文字です。"
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "作者名"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: /templates/new_collection.html:64
 msgid "Background Color"
-msgstr ""
+msgstr "背景色"
 
 #: /templates/new_collection.html:66
 msgid "A background color is required"
-msgstr ""
+msgstr "背景色は必須です"
 
 #: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "色を HEX 値で入力してください (例「#AB78EF」)"
 
 #: /templates/new_collection.html:71
 msgid "Text Color"
-msgstr ""
+msgstr "文字色"
 
 #: /templates/new_collection.html:73
 msgid "A text color is required"
-msgstr ""
+msgstr "文字色は必須です"
 
 #: /templates/new_collection.html:80
 msgid "Create"
-msgstr ""
+msgstr "作成"
 
 #: /templates/new_collection.html:85
 msgid "Unauthorized"
-msgstr ""
+msgstr "未承認"
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "コレクションを作成するにはログインしてください。"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "コレクションは公開です"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "この種類の公開コレクションはありません。"
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "カテゴリを読み込んでいます..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- なし --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr ""
+msgstr "地域を読み込んでいます..."
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr ""
+msgstr "キャリアを読み込んでいます..."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "読み込み中に問題が発生しました"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "再読み込み"
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "エラー"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "問題が発生しました。"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "他のロケール"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "ログアウトしました"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "ログインしました"
 
 #: /media/js/login.js:125
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
+msgstr "Persona のログインに失敗しました。入力されたメールアドレスのアカウントは存在しない可能性があります。"
 
 #: /media/js/login.js:130
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "Persona のログインに失敗しました。サーバエラーが発生しました。"
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
-msgstr ""
+msgstr "基本コレクション"
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr ""
+msgstr "おすすめアプリコレクション"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "オペレーターのコレクション"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:25
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
+msgstr[0] "残り <b>{n}</b> 文字です。"
 
 #: /media/js/navigation.js:50
 msgid "No internet connection"
-msgstr ""
+msgstr "インターネット未接続"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "Not Found"
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr ""
+msgstr "コレクションを非公開にする"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "コレクションを非公開にしました"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
-msgstr ""
+msgstr "コレクションを公開しました"
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "コレクションの公開設定を変更きませんでした"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "「ヒーロー」フラグを有効にする"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "「ヒーロー」フラグを無効にする"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "「ヒーロー」フラグを有効にしました"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "「ヒーロー」フラグを無効にしました"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "コレクションの「ヒーロー」フラグを変更きませんでした"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr ""
+msgstr "複製が完了しました"
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "コレクションを複製できませんでした"
 
 #: /media/js/views/collection.js:109
 msgid "Search failed :-("
-msgstr ""
+msgstr "検索エラー"
 
 #: /media/js/views/collection.js:137
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "管理者を追加しました。また後で確認してください。"
 
 #: /media/js/views/collection.js:141
 msgid "Added curator"
-msgstr ""
+msgstr "追加された管理者"
 
 #: /media/js/views/collection.js:156
 msgid "Failed to add curator"
-msgstr ""
+msgstr "管理者を追加できませんでした"
 
 #: /media/js/views/collection.js:172
 msgid "Removed curator"
-msgstr ""
+msgstr "削除された管理者"
 
 #: /media/js/views/collection.js:176
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "管理者を削除できませんでした"
 
 #: /media/js/views/collection.js:199
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "コレクションから {app} を削除しました。"
 
 #: /media/js/views/collection.js:203
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "コレクションからアプリを削除できませんでした。"
 
 #: /media/js/views/collection.js:227
 msgid "App added to collection."
-msgstr ""
+msgstr "コレクションにアプリを追加しました。"
 
 #: /media/js/views/collection.js:231
 msgid "Failed to add app."
-msgstr ""
+msgstr "アプリを追加できませんでした。"
 
 #: /media/js/views/collection.js:242
 msgid "Are you sure you want to delete this collection?"
-msgstr ""
+msgstr "本当にこのコレクションを削除しますか？"
 
 #: /media/js/views/collection.js:266
 msgid "Collection deleted."
-msgstr ""
+msgstr "コレクションは削除されました。"
 
 #: /media/js/views/collection.js:270
 msgid "Failed to delete collection."
-msgstr ""
+msgstr "コレクションを削除できませんでした。"
 
 #: /media/js/views/collection.js:286
 msgid "Order updated"
-msgstr ""
+msgstr "順番が更新されました"
 
 #: /media/js/views/collection.js:288
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "コレクションの順番を更新できませんでした。ページを再読み込みしてみてください。"
 
 #: /media/js/views/collection.js:378
 msgid "Saved {field}"
-msgstr ""
+msgstr "保存された {field}"
 
 #: /media/js/views/collection.js:389
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "{field} を更新できませんでした"
 
 #: /media/js/views/collection.js:414
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "非対応: アプリはコレクションの地域では利用できません。"
 
 #: /media/js/views/collection.js:496
 msgid "No Image Provided"
-msgstr ""
+msgstr "画像が選択されていません"
 
 #: /media/js/views/collection.js:508
 msgid "Image cleared"
-msgstr ""
+msgstr "画像が削除されました"
 
 #: /media/js/views/collection.js:510
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "画像を削除できませんでした。おそらく Bug 917081 です"
 
 #: /media/js/views/collection.js:521
 msgid "Image saved"
-msgstr ""
+msgstr "画像を保存しました"
 
 #: /media/js/views/collection.js:524
 msgid "Could not save image"
-msgstr ""
+msgstr "画像を保存できませんでした"
 
 #: /media/js/views/collection.js:581
 msgid "Collection"
-msgstr ""
+msgstr "コレクション"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
-msgstr ""
+msgstr "新しいコレクションが作成されました。"
 
 #: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "新しいコレクションを作成できませんでした。"
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
+msgstr "新しいコレクション"
