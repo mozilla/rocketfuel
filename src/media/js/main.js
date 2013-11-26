@@ -102,9 +102,9 @@ require.config({
             console.log('Reloading chrome');
             var context = {z: z};
             $('#site-header').html(
-                nunjucks.env.getTemplate('header.html').render(context));
+                nunjucks.env.render('header.html', context));
             $('#site-footer').html(
-                nunjucks.env.getTemplate('footer.html').render(context));
+                nunjucks.env.render('footer.html', context));
 
             z.body.toggleClass('logged-in', require('user').logged_in());
             z.body.toggleClass('is-curator', require('user').get_permission('curator'));

@@ -100,8 +100,10 @@ define('views/collection',
                     // Don't show apps that have already been added.
                     return;
                 }
-                list.append('<li>' + nunjucks.env.getTemplate('helpers/app.html').render(
-                    {'this': v, 'allow_delete': false}));
+                list.append('<li>' + nunjucks.env.render(
+                    'helpers/app.html',
+                    {'this': v, 'allow_delete': false})
+                );
             });
 
             apply_incompat(get_collection().region, data.objects);
@@ -147,10 +149,10 @@ define('views/collection',
                 $curators.find('h2').after('<ul>');
             }
             $curators.find('ul').append(
-                nunjucks.env.getTemplate('helpers/curator.html').render({
-                    'curator': curator,
-                    'curator_color': function() {return 'black';}
-                })
+                nunjucks.env.render(
+                    'helpers/curator.html',
+                    { 'curator': curator, 'curator_color': function() {return 'black';}}
+                )
             );
         }, function() {
             notification.notification({message: gettext('Failed to add curator')});
@@ -211,8 +213,10 @@ define('views/collection',
         $this.parent().remove();
         var collection = get_collection();
         var app_data = app_model.lookup(app + '', 'id');
-        var $app = $(nunjucks.env.getTemplate('helpers/app.html').render(
-            {'this': app_data, 'allow_delete': true, 'allow_reorder': true, 'tag': 'li'}));
+        var $app = $(nunjucks.env.render(
+            'helpers/app.html',
+            {'this': app_data, 'allow_delete': true, 'allow_reorder': true, 'tag': 'li'})
+        );
         $('.main ul.apps').append($app);
         apply_incompat(collection.region, [app_data]);
 

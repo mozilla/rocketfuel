@@ -28,8 +28,8 @@ define('views/homepage',
             {
                 'get_url_params': get_url_params,
                 'region': args.region || 'worldwide',
-                'category': args.category || null,
-                'carrier': args.carrier || null
+                'category': args.category || '',
+                'carrier': args.carrier || ''
             }
         );
 
