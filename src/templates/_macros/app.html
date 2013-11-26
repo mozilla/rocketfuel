@@ -9,7 +9,7 @@
   <img src="{{ data.icons['128'] }}" alt="" height="{{ icon_size }}" width="{{ icon_size }}">
   <strong>
   	{% if tag != 'a' %}<a href="/app/{{ data.slug }}">{% endif %}
-  	{{ data.name or data.slug }}
+  	{{ data.name|translate(data) if data.name else data.slug }}
   	{% if tag != 'a' %}</a>{% endif %}
   </strong>
   <p>{{ data.author }}</p>
