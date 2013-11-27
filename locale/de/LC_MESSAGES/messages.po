@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
-"PO-Revision-Date: 2013-10-17 15:36+0000\n"
+"PO-Revision-Date: 2013-11-27 17:15+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382024167.0\n"
+"X-POOTLE-MTIME: 1385572546.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -214,7 +214,7 @@ msgstr "Die Rocketfuel-Kennzeichnung ist deaktiviert. Im Verwaltungswerkzeug dur
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Sie sind nicht als Verwalter angemeldet"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
