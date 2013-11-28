@@ -213,7 +213,7 @@ msgstr "De Rocketfuel-vlag is uitgeschakeld. Wijzigingen die met het curatiehulp
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "U bent niet aangemeld als een curator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
