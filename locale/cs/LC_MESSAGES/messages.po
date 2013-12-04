@@ -208,9 +208,7 @@ msgstr "Přihlášení"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-"Příznak Rocketfuel je zakázán. Změny v nástroji Curation Tool nebudou na "
-"webu reflektovány."
+msgstr "Příznak Rocketfuel je zakázán. Změny v nástroji Curation Tool nebudou na webu reflektovány."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
