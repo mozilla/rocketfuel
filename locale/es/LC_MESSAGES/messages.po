@@ -176,8 +176,7 @@ msgstr "Se necesita un título breve"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Los títulos breves (o slugs) deben empezar con una letra y solo pueden contener letras, números y guiones. Deben tener un máximo de 30 caracteres o menos y no pueden ser iguales a la colección "
+msgstr "Los títulos breves (o slugs) deben empezar con una letra y solo pueden contener letras, números y guiones. Deben tener un máximo de 30 caracteres o menos y no pueden ser iguales a la colección "
 "existente."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
@@ -206,7 +205,7 @@ msgstr "Salir"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr "Iniciar sesión"
+msgstr "Identificarse"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
@@ -214,7 +213,7 @@ msgstr "El indicador de Rocketfuel está desactivado. Cualquier cambio que se ha
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "No has entrado como administrador"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
