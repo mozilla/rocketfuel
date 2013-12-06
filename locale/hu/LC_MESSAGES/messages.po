@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
-"PO-Revision-Date: 2013-10-20 20:48+0000\n"
+"PO-Revision-Date: 2013-12-06 19:27+0000\n"
 "Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
 "Language: hu\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n !=1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1382302105.0\n"
+"X-POOTLE-MTIME: 1386358079.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -212,7 +212,7 @@ msgstr "A Rocketfuel jelző kikapcsolva. A karbantartói eszközben végzett vá
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Nincs bejelentkezve karbantartóként"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
