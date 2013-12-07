@@ -1,89 +1,94 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-12-07 13:34+0000\n"
+"Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; charset=UTF-8\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1386423265.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Küratör ekle"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Kullanıcının e-posta adresi"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Bu koleksiyon için küratör yapmak istediğiniz bir kullanıcının e-posta "
+"adresini girin."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Uygulama Ekle"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Arama"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "Yazar:"
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "Kısa ad:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "Bölge:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "Şebeke:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "Kategori:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Tüm kategoriler (ana sayfa)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "Açıklama:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Özelleştirme"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Arka plan resmi:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Ön izleme görüntüsü yükleniyor"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Aşağıya bir PNG veya JPG resmi sürükleyin veya resim yüklemek için <span>bir "
+"dosya seçin</span>."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Tarayıcınız tuvali desteklemiyor."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
@@ -91,23 +96,23 @@ msgstr ""
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Resmi kaydet"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "İptal et ve geri al"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Arka plan:"
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "Metin:"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "Uygulamalar"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
@@ -119,27 +124,27 @@ msgstr ""
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Koleksiyonu çoğalt"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "Koleksiyonu sil"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Küratörler"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Bu koleksiyon için küratör yok."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Küratör ekle"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
-msgstr ""
+msgstr "Koleksiyon yükleme hatası."
 
 #: /templates/confirmation.html:0
 msgid "Close"
@@ -147,31 +152,31 @@ msgstr ""
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "Hayır"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Evet"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Koleksiyonu çoğalt"
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 #: /templates/duplicate_collection.html:9
 msgid "A name is required"
-msgstr ""
+msgstr "Ad gerekli"
 
 #: /templates/duplicate_collection.html:13
 msgid "Slug"
-msgstr ""
+msgstr "Kısa isim"
 
 #: /templates/duplicate_collection.html:15
 msgid "A slug is required"
-msgstr ""
+msgstr "Kısa isim gerekli"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
@@ -179,11 +184,11 @@ msgstr ""
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "Bölge"
 
 #: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
@@ -191,7 +196,7 @@ msgstr ""
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr ""
+msgstr "Çoğalt"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
@@ -199,11 +204,11 @@ msgstr ""
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Oturumu kapat"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Oturum aç"
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
@@ -219,15 +224,15 @@ msgstr ""
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Koleksiyonlar"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "Hiç koleksiyon oluşturulmadı."
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "Yeni koleksiyon ekle"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
@@ -259,11 +264,11 @@ msgstr ""
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Yeni {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "Ad kullanıcılara gösterilmez, sadece kolaylık içindir."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
@@ -275,11 +280,11 @@ msgstr ""
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "Yazar adı"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "Açıklama"
 
 #: /templates/new_collection.html:64
 msgid "Background Color"
@@ -303,15 +308,15 @@ msgstr ""
 
 #: /templates/new_collection.html:80
 msgid "Create"
-msgstr ""
+msgstr "Yarat"
 
 #: /templates/new_collection.html:85
 msgid "Unauthorized"
-msgstr ""
+msgstr "Yetkisiz"
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "Koleksiyon yaratmak için oturum açmalısınız."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
@@ -323,7 +328,7 @@ msgstr ""
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "Kategoriler yükleniyor..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
@@ -402,7 +407,6 @@ msgstr ""
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
 msgstr[0] ""
-msgstr[1] ""
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
