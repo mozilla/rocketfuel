@@ -25,7 +25,7 @@ def pre_update(ref):
 def update():
     with lcd(ROCKETFUEL):
         local('npm install')
-        local('npm install --force commonplace@0.2.2')
+        local('npm install --force commonplace@0.2.4')
         local('commonplace includes')
         local('commonplace langpacks')
 
