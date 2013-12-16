@@ -125,16 +125,29 @@ function() {
     // Debug page
     (function() {
         var to = false;
+        var debugging = false;
         z.doc.on('touchstart mousedown', '.wordmark', function(e) {
             console.log('hold for debug...', e.type);
             clearTimeout(to);
             to = setTimeout(function() {
                 console.log('navigating to debug...');
                 z.page.trigger('navigate', ['/debug']);
+                debugging = true;
+                setTimeout(function() {
+                    debugging = false;
+                }, 1000);
             }, 3000);
         }).on('touchend mouseup', '.wordmark', function(e) {
             console.log('debug hold released...', e.type);
             clearTimeout(to);
+            to = false;
+        }).on('click', '.wordmark', function(e) {
+            if (to || debugging) {
+                e.preventDefault();
+                e.stopPropagation();
+                debugging = false;
+                return false;
+            }
         });
     })();
 
