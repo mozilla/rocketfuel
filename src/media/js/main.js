@@ -140,7 +140,7 @@ function() {
             }
             clearTimeout(to);
             to = -1; // An impossible timeout, but still truthy.
-        }).on('click', '.wordmark', function(e) {
+        }).on('click', '#site-header h1 a', function(e) {
             if (to) {
                 e.preventDefault();
                 e.stopPropagation();
