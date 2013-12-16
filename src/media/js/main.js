@@ -139,7 +139,13 @@ function() {
                 e.stopPropagation();
             }
             clearTimeout(to);
-            to = false;
+            to = -1; // An impossible timeout, but still truthy.
+        }).on('click', '.wordmark', function(e) {
+            if (to) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
         });
     })();
 
