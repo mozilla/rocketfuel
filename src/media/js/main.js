@@ -100,9 +100,11 @@ function() {
     function do_model_cache(model, url) {
         return require('requests').get(url).done(function(data) {
             var cache = models(model);
+            console.groupCollapsed('Casting ' + model + 's to model cache...');
             data.objects.forEach(function(obj) {
                 cache.cast(obj);
             });
+            console.groupEnd();
         });
     }
 
