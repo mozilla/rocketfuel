@@ -185,7 +185,7 @@ define('views/collection',
         $app.hide();
         var app_id = $app.data('id');
         var collection = get_collection();
-        var app = app_model.lookup(app_id + '', 'id');
+        var app = app_model.lookup(app_id, 'id');
 
         requests.post(
             urls.api.url('remove_app', [collection.id]),
@@ -198,7 +198,8 @@ define('views/collection',
 
             $app.remove();
 
-            notification.notification({message: gettext('Removed {app} from collection.', {app: app.name})});
+            notification.notification({message:
+                gettext('Removed {app} from collection.', {app: utils.translate(app.name, app)})});
 
         }, function() {
             $app.show();
@@ -212,7 +213,7 @@ define('views/collection',
         var app = $this.data('id');
         $this.parent().remove();
         var collection = get_collection();
-        var app_data = app_model.lookup(app + '', 'id');
+        var app_data = app_model.lookup(app, 'id');
         var $app = $(nunjucks.env.render(
             'helpers/app.html',
             {'this': app_data, 'allow_delete': true, 'allow_reorder': true, 'tag': 'li'})
