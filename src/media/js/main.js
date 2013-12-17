@@ -46,12 +46,6 @@ function() {
 
     z.body.addClass('html-' + require('l10n').getDirection());
 
-    z.page.one('loaded', function() {
-        console.log('Hiding splash screen');
-        var splash = $('#splash-overlay').addClass('hide');
-        setTimeout(function() {splash.remove();}, 1000);
-    });
-
     // Add some helpful functions.
     helpers.COLOR_PATTERN = '#[0-9a-fA-F]{6}';
     helpers.color_cycle = function(alpha) {
