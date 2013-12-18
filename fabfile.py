@@ -11,6 +11,7 @@ fabdeploytools.envs.loadenv(os.path.join('/etc/deploytools/envs',
                                          settings.CLUSTER))
 ROCKETFUEL = os.path.dirname(__file__)
 ROOT = os.path.dirname(ROCKETFUEL)
+COMMONPLACE = '%s/node_modules/commonplace/bin/commonplace' % ROCKETFUEL
 
 
 @task
@@ -26,8 +27,8 @@ def update():
     with lcd(ROCKETFUEL):
         local('npm install')
         local('npm install --force commonplace@0.2.4')
-        local('commonplace includes')
-        local('commonplace langpacks')
+        local('%s includes' % COMMONPLACE)
+        local('%s langpacks' % COMMONPLACE)
 
 
 @task
