@@ -3,32 +3,27 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
-"PO-Revision-Date: 2013-11-30 17:29+0400\n"
+"PO-Revision-Date: 2013-10-20 00:36+0400\n"
 "Last-Translator: Alexander L. Slovesnik <unghost@mozilla-russia.org>\n"
 "Language-Team: none\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 1.5.7\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr "Добавить Куратора"
+msgstr "Добавить куратора"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
 msgstr "Адрес эл. почты пользователя"
 
 #: /templates/add_curator.html:8
-msgid ""
-"Enter the email address of a user that you wish to make a curator for this "
-"collection."
-msgstr ""
-"Введите адрес эл. почты пользователя, которого вы хотите сделать куратором "
-"этой подборки."
+msgid "Enter the email address of a user that you wish to make a curator for this collection."
+msgstr "Введите адрес эл. почты пользователя, которого вы хотите сделать куратором этой подборки."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -62,8 +57,7 @@ msgstr "Оператор:"
 msgid "Category:"
 msgstr "Категория:"
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
 msgid "All Categories (Homepage)"
 msgstr "Все категории (Домашняя страница)"
 
@@ -84,12 +78,8 @@ msgid "Loading preview image"
 msgstr "Загрузка превью изображения"
 
 #: /templates/collection.html:68
-msgid ""
-"Drag a PNG or JPG image below or <span>select a file</span> to upload an "
-"image."
-msgstr ""
-"Перетащите ниже изображение PNG или JPG или <span>выберите файл</span>, "
-"чтобы загрузить изображение."
+msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
+msgstr "Перетащите ниже изображение PNG или JPG или <span>выберите файл</span>, чтобы загрузить изображение."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -145,7 +135,7 @@ msgstr "Для этой подборки нет кураторов."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr "Добавить Куратора"
+msgstr "Добавить куратора"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -184,27 +174,18 @@ msgid "A slug is required"
 msgstr "Требуется короткий url"
 
 #: /templates/duplicate_collection.html:16
-msgid ""
-"Slugs must start with a letter and can only contain letters, numbers, and "
-"hyphens. It must be 30 characters or less and cannot be the same as the "
-"existing collection."
-msgstr ""
-"Короткие url должны начинаться с буквы и могут содержать только буквы, цифры "
-"и дефисы. Их длина не должна превышать 30 символов и они не могут совпадать "
-"с существующей подборкой."
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr "Короткие url должны начинаться с буквы и могут содержать только буквы, цифры и дефисы. Их длина не должна превышать 30 символов и они не могут совпадать с существующей подборкой."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13
-#: /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "Категория"
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19
-#: /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "Регион"
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25
-#: /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "Оператор"
 
@@ -225,24 +206,16 @@ msgid "Sign In"
 msgstr "Войти"
 
 #: /templates/header.html:11
-msgid ""
-"The Rocketfuel flag is disabled. Changes made in the Curation Tool will not "
-"be reflected on the live site."
-msgstr ""
-"Флаг Rocketfuel отключён. Изменения, сделанные в Инструменте Куратора, не "
-"будут отражены на живом сайте."
+msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
+msgstr "Флаг Rocketfuel отключён. Изменения, сделанные в Инструменте Куратора, не будут отражены на живом сайте."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr "Вы не вошли в качестве Куратора"
+msgstr ""
 
 #: /templates/homepage.html:6
-msgid ""
-"In order to create or modify collections, you must be logged in as a Curator "
-"to effectively use this tool."
-msgstr ""
-"Для того, чтобы создавать или изменять подборки, необходимо войти в качестве "
-"Куратора для эффективного использования этого инструмента."
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Для того, чтобы создавать или изменять подборки, необходимо войти в качестве Куратора для эффективного использования этого инструмента."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -297,12 +270,8 @@ msgid "Collection Slug"
 msgstr "Короткий url подборки"
 
 #: /templates/new_collection.html:17
-msgid ""
-"Slugs must start with a letter and can only contain letters, numbers, and "
-"hyphens. It must be 30 characters or less."
-msgstr ""
-"Короткие URL должны начинаться с буквы и могут содержать только буквы, цифры "
-"и дефисы. Их длина не должна превышать 30 символов."
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
+msgstr "Короткие URL должны начинаться с буквы и могут содержать только буквы, цифры и дефисы. Их длина не должна превышать 30 символов."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -405,12 +374,8 @@ msgid "You have been signed in"
 msgstr "Вы вошли в систему"
 
 #: /media/js/login.js:127
-msgid ""
-"Persona login failed. Maybe you don't have an account under that email "
-"address?"
-msgstr ""
-"Ошибка входа через Persona. Возможно у вас нет учетной записи для этого "
-"адреса эл. почты?"
+msgid "Persona login failed. Maybe you don't have an account under that email address?"
+msgstr "Ошибка входа через Persona. Возможно у вас нет учетной записи для этого адреса эл. почты?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
