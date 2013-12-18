@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
+"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
 "PO-Revision-Date: 2013-11-27 17:15+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
@@ -58,7 +58,7 @@ msgstr "Mobilfunkanbieter:"
 msgid "Category:"
 msgstr "Kategorie:"
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "Alle Kategorien (Startseite)"
 
@@ -180,15 +180,15 @@ msgstr ""
 "Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung "
 "übereinstimmen. "
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
 msgid "Category"
 msgstr "Kategorie"
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
 msgid "Region"
 msgstr "Region"
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
 msgid "Carrier"
 msgstr "Mobilfunkanbieter"
 
@@ -211,54 +211,6 @@ msgstr "Anmelden"
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr "Die Rocketfuel-Kennzeichnung ist deaktiviert. Im Verwaltungswerkzeug durchgeführte Änderungen werden nicht auf der öffentlichen Seite erscheinen."
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Sie sind nicht als Verwalter angemeldet"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter anmelden, um dieses Werkzeug effektiv verwenden zu können."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Sammlungen"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Es wurden noch keine Sammlungen erstellt."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Eine neue Sammlung hinzufügen"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Vorgestellte Apps"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Es wurden noch keine Abschnitte für vorgestellte Apps erstellt."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Eine neue Sammlung für vorgestellte Apps hinzufügen"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Regale für Mobilfunkanbieter"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Es wurden noch keine Regale für Mobilfunkanbieter erstellt."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Ein neues Regal für Mobilfunkanbieter hinzufügen"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Bitte wählen Sie einen Mobilfunkanbieter aus, um Regale für Mobilfunkanbieter zu sehen."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -315,6 +267,54 @@ msgstr "Nicht autorisiert"
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Sie müssen angemeldet sein, um Sammlungen zu erstellen."
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Sie sind nicht als Verwalter angemeldet"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter anmelden, um dieses Werkzeug effektiv verwenden zu können."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Sammlungen"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Es wurden noch keine Sammlungen erstellt."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Eine neue Sammlung hinzufügen"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Vorgestellte Apps"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Es wurden noch keine Abschnitte für vorgestellte Apps erstellt."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Eine neue Sammlung für vorgestellte Apps hinzufügen"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Regale für Mobilfunkanbieter"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Es wurden noch keine Regale für Mobilfunkanbieter erstellt."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Ein neues Regal für Mobilfunkanbieter hinzufügen"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Bitte wählen Sie einen Mobilfunkanbieter aus, um Regale für Mobilfunkanbieter zu sehen."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
@@ -475,75 +475,75 @@ msgstr "Verwalter entfernt"
 msgid "Failed to remove curator"
 msgstr "Verwalter konnte nicht entfernt werden"
 
-#: /media/js/views/collection.js:201
+#: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
 msgstr "{app} aus Sammlung entfernt."
 
-#: /media/js/views/collection.js:205
+#: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
 msgstr "App konnte nicht aus Sammlung gelöscht werden."
 
-#: /media/js/views/collection.js:231
+#: /media/js/views/collection.js:232
 msgid "App added to collection."
 msgstr "App zur Sammlung hinzugefügt."
 
-#: /media/js/views/collection.js:235
+#: /media/js/views/collection.js:236
 msgid "Failed to add app."
 msgstr "Hinzufügen der App fehlgeschlagen."
 
-#: /media/js/views/collection.js:246
+#: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
 msgstr "Soll diese Sammlung wirklich gelöscht werden?"
 
-#: /media/js/views/collection.js:270
+#: /media/js/views/collection.js:271
 msgid "Collection deleted."
 msgstr "Sammlung gelöscht."
 
-#: /media/js/views/collection.js:274
+#: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
 msgstr "Löschen der Sammlung fehlgeschlagen."
 
-#: /media/js/views/collection.js:290
+#: /media/js/views/collection.js:291
 msgid "Order updated"
 msgstr "Reihenfolge aktualisiert"
 
-#: /media/js/views/collection.js:292
+#: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr "Aktualisierung der Sammlungsreihenfolge fehlgeschlagen. Versuchen Sie, die Seite zu aktualisieren"
 
-#: /media/js/views/collection.js:382
+#: /media/js/views/collection.js:383
 msgid "Saved {field}"
 msgstr "{field} gespeichert"
 
-#: /media/js/views/collection.js:393
+#: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
 msgstr "Aktualisieren von {field} fehlgeschlagen"
 
-#: /media/js/views/collection.js:418
+#: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
 msgstr "Inkompatibel: App nicht in der Region der Sammlung verfügbar."
 
-#: /media/js/views/collection.js:500
+#: /media/js/views/collection.js:501
 msgid "No Image Provided"
 msgstr "Keine Grafik angegeben"
 
-#: /media/js/views/collection.js:512
+#: /media/js/views/collection.js:513
 msgid "Image cleared"
 msgstr "Grafik gelöscht"
 
-#: /media/js/views/collection.js:514
+#: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
 msgstr "Grafik konnte nicht gelöscht werden, vermutlich Bug 917081"
 
-#: /media/js/views/collection.js:525
+#: /media/js/views/collection.js:526
 msgid "Image saved"
 msgstr "Grafik gespeichert"
 
-#: /media/js/views/collection.js:528
+#: /media/js/views/collection.js:529
 msgid "Could not save image"
 msgstr "Grafik konnte nicht gespeichert werden"
 
-#: /media/js/views/collection.js:585
+#: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Sammlung"
 

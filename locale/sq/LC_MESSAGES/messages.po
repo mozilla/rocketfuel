@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
+"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
 "PO-Revision-Date: 2013-11-27 19:26+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr "Operator:"
 msgid "Category:"
 msgstr "Kategori:"
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "Krejt Kategoritë (Faqja Hyrëse)"
 
@@ -180,15 +180,15 @@ msgstr ""
 "Identifikuesit duhet të fillojnë me një shkronjë dhe mund të përmbajnë vetëm shkronja, numra dhe vija ndarëse. Duhet të jetë 30 ose më pak shenja dhe nuk mund të jetë i njëjtë me atë të koleksionit "
 "ekzistues."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
 msgid "Category"
 msgstr "Kategori"
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
 msgid "Region"
 msgstr "Rajon"
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
 msgid "Carrier"
 msgstr "Operator"
 
@@ -211,54 +211,6 @@ msgstr "Hyni"
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr "Flamurka Rocketfuel është e çaktivizuar. Ndryshimet e bëra te Mjeti i Përkujdesjes nuk do të pasqyrohen te site-i real."
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Nuk jeni futur si një Kujdestar"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Që të mund të krijoni ose modifikoni koleksione, duhet të jeni i futur si një Kujdestar që të mund të përdorni  efektivisht këtë mjet."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Koleksione"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Nuk u krijuan koleksione."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Shtoni një koleksion të ri"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Zbatime të Zgjedhura"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Nuk janë krijuar ndarje zbatimesh të zgjedhura."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Shtoni një koleksion të ri të zgjedhur zbatimesh"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Rafte Operatorësh"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Nuk janë krijuar rafte operatorësh."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Shtoni një raft të ri operatori "
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Ju lutemi, përzgjidhni një operator që të shihni raftet."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -315,6 +267,54 @@ msgstr "I paautorizuar"
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "Duhet të keni bërë hyrjen që të krijoni koleksione."
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Nuk jeni futur si një Kujdestar"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Që të mund të krijoni ose modifikoni koleksione, duhet të jeni i futur si një Kujdestar që të mund të përdorni  efektivisht këtë mjet."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Koleksione"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Nuk u krijuan koleksione."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Shtoni një koleksion të ri"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Zbatime të Zgjedhura"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Nuk janë krijuar ndarje zbatimesh të zgjedhura."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Shtoni një koleksion të ri të zgjedhur zbatimesh"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Rafte Operatorësh"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Nuk janë krijuar rafte operatorësh."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Shtoni një raft të ri operatori "
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Ju lutemi, përzgjidhni një operator që të shihni raftet."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
@@ -475,75 +475,75 @@ msgstr "Kujdestari u hoq"
 msgid "Failed to remove curator"
 msgstr "Dështoi në heqje kujdestari"
 
-#: /media/js/views/collection.js:201
+#: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
 msgstr "{app} u hoq prej koleksionit."
 
-#: /media/js/views/collection.js:205
+#: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
 msgstr "Nuk fshiu dot zbatim prej koleksionit."
 
-#: /media/js/views/collection.js:231
+#: /media/js/views/collection.js:232
 msgid "App added to collection."
 msgstr "Zbatimi u shtua te koleksioni."
 
-#: /media/js/views/collection.js:235
+#: /media/js/views/collection.js:236
 msgid "Failed to add app."
 msgstr "Dështoi në shtim zbatimi."
 
-#: /media/js/views/collection.js:246
+#: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
 msgstr "Jeni i sigurt se doni të fshihet ky koleksion?"
 
-#: /media/js/views/collection.js:270
+#: /media/js/views/collection.js:271
 msgid "Collection deleted."
 msgstr "Koleksioni u fshi."
 
-#: /media/js/views/collection.js:274
+#: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
 msgstr "Dështoi në fshirje koleksioni."
 
-#: /media/js/views/collection.js:290
+#: /media/js/views/collection.js:291
 msgid "Order updated"
 msgstr "Radha u përditësua"
 
-#: /media/js/views/collection.js:292
+#: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr "Dështoi në përditësim radhe koleksioni. Provoni të rifreskoni faqen."
 
-#: /media/js/views/collection.js:382
+#: /media/js/views/collection.js:383
 msgid "Saved {field}"
 msgstr "U ruajt {field}"
 
-#: /media/js/views/collection.js:393
+#: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
 msgstr "Dështoi në përditësimin e {field}"
 
-#: /media/js/views/collection.js:418
+#: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
 msgstr "E papërputhshme: Zbatim jo i passhëm në rajonin e koleksionit."
 
-#: /media/js/views/collection.js:500
+#: /media/js/views/collection.js:501
 msgid "No Image Provided"
 msgstr "Nuk u Dha Figurë"
 
-#: /media/js/views/collection.js:512
+#: /media/js/views/collection.js:513
 msgid "Image cleared"
 msgstr "Figura u hoq"
 
-#: /media/js/views/collection.js:514
+#: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
 msgstr "Nuk hoqi dot figurën, me gjasa për shkak të bug-ut 917081"
 
-#: /media/js/views/collection.js:525
+#: /media/js/views/collection.js:526
 msgid "Image saved"
 msgstr "Figura u ruajt"
 
-#: /media/js/views/collection.js:528
+#: /media/js/views/collection.js:529
 msgid "Could not save image"
 msgstr "Nuk ruajti dot figurën"
 
-#: /media/js/views/collection.js:585
+#: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Koleksion"
 

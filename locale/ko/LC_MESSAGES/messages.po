@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
+"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
 "PO-Revision-Date: 2013-12-07 04:21+0000\n"
 "Last-Translator: Channy <channy@mozilla.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr "통신사:"
 msgid "Category:"
 msgstr "분류:"
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "모든 카테고리(홈페이지)"
 
@@ -176,19 +176,17 @@ msgstr "URL 줄임 제목이 필요함"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"URL 줄임 제목은 글자로 시작해야 하고 글자와 숫자, 하이픈만 포함할 수 있습니다. 30자 이상은 사용할 수 없고 기존의 URL 줄임 "
-"제목과 중보될 수 없습니다."
+msgstr "URL 줄임 제목은 글자로 시작해야 하고 글자와 숫자, 하이픈만 포함할 수 있습니다. 30자 이상은 사용할 수 없고 기존의 URL 줄임 제목과 중보될 수 없습니다."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
 msgid "Category"
 msgstr "분류"
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
 msgid "Region"
 msgstr "지역"
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
 msgid "Carrier"
 msgstr "통신사"
 
@@ -211,54 +209,6 @@ msgstr "로그인"
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr "Rocketfuel 표시가 비활성화 되었습니다. 큐레이션 도구를 통한 변경사항이 실제 사이트에 반영되지 않습니다."
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "큐레이터로 로그인하지 않음"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "모음집을 만들거나 수정하기 위해서는 큐레이터로 로그인 해야 도구를 효과적으로 사용할 수 있습니다."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "모음집"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "모음집이 없습니다."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "모음집 추가"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "추천 앱"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "추천 앱 부분이 생성되지 않았습니다."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "새 추천앱 모음집 추가"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "운영자 선반"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "운영자 선반이 생성되지 않았습니다."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "새 운영자 선반 추가"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "운영자 선반을 확인하기 위한 캐리어를 선택해 주세요."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -315,6 +265,54 @@ msgstr "권한없음"
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "모음집을 생성하기 위해서 로그인 해야합니다."
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "큐레이터로 로그인하지 않음"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "모음집을 만들거나 수정하기 위해서는 큐레이터로 로그인 해야 도구를 효과적으로 사용할 수 있습니다."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "모음집"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "모음집이 없습니다."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "모음집 추가"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "추천 앱"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "추천 앱 부분이 생성되지 않았습니다."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "새 추천앱 모음집 추가"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "운영자 선반"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "운영자 선반이 생성되지 않았습니다."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "새 운영자 선반 추가"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "운영자 선반을 확인하기 위한 캐리어를 선택해 주세요."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
@@ -474,75 +472,75 @@ msgstr "삭제된 큐레이터"
 msgid "Failed to remove curator"
 msgstr "큐레이터 삭제 실패"
 
-#: /media/js/views/collection.js:201
+#: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
 msgstr "모음집에서 {app}가 삭제되었습니다."
 
-#: /media/js/views/collection.js:205
+#: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
 msgstr "모음집에서 앱을 삭제하지 못했습니다."
 
-#: /media/js/views/collection.js:231
+#: /media/js/views/collection.js:232
 msgid "App added to collection."
 msgstr "모음집에 앱이 추가되었습니다."
 
-#: /media/js/views/collection.js:235
+#: /media/js/views/collection.js:236
 msgid "Failed to add app."
 msgstr "앱 추가에 실패하였습니다."
 
-#: /media/js/views/collection.js:246
+#: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
 msgstr "이 모음집을 삭제하시겠습니까?"
 
-#: /media/js/views/collection.js:270
+#: /media/js/views/collection.js:271
 msgid "Collection deleted."
 msgstr "모음집이 삭제되었습니다."
 
-#: /media/js/views/collection.js:274
+#: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
 msgstr "모음집 삭제에 실패하였습니다."
 
-#: /media/js/views/collection.js:290
+#: /media/js/views/collection.js:291
 msgid "Order updated"
 msgstr "순서 갱신됨"
 
-#: /media/js/views/collection.js:292
+#: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr "모음집 순서 갱신에 실패하였습니다. 페이지를 새로고침해 주세요."
 
-#: /media/js/views/collection.js:382
+#: /media/js/views/collection.js:383
 msgid "Saved {field}"
 msgstr "{field} 저장됨"
 
-#: /media/js/views/collection.js:393
+#: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
 msgstr "{field} 갱신에 실패함"
 
-#: /media/js/views/collection.js:418
+#: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
 msgstr "호환되지 않음: 모음집의 지역에서 앱이 유효하지 않습니다."
 
-#: /media/js/views/collection.js:500
+#: /media/js/views/collection.js:501
 msgid "No Image Provided"
 msgstr "이미지가 없음"
 
-#: /media/js/views/collection.js:512
+#: /media/js/views/collection.js:513
 msgid "Image cleared"
 msgstr "이미지가 삭제됨"
 
-#: /media/js/views/collection.js:514
+#: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
 msgstr "이미지를 삭제하지 못했습니다, bug 917081 때문일 수 있습니다."
 
-#: /media/js/views/collection.js:525
+#: /media/js/views/collection.js:526
 msgid "Image saved"
 msgstr "이미지가 저장됨"
 
-#: /media/js/views/collection.js:528
+#: /media/js/views/collection.js:529
 msgid "Could not save image"
 msgstr "이미지를 저장하지 못함"
 
-#: /media/js/views/collection.js:585
+#: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "모음집"
 

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
+"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Category:"
 msgstr ""
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr ""
 
@@ -177,15 +177,15 @@ msgstr ""
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
 msgid "Category"
 msgstr ""
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
 msgid "Region"
 msgstr ""
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
 msgid "Carrier"
 msgstr ""
 
@@ -207,54 +207,6 @@ msgstr ""
 
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr ""
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr ""
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr ""
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr ""
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr ""
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr ""
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr ""
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr ""
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr ""
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr ""
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr ""
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
 msgstr ""
 
 #: /templates/new_collection.html:2
@@ -311,6 +263,54 @@ msgstr ""
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
+msgstr ""
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr ""
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr ""
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr ""
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr ""
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr ""
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr ""
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr ""
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr ""
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr ""
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr ""
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr ""
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
 msgstr ""
 
 #: /templates/_macros/collections.html:30
@@ -472,75 +472,75 @@ msgstr ""
 msgid "Failed to remove curator"
 msgstr ""
 
-#: /media/js/views/collection.js:201
+#: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
 msgstr ""
 
-#: /media/js/views/collection.js:205
+#: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
 msgstr ""
 
-#: /media/js/views/collection.js:231
+#: /media/js/views/collection.js:232
 msgid "App added to collection."
 msgstr ""
 
-#: /media/js/views/collection.js:235
+#: /media/js/views/collection.js:236
 msgid "Failed to add app."
 msgstr ""
 
-#: /media/js/views/collection.js:246
+#: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
 msgstr ""
 
-#: /media/js/views/collection.js:270
+#: /media/js/views/collection.js:271
 msgid "Collection deleted."
 msgstr ""
 
-#: /media/js/views/collection.js:274
+#: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
 msgstr ""
 
-#: /media/js/views/collection.js:290
+#: /media/js/views/collection.js:291
 msgid "Order updated"
 msgstr ""
 
-#: /media/js/views/collection.js:292
+#: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr ""
 
-#: /media/js/views/collection.js:382
+#: /media/js/views/collection.js:383
 msgid "Saved {field}"
 msgstr ""
 
-#: /media/js/views/collection.js:393
+#: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
 msgstr ""
 
-#: /media/js/views/collection.js:418
+#: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
 msgstr ""
 
-#: /media/js/views/collection.js:500
+#: /media/js/views/collection.js:501
 msgid "No Image Provided"
 msgstr ""
 
-#: /media/js/views/collection.js:512
+#: /media/js/views/collection.js:513
 msgid "Image cleared"
 msgstr ""
 
-#: /media/js/views/collection.js:514
+#: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
 msgstr ""
 
-#: /media/js/views/collection.js:525
+#: /media/js/views/collection.js:526
 msgid "Image saved"
 msgstr ""
 
-#: /media/js/views/collection.js:528
+#: /media/js/views/collection.js:529
 msgid "Could not save image"
 msgstr ""
 
-#: /media/js/views/collection.js:585
+#: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr ""
 

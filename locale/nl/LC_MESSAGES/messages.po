@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
+"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
 "PO-Revision-Date: 2013-12-02 11:07+0000\n"
 "Last-Translator: Mark <markh@babelzilla.org>\n"
 "Language-Team: none\n"
@@ -58,7 +58,7 @@ msgstr "Provider:"
 msgid "Category:"
 msgstr "Categorie:"
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "Alle categorieën (Startpagina)"
 
@@ -179,15 +179,15 @@ msgid "Slugs must start with a letter and can only contain letters, numbers, and
 msgstr ""
 "Slugs moeten met een letter beginnen en kunnen alleen letters, cijfers en koppeltekens bevatten. Een slug moet uit 30 of minder tekens bestaan en kan niet hetzelfde zijn als de bestaande collectie."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
 msgid "Category"
 msgstr "Categorie"
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
 msgid "Region"
 msgstr "Regio"
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
 msgid "Carrier"
 msgstr "Provider"
 
@@ -210,54 +210,6 @@ msgstr "Aanmelden"
 #: /templates/header.html:11
 msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
 msgstr "De Rocketfuel-vlag is uitgeschakeld. Wijzigingen die met het curatiehulpmiddel zijn gemaakt worden niet op de live-website weergegeven."
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "U bent niet aangemeld als een curator"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Voor het aanmaken of aanpassen van collecties moet u aangemeld zijn als een curator om dit hulpmiddel effectief te kunnen gebruiken."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Collecties"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Er zijn geen collecties aangemaakt."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Een nieuwe collectie toevoegen"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Aanbevolen apps"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Er zijn geen collecties voor aanbevolen apps aangemaakt."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Nieuwe collectie voor aanbevolen apps toevoegen"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Operatorplanken"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Er zijn geen operatorplanken aangemaakt."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Nieuwe operatorplank toevoegen"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Kies een provider om operatorplanken te zien."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -314,6 +266,54 @@ msgstr "Niet geautoriseerd"
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
 msgstr "U moet aangemeld zijn om collecties aan te maken."
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "U bent niet aangemeld als een curator"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Voor het aanmaken of aanpassen van collecties moet u aangemeld zijn als een curator om dit hulpmiddel effectief te kunnen gebruiken."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Collecties"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Er zijn geen collecties aangemaakt."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Een nieuwe collectie toevoegen"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Aanbevolen apps"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Er zijn geen collecties voor aanbevolen apps aangemaakt."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Nieuwe collectie voor aanbevolen apps toevoegen"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Operatorplanken"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Er zijn geen operatorplanken aangemaakt."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Nieuwe operatorplank toevoegen"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Kies een provider om operatorplanken te zien."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
@@ -474,75 +474,75 @@ msgstr "Curator verwijderd"
 msgid "Failed to remove curator"
 msgstr "Verwijderen van curator mislukt"
 
-#: /media/js/views/collection.js:201
+#: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
 msgstr "{app} uit collectie verwijderd."
 
-#: /media/js/views/collection.js:205
+#: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
 msgstr "Kon app niet uit collectie verwijderen."
 
-#: /media/js/views/collection.js:231
+#: /media/js/views/collection.js:232
 msgid "App added to collection."
 msgstr "App aan collectie toegevoegd."
 
-#: /media/js/views/collection.js:235
+#: /media/js/views/collection.js:236
 msgid "Failed to add app."
 msgstr "App toevoegen is mislukt."
 
-#: /media/js/views/collection.js:246
+#: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
 msgstr "Weet u zeker dat u deze collectie wilt verwijderen?"
 
-#: /media/js/views/collection.js:270
+#: /media/js/views/collection.js:271
 msgid "Collection deleted."
 msgstr "Collectie verwijderd."
 
-#: /media/js/views/collection.js:274
+#: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
 msgstr "Collectie verwijderen is mislukt."
 
-#: /media/js/views/collection.js:290
+#: /media/js/views/collection.js:291
 msgid "Order updated"
 msgstr "Volgorde bijgewerkt"
 
-#: /media/js/views/collection.js:292
+#: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr "Bijwerken van collectievolgorde is mislukt. Probeer de pagina opnieuw te laden."
 
-#: /media/js/views/collection.js:382
+#: /media/js/views/collection.js:383
 msgid "Saved {field}"
 msgstr "{field} opgeslagen"
 
-#: /media/js/views/collection.js:393
+#: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
 msgstr "Bijwerken van {field} is mislukt"
 
-#: /media/js/views/collection.js:418
+#: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
 msgstr "Niet compatibel: app niet beschikbaar in regio van de collectie."
 
-#: /media/js/views/collection.js:500
+#: /media/js/views/collection.js:501
 msgid "No Image Provided"
 msgstr "Geen afbeelding aangeleverd"
 
-#: /media/js/views/collection.js:512
+#: /media/js/views/collection.js:513
 msgid "Image cleared"
 msgstr "Afbeelding verwijderd"
 
-#: /media/js/views/collection.js:514
+#: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
 msgstr "Kon afbeelding niet verwijderen, waarschijnlijk bug 917081"
 
-#: /media/js/views/collection.js:525
+#: /media/js/views/collection.js:526
 msgid "Image saved"
 msgstr "Afbeelding opgeslagen"
 
-#: /media/js/views/collection.js:528
+#: /media/js/views/collection.js:529
 msgid "Could not save image"
 msgstr "Kon afbeelding niet opslaan"
 
-#: /media/js/views/collection.js:585
+#: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Collectie"
 
