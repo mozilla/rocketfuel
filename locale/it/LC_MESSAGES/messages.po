@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Rocketfuel in italiano\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
-"PO-Revision-Date: 2013-10-21 20:28+0000\n"
+"PO-Revision-Date: 2013-12-19 09:59+0000\n"
 "Last-Translator: Sara <sara.todaro@mozillaitalia.org>\n"
 "Language-Team: MozillaItalia <gialloporpora@gmail.com>\n"
 "Language: it\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
-"X-POOTLE-MTIME: 1382387312.0\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1387447150.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -270,7 +270,7 @@ msgstr "È necessario effettuare l'accesso per creare una raccolta."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Non sei identificato come curatore"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
