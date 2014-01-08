@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
+"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,6 +12,15 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Fireplace L10n Tools 1.0\n"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ȧḓḓ Ȧƥƥş"
+
+#: /templates/app_search.html:4
+#: /templates/app_search.html:5
+msgid "Search"
+msgstr "Şḗȧřƈħ"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -31,14 +40,17 @@ msgstr ""
 msgid "Namaste"
 msgstr "Ƞȧḿȧşŧḗ"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ȧḓḓ Ȧƥƥş"
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Ƈŭřȧŧīǿƞ Ŧǿǿŀ"
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
-msgid "Search"
-msgstr "Şḗȧřƈħ"
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Şīɠƞ Ǿŭŧ"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Şīɠƞ Īƞ"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -193,20 +205,20 @@ msgstr ""
 "ḗẋīşŧīƞɠ ƈǿŀŀḗƈŧīǿƞ."
 
 #: /templates/duplicate_collection.html:22
-#: /templates/new_collection.html:44
 #: /templates/homepage.html:13
+#: /templates/new_collection.html:44
 msgid "Category"
 msgstr "Ƈȧŧḗɠǿřẏ"
 
 #: /templates/duplicate_collection.html:27
-#: /templates/new_collection.html:49
 #: /templates/homepage.html:19
+#: /templates/new_collection.html:49
 msgid "Region"
 msgstr "Řḗɠīǿƞ"
 
 #: /templates/duplicate_collection.html:32
-#: /templates/new_collection.html:54
 #: /templates/homepage.html:25
+#: /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "Ƈȧřřīḗř"
 
@@ -214,23 +226,55 @@ msgstr "Ƈȧřřīḗř"
 msgid "Duplicate"
 msgstr "Ḓŭƥŀīƈȧŧḗ"
 
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Ƈŭřȧŧīǿƞ Ŧǿǿŀ"
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Ẏǿŭ ȧřḗ ƞǿŧ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř"
 
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Şīɠƞ Ǿŭŧ"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Şīɠƞ Īƞ"
-
-#: /templates/header.html:11
-msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
-"Ŧħḗ Řǿƈķḗŧƒŭḗŀ ƒŀȧɠ īş ḓīşȧƀŀḗḓ. Ƈħȧƞɠḗş ḿȧḓḗ īƞ ŧħḗ Ƈŭřȧŧīǿƞ Ŧǿǿŀ ẇīŀŀ ƞǿŧ "
-"ƀḗ řḗƒŀḗƈŧḗḓ ǿƞ ŧħḗ ŀīṽḗ şīŧḗ."
+"Īƞ ǿřḓḗř ŧǿ ƈřḗȧŧḗ ǿř ḿǿḓīƒẏ ƈǿŀŀḗƈŧīǿƞş, ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř "
+"ŧǿ ḗƒƒḗƈŧīṽḗŀẏ ŭşḗ ŧħīş ŧǿǿŀ."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Ƈǿŀŀḗƈŧīǿƞş"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ƞǿ ƈǿŀŀḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Ȧḓḓ ȧ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Ƒḗȧŧŭřḗḓ Ȧƥƥş"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Ƞǿ ƒḗȧŧŭřḗḓ ȧƥƥ şḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Ȧḓḓ ȧ ƞḗẇ ƒḗȧŧŭřḗḓ ȧƥƥ ƈǿŀŀḗƈŧīǿƞ"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Ǿƥḗřȧŧǿř Şħḗŀṽḗş"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Ƞǿ ǿƥḗřȧŧǿř şħḗŀṽḗş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Ȧḓḓ ȧ ƞḗẇ ǿƥḗřȧŧǿř şħḗŀƒ"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Ƥŀḗȧşḗ şḗŀḗƈŧ ȧ ƈȧřřīḗř ŧǿ şḗḗ ǿƥḗřȧŧǿř şħḗŀṽḗş."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -291,56 +335,6 @@ msgstr "Ŭƞȧŭŧħǿřīzḗḓ"
 msgid "You must be logged in to create collections."
 msgstr "Ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ŧǿ ƈřḗȧŧḗ ƈǿŀŀḗƈŧīǿƞş."
 
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Ẏǿŭ ȧřḗ ƞǿŧ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Īƞ ǿřḓḗř ŧǿ ƈřḗȧŧḗ ǿř ḿǿḓīƒẏ ƈǿŀŀḗƈŧīǿƞş, ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř "
-"ŧǿ ḗƒƒḗƈŧīṽḗŀẏ ŭşḗ ŧħīş ŧǿǿŀ."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Ƈǿŀŀḗƈŧīǿƞş"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ƞǿ ƈǿŀŀḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Ȧḓḓ ȧ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Ƒḗȧŧŭřḗḓ Ȧƥƥş"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Ƞǿ ƒḗȧŧŭřḗḓ ȧƥƥ şḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Ȧḓḓ ȧ ƞḗẇ ƒḗȧŧŭřḗḓ ȧƥƥ ƈǿŀŀḗƈŧīǿƞ"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Ǿƥḗřȧŧǿř Şħḗŀṽḗş"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Ƞǿ ǿƥḗřȧŧǿř şħḗŀṽḗş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Ȧḓḓ ȧ ƞḗẇ ǿƥḗřȧŧǿř şħḗŀƒ"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Ƥŀḗȧşḗ şḗŀḗƈŧ ȧ ƈȧřřīḗř ŧǿ şḗḗ ǿƥḗřȧŧǿř şħḗŀṽḗş."
-
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "Ƈǿŀŀḗƈŧīǿƞ īş Ƥŭƀŀīƈ"
@@ -366,13 +360,9 @@ msgstr "Ŀǿȧḓīƞɠ řḗɠīǿƞş..."
 msgid "Loading carriers..."
 msgstr "Ŀǿȧḓīƞɠ ƈȧřřīḗřş..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Ǿħ ƞǿ!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Ȧƞ ḗřřǿř ǿƈƈŭřřḗḓ."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ĪḒ: {īḓ}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -382,9 +372,13 @@ msgstr "Ḗřřǿř ŀǿȧḓīƞɠ ḿǿřḗ"
 msgid "Try Again"
 msgstr "Ŧřẏ Ȧɠȧīƞ"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ĪḒ: {īḓ}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Ǿħ ƞǿ!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Ȧƞ ḗřřǿř ǿƈƈŭřřḗḓ."
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -416,6 +410,13 @@ msgstr "Ƥḗřşǿƞȧ ŀǿɠīƞ ƒȧīŀḗḓ. Ȧ şḗřṽḗř ḗřřǿ�
 msgid "No internet connection"
 msgstr "Ƞǿ īƞŧḗřƞḗŧ ƈǿƞƞḗƈŧīǿƞ"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{ƞ}</b> ƈħȧřȧƈŧḗř ŀḗƒŧ."
+msgstr[1] "<b>{ƞ}</b> ƈħȧřȧƈŧḗřş ŀḗƒŧ."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Ɓȧşīƈ Ƈǿŀŀḗƈŧīǿƞ"
@@ -428,12 +429,26 @@ msgstr "Ƒḗȧŧŭřḗḓ Ȧƥƥ Ƈǿŀŀḗƈŧīǿƞ"
 msgid "Operator Shelf"
 msgstr "Ǿƥḗřȧŧǿř Şħḗŀƒ"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{ƞ}</b> ƈħȧřȧƈŧḗř ŀḗƒŧ."
-msgstr[1] "<b>{ƞ}</b> ƈħȧřȧƈŧḗřş ŀḗƒŧ."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Ǿṽḗřṽīḗẇ"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Ƞḗẇ ƈǿŀŀḗƈŧīǿƞ ƈřḗȧŧḗḓ."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Ƒȧīŀḗḓ ŧǿ ƈřḗȧŧḗ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Ƞḗẇ Ƈǿŀŀḗƈŧīǿƞ"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Ƞǿŧ Ƒǿŭƞḓ"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -574,24 +589,3 @@ msgstr "Ƈǿŭŀḓ ƞǿŧ şȧṽḗ īḿȧɠḗ"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Ƈǿŀŀḗƈŧīǿƞ"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Ǿṽḗřṽīḗẇ"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Ƞḗẇ ƈǿŀŀḗƈŧīǿƞ ƈřḗȧŧḗḓ."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Ƒȧīŀḗḓ ŧǿ ƈřḗȧŧḗ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Ƞḗẇ Ƈǿŀŀḗƈŧīǿƞ"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Ƞǿŧ Ƒǿŭƞḓ"

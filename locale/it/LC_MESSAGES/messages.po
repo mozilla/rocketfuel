@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rocketfuel in italiano\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
+"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
 "PO-Revision-Date: 2013-12-19 09:59+0000\n"
 "Last-Translator: Sara <sara.todaro@mozillaitalia.org>\n"
 "Language-Team: MozillaItalia <gialloporpora@gmail.com>\n"
@@ -13,6 +13,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1387447150.0\n"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Aggiungi app"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Cerca"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -30,13 +38,17 @@ msgstr "Inserisci l'indirizzo email dell'utente a cui vuoi assegnare il ruolo di
 msgid "Namaste"
 msgstr "Namaste"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Aggiungi app"
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Strumento di gestione"
 
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Cerca"
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Esci"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Accedi"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -180,15 +192,15 @@ msgstr ""
 "Gli slug devono iniziare con una lettera e devono contenere solo caratteri alfanumerici e trattini. Sono composti da non più di 30 caratteri e non è possibile scegliere slum utilizzati da altre "
 "raccolte."
 
-#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "Categoria"
 
-#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "Regione"
 
-#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "Operatore telefonico"
 
@@ -196,21 +208,53 @@ msgstr "Operatore telefonico"
 msgid "Duplicate"
 msgstr "Clona"
 
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Strumento di gestione"
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Non sei identificato come curatore"
 
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Esci"
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Al fine di utilizzare effettivamente questo strumento per creare o modificare una raccolta devi essere identificato come curatore."
 
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Accedi"
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Raccolte"
 
-#: /templates/header.html:11
-msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr "Il flag di Rocketfuel è disattivato. Le modifiche effettuate tramite lo Strumento curatori non verranno applicate sul sito di produzione."
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Non è stata creata alcuna raccolta."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Aggiungi una nuova raccolta"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "App consigliate"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Non è stata creata alcuna sezione per le app consigliate."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Aggiungi una nuova raccolta di app consigliate"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Scaffali operatore"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Non è stato creato alcun scaffale operatore."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Aggiungi un nuovo scaffale operatore"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Seleziona un operatore telefonico per visualizzare i suoi scaffali di app."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -268,54 +312,6 @@ msgstr "Operazione non consentita"
 msgid "You must be logged in to create collections."
 msgstr "È necessario effettuare l'accesso per creare una raccolta."
 
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Non sei identificato come curatore"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Al fine di utilizzare effettivamente questo strumento per creare o modificare una raccolta devi essere identificato come curatore."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Raccolte"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Non è stata creata alcuna raccolta."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Aggiungi una nuova raccolta"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "App consigliate"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Non è stata creata alcuna sezione per le app consigliate."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Aggiungi una nuova raccolta di app consigliate"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Scaffali operatore"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Non è stato creato alcun scaffale operatore."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Aggiungi un nuovo scaffale operatore"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Seleziona un operatore telefonico per visualizzare i suoi scaffali di app."
-
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "Questa raccolta è pubblica"
@@ -340,13 +336,9 @@ msgstr "Caricamento delle regioni in corso…"
 msgid "Loading carriers..."
 msgstr "Caricamento degli operatori telefonici in corso…"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Oh no!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Si è verificato un errore."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -356,9 +348,13 @@ msgstr "Errore durante il caricamento di altri contenuti"
 msgid "Try Again"
 msgstr "Riprova"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Oh no!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Si è verificato un errore."
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -388,6 +384,13 @@ msgstr "È fallita l'identificazione tramite Persona. Si è verificato un errore
 msgid "No internet connection"
 msgstr "Connessione Internet non disponibile"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> carattere rimasto."
+msgstr[1] "<b>{n}</b> caratteri rimasti."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Raccolta base"
@@ -400,12 +403,26 @@ msgstr "Raccolta di app consigliate"
 msgid "Operator Shelf"
 msgstr "Scaffale operatore"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> carattere rimasto."
-msgstr[1] "<b>{n}</b> caratteri rimasti."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Panoramica"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "La nuova raccolta è stata creata."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Creazione della nuova raccolta non riuscita."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nuova raccolta"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Non trovato"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -546,24 +563,3 @@ msgstr "Impossibile salvare l'immagine"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Raccolta"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Panoramica"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "La nuova raccolta è stata creata."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Creazione della nuova raccolta non riuscita."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nuova raccolta"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Non trovato"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-18T17:32:23.109Z\n"
+"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
 "PO-Revision-Date: 2013-11-27 12:26-0500\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -12,6 +12,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Fireplace L10n Tools 1.0\n"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "アプリを追加"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "検索"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -29,13 +37,17 @@ msgstr "このコレクションの管理者にしたいユーザのメールア
 msgid "Namaste"
 msgstr "Namaste"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "アプリを追加"
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "管理者ツール"
 
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "検索"
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "ログアウト"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "ログイン"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -177,15 +189,15 @@ msgstr "スラグは必須です"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "スラグは、最初の文字をアルファベットにする必要があり、英数字とハイフンのみ使用できます。最大 30 文字で、既存のコレクションと同じものは使用できません。"
 
-#: /templates/duplicate_collection.html:22 /templates/new_collection.html:44 /templates/homepage.html:13
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "カテゴリ"
 
-#: /templates/duplicate_collection.html:27 /templates/new_collection.html:49 /templates/homepage.html:19
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "地域"
 
-#: /templates/duplicate_collection.html:32 /templates/new_collection.html:54 /templates/homepage.html:25
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "キャリア"
 
@@ -193,21 +205,53 @@ msgstr "キャリア"
 msgid "Duplicate"
 msgstr "複製"
 
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "管理者ツール"
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "あなたは管理者としてログインしていません"
 
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "ログアウト"
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "コレクションを作成、編集するには、管理者としてログインし、このツールを効果的に使用する必要があります。"
 
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "ログイン"
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "コレクション"
 
-#: /templates/header.html:11
-msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr "Rocketfuel フラグは無効化されています。管理者ツール上で行われてた変更は実際のサイトに反映されません。"
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "コレクションはまだ作成されていません。"
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "新しいコレクションを追加"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "おすすめアプリ"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "おすすめアプリの項目はまだ作成されていません。"
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "新しいおすすめアプリコレクションを追加"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "オペレーターのコレクション"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "オペレーターのコレクションはまだ作成されていません。"
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "新しいオペレーターのコレクションを追加"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "オペレーターのコレクションを見るにはキャリアを選択してください。"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -265,54 +309,6 @@ msgstr "未承認"
 msgid "You must be logged in to create collections."
 msgstr "コレクションを作成するにはログインしてください。"
 
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "あなたは管理者としてログインしていません"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "コレクションを作成、編集するには、管理者としてログインし、このツールを効果的に使用する必要があります。"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "コレクション"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "コレクションはまだ作成されていません。"
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "新しいコレクションを追加"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "おすすめアプリ"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "おすすめアプリの項目はまだ作成されていません。"
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "新しいおすすめアプリコレクションを追加"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "オペレーターのコレクション"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "オペレーターのコレクションはまだ作成されていません。"
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "新しいオペレーターのコレクションを追加"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "オペレーターのコレクションを見るにはキャリアを選択してください。"
-
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "コレクションは公開です"
@@ -337,13 +333,9 @@ msgstr "地域を読み込んでいます..."
 msgid "Loading carriers..."
 msgstr "キャリアを読み込んでいます..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "エラー"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "問題が発生しました。"
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -353,9 +345,13 @@ msgstr "読み込み中に問題が発生しました"
 msgid "Try Again"
 msgstr "再読み込み"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "エラー"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "問題が発生しました。"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -385,6 +381,12 @@ msgstr "Persona のログインに失敗しました。サーバエラーが発�
 msgid "No internet connection"
 msgstr "インターネット未接続"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "残り <b>{n}</b> 文字です。"
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "基本コレクション"
@@ -397,11 +399,26 @@ msgstr "おすすめアプリコレクション"
 msgid "Operator Shelf"
 msgstr "オペレーターのコレクション"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "残り <b>{n}</b> 文字です。"
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "概要"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "新しいコレクションが作成されました。"
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "新しいコレクションを作成できませんでした。"
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "新しいコレクション"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Not Found"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -542,24 +559,3 @@ msgstr "画像を保存できませんでした"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "コレクション"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "概要"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "新しいコレクションが作成されました。"
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "新しいコレクションを作成できませんでした。"
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "新しいコレクション"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Not Found"
