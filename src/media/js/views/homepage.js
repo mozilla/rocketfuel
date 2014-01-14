@@ -27,7 +27,7 @@ define('views/homepage',
             'homepage.html',
             {
                 'get_url_params': get_url_params,
-                'region': args.region || 'worldwide',
+                'region': args.region || 'restofworld',
                 'category': args.category || '',
                 'carrier': args.carrier || ''
             }
@@ -44,7 +44,7 @@ define('views/homepage',
             }
 
             url = utils.urlparams(url, {
-                'region': args.region || 'worldwide',
+                'region': args.region || 'restofworld',
                 'carrier': args.carrier || undefined,
                 'lang': navigator.l10n ? navigator.l10n.language : 'en-US',
                 'preview': 'true'
