@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-27T15:59:51.103Z\n"
+"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
 "PO-Revision-Date: 2013-11-27 19:26+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1383501041.0\n"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Shtoni Zbatime"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Kërko"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -30,14 +38,17 @@ msgstr "Jepni adresën email të një përdoruesi që dëshironi ta bëni kujdes
 msgid "Namaste"
 msgstr "Namaste"
 
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Shtoni Zbatime"
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Mjete Kujdestarie"
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
-msgid "Search"
-msgstr "Kërko"
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Dilni"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Hyni"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -47,24 +58,19 @@ msgstr "Autor:"
 msgid "Slug:"
 msgstr "Identifikues:"
 
-#: /templates/collection.html:33
-#: /templates/_macros/collections.html:11
+#: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
 msgstr "Rajon:"
 
-#: /templates/collection.html:39
-#: /templates/_macros/collections.html:15
+#: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
 msgstr "Operator:"
 
-#: /templates/collection.html:46
-#: /templates/_macros/collections.html:19
+#: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
 msgstr "Kategori:"
 
-#: /templates/collection.html:47
-#: /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:350
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "Krejt Kategoritë (Faqja Hyrëse)"
 
@@ -120,8 +126,7 @@ msgstr "Zbatime"
 msgid "Add app to collection"
 msgstr "Shtoni zbatim te koleksioni"
 
-#: /templates/collection.html:114
-#: /media/js/views/collection.js:15
+#: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
 msgstr "Bëje Koleksionin Publik"
 
@@ -165,8 +170,7 @@ msgstr "Po"
 msgid "Duplicate Collection"
 msgstr "Bëj Një Kopje të Koleksionit"
 
-#: /templates/duplicate_collection.html:7
-#: /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "Emër"
 
@@ -184,45 +188,25 @@ msgstr "Lypset një identifikues"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr "Identifikuesit duhet të fillojnë me një shkronjë dhe mund të përmbajnë vetëm shkronja, numra dhe vija ndarëse. Duhet të jetë 30 ose më pak shenja dhe nuk mund të jetë i njëjtë me atë të koleksionit ekzistues."
+msgstr ""
+"Identifikuesit duhet të fillojnë me një shkronjë dhe mund të përmbajnë vetëm shkronja, numra dhe vija ndarëse. Duhet të jetë 30 ose më pak shenja dhe nuk mund të jetë i njëjtë me atë të koleksionit "
+"ekzistues."
 
-#: /templates/duplicate_collection.html:22
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "Kategori"
 
-#: /templates/duplicate_collection.html:27
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "Rajon"
 
-#: /templates/duplicate_collection.html:32
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "Operator"
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Bëje Kopjen"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Mjete Kujdestarie"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Dilni"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Hyni"
-
-#: /templates/header.html:11
-msgid "The Rocketfuel flag is disabled. Changes made in the Curation Tool will not be reflected on the live site."
-msgstr "Flamurka Rocketfuel është e çaktivizuar. Ndryshimet e bëra te Mjeti i Përkujdesjes nuk do të pasqyrohen te sajti real."
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -304,8 +288,7 @@ msgstr "Ngjyrë Sfondi"
 msgid "A background color is required"
 msgstr "Ngjyra e sfondit është e domosdoshme"
 
-#: /templates/new_collection.html:67
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "Ju lutemi, jepni një ngjyrë me kod gjashtësh (p.sh.: \"#AB78EF\")"
 
@@ -341,8 +324,7 @@ msgstr "Nuk ka koleksione publikë të këtij lloji."
 msgid "Loading categories..."
 msgstr "Po ngarkohen kategoritë..."
 
-#: /templates/_macros/dropdowns.html:30
-#: /templates/_macros/dropdowns.html:53
+#: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
 msgstr "-- Asnjë --"
 
@@ -354,13 +336,9 @@ msgstr "Po ngarkohen rajonet..."
 msgid "Loading carriers..."
 msgstr "Po ngarkohen operatorët..."
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Mooos!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Ndodhi një gabim."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -370,9 +348,13 @@ msgstr "Gabim gjatë ngarkimit të më tepër"
 msgid "Try Again"
 msgstr "Riprovoni"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Mooos!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Ndodhi një gabim."
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -402,6 +384,13 @@ msgstr "Hyrja me Persona dështoi. U has një gabim shërbyesi."
 msgid "No internet connection"
 msgstr "Pa lidhje internet"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "edhe <b>{n}</b> shenjë."
+msgstr[1] "edhe <b>{n}</b> shenja."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Koleksion Bazë"
@@ -414,12 +403,26 @@ msgstr "Koleksion Zbatimesh të Zgjedhura"
 msgid "Operator Shelf"
 msgstr "Raft Operatori"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "edhe <b>{n}</b> shenjë."
-msgstr[1] "edhe <b>{n}</b> shenja."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Përmbledhje"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Koleksioni i ri u krijua."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Dështoi në krijim koleksioni të ri."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Koleksion i Ri"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nuk u Gjet"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -489,96 +492,74 @@ msgstr "Kujdestari u hoq"
 msgid "Failed to remove curator"
 msgstr "Dështoi në heqje kujdestari"
 
-#: /media/js/views/collection.js:201
+#: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
 msgstr "{app} u hoq prej koleksionit."
 
-#: /media/js/views/collection.js:205
+#: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
 msgstr "Nuk fshiu dot zbatim prej koleksionit."
 
-#: /media/js/views/collection.js:231
+#: /media/js/views/collection.js:232
 msgid "App added to collection."
 msgstr "Zbatimi u shtua te koleksioni."
 
-#: /media/js/views/collection.js:235
+#: /media/js/views/collection.js:236
 msgid "Failed to add app."
 msgstr "Dështoi në shtim zbatimi."
 
-#: /media/js/views/collection.js:246
+#: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
 msgstr "Jeni i sigurt se doni të fshihet ky koleksion?"
 
-#: /media/js/views/collection.js:270
+#: /media/js/views/collection.js:271
 msgid "Collection deleted."
 msgstr "Koleksioni u fshi."
 
-#: /media/js/views/collection.js:274
+#: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
 msgstr "Dështoi në fshirje koleksioni."
 
-#: /media/js/views/collection.js:290
+#: /media/js/views/collection.js:291
 msgid "Order updated"
 msgstr "Radha u përditësua"
 
-#: /media/js/views/collection.js:292
+#: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr "Dështoi në përditësim radhe koleksioni. Provoni të rifreskoni faqen."
 
-#: /media/js/views/collection.js:382
+#: /media/js/views/collection.js:383
 msgid "Saved {field}"
 msgstr "U ruajt {field}"
 
-#: /media/js/views/collection.js:393
+#: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
 msgstr "Dështoi në përditësimin e {field}"
 
-#: /media/js/views/collection.js:418
+#: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
 msgstr "E papërputhshme: Zbatim jo i passhëm në rajonin e koleksionit."
 
-#: /media/js/views/collection.js:500
+#: /media/js/views/collection.js:501
 msgid "No Image Provided"
 msgstr "Nuk u Dha Figurë"
 
-#: /media/js/views/collection.js:512
+#: /media/js/views/collection.js:513
 msgid "Image cleared"
 msgstr "Figura u hoq"
 
-#: /media/js/views/collection.js:514
+#: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
 msgstr "Nuk hoqi dot figurën, me gjasa për shkak të bug-ut 917081"
 
-#: /media/js/views/collection.js:525
+#: /media/js/views/collection.js:526
 msgid "Image saved"
 msgstr "Figura u ruajt"
 
-#: /media/js/views/collection.js:528
+#: /media/js/views/collection.js:529
 msgid "Could not save image"
 msgstr "Nuk ruajti dot figurën"
 
-#: /media/js/views/collection.js:585
+#: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Koleksion"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Përmbledhje"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Koleksioni i ri u krijua."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Dështoi në krijim koleksioni të ri."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Koleksion i Ri"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nuk u Gjet"
-
