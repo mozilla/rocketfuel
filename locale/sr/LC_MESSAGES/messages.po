@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
-"PO-Revision-Date: 2014-01-10 10:59+0000\n"
-"Last-Translator: Aleksandra <auzelac91@gmail.com>\n"
+"PO-Revision-Date: 2014-02-09 20:56+0000\n"
+"Last-Translator: Vanja <vtumbas@mozilla.rs>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1389351549.0\n"
+"X-POOTLE-MTIME: 1391979394.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
@@ -47,11 +47,11 @@ msgstr "Алат за курацију"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr "Одјава"
+msgstr "Одјави се"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr "Пријава"
+msgstr "Пријави се"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -173,7 +173,7 @@ msgstr "Да"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr "Дуплирајте колекцију"
+msgstr "Дуплирај колекцију"
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
@@ -258,7 +258,7 @@ msgstr "Ни једна полица оператора није креиран�
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr "Дидајте нову полицу оператора"
+msgstr "Дoдајте нову полицу оператора"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
@@ -298,7 +298,7 @@ msgstr "Позадинска боја"
 
 #: /templates/new_collection.html:66
 msgid "A background color is required"
-msgstr "Неопходно је унети позадинску боју."
+msgstr "Неопходно је унети позадинску боју"
 
 #: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
@@ -350,7 +350,7 @@ msgstr "Учитавање оператера..."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr "ИД: {id}"
+msgstr "ID: {id}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -358,7 +358,7 @@ msgstr "Грешка током учитавања"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr "Покушајте поново"
+msgstr "Покушај поново"
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
