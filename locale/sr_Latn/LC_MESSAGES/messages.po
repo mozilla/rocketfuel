@@ -10,8 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1391979394.0\n"
 
@@ -33,9 +32,7 @@ msgstr "Korisnikova adresa e-pošte"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Unesite adresu e-pošte korisnika kojeg želite da napravite kuratorom za ovu "
-"kolekciju."
+msgstr "Unesite adresu e-pošte korisnika kojeg želite da napravite kuratorom za ovu kolekciju."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -95,9 +92,7 @@ msgstr "Učitavanje slike"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Dovucite dole PNG ili JPG sliku ili <span>izaberite datoteku</span> da biste "
-"postavili sliku."
+msgstr "Dovucite dole PNG ili JPG sliku ili <span>izaberite datoteku</span> da biste postavili sliku."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -193,10 +188,7 @@ msgstr "Naziv url adrese je neophodan"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Nazivi url adresa moraju početi slovom i mogu da sadrže samo slova, brojeve "
-"i crtice. Moraju biti dužine 30 ili manje karaktera i ne mogu biti isti sa "
-"postojećom kolekcijom."
+msgstr "Nazivi url adresa moraju početi slovom i mogu da sadrže samo slova, brojeve i crtice. Moraju biti dužine 30 ili manje karaktera i ne mogu biti isti sa postojećom kolekcijom."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -220,9 +212,7 @@ msgstr "Niste prijavljeni kao kurator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Da biste kreirali ili izmenili kolekcije, morate biti prijavljeni kao kurator "
-"kako biste uspešno koristili ovaj alat."
+msgstr "Da biste kreirali ili izmenili kolekcije, morate biti prijavljeni kao kurator kako biste uspešno koristili ovaj alat."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -262,9 +252,7 @@ msgstr "Dodajte novu policu operatora"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
-"Molimo Vas izaberite mrežnog operatera kako biste pregledali police "
-"operatora."
+msgstr "Molimo Vas izaberite mrežnog operatera kako biste pregledali police operatora."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -280,9 +268,7 @@ msgstr "Naziv url adrese za kolekciju"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"Nazivi url adresa moraju početi slovom i mogu da sadrže samo slova, brojeve "
-"i crtice. Moraju biti dužine 30 ili manje karaktera."
+msgstr "Nazivi url adresa moraju početi slovom i mogu da sadrže samo slova, brojeve i crtice. Moraju biti dužine 30 ili manje karaktera."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -386,14 +372,11 @@ msgstr "Prijavljeni ste"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
-"Prijava putem Persona sistema je neuspešna. Možda nemate nalog pod tom "
-"adresom e-pošte?"
+msgstr "Prijava putem Persona sistema je neuspešna. Možda nemate nalog pod tom adresom e-pošte?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
-"Prijava putem Persona sistema je neuspešna. Došlo je do greške na serveru."
+msgstr "Prijava putem Persona sistema je neuspešna. Došlo je do greške na serveru."
 
 #: /media/js/navigation.js:31
 msgid "No internet connection"
@@ -542,8 +525,7 @@ msgstr "Redosled je ažuriran"
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
-"Neuspešno ažuriranje redosleda kolekcije. Pokušajte da osvežite stranicu."
+msgstr "Neuspešno ažuriranje redosleda kolekcije. Pokušajte da osvežite stranicu."
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"

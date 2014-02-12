@@ -32,9 +32,7 @@ msgstr "E-mailadres van gebruiker"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Voer het e-mailadres in van een gebruiker die u curator van deze collectie "
-"wilt maken."
+msgstr "Voer het e-mailadres in van een gebruiker die u curator van deze collectie wilt maken."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
