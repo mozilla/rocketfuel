@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
-"PO-Revision-Date: 2014-01-22 23:33+0000\n"
+"PO-Revision-Date: 2014-02-13 19:18+0000\n"
 "Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: none\n"
 "Language: nl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1390433620.0\n"
+"X-POOTLE-MTIME: 1392319091.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
@@ -233,7 +233,7 @@ msgstr "Aanbevolen apps"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr "Er zijn geen collecties voor aanbevolen apps aangemaakt."
+msgstr "Er zijn geen secties voor aanbevolen apps aangemaakt."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
