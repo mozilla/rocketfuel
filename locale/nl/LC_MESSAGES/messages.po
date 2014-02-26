@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
-"PO-Revision-Date: 2014-02-13 19:18+0000\n"
-"Last-Translator: Ton <tonnes.mb@gmail.com>\n"
+"PO-Revision-Date: 2014-02-26 06:49+0000\n"
+"Last-Translator: Mark <markh@babelzilla.org>\n"
 "Language-Team: none\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1392319091.0\n"
+"X-POOTLE-MTIME: 1393397348.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
@@ -457,7 +457,7 @@ msgstr "De vlag “held” is nu uitgeschakeld"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr "Eigenschap “held” van collectie instellen mislukt"
+msgstr "Instellen eigenschap “held” van collectie mislukt"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
