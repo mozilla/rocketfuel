@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
-"PO-Revision-Date: 2013-10-09 15:24+0000\n"
-"Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
+"PO-Revision-Date: 2014-03-01 14:11+0000\n"
+"Last-Translator: Frédéric <fredchat@frenchmozilla.org>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1381332252.0\n"
+"X-POOTLE-MTIME: 1393683104.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
@@ -24,23 +24,25 @@ msgstr "Rechercher"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Ajouter un superviseur"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Adresse électronique de l'utilisateur"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Saisissez l'adresse électronique de l'utilisateur que vous voulez nommer "
+"superviseur pour cette collection."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namasté"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr "Outil de curation"
+msgstr "Outil de supervision"
 
 #: /templates/header.html:7
 msgid "Sign Out"
@@ -84,35 +86,37 @@ msgstr "Personnalisation"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Image d'arrière-plan&nbsp;:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Chargement de l'aperçu"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Déposez une image PNG ou JPG ci-dessous ou <span>sélectionnez un "
+"fichier</span> pour téléverser une image."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Votre navigateur ne prend pas en charge canvas."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Effacer l’image enregistrée"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Enregistrer l’image"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Annuler et rétablir"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr "Arrière-plan :"
+msgstr "Arrière-plan&nbsp;:"
 
 #: /templates/collection.html:91
 msgid "Text:"
@@ -120,11 +124,11 @@ msgstr "Texte :"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr "Apps"
+msgstr "Applications"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr "Ajouter l'app à la collection"
+msgstr "Ajouter l'application à la collection"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
@@ -140,15 +144,15 @@ msgstr "Supprimer la collection"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Superviseurs"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Il n'y a pas de superviseur pour cette collection."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Ajouter un superviseur"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
@@ -210,11 +214,13 @@ msgstr "Dupliquer"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Vous n'êtes pas connecté en tant que superviseur"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"Afin de créer ou de modifier des collections, vous devez être connecté en "
+"tant que superviseur pour pleinement utiliser cet outil."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -230,31 +236,31 @@ msgstr "Ajouter une nouvelle collection"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr "Apps mises en avant"
+msgstr "Applications en vedette"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr "Aucune section de mise en avant n'a été créée."
+msgstr "Aucune section d'applications en vedette n'a été créée."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr "Ajouter une nouvelle collection d'apps mises en avant"
+msgstr "Ajouter une nouvelle collection d'applications en vedette"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr "Rayons d'opérateur"
+msgstr "Étagères opérateur"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr "Aucun rayon d'opérateur n'a été créé."
+msgstr "Aucune étagère opérateur n'a été créé."
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr "Ajouter un nouveau rayon d'opérateur"
+msgstr "Ajouter une nouvelle étagère opérateur"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr "Veuillez choisir un opérateur pour voir ses rayons."
+msgstr "Veuillez choisir un opérateur pour voir ses étagères."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -262,7 +268,8 @@ msgstr "Nouvelle collection {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr "Le nom ne sera pas montré aux utilisateurs et est à votre usage uniquement"
+msgstr ""
+"Le nom ne sera pas montré aux utilisateurs et est à votre usage uniquement."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
@@ -314,11 +321,11 @@ msgstr "Vous devez vous connecter pour créer des collections."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "La collection est publique"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Il n'existe pas de collection publique de ce type."
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
@@ -338,7 +345,7 @@ msgstr "Chargement des opérateurs…"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID&nbsp;: {id}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -366,15 +373,17 @@ msgstr "Autres langues"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr "Déconnexion effectuée"
+msgstr "Vous avez été déconnecté(e)"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr "Connexion effectuée"
+msgstr "Vous êtes connecté(e)"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr "Échec de la connexion avec Persona. Peut-être n'avez-vous pas de compte sous cette adresse électronique ?"
+msgstr ""
+"Échec de la connexion avec Persona. Peut-être n'avez-vous pas de compte avec "
+"cette adresse électronique&nbsp;?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
@@ -397,11 +406,11 @@ msgstr "Collection de base"
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr "Collection d'apps mises en avant"
+msgstr "Collection d'applications en vedette"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr "Rayon d'opérateur"
+msgstr "Étagère opérateur"
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
@@ -426,11 +435,11 @@ msgstr "Introuvable"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr "Masquer la collection"
+msgstr "Rendre la collection privée"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr "La collection est à présent masquée"
+msgstr "La collection est à présent privée"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
@@ -442,23 +451,23 @@ msgstr "Échec de la modification de la propriété publique de la collection"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "Activer l'étiquette « hero »"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "Désactiver l'étiquette « hero »"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "L'étiquette « hero » est maintenant activée"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "L'étiquette « hero » est maintenant désactivée"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Échec de l'attribution de l'étiquette « hero » à la collection"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
@@ -474,39 +483,39 @@ msgstr "La recherche a échoué :-("
 
 #: /media/js/views/collection.js:139
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Superviseur ajouté&nbsp;;revérifiez dans quelques instants"
 
 #: /media/js/views/collection.js:143
 msgid "Added curator"
-msgstr ""
+msgstr "Superviseur ajouté"
 
 #: /media/js/views/collection.js:158
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Impossible d'ajouter un superviseur"
 
 #: /media/js/views/collection.js:174
 msgid "Removed curator"
-msgstr ""
+msgstr "Superviseur supprimé"
 
 #: /media/js/views/collection.js:178
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Impossible de supprimer un superviseur"
 
 #: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
-msgstr "Application {app} retirée de la collection."
+msgstr "Application {app} supprimée de la collection."
 
 #: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
-msgstr "Impossible de supprimer l'app de la collection."
+msgstr "Impossible de supprimer l'application de la collection."
 
 #: /media/js/views/collection.js:232
 msgid "App added to collection."
-msgstr "App ajoutée à la collection."
+msgstr "Application ajoutée à la collection."
 
 #: /media/js/views/collection.js:236
 msgid "Failed to add app."
-msgstr "Impossible d'ajouter l'app."
+msgstr "Impossible d'ajouter l'application."
 
 #: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
@@ -538,27 +547,29 @@ msgstr "Impossible de mettre à jour {field}"
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr "Incompatible : l'app n'est pas disponible dans la région de la collection."
+msgstr ""
+"Incompatibilité&nbsp;: l'application n'est pas disponible dans la région de "
+"la collection."
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"
-msgstr ""
+msgstr "Aucune image n'est fournie"
 
 #: /media/js/views/collection.js:513
 msgid "Image cleared"
-msgstr ""
+msgstr "Image effacée"
 
 #: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Impossible d'effacer l'image, probablement à cause du bogue 917081"
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
-msgstr ""
+msgstr "Image enregistrée"
 
 #: /media/js/views/collection.js:529
 msgid "Could not save image"
-msgstr ""
+msgstr "Impossible d'enregistrer l'image"
 
 #: /media/js/views/collection.js:586
 msgid "Collection"
