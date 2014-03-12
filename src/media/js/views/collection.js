@@ -252,7 +252,7 @@ define('views/collection',
                 // Rewrite the cache to remove the collection.
                 collection_model.del(collection.id);
                 cache.bust(urls.api.url('collection', [collection.id]));
-                var list_endpoint = urls.api.unsigned.url('collections');
+                var list_endpoint = urls.api.base.url('collections');
                 cache.attemptRewrite(
                     function(key) {
                         return utils.baseurl(key) == list_endpoint;

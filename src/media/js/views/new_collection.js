@@ -26,7 +26,7 @@ define('views/new_collection',
             data.description[navigator.l10n.language] = orig_data.description;
 
             collection_model.cast(data);
-            var list_endpoint = urls.api.unsigned.url('collections');
+            var list_endpoint = urls.api.base.url('collections');
             cache.attemptRewrite(
                 function(key) {
                     if (utils.baseurl(key) !== list_endpoint) return false;
