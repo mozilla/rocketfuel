@@ -3,560 +3,574 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
-"PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2014-03-14 21:37+0000\n"
+"Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1394833052.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Adicionar Aplicativos"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Adicionar um Curador"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Endereço de E-mail do Usuário"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Digite o endereço de e-mail de um usuário que você deseja fazer curador "
+"dessa coleção."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Ferramenta de Curadoria"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Sair"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Entrar"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "Autor:"
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "Slug:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "Região:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "Provedor:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "Categoria:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Todas as Categorias (Página Inicial)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "Descrição:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Personalização"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Imagem de Fundo:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Carregando pré-visualização da imagem"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Arraste uma imagem em PNG ou JPG abaixo ou <span>escolha o arquivo</span> "
+"para fazer o upload da imagem."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Seu navegador não suporta canvas."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Limpar imagem salva"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Salvar imagem"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Cancelar e Reverter"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Fundo:"
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "Texto:"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "Aplicativos"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "Adicionar aplicativo para coleção"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr ""
+msgstr "Torne a coleção pública"
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Duplicar a Coleção"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "Excluir coleção"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Curadores"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Não há curadores para esta coleção"
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Adicionar Curador"
 
 #: /templates/collection.html:148
 msgid "Error loading the collection."
-msgstr ""
+msgstr "Erro ao carregar a coleção"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Duplicar Coleção"
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: /templates/duplicate_collection.html:9
 msgid "A name is required"
-msgstr ""
+msgstr "É necessário um nome "
 
 #: /templates/duplicate_collection.html:13
 msgid "Slug"
-msgstr ""
+msgstr "Título curto (slug)"
 
 #: /templates/duplicate_collection.html:15
 msgid "A slug is required"
-msgstr ""
+msgstr "Um título curto é exigido"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
+"Os títulos curtos devem começar com uma letra e pode conter apenas letras, "
+"números e hifens. Deve ter 30 caracteres ou menos e não pode ser o mesmo que "
+"o conjunto existente."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "Região"
 
 #: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
-msgstr ""
+msgstr "Provedor"
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicar"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Você não está logado como um curador"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"Para criar ou modificar as coleções, você deve estar logado como um curador "
+"para usar eficazmente esta ferramenta."
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Coleções"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "Não foi criada nenhuma coleção."
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "Adicionar uma nova coleção"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr ""
+msgstr "Aplicativos em destaque"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "Não há seções de aplicativos em destaque criadas."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Adicione uma nova coleção de aplicativos em destaque"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Prateleiras do operador"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "Não foi criada nehuma prateleira do operador."
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "Adicione uma nova prateleira do operador"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "Selecione uma operadora para ver as prateleiras do operador."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Nova {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "O nome não é mostrado para os usuários, é apenas por conveniência"
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr ""
+msgstr "Título curto da coleção"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
 msgstr ""
+"Títulos curtos devem começar com uma letra e pode conter apenas letras, "
+"números e hífens. Deve ter 30 caracteres ou menos."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "Nome do Autor"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: /templates/new_collection.html:64
 msgid "Background Color"
-msgstr ""
+msgstr "Cor de fundo"
 
 #: /templates/new_collection.html:66
 msgid "A background color is required"
-msgstr ""
+msgstr "A cor de fundo é necessária"
 
 #: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Por favor insira uma cor hex (ex.: \"#AB78EF\")"
 
 #: /templates/new_collection.html:71
 msgid "Text Color"
-msgstr ""
+msgstr "Cor do texto"
 
 #: /templates/new_collection.html:73
 msgid "A text color is required"
-msgstr ""
+msgstr "A cor do texto é necessária"
 
 #: /templates/new_collection.html:80
 msgid "Create"
-msgstr ""
+msgstr "Criar"
 
 #: /templates/new_collection.html:85
 msgid "Unauthorized"
-msgstr ""
+msgstr "Não autorizado"
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "Você precisa estar logado para criar coleções."
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "A coleção é pública"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Não há coleções públicas deste tipo."
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "Carregando categorias..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- nenhum --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr ""
+msgstr "Carregando regiões..."
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr ""
+msgstr "Carregando Operadoras..."
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "Erro ao carregar mais"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "Tente novamente"
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "Oh, não!"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "Ocorreu um erro."
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Outros idiomas"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "Você foi desconectado"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "Você foi autenticado"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
 msgstr ""
+"O login do Persona falhou. Talvez você não tem uma conta com esse endereço "
+"de e-mail?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "O login do Persona falhou. Um erro foi encontrado no servidor."
 
 #: /media/js/navigation.js:31
 msgid "No internet connection"
-msgstr ""
+msgstr "Sem conexão com a internet"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:28
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<b>{n}</b> caractere à esquerda."
+msgstr[1] "<b>{n}</b> caracteres à esquerda."
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
-msgstr ""
+msgstr "Coleção Básica"
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr ""
+msgstr "Coleção de aplicativos em destaque"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Prateleira do operador"
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
-msgstr ""
+msgstr "Visão global"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
-msgstr ""
+msgstr "Nova coleção criada."
 
 #: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "Falha ao criar nova coleção."
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
+msgstr "Nova coleção"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "Não encontrado"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr ""
+msgstr "Ocultar coleção"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "Coleção agora está oculta"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
-msgstr ""
+msgstr "Coleção agora é pública"
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "Falhou ao configurar a propriedade da coleção como pública"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "Ativar bandeira \"herói\""
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "Desativar bandeira \"herói\""
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "A bandeira \"herói\" está ativa"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "A bandeira \"herói\" está desativada"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Houve um erro ao definir a propriedade da coleção \"herói\""
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr ""
+msgstr "Duplicada com sucesso"
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "Falha ao duplicar coleção"
 
 #: /media/js/views/collection.js:111
 msgid "Search failed :-("
-msgstr ""
+msgstr "A busca falhou :-("
 
 #: /media/js/views/collection.js:139
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Curador acrescentado; volte daqui a pouco"
 
 #: /media/js/views/collection.js:143
 msgid "Added curator"
-msgstr ""
+msgstr "Adicionado curador"
 
 #: /media/js/views/collection.js:158
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Falha ao adicionar curador"
 
 #: /media/js/views/collection.js:174
 msgid "Removed curator"
-msgstr ""
+msgstr "Curador removido"
 
 #: /media/js/views/collection.js:178
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Falha ao remover curador"
 
 #: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "Removido {app} da coleção."
 
 #: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "Não foi possível excluir aplicativo da coleção."
 
 #: /media/js/views/collection.js:232
 msgid "App added to collection."
-msgstr ""
+msgstr "Aplicativo adicionado à coleção."
 
 #: /media/js/views/collection.js:236
 msgid "Failed to add app."
-msgstr ""
+msgstr "Falha ao adicionar aplicativo."
 
 #: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
-msgstr ""
+msgstr "Tem certeza de que quer apagar esta coleção?"
 
 #: /media/js/views/collection.js:271
 msgid "Collection deleted."
-msgstr ""
+msgstr "Coleção apagada."
 
 #: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
-msgstr ""
+msgstr "Falha ao apagar coleção."
 
 #: /media/js/views/collection.js:291
 msgid "Order updated"
-msgstr ""
+msgstr "Atualizado"
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "Falha ao atualizar a coleção. Tente atualizar a página."
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"
-msgstr ""
+msgstr "Salvo {field}"
 
 #: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "Falha ao atualizar {field}"
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "Incompatível: Aplicativo não está disponível na região da coleção."
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"
-msgstr ""
+msgstr "Imagem não fornecida"
 
 #: /media/js/views/collection.js:513
 msgid "Image cleared"
-msgstr ""
+msgstr "Imagem limpa"
 
 #: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Não foi possível limpar a imagem, provavelmente bug 917081"
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
-msgstr ""
+msgstr "Imagem salva"
 
 #: /media/js/views/collection.js:529
 msgid "Could not save image"
-msgstr ""
+msgstr "Não foi possível salvar imagem"
 
 #: /media/js/views/collection.js:586
 msgid "Collection"
-msgstr ""
+msgstr "Coleção"
