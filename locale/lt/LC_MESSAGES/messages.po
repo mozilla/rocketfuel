@@ -10,16 +10,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; "
-"charset=utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: Fireplace L10n Tools 1.0\n"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
 msgstr ""
 
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
+#: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr ""
 
@@ -59,24 +57,19 @@ msgstr ""
 msgid "Slug:"
 msgstr ""
 
-#: /templates/collection.html:33
-#: /templates/_macros/collections.html:11
+#: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
 msgstr ""
 
-#: /templates/collection.html:39
-#: /templates/_macros/collections.html:15
+#: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
 msgstr ""
 
-#: /templates/collection.html:46
-#: /templates/_macros/collections.html:19
+#: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
 msgstr ""
 
-#: /templates/collection.html:47
-#: /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:351
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr ""
 
@@ -132,8 +125,7 @@ msgstr ""
 msgid "Add app to collection"
 msgstr ""
 
-#: /templates/collection.html:114
-#: /media/js/views/collection.js:15
+#: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
 msgstr ""
 
@@ -177,8 +169,7 @@ msgstr ""
 msgid "Duplicate Collection"
 msgstr ""
 
-#: /templates/duplicate_collection.html:7
-#: /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr ""
 
@@ -198,21 +189,15 @@ msgstr ""
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
 
-#: /templates/duplicate_collection.html:22
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr ""
 
-#: /templates/duplicate_collection.html:27
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr ""
 
-#: /templates/duplicate_collection.html:32
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr ""
 
@@ -300,8 +285,7 @@ msgstr ""
 msgid "A background color is required"
 msgstr ""
 
-#: /templates/new_collection.html:67
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr ""
 
@@ -337,8 +321,7 @@ msgstr ""
 msgid "Loading categories..."
 msgstr ""
 
-#: /templates/_macros/dropdowns.html:30
-#: /templates/_macros/dropdowns.html:53
+#: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
 msgstr ""
 

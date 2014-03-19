@@ -32,9 +32,7 @@ msgstr "Adresse électronique de l'utilisateur"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Saisissez l'adresse électronique de l'utilisateur que vous voulez nommer "
-"superviseur pour cette collection."
+msgstr "Saisissez l'adresse électronique de l'utilisateur que vous voulez nommer superviseur pour cette collection."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -94,9 +92,7 @@ msgstr "Chargement de l'aperçu"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Déposez une image PNG ou JPG ci-dessous ou <span>sélectionnez un "
-"fichier</span> pour téléverser une image."
+msgstr "Déposez une image PNG ou JPG ci-dessous ou <span>sélectionnez un fichier</span> pour téléverser une image."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -218,9 +214,7 @@ msgstr "Vous n'êtes pas connecté en tant que superviseur"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Afin de créer ou de modifier des collections, vous devez être connecté en "
-"tant que superviseur pour pleinement utiliser cet outil."
+msgstr "Afin de créer ou de modifier des collections, vous devez être connecté en tant que superviseur pour pleinement utiliser cet outil."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -268,8 +262,7 @@ msgstr "Nouvelle collection {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
-"Le nom ne sera pas montré aux utilisateurs et est à votre usage uniquement."
+msgstr "Le nom ne sera pas montré aux utilisateurs et est à votre usage uniquement."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
@@ -381,9 +374,7 @@ msgstr "Vous êtes connecté(e)"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
-"Échec de la connexion avec Persona. Peut-être n'avez-vous pas de compte avec "
-"cette adresse électronique&nbsp;?"
+msgstr "Échec de la connexion avec Persona. Peut-être n'avez-vous pas de compte avec cette adresse électronique&nbsp;?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
@@ -547,9 +538,7 @@ msgstr "Impossible de mettre à jour {field}"
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
-"Incompatibilité&nbsp;: l'application n'est pas disponible dans la région de "
-"la collection."
+msgstr "Incompatibilité&nbsp;: l'application n'est pas disponible dans la région de la collection."
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"
