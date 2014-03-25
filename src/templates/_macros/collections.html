@@ -2,7 +2,7 @@
 
 {% macro collection_overview(collection, show_thumbs=False) %}
 <div class="collection overview">
-  <strong><a href="{{ url('collection', [collection.slug]) }}">{{ collection.name|translate(collection) }}</a></strong>
+  <strong><a href="{{ url('collection', [collection.slug]) }}">{{ collection.name|translate(collection) or _('(Unnamed collection)') }}</a></strong>
   {% if collection.description %}
     <p>{{ collection.description|translate(collection)|safe }}</p>
   {% endif %}
