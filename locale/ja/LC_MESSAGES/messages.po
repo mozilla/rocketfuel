@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
-"PO-Revision-Date: 2013-11-27 12:26-0500\n"
+"PO-Revision-Date: 2014-03-26 14:10-0500\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -27,7 +27,7 @@ msgstr "このコレクションの管理者にしたいユーザのメールア
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr "Namaste"
+msgstr "ナマステ"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -311,11 +311,11 @@ msgstr "コレクションを作成するにはログインしてください。
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "(名称未設定のコレクション)"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr "コレクションは公開です"
+msgstr "コレクションは公開されています"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
@@ -533,7 +533,7 @@ msgstr "画像を削除できませんでした。おそらく Bug 917081 です
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
-msgstr "画像を保存しました"
+msgstr "画像が保存されました"
 
 #: /media/js/views/collection.js:529
 msgid "Could not save image"
