@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2013-12-02 03:17+0000\n"
 "Last-Translator: Shaohua <shaohua.wen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1385954277.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "添加应用程序"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "搜索"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "请输入此收藏集的策展人帐号的电子邮件地址"
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "你好"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "策展工具"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "登出"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "登录"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "添加策展人"
 msgid "Error loading the collection."
 msgstr "载入收藏集时发生错误。"
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "添加应用程序"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "搜索"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "关闭"
@@ -205,6 +193,18 @@ msgstr "运营商"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "复制"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "策展工具"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "登出"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "登录"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -310,6 +310,10 @@ msgstr "未授权"
 msgid "You must be logged in to create collections."
 msgstr "您必须登录才能创建收藏集。"
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "收藏集是公开的"
@@ -334,9 +338,13 @@ msgstr "正在载入区域列表..."
 msgid "Loading carriers..."
 msgstr "正在载入运营商列表..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "哦，不！"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "出错了。"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -346,13 +354,9 @@ msgstr "载入更多时出错"
 msgid "Try Again"
 msgstr "重试"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "哦，不！"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "出错了。"
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,12 +386,6 @@ msgstr "Persona 登录失败，发生服务端错误。"
 msgid "No internet connection"
 msgstr "无互联网连接"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "还剩 <b>{n}</b> 个字符。"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "基本收藏集"
@@ -400,26 +398,11 @@ msgstr "精选应用程序收藏集"
 msgid "Operator Shelf"
 msgstr "电信运营商展示架"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "概观"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "已新建收藏集。"
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "无法创建新的收藏集。"
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "新建收藏集"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "未找到"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "还剩 <b>{n}</b> 个字符。"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -560,3 +543,24 @@ msgstr "无法保存图片"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "收藏集"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "概观"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "已新建收藏集。"
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "无法创建新的收藏集。"
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "新建收藏集"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "未找到"

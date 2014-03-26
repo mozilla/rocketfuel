@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2014-02-09 20:56+0000\n"
 "Last-Translator: Vanja <vtumbas@mozilla.rs>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1391979394.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Dodajte aplikacije"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Pretraži"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "Unesite adresu e-pošte korisnika kojeg želite da napravite kuratorom z
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Alat za kuraciju"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Odjavi se"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Prijavi se"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "Dodajte kuratora"
 msgid "Error loading the collection."
 msgstr "Greška u očitavanju kolekcije."
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Dodajte aplikacije"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Pretraži"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "Zatvori"
@@ -205,6 +193,18 @@ msgstr "Operater"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliraj"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Alat za kuraciju"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Odjavi se"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Prijavi se"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -310,6 +310,10 @@ msgstr "Nedozvoljen pristup"
 msgid "You must be logged in to create collections."
 msgstr "Morate biti prijavljeni da biste napravili kolekciju."
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "Kolekcija je javna"
@@ -334,9 +338,13 @@ msgstr "Učitavanje regiona..."
 msgid "Loading carriers..."
 msgstr "Učitavanje operatera..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "O, ne!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Došlo je do greške."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -346,13 +354,9 @@ msgstr "Greška tokom učitavanja"
 msgid "Try Again"
 msgstr "Pokušaj ponovo"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "O, ne!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Došlo je do greške."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,14 +386,6 @@ msgstr "Prijava putem Persona sistema je neuspešna. Došlo je do greške na ser
 msgid "No internet connection"
 msgstr "Nema internet konekcije"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> preostao karakter."
-msgstr[1] "<b>{n}</b> preostala karaktera."
-msgstr[2] "<b>{n}</b> preostalih karaktera."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Osnovne kolekcije"
@@ -402,26 +398,13 @@ msgstr "Kolekcije istaknutih aplikacija"
 msgid "Operator Shelf"
 msgstr "Polica operatora"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Pregled"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Kreirana je nova kolekcija."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Neuspešno kreiranje nove kolekcije."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nova kolekcija"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nije nađeno"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> preostao karakter."
+msgstr[1] "<b>{n}</b> preostala karaktera."
+msgstr[2] "<b>{n}</b> preostalih karaktera."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -562,3 +545,24 @@ msgstr "Neuspešno čuvanje slike"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Kolekcija"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Pregled"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Kreirana je nova kolekcija."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Neuspešno kreiranje nove kolekcije."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nova kolekcija"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nije nađeno"

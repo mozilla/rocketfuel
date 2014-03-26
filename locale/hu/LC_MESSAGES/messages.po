@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2013-12-06 19:27+0000\n"
 "Last-Translator: Gábor <kelemeng@gnome.hu>\n"
 "Language-Team: none\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n !=1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1386358079.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Appok hozzáadása"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Keresés"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "Adja meg a felhasználó e-mail címét, akit a gyűjtemény karbantart�
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Gondozói eszköz"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Kijelentkezés"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Bejelentkezés"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "Karbantartó hozzáadása"
 msgid "Error loading the collection."
 msgstr "Hiba a gyűjtemény betöltésekor."
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Appok hozzáadása"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Keresés"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "Bezárás"
@@ -205,6 +193,18 @@ msgstr "Szolgáltató"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Megkettőzés"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Gondozói eszköz"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Kijelentkezés"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Bejelentkezés"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -310,6 +310,10 @@ msgstr "Jogosulatlan"
 msgid "You must be logged in to create collections."
 msgstr "A gyűjtemények létrehozásához be kell jelentkeznie."
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "A gyűjtemény nyilvános"
@@ -334,9 +338,13 @@ msgstr "Régiók betöltése…"
 msgid "Loading carriers..."
 msgstr "Szolgáltatók betöltése…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "Azonosító: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Jaj ne!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Hiba történt."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -346,13 +354,9 @@ msgstr "Hiba több betöltésekor"
 msgid "Try Again"
 msgstr "Próbálja újra"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Jaj ne!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Hiba történt."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "Azonosító: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,13 +386,6 @@ msgstr "A Persona bejelentkezés sikertelen. Kiszolgálóhiba történt."
 msgid "No internet connection"
 msgstr "Nincs internetkapcsolat"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> karakter maradt."
-msgstr[1] "<b>{n}</b> karakter maradt."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Alap gyűjtemény"
@@ -401,26 +398,12 @@ msgstr "Kiemelt app gyűjtemény"
 msgid "Operator Shelf"
 msgstr "Operátori polc"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Áttekintés"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Új gyűjtemény létrehozva."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Az új gyűjtemény létrehozása meghiúsult."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Új gyűjtemény"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nem található"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> karakter maradt."
+msgstr[1] "<b>{n}</b> karakter maradt."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -561,3 +544,24 @@ msgstr "A kép nem menthető"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Gyűjtemény"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Új gyűjtemény létrehozva."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Az új gyűjtemény létrehozása meghiúsult."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Új gyűjtemény"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nem található"

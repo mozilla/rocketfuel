@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2014-01-09 19:57+0000\n"
 "Last-Translator: Vlado <valastiak@mozilla.sk>\n"
 "Language-Team: none\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1389297424.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Pridať aplikácie"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Vyhľadávanie"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "Zadajte e-mailovú adresu používateľa, ktorého chcete spraviť sprá
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Nástroje správcu"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Odhlásiť sa"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Prihlásiť sa"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "Pridať správcu"
 msgid "Error loading the collection."
 msgstr "Chyba pri načítaní kolekcie."
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Pridať aplikácie"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Vyhľadávanie"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "Zavrieť"
@@ -205,6 +193,18 @@ msgstr "Operátor"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplicitná"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Nástroje správcu"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Odhlásiť sa"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Prihlásiť sa"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -310,6 +310,10 @@ msgstr "Neautorizované"
 msgid "You must be logged in to create collections."
 msgstr "Ak chcete vytvárať kolekcie, musíte byť prihlásený."
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "Kolekcia je verejná"
@@ -334,9 +338,13 @@ msgstr "Načítavajú sa regióny..."
 msgid "Loading carriers..."
 msgstr "Načítavajú sa operátori..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Ale nie!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Nastala chyba."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -346,13 +354,9 @@ msgstr "Chyba pri načítaní"
 msgid "Try Again"
 msgstr "Skúsiť znova"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Ale nie!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Nastala chyba."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,14 +386,6 @@ msgstr "Prihlásenie pomocou Persona zlyhalo. Nastala chyba servera."
 msgid "No internet connection"
 msgstr "Pripojenie k internetu nie je k dispozícii"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Zostáva <b>{n}</b> znak."
-msgstr[1] "Zostávajú <b>{n}</b> znaky."
-msgstr[2] "Zostáva <b>{n}</b> znakov."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Základná kolekcia"
@@ -402,26 +398,13 @@ msgstr "Odporúčaná kolekcia aplikácií"
 msgid "Operator Shelf"
 msgstr "Špecifické pre operátora"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Prehľad"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Nová kolekcia bola vytvorená."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Chyba pri vytváraní novej kolekcie."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nová kolekcia"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nebolo nájdené"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "Zostáva <b>{n}</b> znak."
+msgstr[1] "Zostávajú <b>{n}</b> znaky."
+msgstr[2] "Zostáva <b>{n}</b> znakov."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -562,3 +545,24 @@ msgstr "Obrázok sa nepodarilo uložiť"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Kolekcia"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Prehľad"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Nová kolekcia bola vytvorená."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Chyba pri vytváraní novej kolekcie."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nová kolekcia"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nebolo nájdené"

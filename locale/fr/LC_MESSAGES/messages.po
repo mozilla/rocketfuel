@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2014-03-01 14:11+0000\n"
 "Last-Translator: Frédéric <fredchat@frenchmozilla.org>\n"
 "Language-Team: none\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1393683104.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ajouter des apps"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Rechercher"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "Saisissez l'adresse électronique de l'utilisateur que vous voulez nomme
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namasté"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Outil de supervision"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Déconnexion"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Connexion"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "Ajouter un superviseur"
 msgid "Error loading the collection."
 msgstr "Erreur au chargement de la collection."
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ajouter des apps"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Rechercher"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "Fermer"
@@ -207,6 +195,18 @@ msgstr "Opérateur"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliquer"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Outil de supervision"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Déconnexion"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Connexion"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -312,6 +312,10 @@ msgstr "Non autorisé"
 msgid "You must be logged in to create collections."
 msgstr "Vous devez vous connecter pour créer des collections."
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "La collection est publique"
@@ -336,9 +340,13 @@ msgstr "Chargement des régions…"
 msgid "Loading carriers..."
 msgstr "Chargement des opérateurs…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID&nbsp;: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Oh non !"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Une erreur s'est produite."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -348,13 +356,9 @@ msgstr "Erreur de chargement du contenu supplémentaire"
 msgid "Try Again"
 msgstr "Veuillez réessayer"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Oh non !"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Une erreur s'est produite."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID&nbsp;: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -384,13 +388,6 @@ msgstr "Échec de la connexion avec Persona. Une erreur du serveur s'est produit
 msgid "No internet connection"
 msgstr "Aucune connexion Internet"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> caractère restant."
-msgstr[1] "<b>{n}</b> caractères restants."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Collection de base"
@@ -403,26 +400,12 @@ msgstr "Collection d'applications en vedette"
 msgid "Operator Shelf"
 msgstr "Étagère opérateur"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Aperçu"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Nouvelle collection créée."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Impossible de créer la nouvelle collection."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nouvelle collection"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Introuvable"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> caractère restant."
+msgstr[1] "<b>{n}</b> caractères restants."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -563,3 +546,24 @@ msgstr "Impossible d'enregistrer l'image"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Collection"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Aperçu"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Nouvelle collection créée."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Impossible de créer la nouvelle collection."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nouvelle collection"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Introuvable"

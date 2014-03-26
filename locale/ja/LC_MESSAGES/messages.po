@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2013-11-27 12:26-0500\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Fireplace L10n Tools 1.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "アプリを追加"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "検索"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -36,18 +28,6 @@ msgstr "このコレクションの管理者にしたいユーザのメールア
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "管理者ツール"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "ログアウト"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "ログイン"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -153,6 +133,14 @@ msgstr "管理者を追加"
 msgid "Error loading the collection."
 msgstr "コレクションの読み込み中に問題が発生しました。"
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "アプリを追加"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "検索"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "閉じる"
@@ -204,6 +192,18 @@ msgstr "キャリア"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "複製"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "管理者ツール"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "ログアウト"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "ログイン"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -309,6 +309,10 @@ msgstr "未承認"
 msgid "You must be logged in to create collections."
 msgstr "コレクションを作成するにはログインしてください。"
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "コレクションは公開です"
@@ -333,9 +337,13 @@ msgstr "地域を読み込んでいます..."
 msgid "Loading carriers..."
 msgstr "キャリアを読み込んでいます..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "エラー"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "問題が発生しました。"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -345,13 +353,9 @@ msgstr "読み込み中に問題が発生しました"
 msgid "Try Again"
 msgstr "再読み込み"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "エラー"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "問題が発生しました。"
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -381,12 +385,6 @@ msgstr "Persona のログインに失敗しました。サーバエラーが発�
 msgid "No internet connection"
 msgstr "インターネット未接続"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "残り <b>{n}</b> 文字です。"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "基本コレクション"
@@ -399,26 +397,11 @@ msgstr "おすすめアプリコレクション"
 msgid "Operator Shelf"
 msgstr "オペレーターのコレクション"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "概要"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "新しいコレクションが作成されました。"
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "新しいコレクションを作成できませんでした。"
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "新しいコレクション"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Not Found"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "残り <b>{n}</b> 文字です。"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -559,3 +542,24 @@ msgstr "画像を保存できませんでした"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "コレクション"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "概要"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "新しいコレクションが作成されました。"
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "新しいコレクションを作成できませんでした。"
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "新しいコレクション"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Not Found"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2013-11-27 16:15+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: none\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1385568902.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "新增應用程式"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "搜尋"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "輸入此收藏集策展人帳號的電子郵件地址"
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "你好"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "策展工具"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "登出"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "登入"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "新增策展人"
 msgid "Error loading the collection."
 msgstr "載入收藏集時發生錯誤。"
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "新增應用程式"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "搜尋"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "關閉"
@@ -205,6 +193,18 @@ msgstr "業者"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "複製"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "策展工具"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "登出"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "登入"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -310,6 +310,10 @@ msgstr "未授權"
 msgid "You must be logged in to create collections."
 msgstr "您必須登入才能建立收藏集。"
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "收藏集是公開的"
@@ -334,9 +338,13 @@ msgstr "正在載入區域…"
 msgid "Loading carriers..."
 msgstr "正在載入業者…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "喔，不！"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "發生錯誤。"
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -346,13 +354,9 @@ msgstr "載入更多時發生錯誤"
 msgid "Try Again"
 msgstr "再試一次"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "喔，不！"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "發生錯誤。"
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,12 +386,6 @@ msgstr "Persona 登入失敗，發生伺服器錯誤。"
 msgid "No internet connection"
 msgstr "沒有網路連線"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "剩下 <b>{n}</b> 個字元。"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "基礎收藏集"
@@ -400,26 +398,11 @@ msgstr "精選應用程式收藏集"
 msgid "Operator Shelf"
 msgstr "電信業者展示架"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "概觀"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "已建立新收藏集。"
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "無法新增收藏集。"
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "新增收藏集"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "找不到"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "剩下 <b>{n}</b> 個字元。"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -560,3 +543,24 @@ msgstr "無法儲存圖片"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "收藏集"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "概觀"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "已建立新收藏集。"
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "無法新增收藏集。"
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "新增收藏集"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "找不到"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2013-12-07 04:21+0000\n"
 "Last-Translator: Channy <channy@mozilla.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1386390064.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "앱 추가"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "검색"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "이 모음집의 큐레이터로 추가할 사용자의 이메일 주소
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "나마스떼"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "큐레이션 도구"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "로그아웃"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "로그인"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "큐레이터 추가"
 msgid "Error loading the collection."
 msgstr "모음집을 불러오는 중에 오류가 발생하였습니다."
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "앱 추가"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "검색"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "닫기"
@@ -205,6 +193,18 @@ msgstr "통신사"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "복제"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "큐레이션 도구"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "로그아웃"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "로그인"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -310,6 +310,10 @@ msgstr "권한없음"
 msgid "You must be logged in to create collections."
 msgstr "모음집을 생성하기 위해서 로그인 해야합니다."
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "모음집이 공개됨"
@@ -334,9 +338,13 @@ msgstr "지역 읽는 중..."
 msgid "Loading carriers..."
 msgstr "캐리어 읽는 중..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "앗 이런!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "오류가 발생하였습니다."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -346,13 +354,9 @@ msgstr "더 읽는 중에 오류 발생"
 msgid "Try Again"
 msgstr "다시 시도"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "앗 이런!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "오류가 발생하였습니다."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,12 +386,6 @@ msgstr "Persona 로그인에 실패하였습니다. 서버 오류가 발생하�
 msgid "No internet connection"
 msgstr "인터넷 연결되지 않음"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> 글자 남았습니다."
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "기본 모음집"
@@ -400,26 +398,11 @@ msgstr "추천 앱 모음집"
 msgid "Operator Shelf"
 msgstr "운영자 선반"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "개요"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "모음집이 생성되지 않았습니다."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "모음집 생성을 실패하였습니다."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "새 모음집"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "찾을 수 없음"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> 글자 남았습니다."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -560,3 +543,24 @@ msgstr "이미지를 저장하지 못함"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "모음집"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "개요"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "모음집이 생성되지 않았습니다."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "모음집 생성을 실패하였습니다."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "새 모음집"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "찾을 수 없음"

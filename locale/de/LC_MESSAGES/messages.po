@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-08T17:43:25.768Z\n"
+"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
 "PO-Revision-Date: 2013-11-27 17:15+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1385572546.0\n"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Apps hinzufügen"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Suchen"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -37,18 +29,6 @@ msgstr "Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie zum Verwalter di
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Kurations-Werkzeug"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Abmelden"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Anmelden"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -154,6 +134,14 @@ msgstr "Verwalter hinzufügen"
 msgid "Error loading the collection."
 msgstr "Fehler beim Laden der Sammlung."
 
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Apps hinzufügen"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Suchen"
+
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "Schließen"
@@ -207,6 +195,18 @@ msgstr "Mobilfunkanbieter"
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplizieren"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Kurations-Werkzeug"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Abmelden"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Anmelden"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
@@ -312,6 +312,10 @@ msgstr "Nicht autorisiert"
 msgid "You must be logged in to create collections."
 msgstr "Sie müssen angemeldet sein, um Sammlungen zu erstellen."
 
+#: /templates/_macros/collections.html:4
+msgid "(Unnamed collection)"
+msgstr ""
+
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
 msgstr "Sammlung ist öffentlich"
@@ -336,9 +340,13 @@ msgstr "Regionen werden geladen…"
 msgid "Loading carriers..."
 msgstr "Mobilfunkanbieter werden geladen…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
+#: /templates/errors/fragment.html:1
+msgid "Oh no!"
+msgstr "Oh, nein!"
+
+#: /templates/errors/fragment.html:2
+msgid "An error occurred."
+msgstr "Ein Fehler ist aufgetreten."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
@@ -348,13 +356,9 @@ msgstr "Fehler beim Laden weiterer Daten"
 msgid "Try Again"
 msgstr "Versuchen Sie es erneut"
 
-#: /templates/errors/fragment.html:1
-msgid "Oh no!"
-msgstr "Oh, nein!"
-
-#: /templates/errors/fragment.html:2
-msgid "An error occurred."
-msgstr "Ein Fehler ist aufgetreten."
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -384,13 +388,6 @@ msgstr "Persona-Anmeldung fehlgeschlagen. Ein Server-Fehler ist aufgetreten."
 msgid "No internet connection"
 msgstr "Keine Internet-Verbindung"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Noch <b>{n}</b> Zeichen übrig"
-msgstr[1] "Noch <b>{n}</b> Zeichen übrig"
-
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Basissammlung"
@@ -403,26 +400,12 @@ msgstr "Sammlung vorgestellter Apps"
 msgid "Operator Shelf"
 msgstr "Regal für Mobilfunkanbieter"
 
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Übersicht"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Neue Sammlung erstellt."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Erstellen einer neuen Sammlung fehlgeschlagen."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Neue Sammlung"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nicht gefunden"
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "Noch <b>{n}</b> Zeichen übrig"
+msgstr[1] "Noch <b>{n}</b> Zeichen übrig"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -563,3 +546,24 @@ msgstr "Grafik konnte nicht gespeichert werden"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Sammlung"
+
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Übersicht"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Neue Sammlung erstellt."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Erstellen einer neuen Sammlung fehlgeschlagen."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Neue Sammlung"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nicht gefunden"
