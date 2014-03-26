@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
-"PO-Revision-Date: 2014-03-14 21:37+0000\n"
-"Last-Translator: Marco Aurélio <ouesten@me.com>\n"
+"PO-Revision-Date: 2014-03-26 18:50+0000\n"
+"Last-Translator: Marcelo <mlcaraldi@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1394833052.0\n"
+"X-POOTLE-MTIME: 1395859807.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -308,11 +308,11 @@ msgstr "Não autorizado"
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr "Você precisa estar logado para criar coleções."
+msgstr "(Coleção sem nome)"
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "(Coleção sem nome)"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
