@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
-"PO-Revision-Date: 2013-11-27 16:15+0000\n"
+"PO-Revision-Date: 2014-03-26 16:26+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: none\n"
 "Language: zh_TW\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1385568902.0\n"
+"X-POOTLE-MTIME: 1395851165.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -312,7 +312,7 @@ msgstr "您必須登入才能建立收藏集。"
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "（未命名的收藏集）"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
