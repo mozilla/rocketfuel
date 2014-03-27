@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Rocketfuel in italiano\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
-"PO-Revision-Date: 2013-12-19 09:59+0000\n"
-"Last-Translator: Sara <sara.todaro@mozillaitalia.org>\n"
+"PO-Revision-Date: 2014-03-27 17:28+0000\n"
+"Last-Translator: Sandro <gialloporpora@mozillaitalia.org>\n"
 "Language-Team: MozillaItalia <gialloporpora@gmail.com>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1387447150.0\n"
+"X-POOTLE-MTIME: 1395941317.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -314,7 +314,7 @@ msgstr "È necessario effettuare l'accesso per creare una raccolta."
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "(Raccolta senza nome)"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
