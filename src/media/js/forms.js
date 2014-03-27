@@ -56,7 +56,7 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
         var translated_fields = $('input[type=translated], textarea[translated]');
         translated_fields.each(function(i, elem) {
             var $elem = $(elem);
-            var values = $elem.data('value');
+            var values = $elem.data('value') || {};
             var locale_picker = $('<select class="locale">');
             for (var locale in values) {
                 locale_picker.append('<option>' + locale + '</option>');
@@ -83,7 +83,7 @@ define('forms', ['jquery', 'l10n', 'z'], function($, l10n, z) {
 
             function save() {
                 var $elem = $(elem);  // Get a new reference!
-                var data = $elem.data('value');
+                var data = $elem.data('value') || {};
                 // Save the old value.
                 data[previous_value] = $elem.val();
                 $elem.data(data);
