@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
-"PO-Revision-Date: 2014-03-01 14:11+0000\n"
-"Last-Translator: Frédéric <fredchat@frenchmozilla.org>\n"
+"PO-Revision-Date: 2014-03-30 13:32+0000\n"
+"Last-Translator: Théo <theo.chevalier11@gmail.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1393683104.0\n"
+"X-POOTLE-MTIME: 1396186337.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -314,7 +314,7 @@ msgstr "Vous devez vous connecter pour créer des collections."
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "(Collection sans nom)"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
