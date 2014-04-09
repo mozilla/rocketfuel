@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-03-29 18:55+0000\n"
 "Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,14 @@ msgstr "Introduce el correo electrónico del usuario que quieres hacer administr
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namasté"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Agregar aplicaciones"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Buscar"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "No hay administradores para esta colección."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Agregar un administrador"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Error al cargar la colección."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Agregar aplicaciones"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Buscar"
 
 #: /templates/confirmation.html:0
 msgid "Close"
@@ -521,8 +517,7 @@ msgstr "Error al actualizar {field}"
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
-"Incompatible: la aplicación no está disponible en el país de la colección."
+msgstr "Incompatible: la aplicación no está disponible en el país de la colección."
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"

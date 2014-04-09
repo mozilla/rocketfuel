@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2013-12-07 04:21+0000\n"
 "Last-Translator: Channy <channy@mozilla.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,14 @@ msgstr "이 모음집의 큐레이터로 추가할 사용자의 이메일 주소
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "나마스떼"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "앱 추가"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "검색"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "이 모음집의 큐레이터가 없습니다."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "큐레이터 추가"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "모음집을 불러오는 중에 오류가 발생하였습니다."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "앱 추가"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "검색"
 
 #: /templates/confirmation.html:0
 msgid "Close"

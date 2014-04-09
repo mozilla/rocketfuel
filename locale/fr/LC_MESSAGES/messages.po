@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-03-30 13:32+0000\n"
 "Last-Translator: Théo <theo.chevalier11@gmail.com>\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Saisissez l'adresse électronique de l'utilisateur que vous voulez nomme
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namasté"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ajouter des apps"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Rechercher"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "Il n'y a pas de superviseur pour cette collection."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Ajouter un superviseur"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Erreur au chargement de la collection."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ajouter des apps"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Rechercher"
 
 #: /templates/confirmation.html:0
 msgid "Close"

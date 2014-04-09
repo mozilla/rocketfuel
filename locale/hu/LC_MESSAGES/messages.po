@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-04-03 13:16+0000\n"
 "Last-Translator: Gábor <kelemeng@ubuntu.com>\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Adja meg a felhasználó e-mail címét, akit a gyűjtemény karbantart�
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Appok hozzáadása"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Keresés"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "Nincsenek karbantartók a gyűjteményhez."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Karbantartó hozzáadása"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Hiba a gyűjtemény betöltésekor."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Appok hozzáadása"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Keresés"
 
 #: /templates/confirmation.html:0
 msgid "Close"

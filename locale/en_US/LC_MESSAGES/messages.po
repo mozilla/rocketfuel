@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rocketfuel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Enter the email address of a user that you wish to make a curator for th
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr ""
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr ""
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "There are no curators for this collection."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Add Curator"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr ""
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr ""
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr ""
 
 #: /templates/confirmation.html:0
 msgid "Close"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,15 @@ msgstr ""
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Ƞȧḿȧşŧḗ"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ȧḓḓ Ȧƥƥş"
+
+#: /templates/app_search.html:4
+#: /templates/app_search.html:5
+msgid "Search"
+msgstr "Şḗȧřƈħ"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -138,19 +147,6 @@ msgstr "Ŧħḗřḗ ȧřḗ ƞǿ ƈŭřȧŧǿřş ƒǿř ŧħīş ƈǿŀŀḗƈ
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Ȧḓḓ Ƈŭřȧŧǿř"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Ḗřřǿř ŀǿȧḓīƞɠ ŧħḗ ƈǿŀŀḗƈŧīǿƞ."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ȧḓḓ Ȧƥƥş"
-
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
-msgid "Search"
-msgstr "Şḗȧřƈħ"
 
 #: /templates/confirmation.html:0
 msgid "Close"

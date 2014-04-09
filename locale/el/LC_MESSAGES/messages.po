@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
 "Last-Translator: Αλέξανδρος Μιόγλου <alexandros@mioglou.me>\n"
 "Language-Team: none\n"
@@ -28,6 +28,14 @@ msgstr "Εισάγετε τη διεύθυνση email ενός χρήστη π�
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Προσθήκη εφαρμογών"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Αναζήτηση"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -128,18 +136,6 @@ msgstr "Δεν υπάρχουν επιμελητές για αυτή τη συλ
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Προσθήκε Επιμελητή"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Σφάλμα κατά τη φόρτωση της συλλογής."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Προσθήκη εφαρμογών"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Αναζήτηση"
 
 #: /templates/confirmation.html:0
 msgid "Close"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rockfuel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-04-04 14:31+0000\n"
 "Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: Czech Mozilla <info@mozilla.cz>\n"
@@ -29,6 +29,14 @@ msgstr "Vložte e-mailovou adresu uživatele, u kterého chcete, aby se stal spr
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Přidat aplikace"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Vyhledávání"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "U této sbírky není žádný správce."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Přidat správce"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Chyba při načítání sbírky."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Přidat aplikace"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Vyhledávání"
 
 #: /templates/confirmation.html:0
 msgid "Close"

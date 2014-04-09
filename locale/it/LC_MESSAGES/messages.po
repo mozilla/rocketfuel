@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rocketfuel in italiano\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-03-27 17:28+0000\n"
 "Last-Translator: Sandro <gialloporpora@mozillaitalia.org>\n"
 "Language-Team: MozillaItalia <gialloporpora@gmail.com>\n"
@@ -29,6 +29,14 @@ msgstr "Inserisci l'indirizzo email dell'utente a cui vuoi assegnare il ruolo di
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Aggiungi app"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Cerca"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "Questa raccolta non è stata assegnata a nessun curatore."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Aggiungi curatore"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Si è verificato un errore durante il caricamento della raccolta."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Aggiungi app"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Cerca"
 
 #: /templates/confirmation.html:0
 msgid "Close"

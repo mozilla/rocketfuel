@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2013-12-07 13:34+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,14 @@ msgstr "Bu koleksiyon için küratör yapmak istediğiniz bir kullanıcının e-
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Uygulama Ekle"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Arama"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "Bu koleksiyon için küratör yok."
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Küratör ekle"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Koleksiyon yükleme hatası."
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Uygulama Ekle"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Arama"
 
 #: /templates/confirmation.html:0
 msgid "Close"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-03-26 18:50+0000\n"
 "Last-Translator: Marcelo <mlcaraldi@gmail.com>\n"
 "Language-Team: none\n"
@@ -29,6 +29,14 @@ msgstr "Digite o endereço de e-mail de um usuário que você deseja fazer curad
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Adicionar Aplicativos"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Buscar"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -129,18 +137,6 @@ msgstr "Não há curadores para esta coleção"
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "Adicionar Curador"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "Erro ao carregar a coleção"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Adicionar Aplicativos"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Buscar"
 
 #: /templates/confirmation.html:0
 msgid "Close"

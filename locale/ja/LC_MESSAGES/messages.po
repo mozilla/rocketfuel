@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-03-26 14:10-0500\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -28,6 +28,14 @@ msgstr "このコレクションの管理者にしたいユーザのメールア
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "ナマステ"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "アプリを追加"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "検索"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -128,18 +136,6 @@ msgstr "このコレクションには管理者がいません。"
 #: /templates/collection.html:139
 msgid "Add Curator"
 msgstr "管理者を追加"
-
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "コレクションの読み込み中に問題が発生しました。"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "アプリを追加"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "検索"
 
 #: /templates/confirmation.html:0
 msgid "Close"

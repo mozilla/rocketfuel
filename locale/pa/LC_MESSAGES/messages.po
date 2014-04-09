@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26T16:22:17.125Z\n"
+"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
 "PO-Revision-Date: 2014-04-01 23:14+0000\n"
 "Last-Translator: Aman <amanpreet.alam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,13 +24,19 @@ msgstr "ਯੂਜ਼ਰ ਈਮੇਲ ਐਡਰੈੱਸ"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"ਉਪਭੋਗੀ ਦੇ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ। ਜਿਸ ਨੂੰ ਤੁਸੀ ਭੰਡਾਰ ਕਰਨ ਲਈ ਇੱਕ curator ਬਣਾਉਣਾ "
-"ਚਾਹੁੰਦੇ ਹੋ।"
+msgstr "ਉਪਭੋਗੀ ਦੇ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ। ਜਿਸ ਨੂੰ ਤੁਸੀ ਭੰਡਾਰ ਕਰਨ ਲਈ ਇੱਕ curator ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ।"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "ਨਮਸਤੇ"
+
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "ਐਪ ਜੋੜੋ"
+
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "ਲੱਭੋ"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -40,24 +46,19 @@ msgstr "ਲੇਖਕ:"
 msgid "Slug:"
 msgstr "slug:"
 
-#: /templates/collection.html:33
-#: /templates/_macros/collections.html:11
+#: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
 msgstr "ਖੇਤਰ:"
 
-#: /templates/collection.html:39
-#: /templates/_macros/collections.html:15
+#: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
 msgstr "ਕੈਰੀਅਰ:"
 
-#: /templates/collection.html:46
-#: /templates/_macros/collections.html:19
+#: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
 msgstr "ਸ਼੍ਰੇਣੀ:"
 
-#: /templates/collection.html:47
-#: /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:351
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "ਸਭ ਵਰਗ (ਹੋਮਪੇਜ)"
 
@@ -79,9 +80,7 @@ msgstr "ਝਲਕ ਚਿੱਤਰ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹ
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"ਹੇਠਾ ਇੱਕ PNG ਜਾ jpg ਚਿੱਤਰ ਸੁੱਟੋ ਜਾ </ span> ਇੱਕ ਚਿੱਤਰ ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਇੱਕ "
-"ਫਾਇਲ</ span>  ਦੀ ਚੋਣ ਕਰੋ।"
+msgstr "ਹੇਠਾ ਇੱਕ PNG ਜਾ jpg ਚਿੱਤਰ ਸੁੱਟੋ ਜਾ </ span> ਇੱਕ ਚਿੱਤਰ ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਇੱਕ ਫਾਇਲ</ span>  ਦੀ ਚੋਣ ਕਰੋ।"
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -115,8 +114,7 @@ msgstr "ਐਪਸ"
 msgid "Add app to collection"
 msgstr "ਭੰਡਾਰ ਵਿਚ ਲਈ ਐਪ ਸ਼ਾਮਲ ਕਰੋ"
 
-#: /templates/collection.html:114
-#: /media/js/views/collection.js:15
+#: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
 msgstr "ਭੰਡਾਰ ਪਬਲਿਕ ਬਣਾਉ"
 
@@ -140,19 +138,6 @@ msgstr "ਇਸ ਨੂੰ ਇਕੱਠੇ ਕਰਨ ਲਈ ਕੋਈ ਵੀ ਪ�
 msgid "Add Curator"
 msgstr "ਪ੍ਰਧਾਨ ਸ਼ਾਮਲ ਕਰੋ"
 
-#: /templates/collection.html:148
-msgid "Error loading the collection."
-msgstr "ਭੰਡਾਰ ਨੂੰ ਲੋਡ ਕਰਨ ਵਿੱਚ ਗਲਤੀ।"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "ਐਪ ਜੋੜੋ"
-
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
-msgid "Search"
-msgstr "ਲੱਭੋ"
-
 #: /templates/confirmation.html:0
 msgid "Close"
 msgstr "ਬੰਦ ਕਰੋ"
@@ -169,8 +154,7 @@ msgstr "ਹਾ"
 msgid "Duplicate Collection"
 msgstr "ਭੰਡਾਰ ਨਕਲ"
 
-#: /templates/duplicate_collection.html:7
-#: /templates/new_collection.html:7
+#: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
 msgstr "ਨਾਮ"
 
@@ -188,26 +172,17 @@ msgstr "ਇੱਕ slug ਦੀ ਲੋੜ ਹੈ"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Slugs ਇੱਕ ਅੱਖਰ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਅੱਖਰ, ਅੰਕ, ਅਤੇ ਹਾਈਫਨ ਹੋ "
-"ਸਕਦੇ ਹਨ. ਇਹ 30 ਅੱਖਰ ਜ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਮੌਜੂਦਾ ਭੰਡਾਰ ਨੂੰ ਹੀ ਹੋ "
-"ਸਕਦਾ ਹੈ।"
+msgstr "Slugs ਇੱਕ ਅੱਖਰ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਅੱਖਰ, ਅੰਕ, ਅਤੇ ਹਾਈਫਨ ਹੋ ਸਕਦੇ ਹਨ. ਇਹ 30 ਅੱਖਰ ਜ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਮੌਜੂਦਾ ਭੰਡਾਰ ਨੂੰ ਹੀ ਹੋ ਸਕਦਾ ਹੈ।"
 
-#: /templates/duplicate_collection.html:22
-#: /templates/homepage.html:13
-#: /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "ਸ਼੍ਰੇਣੀ"
 
-#: /templates/duplicate_collection.html:27
-#: /templates/homepage.html:19
-#: /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "ਖੇਤਰ"
 
-#: /templates/duplicate_collection.html:32
-#: /templates/homepage.html:25
-#: /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "ਕੈਰੀਅਰ"
 
@@ -233,9 +208,7 @@ msgstr "ਤੁਹਾਨੂੰ ਇੱਕ ਪ੍ਰਧਾਨ ਦੇ ਤੌਰ ਤ�
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"ਸੰਗ੍ਰਹਿ ਨੂੰ ਬਣਾਉਣ ਜਾ ਸੋਧ ਕਰਨ ਲਈ, ਇਸ ਜੰਤਰ ਨੂੰ ਵਰਤਣ ਲਈ ਇੱਕ ਪ੍ਰਧਾਨ ਤੌਰ ਤੇ ਲਾਗਇਨ "
-"ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
+msgstr "ਸੰਗ੍ਰਹਿ ਨੂੰ ਬਣਾਉਣ ਜਾ ਸੋਧ ਕਰਨ ਲਈ, ਇਸ ਜੰਤਰ ਨੂੰ ਵਰਤਣ ਲਈ ਇੱਕ ਪ੍ਰਧਾਨ ਤੌਰ ਤੇ ਲਾਗਇਨ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -291,9 +264,7 @@ msgstr "ਭੰਡਾਰ Slug"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"Slugs ਇੱਕ ਅੱਖਰ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਅੱਖਰ, ਅੰਕ, ਅਤੇ ਹਾਈਫਨ ਹੋ "
-"ਸਕਦੇ ਹਨ. ਇਹ 30 ਅੱਖਰ ਜ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
+msgstr "Slugs ਇੱਕ ਅੱਖਰ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਅੱਖਰ, ਅੰਕ, ਅਤੇ ਹਾਈਫਨ ਹੋ ਸਕਦੇ ਹਨ. ਇਹ 30 ਅੱਖਰ ਜ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -311,8 +282,7 @@ msgstr "ਪਿੱਠਭੂਮੀ ਰੰਗ"
 msgid "A background color is required"
 msgstr "ਪਿੱਠਭੂਮੀ ਰੰਗ ਚਾਹਿਦਾ ਹੈ"
 
-#: /templates/new_collection.html:67
-#: /templates/new_collection.html:74
+#: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
 msgstr "ਕਿ੍ਪਾ ਕਰਕੇ ਇੱਕ ਹੈਕਸਾ ਦੇ ਰੰਗ ਭਰੋ ਜੀ  (e.g.: \"#AB78EF\")"
 
@@ -352,8 +322,7 @@ msgstr "ਇਸ ਕਿਸਮ ਦੇ ਕੋਈ ਜਨਤਕ ਭੰਡਾਰ ਨਹ
 msgid "Loading categories..."
 msgstr "ਵਰਗ ਲੋਡ ਕੀਤਾ ..."
 
-#: /templates/_macros/dropdowns.html:30
-#: /templates/_macros/dropdowns.html:53
+#: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
 msgstr "-- ਕੋਈ --"
 
@@ -403,8 +372,7 @@ msgstr "ਤੁਹਾਨੂੰ ਸਾਇਨ ਇਨ ਕੀਤਾ ਗਿਆ ਹੈ"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
-"ਵਅਕਤੀ ਲਾਗਇਨ ਫੇਲ੍ਹ ਹੈ। ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਤੁਹਾਡਾ ਖਾਤਾ ਉਸ ਮੇਲ ਪਤੇ ਹੇਠਾ ਨਾ ਹੋਵੇ?"
+msgstr "ਵਅਕਤੀ ਲਾਗਇਨ ਫੇਲ੍ਹ ਹੈ। ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਤੁਹਾਡਾ ਖਾਤਾ ਉਸ ਮੇਲ ਪਤੇ ਹੇਠਾ ਨਾ ਹੋਵੇ?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
@@ -535,8 +503,7 @@ msgstr "ਆਰਡਰ ਅੱਪਡੇਟ ਕੀਤਾ"
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
-"ਭੰਡਾਰ 'ਆਰਡਰ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ। ਸਫ਼ੇ ਨੂੰ ਤਾਜ਼ਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+msgstr "ਭੰਡਾਰ 'ਆਰਡਰ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ। ਸਫ਼ੇ ਨੂੰ ਤਾਜ਼ਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"
