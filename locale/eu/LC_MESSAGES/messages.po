@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
-"PO-Revision-Date: 2014-06-10 21:23+0000\n"
-"Last-Translator: asiersar <asier.sarasua@gmail.com>\n"
+"PO-Revision-Date: 2014-06-13 20:46+0000\n"
+"Last-Translator: Ibai <ibai@oihanguren.com>\n"
 "Language-Team: none\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1402435419.0\n"
+"X-POOTLE-MTIME: 1402692394.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -412,7 +412,7 @@ msgstr "Operatzaile-apala"
 #: /media/js/utils.js:28
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Karaktere bat falta da."
+msgstr[0] "Karaktere <b>{n}</b> falta da."
 msgstr[1] "<b>{n}</b> karaktere falta dira."
 
 #: /media/js/views/collection.js:14
