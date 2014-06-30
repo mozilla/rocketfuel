@@ -8,10 +8,10 @@ msgstr ""
 "Language-Team: Cláudio Esperança <cesperanc+mozilla@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
-"Content-Type: text/plain; charset=UTF-8\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -22,12 +22,8 @@ msgid "User Email Address"
 msgstr "Endereço de email do utilizador"
 
 #: /templates/add_curator.html:8
-msgid ""
-"Enter the email address of a user that you wish to make a curator for this "
-"collection."
-msgstr ""
-"Introduza um endereço de email de um utilizador que quer tornar um curador "
-"para esta coleção."
+msgid "Enter the email address of a user that you wish to make a curator for this collection."
+msgstr "Introduza um endereço de email de um utilizador que quer tornar um curador para esta coleção."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -61,8 +57,7 @@ msgstr "Operador:"
 msgid "Category:"
 msgstr "Categoria:"
 
-#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8
-#: /media/js/views/collection.js:351
+#: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
 msgstr "Todas as categorias (página inicial)"
 
@@ -83,12 +78,8 @@ msgid "Loading preview image"
 msgstr "A carregar a imagem de pré-visualização"
 
 #: /templates/collection.html:68
-msgid ""
-"Drag a PNG or JPG image below or <span>select a file</span> to upload an "
-"image."
-msgstr ""
-"Arraste uma imagem PNG ou JPG em baixo ou <span>selecione um ficheiro</span> "
-"para enviar uma imagem."
+msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
+msgstr "Arraste uma imagem PNG ou JPG em baixo ou <span>selecione um ficheiro</span> para enviar uma imagem."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -179,27 +170,18 @@ msgid "A slug is required"
 msgstr "É necessário um slug"
 
 #: /templates/duplicate_collection.html:16
-msgid ""
-"Slugs must start with a letter and can only contain letters, numbers, and "
-"hyphens. It must be 30 characters or less and cannot be the same as the "
-"existing collection."
-msgstr ""
-"Os slugs devem começar com uma letra e só conter letras, números e hífenes. "
-"Tem de ter 30 carateres ou menos e não pode ser igual ao de coleções "
-"existentes."
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
+msgstr "Os slugs devem começar com uma letra e só conter letras, números e hífenes. Tem de ter 30 carateres ou menos e não pode ser igual ao de coleções existentes."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13
-#: /templates/new_collection.html:44
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
 msgstr "Categoria"
 
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19
-#: /templates/new_collection.html:49
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
 msgstr "Região"
 
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25
-#: /templates/new_collection.html:54
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
 msgstr "Operador"
 
@@ -224,12 +206,8 @@ msgid "You are not logged in as a Curator"
 msgstr "Não está autenticado como um curador"
 
 #: /templates/homepage.html:6
-msgid ""
-"In order to create or modify collections, you must be logged in as a Curator "
-"to effectively use this tool."
-msgstr ""
-"Para criar ou modificar coleções, deve ter sessão iniciada como um curador "
-"para utilizar esta ferramenta."
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Para criar ou modificar coleções, deve ter sessão iniciada como um curador para utilizar esta ferramenta."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -284,12 +262,8 @@ msgid "Collection Slug"
 msgstr "Slug da coleção"
 
 #: /templates/new_collection.html:17
-msgid ""
-"Slugs must start with a letter and can only contain letters, numbers, and "
-"hyphens. It must be 30 characters or less."
-msgstr ""
-"Os slugs devem começar com uma letra e só conter letras, números e hífenes. "
-"Tem de ter 30 carateres ou menos."
+msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
+msgstr "Os slugs devem começar com uma letra e só conter letras, números e hífenes. Tem de ter 30 carateres ou menos."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -396,17 +370,12 @@ msgid "You have been signed in"
 msgstr "A sua sessão foi iniciada"
 
 #: /media/js/login.js:127
-msgid ""
-"Persona login failed. Maybe you don't have an account under that email "
-"address?"
-msgstr ""
-"A autenticação com o Persona falhou. Talvez não tenha uma conta com esse "
-"endereço de correio eletrónico?"
+msgid "Persona login failed. Maybe you don't have an account under that email address?"
+msgstr "A autenticação com o Persona falhou. Talvez não tenha uma conta com esse endereço de correio eletrónico?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
-"A autenticação com o Persona falhou. Foi encontrado um erro no servidor."
+msgstr "A autenticação com o Persona falhou. Foi encontrado um erro no servidor."
 
 #: /media/js/navigation.js:31
 msgid "No internet connection"

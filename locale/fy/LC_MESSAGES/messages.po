@@ -3,563 +3,560 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
-"PO-Revision-Date: 2014-06-13 20:46+0000\n"
-"Last-Translator: Ibai <ibai@oihanguren.com>\n"
-"Language-Team: none\n"
-"Language: eu\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1402692394.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: Fireplace L10n Tools 1.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr "Gehitu mantentzaile bat"
+msgstr ""
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr "Erabiltzailearen posta-helbidea"
+msgstr ""
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr "Sartu bilduma honen mantentzaile bihurtu nahi duzun erabiltzailearen posta-helbidea."
+msgstr ""
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr "Namaste"
+msgstr ""
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr "Gehitu aplikazioak"
+msgstr ""
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr "Bilatu"
+msgstr ""
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr "Egilea:"
+msgstr ""
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr "Slug-a:"
+msgstr ""
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr "Eskualdea:"
+msgstr ""
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr "Hornitzailea:"
+msgstr ""
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr "Kategoria:"
+msgstr ""
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
-msgstr "Kategoria guztiak (orri nagusia)"
+msgstr ""
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr "Deskribapena:"
+msgstr ""
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr "Pertsonalizazioa"
+msgstr ""
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr "Atzeko planoko irudia:"
+msgstr ""
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr "Aurrebista-irudia kargatzen"
+msgstr ""
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr "Arrastatu PNG edo JPG irudi bat hona behera edo <span>hautatu fitxategi bat</span> irudi bat kargatzeko."
+msgstr ""
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr "Zure nabigatzaileak ez du onartzen canvas elementua."
+msgstr ""
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr "Garbitu gordetako irudia"
+msgstr ""
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr "Gorde irudia"
+msgstr ""
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr "Utzi eta leheneratu"
+msgstr ""
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr "Atzeko planoa:"
+msgstr ""
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr "Testua:"
+msgstr ""
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr "Aplikazioak"
+msgstr ""
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr "Gehitu aplikazioa bildumari"
+msgstr ""
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr "Argitaratu bilduma"
+msgstr ""
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr "Bikoiztu bilduma"
+msgstr ""
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr "Ezabatu bilduma"
+msgstr ""
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr "Mantentzaileak"
+msgstr ""
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr "Ez dago mantentzailerik bilduma honetarako."
+msgstr ""
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr "Gehitu mantentzailea"
+msgstr ""
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr "Itxi"
+msgstr ""
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr "Ez"
+msgstr ""
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr "Bai"
+msgstr ""
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr "Bikoiztu bilduma"
+msgstr ""
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
-msgstr "Izena"
+msgstr ""
 
 #: /templates/duplicate_collection.html:9
 msgid "A name is required"
-msgstr "Beharrezkoa da izen bat"
+msgstr ""
 
 #: /templates/duplicate_collection.html:13
 msgid "Slug"
-msgstr "Slug-a"
+msgstr ""
 
 #: /templates/duplicate_collection.html:15
 msgid "A slug is required"
-msgstr "Beharrezkoa da slug bat"
+msgstr ""
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
-"Slug-ek letra batekin hasi behar dute eta letrak, zenbakiak eta marratxoak soilik eduki ditzakete. 30 karaktere edo gutxiago eduki behar dituzte eta ezin dute izan lehendik dagoen bildumak duen "
-"bera."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr "Kategoria"
+msgstr ""
 
 #: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr "Eskualdea"
+msgstr ""
 
 #: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
-msgstr "Hornitzailea"
+msgstr ""
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr "Bikoiztu"
+msgstr ""
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr "Mantentze-tresna"
+msgstr ""
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr "Amaitu saioa"
+msgstr ""
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr "Hasi saioa"
+msgstr ""
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr "Ez duzu saioa hasi mantentzaile gisa"
+msgstr ""
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Bildumak sortu edo aldatzeko tresna hau erabili nahi baduzu, mantentzaile modura hasi behar duzu saioa."
+msgstr ""
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr "Bildumak"
+msgstr ""
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr "Ez da bildumarik sortu."
+msgstr ""
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr "Gehitu bilduma berri bat"
+msgstr ""
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr "Nabarmendutako aplikazioak"
+msgstr ""
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr "Ez da nabarmendutako aplikazioen atalik sortu."
+msgstr ""
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr "Gehitu nabarmendutako aplikazioen bilduma berri bat"
+msgstr ""
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr "Operatzaile-apalak"
+msgstr ""
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr "Ez da operatzaile-apalik sortu."
+msgstr ""
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr "Gehitu operatzaile-apal berri bat"
+msgstr ""
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr "Hautatu hornitzaile bat operatzaile-apalak ikusteko."
+msgstr ""
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr "{collection_type} berria"
+msgstr ""
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr "Erabiltzaileek ez dute izena ikusten, erosotasunagatik erabiltzen da."
+msgstr ""
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr "Bildumaren slug-a"
+msgstr ""
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr "Slug-ek letra batekin hasi behar dute eta letrak, zenbakiak eta marratxoak soilik eduki ditzakete. 30 karaktere edo gutxiago eduki behar ditu."
+msgstr ""
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr "Egile-izena"
+msgstr ""
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr "Deskribapena"
+msgstr ""
 
 #: /templates/new_collection.html:64
 msgid "Background Color"
-msgstr "Atzeko planoaren kolorea"
+msgstr ""
 
 #: /templates/new_collection.html:66
 msgid "A background color is required"
-msgstr "Beharrezkoa da atzeko planorako kolore bat"
+msgstr ""
 
 #: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr "Sartu hex kolore bat (adib.: \"#AB78EF\")"
+msgstr ""
 
 #: /templates/new_collection.html:71
 msgid "Text Color"
-msgstr "Testu-kolorea"
+msgstr ""
 
 #: /templates/new_collection.html:73
 msgid "A text color is required"
-msgstr "Beharrezkoa da testu-kolore bat"
+msgstr ""
 
 #: /templates/new_collection.html:80
 msgid "Create"
-msgstr "Sortu"
+msgstr ""
 
 #: /templates/new_collection.html:85
 msgid "Unauthorized"
-msgstr "Baimenik ez"
+msgstr ""
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr "Saioa hasi behar duzu bildumak sortzeko."
+msgstr ""
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr "(Izenik gabeko bilduma)"
+msgstr ""
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr "Bilduma publikoa da"
+msgstr ""
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr "Ez dago mota honetako bilduma publikorik."
+msgstr ""
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr "Kategoriak kargatzen..."
+msgstr ""
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr "-- Bat ere ez --"
+msgstr ""
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr "Eskualdeak kargatzen..."
+msgstr ""
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr "Hornitzaileak kargatzen..."
+msgstr ""
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr "O ez!"
+msgstr ""
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr "Errore bat gertatu da."
+msgstr ""
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr "Errorea gehiago kargatzean"
+msgstr ""
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr "Saiatu berriro"
+msgstr ""
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr "IDa: {id}"
+msgstr ""
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr "Gorde"
+msgstr ""
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr "Beste locale batzuk"
+msgstr ""
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr "Saioa amaitu duzu"
+msgstr ""
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr "Saioa hasi duzu"
+msgstr ""
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr "Persona erabiliz saioa hasteak huts egin du. Beharbada ez duzu konturik posta-helbide horrekin?"
+msgstr ""
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
-msgstr "Persona erabiliz saioa hasteak huts egin du. Zerbitzari-errorea aurkitu da."
+msgstr ""
 
 #: /media/js/navigation.js:31
 msgid "No internet connection"
-msgstr "Ez dago Internet-eko konexiorik"
+msgstr ""
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
-msgstr "Oinarrizko bilduma"
+msgstr ""
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr "Nabarmendutako aplikazio-bilduma"
+msgstr ""
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr "Operatzaile-apala"
+msgstr ""
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:28
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Karaktere <b>{n}</b> falta da."
-msgstr[1] "<b>{n}</b> karaktere falta dira."
+msgstr[0] ""
+msgstr[1] ""
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr "Ezkutatu bilduma"
+msgstr ""
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr "Bilduma ezkutuan dago orain"
+msgstr ""
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
-msgstr "Bilduma publikoa da orain"
+msgstr ""
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr "Bildumaren publikotasuna ezartzeak huts egin du"
+msgstr ""
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr "Gaitu \"heroi\" bandera"
+msgstr ""
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr "Desgaitu \"heroi\" bandera"
+msgstr ""
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr "\"Heroi\" bandera gaituta dago"
+msgstr ""
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr "\"Heroi\" bandera desgaituta dago"
+msgstr ""
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr "Bildumaren \"heroi\" propietatea ezartzeak huts egin du"
+msgstr ""
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr "Ongi bikoiztu da"
+msgstr ""
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr "Ezin izan da bilduma bikoiztu"
+msgstr ""
 
 #: /media/js/views/collection.js:111
 msgid "Search failed :-("
-msgstr "Bilaketak huts egin du :-("
+msgstr ""
 
 #: /media/js/views/collection.js:139
 msgid "Curator added; check back in a bit"
-msgstr "Mantentzailea gehitu da; egiaztatu momentu batean"
+msgstr ""
 
 #: /media/js/views/collection.js:143
 msgid "Added curator"
-msgstr "Gehitutako mantentzailea"
+msgstr ""
 
 #: /media/js/views/collection.js:158
 msgid "Failed to add curator"
-msgstr "Mantentzailea gehitzeak huts egin du"
+msgstr ""
 
 #: /media/js/views/collection.js:174
 msgid "Removed curator"
-msgstr "Kendutako mantentzailea"
+msgstr ""
 
 #: /media/js/views/collection.js:178
 msgid "Failed to remove curator"
-msgstr "Mantentzailea kentzeak huts egin du"
+msgstr ""
 
 #: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
-msgstr "{app} bildumatik kendu da."
+msgstr ""
 
 #: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
-msgstr "Ezin da aplikazioa bildumatik ezabatu."
+msgstr ""
 
 #: /media/js/views/collection.js:232
 msgid "App added to collection."
-msgstr "Aplikazioa bildumari gehitu zaio."
+msgstr ""
 
 #: /media/js/views/collection.js:236
 msgid "Failed to add app."
-msgstr "Ezin izan da aplikazioa gehitu."
+msgstr ""
 
 #: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
-msgstr "Seguru zaude bilduma hau ezabatu nahi duzula?"
+msgstr ""
 
 #: /media/js/views/collection.js:271
 msgid "Collection deleted."
-msgstr "Bilduma ezabatu da."
+msgstr ""
 
 #: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
-msgstr "Ezin izan da bilduma ezabatu."
+msgstr ""
 
 #: /media/js/views/collection.js:291
 msgid "Order updated"
-msgstr "Ordena eguneratu da"
+msgstr ""
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr "Ezin izan da bildumaren ordena eguneratu. Saiatu orria freskatuta."
+msgstr ""
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"
-msgstr "{field} gorde da"
+msgstr ""
 
 #: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
-msgstr "{field} eguneratzeak huts egin du"
+msgstr ""
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr "Bateraezina: Aplikazioa ez dago eskuragarri bildumaren eskualdean."
+msgstr ""
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"
-msgstr "Ez da irudirik adierazi"
+msgstr ""
 
 #: /media/js/views/collection.js:513
 msgid "Image cleared"
-msgstr "Irudia garbitu da"
+msgstr ""
 
 #: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
-msgstr "Ezin izan da irudia garbitu, seguru asko 917081 akatsaren erruz"
+msgstr ""
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
-msgstr "Irudia gorde da"
+msgstr ""
 
 #: /media/js/views/collection.js:529
 msgid "Could not save image"
-msgstr "Ezin izan da irudia gorde"
+msgstr ""
 
 #: /media/js/views/collection.js:586
 msgid "Collection"
-msgstr "Bilduma"
+msgstr ""
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
-msgstr "Ikuspegi orokorra"
+msgstr ""
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
-msgstr "Bilduma berria sortu da."
+msgstr ""
 
 #: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
-msgstr "Ezin izan da bilduma berria sortu."
+msgstr ""
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr "Bilduma berria"
+msgstr ""
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr "Ez da aurkitu"
+msgstr ""
