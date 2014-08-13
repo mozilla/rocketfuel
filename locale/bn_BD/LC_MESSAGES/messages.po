@@ -24,9 +24,7 @@ msgstr "ব্যবহারকারীর ইমেইল ঠিকানা"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"একজন ব্যবহারকারীর ইমেইল ঠিকানা প্রবেশ করান যাকে এই সংগ্রহের তত্ত্বাবধায়ক "
-"বানাতে চান।"
+msgstr "একজন ব্যবহারকারীর ইমেইল ঠিকানা প্রবেশ করান যাকে এই সংগ্রহের তত্ত্বাবধায়ক বানাতে চান।"
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -82,8 +80,7 @@ msgstr "প্রাকদর্শনের চিত্র লোড হচ্
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"ছবি আপলোড করতে নিচে PNG অথবা JPG ছবি টেনে আনুন বা <span>ফাইল বাছুন</span>।"
+msgstr "ছবি আপলোড করতে নিচে PNG অথবা JPG ছবি টেনে আনুন বা <span>ফাইল বাছুন</span>।"
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -175,10 +172,7 @@ msgstr "একটি স্লাগ্ অত্যাবশ্যকীয়"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"স্লাগ গুলোর সূচনা অবশ্যই একটি বর্ণ দিয়ে হতে হবে এবং এতে কেবল্মাত্র বর্ণ, "
-"সংখ্যা এবং হাইফেন থাকবে। ৩০ টি অথবা এর থেকে কম সংখ্যক বর্ণ হতে হবে এবং "
-"ভূতপূর্ব কোন সংগ্রহের মত হওয়া যাবে না। "
+msgstr "স্লাগ গুলোর সূচনা অবশ্যই একটি বর্ণ দিয়ে হতে হবে এবং এতে কেবল্মাত্র বর্ণ, সংখ্যা এবং হাইফেন থাকবে। ৩০ টি অথবা এর থেকে কম সংখ্যক বর্ণ হতে হবে এবং ভূতপূর্ব কোন সংগ্রহের মত হওয়া যাবে না। "
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -214,9 +208,7 @@ msgstr "আপনি তত্ত্বাবধায়ক হিসেবে প
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"সংগ্রহ সমূহ সৃষ্টি বা পরিবর্তনের জন্য, এই টুলটি কার্যকরভাবে ব্যাবহারের জন্য "
-"আপনাকে অবশ্যই তত্ত্বাবধায়ক রূপে প্রবেশ করতে হবে ।"
+msgstr "সংগ্রহ সমূহ সৃষ্টি বা পরিবর্তনের জন্য, এই টুলটি কার্যকরভাবে ব্যাবহারের জন্য আপনাকে অবশ্যই তত্ত্বাবধায়ক রূপে প্রবেশ করতে হবে ।"
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -272,9 +264,7 @@ msgstr "স্লাগ সম্ভার"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"স্লাগের শুরুতে অবশ্যই অক্ষর থাকতে হবে এবং এতে শুধু অক্ষর, সংখ্যা, এবং হাইফেন "
-"থাকতে পারবে। এটি ৩০ বা তার কম অক্ষরের হতে পারে।"
+msgstr "স্লাগের শুরুতে অবশ্যই অক্ষর থাকতে হবে এবং এতে শুধু অক্ষর, সংখ্যা, এবং হাইফেন থাকতে পারবে। এটি ৩০ বা তার কম অক্ষরের হতে পারে।"
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
