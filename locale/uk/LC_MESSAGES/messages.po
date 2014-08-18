@@ -1,562 +1,578 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-18 07:20+0000\n"
+"Last-Translator: Artem <a.polivanchuk@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; charset=UTF-8\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1408346402.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Додати куратора"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Адреса електронної пошти користувача"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Введіть адресу електронної пошти користувача, якого ви бажаєте зробити "
+"куратором цієї збірки."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Намасте"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Додати програми"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "Автор:"
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "Коротка URL:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "Регіон:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "Оператор:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "Категорія:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Всі категорії (Домашня сторінка)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "Опис:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Установки"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Зображення тла:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Завантаження попереднього перегляду зображення"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Перетягніть нижче зображення у форматі PNG або JPG, або <span>виберіть "
+"файл</span>, щоб завантажити зображення."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Ваш браузер не підтримує canvas."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Очистити збережене зображення"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Зберегти зображення"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Скасувати і повернути"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Тло:"
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "Текст:"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "Програми"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "Додати програму до збірки"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr ""
+msgstr "Зробити збірку публічною"
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Дублювати збірку"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "Вилучити збірку"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Куратори"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Для цієї збірки немає кураторів."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Додати куратора"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Так"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Дублювати збірку"
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Ім'я"
 
 #: /templates/duplicate_collection.html:9
 msgid "A name is required"
-msgstr ""
+msgstr "Необхідне ім'я"
 
 #: /templates/duplicate_collection.html:13
 msgid "Slug"
-msgstr ""
+msgstr "Коротка URL"
 
 #: /templates/duplicate_collection.html:15
 msgid "A slug is required"
-msgstr ""
+msgstr "Необхідна коротка URL"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
+"Короткі URL повинні починатись із літери та можуть містити лише літери, "
+"цифри та дефіси. Їх довжина не повинна перевищувати 30 символів, а також "
+"вони не можуть співпадати з існуючою збіркою."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "Категорія"
 
 #: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "Регіон"
 
 #: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
-msgstr ""
+msgstr "Оператор"
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr ""
+msgstr "Дублювати"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Інструмент куратора"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Вийти"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Увійти"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Ви не увійшли, як куратор"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"Для того, щоб створювати або змінювати збірки, ви повинні увійти в якості "
+"куратора для ефективного використання цього інструменту."
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Збірки"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "Жодної збірки не створено."
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "Додати нову збірку"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr ""
+msgstr "Відібрані програми"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "Жодного розділу відібраних програм не створено."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Додати нову збірку відібраних програм"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Полиці оператора"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "Жодної полиці оператора не створено."
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "Додати нову полицю оператора"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "Будь ласка, виберіть оператора, щоб побачити полиці оператора."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Нова {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "Ім'я не показується користувачам, це тільки для зручності."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr ""
+msgstr "Коротка URL збірки"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
 msgstr ""
+"Короткі URL повинні починатись із літери і можуть містити лише літери, цифри "
+"та дефіси. Їх довжина не повинна перевищувати 30 символів."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "Ім'я автора"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 #: /templates/new_collection.html:64
 msgid "Background Color"
-msgstr ""
+msgstr "Колір тла"
 
 #: /templates/new_collection.html:66
 msgid "A background color is required"
-msgstr ""
+msgstr "Потрібен колір тла"
 
 #: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Будь ласка, введіть hex колір (н.д.: \"#AB78EF\")"
 
 #: /templates/new_collection.html:71
 msgid "Text Color"
-msgstr ""
+msgstr "Колір тексту"
 
 #: /templates/new_collection.html:73
 msgid "A text color is required"
-msgstr ""
+msgstr "Потрібен колір тексту"
 
 #: /templates/new_collection.html:80
 msgid "Create"
-msgstr ""
+msgstr "Створити"
 
 #: /templates/new_collection.html:85
 msgid "Unauthorized"
-msgstr ""
+msgstr "Не авторизований"
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "Ви повинні увійти для створення збірок."
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "(Збірка без назви)"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "Збірка загальнодоступна"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Немає загальнодоступних збірок цього типу."
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "Завантаження категорій..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- Немає --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr ""
+msgstr "Завантаження регіонів..."
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr ""
+msgstr "Завантаження операторів..."
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "О ні!"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "Сталася помилка."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "Помилка подальшого завантаження"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "Спробувати знову"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Інші локалі"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "Ви вийшли із системи"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "Ви увійшли в систему"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
 msgstr ""
+"Вхід через Persona невдалий. Можливо ви не маєте облікового запису під цією "
+"адресою електронної пошти?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "Вхід через Persona невдалий. Сталася помилка сервера."
 
 #: /media/js/navigation.js:31
 msgid "No internet connection"
-msgstr ""
+msgstr "Немає підключення до інтернету"
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
-msgstr ""
+msgstr "Основна збірка"
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr ""
+msgstr "Збірка відібраних програм"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Полиця оператора"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:28
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Залишився <b>{n}</b> символ."
+msgstr[1] "Залишилось <b>{n}</b> символи."
+msgstr[2] "Залишилось <b>{n}</b> символів."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr ""
+msgstr "Зробити збірку прихованою"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "Збірка тепер прихована"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
-msgstr ""
+msgstr "Збірка тепер загальнодоступна"
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "Встановлення властивостей загальнодоступності збірки невдале"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "Увімкнути прапорець \"герой\""
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "Вимкнути прапорець \"герой\""
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "Прапорець \"герой\" зараз увімкнений"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "Прапорець \"герой\" зараз вимкнений"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Встановлення властивостей збірки \"герой\" невдале"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr ""
+msgstr "Успішно дубльовано"
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "Не вдалося дублювати збірку"
 
 #: /media/js/views/collection.js:111
 msgid "Search failed :-("
-msgstr ""
+msgstr "Пошук невдалий :-("
 
 #: /media/js/views/collection.js:139
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Куратора додано; перевірте знову за мить"
 
 #: /media/js/views/collection.js:143
 msgid "Added curator"
-msgstr ""
+msgstr "Додано куратора"
 
 #: /media/js/views/collection.js:158
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Не вдалося додати куратора"
 
 #: /media/js/views/collection.js:174
 msgid "Removed curator"
-msgstr ""
+msgstr "Прибраний куратор"
 
 #: /media/js/views/collection.js:178
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Не вдалося прибрати куратора"
 
 #: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "{app} прибрано зі збірки."
 
 #: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "Не вдалося вилучити програму зі збірки."
 
 #: /media/js/views/collection.js:232
 msgid "App added to collection."
-msgstr ""
+msgstr "Програму додано до збірки."
 
 #: /media/js/views/collection.js:236
 msgid "Failed to add app."
-msgstr ""
+msgstr "Не вдалося додати програму."
 
 #: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
-msgstr ""
+msgstr "Ви впевнені, що хочете вилучити цю збірку?"
 
 #: /media/js/views/collection.js:271
 msgid "Collection deleted."
-msgstr ""
+msgstr "Збірку вилучено."
 
 #: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
-msgstr ""
+msgstr "Не вдалося вилучити збірку."
 
 #: /media/js/views/collection.js:291
 msgid "Order updated"
-msgstr ""
+msgstr "Порядок оновлено"
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
+msgstr "Не вдалося оновити порядок збірки. Спробуйте оновити сторінку."
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"
-msgstr ""
+msgstr "Збережено {field}"
 
 #: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "Не вдалося оновити {field}"
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "Несумісно: Програма недоступна у регіоні збірки."
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"
-msgstr ""
+msgstr "Зображення не надано"
 
 #: /media/js/views/collection.js:513
 msgid "Image cleared"
-msgstr ""
+msgstr "Зображення очищено"
 
 #: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Не вдалося очистити зображення, ймовірно bug 917081"
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
-msgstr ""
+msgstr "Зображення збережено"
 
 #: /media/js/views/collection.js:529
 msgid "Could not save image"
-msgstr ""
+msgstr "Не вдалося зберегти зображення"
 
 #: /media/js/views/collection.js:586
 msgid "Collection"
-msgstr ""
+msgstr "Збірка"
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
-msgstr ""
+msgstr "Перегляд"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
-msgstr ""
+msgstr "Створено нову збірку."
 
 #: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "Не вдалося створити нову збірку."
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
+msgstr "Нова збірка"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "Не знайдено"
