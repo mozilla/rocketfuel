@@ -3,560 +3,575 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-07-28 22:12+0000\n"
+"Last-Translator: Andreas <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);Content-Type: text/plain; charset=utf-8\n"
-"X-Generator: Fireplace L10n Tools 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1406585564.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
-msgstr ""
+msgstr "Lägg till en kurator"
 
 #: /templates/add_curator.html:6
 msgid "User Email Address"
-msgstr ""
+msgstr "Användarens e-postadress"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
 msgstr ""
+"Ange e-postadressen för den användare som du vill göra till kurator för "
+"denna samling."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
-msgstr ""
+msgstr "Namaste"
 
 #: /templates/app_search.html:2
 msgid "Add Apps"
-msgstr ""
+msgstr "Lägg till appar"
 
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
-msgstr ""
+msgstr "Sök"
 
 #: /templates/collection.html:20
 msgid "Author:"
-msgstr ""
+msgstr "Författare:"
 
 #: /templates/collection.html:27
 msgid "Slug:"
-msgstr ""
+msgstr "Slugg:"
 
 #: /templates/collection.html:33 /templates/_macros/collections.html:11
 msgid "Region:"
-msgstr ""
+msgstr "Region:"
 
 #: /templates/collection.html:39 /templates/_macros/collections.html:15
 msgid "Carrier:"
-msgstr ""
+msgstr "Operatör:"
 
 #: /templates/collection.html:46 /templates/_macros/collections.html:19
 msgid "Category:"
-msgstr ""
+msgstr "Kategori:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
-msgstr ""
+msgstr "Alla kategorier (hemsida)"
 
 #: /templates/collection.html:53
 msgid "Description:"
-msgstr ""
+msgstr "Beskrivning:"
 
 #: /templates/collection.html:61
 msgid "Customization"
-msgstr ""
+msgstr "Anpassning"
 
 #: /templates/collection.html:63
 msgid "Background Image:"
-msgstr ""
+msgstr "Bakgrundsbild:"
 
 #: /templates/collection.html:64
 msgid "Loading preview image"
-msgstr ""
+msgstr "Laddar förhandsgranskning"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
 msgstr ""
+"Dra en PNG- eller JPG-bild nedan eller <span>välj en fil</span> för att "
+"ladda upp en bild."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
-msgstr ""
+msgstr "Din webbläsare stödjer inte canvas."
 
 #: /templates/collection.html:74
 msgid "Clear Saved Image"
-msgstr ""
+msgstr "Rensa sparad bild"
 
 #: /templates/collection.html:77
 msgid "Save Image"
-msgstr ""
+msgstr "Spara bild"
 
 #: /templates/collection.html:78
 msgid "Cancel and Revert"
-msgstr ""
+msgstr "Avbryt och återställ"
 
 #: /templates/collection.html:83
 msgid "Background:"
-msgstr ""
+msgstr "Bakgrund:"
 
 #: /templates/collection.html:91
 msgid "Text:"
-msgstr ""
+msgstr "Text:"
 
 #: /templates/collection.html:101
 msgid "Apps"
-msgstr ""
+msgstr "Appar"
 
 #: /templates/collection.html:108
 msgid "Add app to collection"
-msgstr ""
+msgstr "Lägg till app till samling"
 
 #: /templates/collection.html:114 /media/js/views/collection.js:15
 msgid "Make Collection Public"
-msgstr ""
+msgstr "Gör samling offentlig"
 
 #: /templates/collection.html:118
 msgid "Duplicate collection"
-msgstr ""
+msgstr "Dubblera samling"
 
 #: /templates/collection.html:122
 msgid "Delete collection"
-msgstr ""
+msgstr "Ta bort samling"
 
 #: /templates/collection.html:127
 msgid "Curators"
-msgstr ""
+msgstr "Kuratorer"
 
 #: /templates/collection.html:136
 msgid "There are no curators for this collection."
-msgstr ""
+msgstr "Det finns inga kuratorer för denna samling."
 
 #: /templates/collection.html:139
 msgid "Add Curator"
-msgstr ""
+msgstr "Lägg till kurator"
 
 #: /templates/confirmation.html:0
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 
 #: /templates/confirmation.html:3
 msgid "No"
-msgstr ""
+msgstr "Nej"
 
 #: /templates/confirmation.html:4
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
-msgstr ""
+msgstr "Dubblera samling"
 
 #: /templates/duplicate_collection.html:7 /templates/new_collection.html:7
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #: /templates/duplicate_collection.html:9
 msgid "A name is required"
-msgstr ""
+msgstr "Ett namn krävs"
 
 #: /templates/duplicate_collection.html:13
 msgid "Slug"
-msgstr ""
+msgstr "Slugg"
 
 #: /templates/duplicate_collection.html:15
 msgid "A slug is required"
-msgstr ""
+msgstr "En slugg krävs"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr ""
+"Sluggar måste börja med en bokstav och får endast innehålla bokstäver, "
+"siffror och bindestreck. Den måste vara 30 tecken eller mindre och kan inte "
+"vara samma som den existerande samlingen."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
 msgid "Region"
-msgstr ""
+msgstr "Region"
 
 #: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
 msgid "Carrier"
-msgstr ""
+msgstr "Operatör"
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr ""
+msgstr "Dubblera"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
-msgstr ""
+msgstr "Kuratorverktyg"
 
 #: /templates/header.html:7
 msgid "Sign Out"
-msgstr ""
+msgstr "Logga ut"
 
 #: /templates/header.html:8
 msgid "Sign In"
-msgstr ""
+msgstr "Logga in"
 
 #: /templates/homepage.html:5
 msgid "You are not logged in as a Curator"
-msgstr ""
+msgstr "Du är inte inloggad som kurator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
 msgstr ""
+"För att kunna skapa eller ändra samlingar måste du vara inloggad som en "
+"kurator för att effektivt använda detta verktyg."
 
 #: /templates/homepage.html:38
 msgid "Collections"
-msgstr ""
+msgstr "Samlingar"
 
 #: /templates/homepage.html:46
 msgid "No collections have been created."
-msgstr ""
+msgstr "Ingen samling har skapats."
 
 #: /templates/homepage.html:50
 msgid "Add a new collection"
-msgstr ""
+msgstr "Lägg till en ny samling"
 
 #: /templates/homepage.html:53
 msgid "Featured Apps"
-msgstr ""
+msgstr "Rekommenderade appar"
 
 #: /templates/homepage.html:61
 msgid "No featured app sections have been created."
-msgstr ""
+msgstr "Inge rekommenderad app-sektion har skapats."
 
 #: /templates/homepage.html:65
 msgid "Add a new featured app collection"
-msgstr ""
+msgstr "Lägg till en ny rekommenderad app-samling"
 
 #: /templates/homepage.html:70
 msgid "Operator Shelves"
-msgstr ""
+msgstr "Hyllor för mobiloperatörer"
 
 #: /templates/homepage.html:79
 msgid "No operator shelves have been created."
-msgstr ""
+msgstr "Inga hyllor för mobiloperatörer har skapats."
 
 #: /templates/homepage.html:83
 msgid "Add a new operator shelf"
-msgstr ""
+msgstr "Lägg till en ny hylla för mobiloperatörer"
 
 #: /templates/homepage.html:85
 msgid "Please select a carrier to see operator shelves."
-msgstr ""
+msgstr "Välj en operatör för att se hyllor för mobiloperatörer."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
-msgstr ""
+msgstr "Ny {collection_type}"
 
 #: /templates/new_collection.html:10
 msgid "The name is not shown to users, it is only for convenience."
-msgstr ""
+msgstr "Namnet visas inte för användare, det är endast för bekvämlighet."
 
 #: /templates/new_collection.html:15
 msgid "Collection Slug"
-msgstr ""
+msgstr "Samlingsslugg"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
 msgstr ""
+"Sluggar måste börja med en bokstav och kan endast innehålla bokstäver, "
+"siffror och bindestreck. Den måste vara 30 tecken eller mindre."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
-msgstr ""
+msgstr "Namn på författare"
 
 #: /templates/new_collection.html:29
 msgid "Description"
-msgstr ""
+msgstr "Beskrivning"
 
 #: /templates/new_collection.html:64
 msgid "Background Color"
-msgstr ""
+msgstr "Bakgrundsfärg"
 
 #: /templates/new_collection.html:66
 msgid "A background color is required"
-msgstr ""
+msgstr "En bakgrundsfärg krävs"
 
 #: /templates/new_collection.html:67 /templates/new_collection.html:74
 msgid "Please enter a hex color (e.g.: \"#AB78EF\")"
-msgstr ""
+msgstr "Ange en färg hexadecimalt (exempel: \"#AB78EF\")"
 
 #: /templates/new_collection.html:71
 msgid "Text Color"
-msgstr ""
+msgstr "Textfärg"
 
 #: /templates/new_collection.html:73
 msgid "A text color is required"
-msgstr ""
+msgstr "En textfärg krävs"
 
 #: /templates/new_collection.html:80
 msgid "Create"
-msgstr ""
+msgstr "Skapa"
 
 #: /templates/new_collection.html:85
 msgid "Unauthorized"
-msgstr ""
+msgstr "Obehörig"
 
 #: /templates/new_collection.html:86
 msgid "You must be logged in to create collections."
-msgstr ""
+msgstr "Du måste vara inloggad för att skapa samlingar."
 
 #: /templates/_macros/collections.html:4
 msgid "(Unnamed collection)"
-msgstr ""
+msgstr "(Namnlös samling)"
 
 #: /templates/_macros/collections.html:30
 msgid "Collection is Public"
-msgstr ""
+msgstr "Samlingen är offentlig"
 
 #: /templates/_macros/collections.html:39
 msgid "There are no public collections of this type."
-msgstr ""
+msgstr "Det finns inga publika samlingar av denna typ."
 
 #: /templates/_macros/dropdowns.html:15
 msgid "Loading categories..."
-msgstr ""
+msgstr "Laddar kategorier..."
 
 #: /templates/_macros/dropdowns.html:30 /templates/_macros/dropdowns.html:53
 msgid "-- None --"
-msgstr ""
+msgstr "-- Inga --"
 
 #: /templates/_macros/dropdowns.html:38
 msgid "Loading regions..."
-msgstr ""
+msgstr "Laddar regioner..."
 
 #: /templates/_macros/dropdowns.html:63
 msgid "Loading carriers..."
-msgstr ""
+msgstr "Laddar operatörer..."
 
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
-msgstr ""
+msgstr "Åh nej!"
 
 #: /templates/errors/fragment.html:2
 msgid "An error occurred."
-msgstr ""
+msgstr "Ett fel uppstod."
 
 #: /templates/errors/pagination.html:1
 msgid "Error loading more"
-msgstr ""
+msgstr "Fel uppstod när mer skulle laddas"
 
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
-msgstr ""
+msgstr "Försök igen"
 
 #: /templates/helpers/curator.html:0
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
-msgstr ""
+msgstr "Spara"
 
 #: /media/js/forms.js:65
 msgid "Other Locales"
-msgstr ""
+msgstr "Andra språkversioner"
 
 #: /media/js/login.js:8
 msgid "You have been signed out"
-msgstr ""
+msgstr "Du är utloggad"
 
 #: /media/js/login.js:12
 msgid "You have been signed in"
-msgstr ""
+msgstr "Du är inloggad"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
 msgstr ""
+"Persona-inloggning misslyckades. Du kanske inte har ett konto med den "
+"e-postadressen registrerad?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
-msgstr ""
+msgstr "Persona-inloggning misslyckades. Ett serverfel uppstod."
 
 #: /media/js/navigation.js:31
 msgid "No internet connection"
-msgstr ""
+msgstr "Ingen internetanslutning"
 
 #: /media/js/settings.js:46
 msgid "Basic Collection"
-msgstr ""
+msgstr "Standardsamling"
 
 #: /media/js/settings.js:47
 msgid "Featured App Collection"
-msgstr ""
+msgstr "Rekommenderad app-samling"
 
 #: /media/js/settings.js:48
 msgid "Operator Shelf"
-msgstr ""
+msgstr "Hylla för mobiloperatörer"
 
 #. {n} is the number of characters left.
 #: /media/js/utils.js:28
 msgid "<b>{n}</b> character left."
 msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<b>{n}</b> tecken kvar."
+msgstr[1] "<b>{n}</b> tecken kvar."
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
-msgstr ""
+msgstr "Gör samling dold"
 
 #: /media/js/views/collection.js:16
 msgid "Collection is now hidden"
-msgstr ""
+msgstr "Samlingen är nu dold"
 
 #: /media/js/views/collection.js:17
 msgid "Collection is now public"
-msgstr ""
+msgstr "Samlingen är nu publik"
 
 #: /media/js/views/collection.js:18
 msgid "Setting collection public property failed"
-msgstr ""
+msgstr "Misslyckades med att göra samling publik"
 
 #: /media/js/views/collection.js:21
 msgid "Enable \"hero\" flag"
-msgstr ""
+msgstr "Aktivera \"hero\"-flagga"
 
 #: /media/js/views/collection.js:22
 msgid "Disable \"hero\" flag"
-msgstr ""
+msgstr "Inaktivera \"hero\"-flagga"
 
 #: /media/js/views/collection.js:23
 msgid "The \"hero\" flag is now enabled"
-msgstr ""
+msgstr "\"Hero\"-flaggan är aktiverad"
 
 #: /media/js/views/collection.js:24
 msgid "The \"hero\" flag is now disabled"
-msgstr ""
+msgstr "\"Hero\"-flaggan är inaktiverad"
 
 #: /media/js/views/collection.js:25
 msgid "Setting collection \"hero\" property failed"
-msgstr ""
+msgstr "Misslyckades med att ändra \"hero\"-flaggan"
 
 #: /media/js/views/collection.js:74
 msgid "Successfully duplicated"
-msgstr ""
+msgstr "Dubblering lyckades"
 
 #: /media/js/views/collection.js:78
 msgid "Failed to duplicate collection"
-msgstr ""
+msgstr "Misslyckades med att dubblera samling"
 
 #: /media/js/views/collection.js:111
 msgid "Search failed :-("
-msgstr ""
+msgstr "Sökningen misslyckades :-("
 
 #: /media/js/views/collection.js:139
 msgid "Curator added; check back in a bit"
-msgstr ""
+msgstr "Kurator lades till; återkom inom kort"
 
 #: /media/js/views/collection.js:143
 msgid "Added curator"
-msgstr ""
+msgstr "Kurator lades till"
 
 #: /media/js/views/collection.js:158
 msgid "Failed to add curator"
-msgstr ""
+msgstr "Misslyckades med att lägga till kurator"
 
 #: /media/js/views/collection.js:174
 msgid "Removed curator"
-msgstr ""
+msgstr "Kurator borttagen"
 
 #: /media/js/views/collection.js:178
 msgid "Failed to remove curator"
-msgstr ""
+msgstr "Misslyckades med att ta bort kurator"
 
 #: /media/js/views/collection.js:202
 msgid "Removed {app} from collection."
-msgstr ""
+msgstr "Tog bort {app} från samling."
 
 #: /media/js/views/collection.js:206
 msgid "Could not delete app from collection."
-msgstr ""
+msgstr "Kan inte ta bort app från samling."
 
 #: /media/js/views/collection.js:232
 msgid "App added to collection."
-msgstr ""
+msgstr "App lades till samling."
 
 #: /media/js/views/collection.js:236
 msgid "Failed to add app."
-msgstr ""
+msgstr "Misslyckades med att lägga till app."
 
 #: /media/js/views/collection.js:247
 msgid "Are you sure you want to delete this collection?"
-msgstr ""
+msgstr "Är du säker på att du vill ta bort denna samling?"
 
 #: /media/js/views/collection.js:271
 msgid "Collection deleted."
-msgstr ""
+msgstr "Samling raderad."
 
 #: /media/js/views/collection.js:275
 msgid "Failed to delete collection."
-msgstr ""
+msgstr "Misslyckades med att ta bort samlingen."
 
 #: /media/js/views/collection.js:291
 msgid "Order updated"
-msgstr ""
+msgstr "Ordning uppdaterad"
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
 msgstr ""
+"Misslyckades med att uppdatera samlings ordning. Försök att uppdatera sidan."
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"
-msgstr ""
+msgstr "Sparade {field}"
 
 #: /media/js/views/collection.js:394
 msgid "Failed to update {field}"
-msgstr ""
+msgstr "Misslyckades med att uppdatera {field}"
 
 #: /media/js/views/collection.js:419
 msgid "Incompatible: App not available in the collection's region."
-msgstr ""
+msgstr "Inkompatibel: Appen är inte tillgänglig i samlingens region."
 
 #: /media/js/views/collection.js:501
 msgid "No Image Provided"
-msgstr ""
+msgstr "Ingen bild specificerad"
 
 #: /media/js/views/collection.js:513
 msgid "Image cleared"
-msgstr ""
+msgstr "Bild rensad"
 
 #: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
-msgstr ""
+msgstr "Kunde inte rensa bild, troligtvis bugg 917081"
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
-msgstr ""
+msgstr "Bild sparad"
 
 #: /media/js/views/collection.js:529
 msgid "Could not save image"
-msgstr ""
+msgstr "Kunde inte spara bild"
 
 #: /media/js/views/collection.js:586
 msgid "Collection"
-msgstr ""
+msgstr "Samling"
 
 #: /media/js/views/homepage.js:37
 msgid "Overview"
-msgstr ""
+msgstr "Översikt"
 
 #: /media/js/views/new_collection.js:49
 msgid "New collection created."
-msgstr ""
+msgstr "Ny samling skapad."
 
 #: /media/js/views/new_collection.js:52
 msgid "Failed to create new collection."
-msgstr ""
+msgstr "Det gick inte att skapa en ny samling."
 
 #: /media/js/views/new_collection.js:108
 msgid "New Collection"
-msgstr ""
+msgstr "Ny samling"
 
 #. Page not found (404)
 #: /media/js/views/not_found.js:9
 msgid "Not Found"
-msgstr ""
+msgstr "Hittades inte"
