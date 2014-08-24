@@ -3,16 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
-"PO-Revision-Date: 2014-05-17 12:43+0000\n"
-"Last-Translator: Aleksandra <auzelac91@gmail.com>\n"
+"PO-Revision-Date: 2014-08-24 18:42+0000\n"
+"Last-Translator: Vanja <tumbas93@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1400330628.0\n"
+"X-POOTLE-MTIME: 1408905748.0\n"
 
 #: /templates/add_curator.html:2
 msgid "Add a Curator"
@@ -60,7 +61,7 @@ msgstr "Категорија:"
 
 #: /templates/collection.html:47 /templates/_macros/dropdowns.html:8 /media/js/views/collection.js:351
 msgid "All Categories (Homepage)"
-msgstr "Све категорије (Почетна страна)"
+msgstr "Све категорије (Почетна страница)"
 
 #: /templates/collection.html:53
 msgid "Description:"
@@ -80,7 +81,9 @@ msgstr "Учитавање слике"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr "Довуците доле PNG или JPG слику или <span>изаберите датотеку</span> да бисте поставили слику."
+msgstr ""
+"Превуците PNG или JPG слику до доле или <span>изаберите датотеку</span> да "
+"бисте поставили слику."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -188,7 +191,7 @@ msgstr "Оператер"
 
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
-msgstr "Дуплирај"
+msgstr "Дупликат"
 
 #: /templates/header.html:2
 msgid "Curation Tool"
@@ -528,7 +531,7 @@ msgstr "Слика уклоњена"
 
 #: /media/js/views/collection.js:515
 msgid "Could not clear image, probably bug 917081"
-msgstr "Неуспешно уклањање слике, вероватно грешка 917081"
+msgstr "Неуспешно уклањање слике, вероватно bug 917081"
 
 #: /media/js/views/collection.js:526
 msgid "Image saved"
