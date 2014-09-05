@@ -24,9 +24,7 @@ msgstr "Användarens e-postadress"
 
 #: /templates/add_curator.html:8
 msgid "Enter the email address of a user that you wish to make a curator for this collection."
-msgstr ""
-"Ange e-postadressen för den användare som du vill göra till kurator för "
-"denna samling."
+msgstr "Ange e-postadressen för den användare som du vill göra till kurator för denna samling."
 
 #: /templates/add_curator.html:11
 msgid "Namaste"
@@ -82,9 +80,7 @@ msgstr "Laddar förhandsgranskning"
 
 #: /templates/collection.html:68
 msgid "Drag a PNG or JPG image below or <span>select a file</span> to upload an image."
-msgstr ""
-"Dra en PNG- eller JPG-bild nedan eller <span>välj en fil</span> för att "
-"ladda upp en bild."
+msgstr "Dra en PNG- eller JPG-bild nedan eller <span>välj en fil</span> för att ladda upp en bild."
 
 #: /templates/collection.html:71
 msgid "Your browser does not support canvas."
@@ -176,10 +172,7 @@ msgstr "En slugg krävs"
 
 #: /templates/duplicate_collection.html:16
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
-msgstr ""
-"Sluggar måste börja med en bokstav och får endast innehålla bokstäver, "
-"siffror och bindestreck. Den måste vara 30 tecken eller mindre och kan inte "
-"vara samma som den existerande samlingen."
+msgstr "Sluggar måste börja med en bokstav och får endast innehålla bokstäver, siffror och bindestreck. Den måste vara 30 tecken eller mindre och kan inte vara samma som den existerande samlingen."
 
 #: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
 msgid "Category"
@@ -215,9 +208,7 @@ msgstr "Du är inte inloggad som kurator"
 
 #: /templates/homepage.html:6
 msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"För att kunna skapa eller ändra samlingar måste du vara inloggad som en "
-"kurator för att effektivt använda detta verktyg."
+msgstr "För att kunna skapa eller ändra samlingar måste du vara inloggad som en kurator för att effektivt använda detta verktyg."
 
 #: /templates/homepage.html:38
 msgid "Collections"
@@ -273,9 +264,7 @@ msgstr "Samlingsslugg"
 
 #: /templates/new_collection.html:17
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less."
-msgstr ""
-"Sluggar måste börja med en bokstav och kan endast innehålla bokstäver, "
-"siffror och bindestreck. Den måste vara 30 tecken eller mindre."
+msgstr "Sluggar måste börja med en bokstav och kan endast innehålla bokstäver, siffror och bindestreck. Den måste vara 30 tecken eller mindre."
 
 #: /templates/new_collection.html:23
 msgid "Author Name"
@@ -383,9 +372,7 @@ msgstr "Du är inloggad"
 
 #: /media/js/login.js:127
 msgid "Persona login failed. Maybe you don't have an account under that email address?"
-msgstr ""
-"Persona-inloggning misslyckades. Du kanske inte har ett konto med den "
-"e-postadressen registrerad?"
+msgstr "Persona-inloggning misslyckades. Du kanske inte har ett konto med den e-postadressen registrerad?"
 
 #: /media/js/login.js:132
 msgid "Persona login failed. A server error was encountered."
@@ -516,8 +503,7 @@ msgstr "Ordning uppdaterad"
 
 #: /media/js/views/collection.js:293
 msgid "Failed to update collection order. Try refreshing the page."
-msgstr ""
-"Misslyckades med att uppdatera samlings ordning. Försök att uppdatera sidan."
+msgstr "Misslyckades med att uppdatera samlings ordning. Försök att uppdatera sidan."
 
 #: /media/js/views/collection.js:383
 msgid "Saved {field}"
