@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-08-13 05:27+0000\n"
 "Last-Translator: Ratul <minhaz.ratul@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,66 @@ msgstr "অ্যাপ যোগ করুন"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "খুঁজুন"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "আপনি তত্ত্বাবধায়ক হিসেবে প্রবেশ করেননি"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "সংগ্রহ সমূহ সৃষ্টি বা পরিবর্তনের জন্য, এই টুলটি কার্যকরভাবে ব্যাবহারের জন্য আপনাকে অবশ্যই তত্ত্বাবধায়ক রূপে প্রবেশ করতে হবে ।"
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "বিভাগ"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "অঞ্চল"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "অপারেটর"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "সংগ্রহ সমূহ"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "কোন সংগ্রহ তৈরি করা হয় নি।"
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "নতুন সংগ্রহ যোগ করুন"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "বৈশিষ্ট্যপূর্ণ অ্যাপস"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "বৈশিষ্ট্যপূর্ণ অ্যাপ এর জন্যে কোন সেকশন তৈরী করা হয়নি।"
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "একটি নতুন বৈশিষ্ট্যপূর্ণ অ্যাপ সম্ভার যোগ করুন"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "নিয়ন্ত্রক কক্ষ "
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "কোন নিয়ন্ত্রক কক্ষ তৈরি করা হয় নি। "
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "নতুন নিয়ন্ত্রক কক্ষ যোগ করুন "
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "নিয়ন্ত্রক কক্ষ দেখার জন্য দয়া করে একজন বাহককে নির্বাচন করুন।"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "না"
 msgid "Yes"
 msgstr "হ্যাঁ"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "তত্ত্বাবধায়ন সহায়ক সরঞ্জাম "
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "প্রস্থান"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "সাইন ইন"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "সংগ্রহ প্রতিলিপি"
@@ -174,81 +246,9 @@ msgstr "একটি স্লাগ্ অত্যাবশ্যকীয়"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "স্লাগ গুলোর সূচনা অবশ্যই একটি বর্ণ দিয়ে হতে হবে এবং এতে কেবল্মাত্র বর্ণ, সংখ্যা এবং হাইফেন থাকবে। ৩০ টি অথবা এর থেকে কম সংখ্যক বর্ণ হতে হবে এবং ভূতপূর্ব কোন সংগ্রহের মত হওয়া যাবে না। "
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "বিভাগ"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "অঞ্চল"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "অপারেটর"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "সদৃশ"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "তত্ত্বাবধায়ন সহায়ক সরঞ্জাম "
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "প্রস্থান"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "সাইন ইন"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "আপনি তত্ত্বাবধায়ক হিসেবে প্রবেশ করেননি"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "সংগ্রহ সমূহ সৃষ্টি বা পরিবর্তনের জন্য, এই টুলটি কার্যকরভাবে ব্যাবহারের জন্য আপনাকে অবশ্যই তত্ত্বাবধায়ক রূপে প্রবেশ করতে হবে ।"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "সংগ্রহ সমূহ"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "কোন সংগ্রহ তৈরি করা হয় নি।"
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "নতুন সংগ্রহ যোগ করুন"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "বৈশিষ্ট্যপূর্ণ অ্যাপস"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "বৈশিষ্ট্যপূর্ণ অ্যাপ এর জন্যে কোন সেকশন তৈরী করা হয়নি।"
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "একটি নতুন বৈশিষ্ট্যপূর্ণ অ্যাপ সম্ভার যোগ করুন"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "নিয়ন্ত্রক কক্ষ "
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "কোন নিয়ন্ত্রক কক্ষ তৈরি করা হয় নি। "
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "নতুন নিয়ন্ত্রক কক্ষ যোগ করুন "
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "নিয়ন্ত্রক কক্ষ দেখার জন্য দয়া করে একজন বাহককে নির্বাচন করুন।"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,6 +334,10 @@ msgstr "অঞ্চল লোড করা হচ্ছে..."
 msgid "Loading carriers..."
 msgstr "কারিয়ার লোড হচ্ছে..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "আইডি: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "ওহ না!"
@@ -349,10 +353,6 @@ msgstr "আরও লোড করতে ত্রুটি"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "আবার চেষ্টা করুন"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "আইডি: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,6 +382,13 @@ msgstr "পার্সোনা লগিন ব্যর্থ। একটি
 msgid "No internet connection"
 msgstr "কোন ইন্টারনেট সংযোগ নেই"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> টি অক্ষর বাকি।"
+msgstr[1] "<b>{n}</b> টি অক্ষর বাকি।"
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "সাধারণ সংগ্রহ"
@@ -394,12 +401,26 @@ msgstr "বৈশিষ্ট্যযুক্ত অ্যাপ সংগ্�
 msgid "Operator Shelf"
 msgstr "অপারেটর সেল্ফ"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> টি অক্ষর বাকি।"
-msgstr[1] "<b>{n}</b> টি অক্ষর বাকি।"
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "পরিদর্শন"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "নতুন সংগ্রহ তৈরি হয়েছে।"
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "নতুন সংগ্রহ তৈরিতে ব্যর্থ।"
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "নতুন সংগ্রহ"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "পাওয়া যায়নি"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -540,24 +561,3 @@ msgstr "চিত্র সংরক্ষণ হয়নি "
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "সংগ্রহ"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "পরিদর্শন"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "নতুন সংগ্রহ তৈরি হয়েছে।"
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "নতুন সংগ্রহ তৈরিতে ব্যর্থ।"
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "নতুন সংগ্রহ"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "পাওয়া যায়নি"

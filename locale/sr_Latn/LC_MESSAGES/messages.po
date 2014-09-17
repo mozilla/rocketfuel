@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-05-17 12:43+0000\n"
 "Last-Translator: Aleksandra <auzelac91@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,66 @@ msgstr "Dodajte aplikacije"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Pretraži"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Niste prijavljeni kao kurator"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Da biste kreirali ili izmenili kolekcije, morate biti prijavljeni kao kurator kako biste uspešno koristili ovaj alat."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategorija"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operater"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Kolekcije"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ni jedna kolekcija nije kreirana."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Dodajte novu kolekciju"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Istaknute aplikacije"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Nije kreiran ni jedan odeljak za istaknute aplikacije."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Dodajte novu kolekciju za istaknute aplikacije"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Police operatora"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Ni jedna polica operatora nije kreirana."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Dodajte novu policu operatora"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Molimo Vas izaberite mrežnog operatera kako biste pregledali police operatora."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "Ne"
 msgid "Yes"
 msgstr "Da"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Alat za kuraciju"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Odjavi se"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Prijavi se"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Dupliraj kolekciju"
@@ -174,81 +246,9 @@ msgstr "Naziv url adrese je neophodan"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Nazivi url adresa moraju početi slovom i mogu da sadrže samo slova, brojeve i crtice. Moraju biti dužine 30 ili manje karaktera i ne mogu biti isti sa postojećom kolekcijom."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategorija"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operater"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliraj"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Alat za kuraciju"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Odjavi se"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Prijavi se"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Niste prijavljeni kao kurator"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Da biste kreirali ili izmenili kolekcije, morate biti prijavljeni kao kurator kako biste uspešno koristili ovaj alat."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Kolekcije"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ni jedna kolekcija nije kreirana."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Dodajte novu kolekciju"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Istaknute aplikacije"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Nije kreiran ni jedan odeljak za istaknute aplikacije."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Dodajte novu kolekciju za istaknute aplikacije"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Police operatora"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Ni jedna polica operatora nije kreirana."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Dodajte novu policu operatora"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Molimo Vas izaberite mrežnog operatera kako biste pregledali police operatora."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,6 +334,10 @@ msgstr "Učitavanje regiona..."
 msgid "Loading carriers..."
 msgstr "Učitavanje operatera..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "O, ne!"
@@ -349,10 +353,6 @@ msgstr "Greška tokom učitavanja"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Pokušaj ponovo"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,6 +382,14 @@ msgstr "Prijava putem Persona sistema je neuspešna. Došlo je do greške na ser
 msgid "No internet connection"
 msgstr "Nema internet konekcije"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> preostao karakter."
+msgstr[1] "<b>{n}</b> preostala karaktera."
+msgstr[2] "<b>{n}</b> preostalih karaktera."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Osnovne kolekcije"
@@ -394,13 +402,26 @@ msgstr "Kolekcije istaknutih aplikacija"
 msgid "Operator Shelf"
 msgstr "Polica operatora"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> preostao karakter."
-msgstr[1] "<b>{n}</b> preostala karaktera."
-msgstr[2] "<b>{n}</b> preostalih karaktera."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Pregled"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Kreirana je nova kolekcija."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Neuspešno kreiranje nove kolekcije."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nova kolekcija"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nije nađeno"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -541,24 +562,3 @@ msgstr "Neuspešno čuvanje slike"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Kolekcija"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Pregled"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Kreirana je nova kolekcija."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Neuspešno kreiranje nove kolekcije."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nova kolekcija"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nije nađeno"

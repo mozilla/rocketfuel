@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-06-27 11:40+0000\n"
 "Last-Translator: Håvar <havar@firefox.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,66 @@ msgstr "Legg til apper"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Søk"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Du er ikke logget inn som en kurator"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "For å opprette eller endre samlinger, må du være logget inn som en kurator for å effektivt bruke dette verktøyet."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategori"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operatør"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Samlinger"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ingen samlinger har blitt opprettet."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Legg til en ny samling"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Anbefalte apper"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Ingen anbefalte app-seksjoner har blitt opprettet."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Legg til en ny anbefalt app-samling."
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr ""
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr ""
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr ""
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr ""
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "Nei"
 msgid "Yes"
 msgstr "Ja"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr ""
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Logg ut"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Logg inn"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Dupliser samling"
@@ -174,81 +246,9 @@ msgstr "En identifikator er nødvendig"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Identifikatorer må starte med en bokstav og kan bare inneholde bokstaver, tall og bindestreker. Den må være på 30 tegn eller mindre, og kan ikke være den samme som den eksisterende samling."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategori"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operatør"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliser"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr ""
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Logg ut"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Logg inn"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Du er ikke logget inn som en kurator"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "For å opprette eller endre samlinger, må du være logget inn som en kurator for å effektivt bruke dette verktøyet."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Samlinger"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ingen samlinger har blitt opprettet."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Legg til en ny samling"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Anbefalte apper"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Ingen anbefalte app-seksjoner har blitt opprettet."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Legg til en ny anbefalt app-samling."
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr ""
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr ""
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr ""
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr ""
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,6 +334,10 @@ msgstr "Laster regioner …"
 msgid "Loading carriers..."
 msgstr "Laster operatører …"
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Å nei!"
@@ -349,10 +353,6 @@ msgstr "Feil under lasting av mer"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Prøv igjen"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,6 +382,13 @@ msgstr ""
 msgid "No internet connection"
 msgstr ""
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] ""
+msgstr[1] ""
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr ""
@@ -394,12 +401,26 @@ msgstr ""
 msgid "Operator Shelf"
 msgstr ""
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] ""
-msgstr[1] ""
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr ""
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr ""
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr ""
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr ""
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr ""
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -539,25 +560,4 @@ msgstr ""
 
 #: /media/js/views/collection.js:586
 msgid "Collection"
-msgstr ""
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr ""
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr ""
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr ""
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr ""
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
 msgstr ""

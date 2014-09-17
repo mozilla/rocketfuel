@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2013-11-27 19:26+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,66 @@ msgstr "Shtoni Zbatime"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Kërko"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Nuk jeni futur si një Kujdestar"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Që të mund të krijoni ose modifikoni koleksione, duhet të jeni i futur si një Kujdestar që të mund të përdorni vërtet këtë mjet."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategori"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Rajon"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operator"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Koleksione"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Nuk u krijuan koleksione."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Shtoni një koleksion të ri"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Zbatime të Zgjedhura"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Nuk janë krijuar ndarje zbatimesh të zgjedhura."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Shtoni një koleksion të ri të zgjedhur zbatimesh"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Rafte Operatorësh"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Nuk janë krijuar rafte operatorësh."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Shtoni një raft të ri operatori "
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Ju lutemi, përzgjidhni një operator që të shihni raftet."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "Jo"
 msgid "Yes"
 msgstr "Po"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Mjete Kujdestarie"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Dilni"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Hyni"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Bëj Një Kopje të Koleksionit"
@@ -176,81 +248,9 @@ msgstr ""
 "Identifikuesit duhet të fillojnë me një shkronjë dhe mund të përmbajnë vetëm shkronja, numra dhe vija ndarëse. Duhet të jetë 30 ose më pak shenja dhe nuk mund të jetë i njëjtë me atë të koleksionit "
 "ekzistues."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategori"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Rajon"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operator"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Bëje Kopjen"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Mjete Kujdestarie"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Dilni"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Hyni"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Nuk jeni futur si një Kujdestar"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Që të mund të krijoni ose modifikoni koleksione, duhet të jeni i futur si një Kujdestar që të mund të përdorni vërtet këtë mjet."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Koleksione"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Nuk u krijuan koleksione."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Shtoni një koleksion të ri"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Zbatime të Zgjedhura"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Nuk janë krijuar ndarje zbatimesh të zgjedhura."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Shtoni një koleksion të ri të zgjedhur zbatimesh"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Rafte Operatorësh"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Nuk janë krijuar rafte operatorësh."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Shtoni një raft të ri operatori "
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Ju lutemi, përzgjidhni një operator që të shihni raftet."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -336,6 +336,10 @@ msgstr "Po ngarkohen rajonet..."
 msgid "Loading carriers..."
 msgstr "Po ngarkohen operatorët..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Mooos!"
@@ -351,10 +355,6 @@ msgstr "Gabim gjatë ngarkimit të më tepër"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Riprovoni"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -384,6 +384,13 @@ msgstr "Hyrja me Persona dështoi. U has një gabim shërbyesi."
 msgid "No internet connection"
 msgstr "Pa lidhje internet"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "edhe <b>{n}</b> shenjë."
+msgstr[1] "edhe <b>{n}</b> shenja."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Koleksion Bazë"
@@ -396,12 +403,26 @@ msgstr "Koleksion Zbatimesh të Zgjedhura"
 msgid "Operator Shelf"
 msgstr "Raft Operatori"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "edhe <b>{n}</b> shenjë."
-msgstr[1] "edhe <b>{n}</b> shenja."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Përmbledhje"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Koleksioni i ri u krijua."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Dështoi në krijim koleksioni të ri."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Koleksion i Ri"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nuk u Gjet"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -542,24 +563,3 @@ msgstr "Nuk ruajti dot figurën"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Koleksion"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Përmbledhje"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Koleksioni i ri u krijua."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Dështoi në krijim koleksioni të ri."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Koleksion i Ri"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nuk u Gjet"

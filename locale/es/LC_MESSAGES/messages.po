@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-03-29 18:55+0000\n"
 "Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,66 @@ msgstr "Agregar aplicaciones"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Buscar"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "No te has identificado como administrador"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "A fin de crear o modificar las colecciones, debes identificarte como administrador para usar eficazmente esta herramienta."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categoría"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "País"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Proveedor"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Colecciones"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "No se ha creado ninguna colección."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Agregar una nueva colección"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Aplicaciones destacadas"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "No se han creado secciones para aplicaciones destacadas."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Agrega una nueva colección para aplicaciones destacadas"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Estantes del operador"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "No se ha creado ningún estante del operador."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Agrega un nuevo estante del operador"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Selecciona un proveedor para ver los estantes del operador."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "No"
 msgid "Yes"
 msgstr "Sí"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Herramienta de administración"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Salir"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Identificarse"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Duplicar la colección"
@@ -176,81 +248,9 @@ msgstr ""
 "Los títulos breves (o slugs) deben empezar con una letra y solo pueden contener letras, números y guiones. Deben tener un máximo de 30 caracteres o menos y no pueden ser iguales a la colección "
 "existente."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categoría"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "País"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Proveedor"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplicar"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Herramienta de administración"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Salir"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Identificarse"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "No te has identificado como administrador"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "A fin de crear o modificar las colecciones, debes identificarte como administrador para usar eficazmente esta herramienta."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Colecciones"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "No se ha creado ninguna colección."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Agregar una nueva colección"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Aplicaciones destacadas"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "No se han creado secciones para aplicaciones destacadas."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Agrega una nueva colección para aplicaciones destacadas"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Estantes del operador"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "No se ha creado ningún estante del operador."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Agrega un nuevo estante del operador"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Selecciona un proveedor para ver los estantes del operador."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -336,6 +336,10 @@ msgstr "Cargando países..."
 msgid "Loading carriers..."
 msgstr "Cargando proveedores..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "¡Oh no!"
@@ -351,10 +355,6 @@ msgstr "Error al cargar más"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Probar de nuevo"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -384,6 +384,13 @@ msgstr "Hubo un error al identificarte con Mozilla Persona. Se encontró un erro
 msgid "No internet connection"
 msgstr "No hay conexión a internet"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "Queda <b>{n}</b> carácter."
+msgstr[1] "Quedan <b>{n}</b> caracteres."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Colección básica"
@@ -396,12 +403,26 @@ msgstr "Colección de aplicaciones destacadas"
 msgid "Operator Shelf"
 msgstr "Estante del operador"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Queda <b>{n}</b> carácter."
-msgstr[1] "Quedan <b>{n}</b> caracteres."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Información general"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Se ha creado una colección nueva."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Error al crear una colección nueva."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Colección nueva"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "No se ha encontrado"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -542,24 +563,3 @@ msgstr "No se pudo guardar la imagen"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Colección"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Información general"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Se ha creado una colección nueva."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Error al crear una colección nueva."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Colección nueva"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "No se ha encontrado"

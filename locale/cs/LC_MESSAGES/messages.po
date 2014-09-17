@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rockfuel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-04-04 14:31+0000\n"
 "Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: Czech Mozilla <info@mozilla.cz>\n"
@@ -37,6 +37,66 @@ msgstr "Přidat aplikace"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Vyhledávání"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Nejste přihlášen(a) jako Curator"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Pokud si přejete vytvářet či upravovat sbírky, musíte být přihlášen jako správce, jinak nebudete moci efektivně používat tento nástroj."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategorie"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operátor"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Sbírky"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Nebyly vytvořeny žádné sbírky."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Přidat novou sbírku"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Propagované aplikace"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Nebyla vytvořena žádná sekce propagovaných aplikací."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Přidat novou propagovanou sbírku aplikací"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Pro operátora"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Pro operátory nebylo nic vytvořeno."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Přidat novou skupinu pro operátora"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Zvolte prosím operátora, pro kterého chcete vidět skupiny."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "Ne"
 msgid "Yes"
 msgstr "Ano"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Nástroje správců"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Odhlášení"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Přihlášení"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Duplicitní sbírka"
@@ -174,81 +246,9 @@ msgstr "URL je vyžadováno"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "URL musí začít znakem a může obsahovat pouze znaky, čísla a pomlčky. Může mít maximální délku 30 znaků a nemůže být stejná jako existující sbírka."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategorie"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operátor"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplicitní"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Nástroje správců"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Odhlášení"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Přihlášení"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Nejste přihlášen(a) jako Curator"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Pokud si přejete vytvářet či upravovat sbírky, musíte být přihlášen jako správce, jinak nebudete moci efektivně používat tento nástroj."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Sbírky"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Nebyly vytvořeny žádné sbírky."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Přidat novou sbírku"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Propagované aplikace"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Nebyla vytvořena žádná sekce propagovaných aplikací."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Přidat novou propagovanou sbírku aplikací"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Pro operátora"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Pro operátory nebylo nic vytvořeno."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Přidat novou skupinu pro operátora"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Zvolte prosím operátora, pro kterého chcete vidět skupiny."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,6 +334,10 @@ msgstr "Načítání regionů..."
 msgid "Loading carriers..."
 msgstr "Načítání operátorů..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Ale ne!"
@@ -349,10 +353,6 @@ msgstr "Chyba při načítání"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Zkusit znovu"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,6 +382,14 @@ msgstr "Nastala chyba při přihlášení pomocí Persona. Nastala chyba na serv
 msgid "No internet connection"
 msgstr "Není k dispozici připojení k internetu"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "Zbývá <b>{n}</b> znak."
+msgstr[1] "Zbývají <b>{n}</b> znaky."
+msgstr[2] "Zbývá <b>{n}</b> znaků."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Základní sbírka"
@@ -394,13 +402,26 @@ msgstr "Doporučovaná sbírka aplikací"
 msgid "Operator Shelf"
 msgstr "Pro operátora"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "Zbývá <b>{n}</b> znak."
-msgstr[1] "Zbývají <b>{n}</b> znaky."
-msgstr[2] "Zbývá <b>{n}</b> znaků."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Přehled"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Nová sbírka byla vytvořena."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Chyba při vytváření nové sbírky."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nová sbírka"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Nebylo nalezeno"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -541,24 +562,3 @@ msgstr "Nepodařilo se uložit obrázek"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Sbírka"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Přehled"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Nová sbírka byla vytvořena."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Chyba při vytváření nové sbírky."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nová sbírka"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Nebylo nalezeno"

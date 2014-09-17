@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-04-18 09:45+0000\n"
 "Last-Translator: Channy <channy@mozilla.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,66 @@ msgstr "앱 추가"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "검색"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "큐레이터로 로그인하지 않음"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "모음집을 만들거나 수정하기 위해서는 큐레이터로 로그인 해야 도구를 효과적으로 사용할 수 있습니다."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "분류"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "지역"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "통신사"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "모음집"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "모음집이 없습니다."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "모음집 추가"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "추천 앱"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "추천 앱 부분이 생성되지 않았습니다."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "새 추천앱 모음집 추가"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "운영자 선반"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "운영자 선반이 생성되지 않았습니다."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "새 운영자 선반 추가"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "운영자 선반을 확인하기 위한 캐리어를 선택해 주세요."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "아니오"
 msgid "Yes"
 msgstr "예"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "큐레이션 도구"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "로그아웃"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "로그인"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "모음집 복제"
@@ -174,81 +246,9 @@ msgstr "URL 줄임 제목이 필요함"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "URL 줄임 제목은 글자로 시작해야 하고 글자와 숫자, 하이픈만 포함할 수 있습니다. 30자 이상은 사용할 수 없고 기존의 URL 줄임 제목과 중보될 수 없습니다."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "분류"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "지역"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "통신사"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "복제"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "큐레이션 도구"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "로그아웃"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "로그인"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "큐레이터로 로그인하지 않음"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "모음집을 만들거나 수정하기 위해서는 큐레이터로 로그인 해야 도구를 효과적으로 사용할 수 있습니다."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "모음집"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "모음집이 없습니다."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "모음집 추가"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "추천 앱"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "추천 앱 부분이 생성되지 않았습니다."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "새 추천앱 모음집 추가"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "운영자 선반"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "운영자 선반이 생성되지 않았습니다."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "새 운영자 선반 추가"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "운영자 선반을 확인하기 위한 캐리어를 선택해 주세요."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,6 +334,10 @@ msgstr "지역 읽는 중..."
 msgid "Loading carriers..."
 msgstr "캐리어 읽는 중..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "앗 이런!"
@@ -349,10 +353,6 @@ msgstr "더 읽는 중에 오류 발생"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "다시 시도"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -382,6 +382,12 @@ msgstr "Persona 로그인에 실패하였습니다. 서버 오류가 발생하�
 msgid "No internet connection"
 msgstr "인터넷 연결되지 않음"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> 글자 남았습니다."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "기본 모음집"
@@ -394,11 +400,26 @@ msgstr "추천 앱 모음집"
 msgid "Operator Shelf"
 msgstr "운영자 선반"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> 글자 남았습니다."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "개요"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "모음집이 생성되지 않았습니다."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "모음집 생성을 실패하였습니다."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "새 모음집"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "찾을 수 없음"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -539,24 +560,3 @@ msgstr "이미지를 저장하지 못함"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "모음집"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "개요"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "모음집이 생성되지 않았습니다."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "모음집 생성을 실패하였습니다."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "새 모음집"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "찾을 수 없음"

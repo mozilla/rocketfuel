@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-03-30 01:36+0400\n"
 "Last-Translator: Alexander L. Slovesnik <unghost@mozilla-russia.org>\n"
 "Language-Team: none\n"
@@ -36,6 +36,66 @@ msgstr "Добавить приложения"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Поиск"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Вы не вошли в качестве Куратора"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Для того, чтобы создавать или изменять подборки, необходимо войти в качестве Куратора для эффективного использования этого инструмента."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Категория"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Регион"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Оператор"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Подборки"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ни одной подборки не создано."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Добавить новую подборку"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Избранные приложения"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Ни одного раздела избранных приложений не создано."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Добавить новую подборку избранных приложений"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Полки Оператора"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Ни одной полки оператора не создано."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Добавить новую полку оператора"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Пожалуйста, выберите оператора, чтобы увидеть полки оператора."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -149,6 +209,18 @@ msgstr "Нет"
 msgid "Yes"
 msgstr "Да"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Инструмент куратора"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Выйти"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Войти"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Дублировать подборку"
@@ -173,81 +245,9 @@ msgstr "Требуется короткий url"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Короткие url должны начинаться с буквы и могут содержать только буквы, цифры и дефисы. Их длина не должна превышать 30 символов и они не могут совпадать с существующей подборкой."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Категория"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Регион"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Оператор"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Дублировать"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Инструмент куратора"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Выйти"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Войти"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Вы не вошли в качестве Куратора"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Для того, чтобы создавать или изменять подборки, необходимо войти в качестве Куратора для эффективного использования этого инструмента."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Подборки"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ни одной подборки не создано."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Добавить новую подборку"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Избранные приложения"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Ни одного раздела избранных приложений не создано."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Добавить новую подборку избранных приложений"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Полки Оператора"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Ни одной полки оператора не создано."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Добавить новую полку оператора"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Пожалуйста, выберите оператора, чтобы увидеть полки оператора."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -333,6 +333,10 @@ msgstr "Загрузка регионов..."
 msgid "Loading carriers..."
 msgstr "Загрузка операторов..."
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "О нет!"
@@ -348,10 +352,6 @@ msgstr "Ошибка загрузки другого"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Попробовать снова"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -381,6 +381,14 @@ msgstr "Ошибка входа через Persona. Произошла ошиб�
 msgid "No internet connection"
 msgstr "Нет подключения к Интернету"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "остался <b>{n}</b> символ."
+msgstr[1] "осталось <b>{n}</b> символа."
+msgstr[2] "осталось <b>{n}</b> символов."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Базовая подборка"
@@ -393,13 +401,26 @@ msgstr "Подборка избранных приложений"
 msgid "Operator Shelf"
 msgstr "Полка оператора"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "остался <b>{n}</b> символ."
-msgstr[1] "осталось <b>{n}</b> символа."
-msgstr[2] "осталось <b>{n}</b> символов."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Обзор"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "Создана новая подборка."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Не удалось создать новую подборку."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Новая подборка"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Не найдена"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -540,24 +561,3 @@ msgstr "Не удалось сохранить изображение"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Подборка"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Обзор"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "Создана новая подборка."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Не удалось создать новую подборку."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Новая подборка"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Не найдена"

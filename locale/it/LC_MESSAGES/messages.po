@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rocketfuel in italiano\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09T16:18:01.695Z\n"
+"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
 "PO-Revision-Date: 2014-03-27 17:28+0000\n"
 "Last-Translator: Sandro <gialloporpora@mozillaitalia.org>\n"
 "Language-Team: MozillaItalia <gialloporpora@gmail.com>\n"
@@ -37,6 +37,66 @@ msgstr "Aggiungi app"
 #: /templates/app_search.html:4 /templates/app_search.html:5
 msgid "Search"
 msgstr "Cerca"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Non sei identificato come curatore"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Al fine di utilizzare effettivamente questo strumento per creare o modificare una raccolta devi essere identificato come curatore."
+
+#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categoria"
+
+#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Regione"
+
+#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operatore telefonico"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Raccolte"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Non è stata creata alcuna raccolta."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Aggiungi una nuova raccolta"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "App consigliate"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Non è stata creata alcuna sezione per le app consigliate."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Aggiungi una nuova raccolta di app consigliate"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Scaffali operatore"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Non è stato creato alcun scaffale operatore."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Aggiungi un nuovo scaffale operatore"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Seleziona un operatore telefonico per visualizzare i suoi scaffali di app."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -150,6 +210,18 @@ msgstr "No"
 msgid "Yes"
 msgstr "Si"
 
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Strumento di gestione"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Esci"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Accedi"
+
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
 msgstr "Clona raccolta"
@@ -176,81 +248,9 @@ msgstr ""
 "Gli slug devono iniziare con una lettera e devono contenere solo caratteri alfanumerici e trattini. Sono composti da non più di 30 caratteri e non è possibile scegliere slum utilizzati da altre "
 "raccolte."
 
-#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categoria"
-
-#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Regione"
-
-#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operatore telefonico"
-
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Clona"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Strumento di gestione"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Esci"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Accedi"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Non sei identificato come curatore"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Al fine di utilizzare effettivamente questo strumento per creare o modificare una raccolta devi essere identificato come curatore."
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Raccolte"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Non è stata creata alcuna raccolta."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Aggiungi una nuova raccolta"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "App consigliate"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Non è stata creata alcuna sezione per le app consigliate."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Aggiungi una nuova raccolta di app consigliate"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Scaffali operatore"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Non è stato creato alcun scaffale operatore."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Aggiungi un nuovo scaffale operatore"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Seleziona un operatore telefonico per visualizzare i suoi scaffali di app."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -336,6 +336,10 @@ msgstr "Caricamento delle regioni in corso…"
 msgid "Loading carriers..."
 msgstr "Caricamento degli operatori telefonici in corso…"
 
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Oh no!"
@@ -351,10 +355,6 @@ msgstr "Errore durante il caricamento di altri contenuti"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Riprova"
-
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
@@ -384,6 +384,13 @@ msgstr "È fallita l'identificazione tramite Persona. Si è verificato un errore
 msgid "No internet connection"
 msgstr "Connessione Internet non disponibile"
 
+#. {n} is the number of characters left.
+#: /media/js/utils.js:28
+msgid "<b>{n}</b> character left."
+msgid_plural "<b>{n}</b> characters left."
+msgstr[0] "<b>{n}</b> carattere rimasto."
+msgstr[1] "<b>{n}</b> caratteri rimasti."
+
 #: /media/js/settings.js:46
 msgid "Basic Collection"
 msgstr "Raccolta base"
@@ -396,12 +403,26 @@ msgstr "Raccolta di app consigliate"
 msgid "Operator Shelf"
 msgstr "Scaffale operatore"
 
-#. {n} is the number of characters left.
-#: /media/js/utils.js:28
-msgid "<b>{n}</b> character left."
-msgid_plural "<b>{n}</b> characters left."
-msgstr[0] "<b>{n}</b> carattere rimasto."
-msgstr[1] "<b>{n}</b> caratteri rimasti."
+#: /media/js/views/homepage.js:37
+msgid "Overview"
+msgstr "Panoramica"
+
+#: /media/js/views/new_collection.js:49
+msgid "New collection created."
+msgstr "La nuova raccolta è stata creata."
+
+#: /media/js/views/new_collection.js:52
+msgid "Failed to create new collection."
+msgstr "Creazione della nuova raccolta non riuscita."
+
+#: /media/js/views/new_collection.js:108
+msgid "New Collection"
+msgstr "Nuova raccolta"
+
+#. Page not found (404)
+#: /media/js/views/not_found.js:9
+msgid "Not Found"
+msgstr "Non trovato"
 
 #: /media/js/views/collection.js:14
 msgid "Make Collection Hidden"
@@ -542,24 +563,3 @@ msgstr "Impossibile salvare l'immagine"
 #: /media/js/views/collection.js:586
 msgid "Collection"
 msgstr "Raccolta"
-
-#: /media/js/views/homepage.js:37
-msgid "Overview"
-msgstr "Panoramica"
-
-#: /media/js/views/new_collection.js:49
-msgid "New collection created."
-msgstr "La nuova raccolta è stata creata."
-
-#: /media/js/views/new_collection.js:52
-msgid "Failed to create new collection."
-msgstr "Creazione della nuova raccolta non riuscita."
-
-#: /media/js/views/new_collection.js:108
-msgid "New Collection"
-msgstr "Nuova raccolta"
-
-#. Page not found (404)
-#: /media/js/views/not_found.js:9
-msgid "Not Found"
-msgstr "Non trovato"
