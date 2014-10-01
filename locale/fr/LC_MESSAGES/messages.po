@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-03-30 13:32+0000\n"
 "Last-Translator: Théo <theo.chevalier11@gmail.com>\n"
 "Language-Team: none\n"
@@ -29,74 +29,6 @@ msgstr "Saisissez l'adresse électronique de l'utilisateur que vous voulez nomme
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namasté"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ajouter des apps"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Rechercher"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Vous n'êtes pas connecté en tant que superviseur"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Afin de créer ou de modifier des collections, vous devez être connecté en tant que superviseur pour pleinement utiliser cet outil."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Catégorie"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Région"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Opérateur"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Collections"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Aucune collection n'a été créée."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Ajouter une nouvelle collection"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Applications en vedette"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Aucune section d'applications en vedette n'a été créée."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Ajouter une nouvelle collection d'applications en vedette"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Étagères opérateur"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Aucune étagère opérateur n'a été créé."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Ajouter une nouvelle étagère opérateur"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Veuillez choisir un opérateur pour voir ses étagères."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Il n'y a pas de superviseur pour cette collection."
 msgid "Add Curator"
 msgstr "Ajouter un superviseur"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Fermer"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ajouter des apps"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Non"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Oui"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Outil de supervision"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Déconnexion"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Connexion"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Rechercher"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -248,9 +164,93 @@ msgstr ""
 "Les raccourcis doivent commencer par une lettre et ne peuvent contenir que des lettres, des chiffres et des tirets. Leur longueur ne peut pas dépasser 30 caractères et ils ne peuvent pas être "
 "identiques à celui d'une autre collection existante."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Catégorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Région"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Opérateur"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dupliquer"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Fermer"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Non"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Oui"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Outil de supervision"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Déconnexion"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Connexion"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Vous n'êtes pas connecté en tant que superviseur"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Afin de créer ou de modifier des collections, vous devez être connecté en tant que superviseur pour pleinement utiliser cet outil."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Collections"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Aucune collection n'a été créée."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Ajouter une nouvelle collection"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Applications en vedette"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Aucune section d'applications en vedette n'a été créée."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Ajouter une nouvelle collection d'applications en vedette"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Étagères opérateur"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Aucune étagère opérateur n'a été créé."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Ajouter une nouvelle étagère opérateur"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Veuillez choisir un opérateur pour voir ses étagères."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -336,10 +336,6 @@ msgstr "Chargement des régions…"
 msgid "Loading carriers..."
 msgstr "Chargement des opérateurs…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID&nbsp;: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Oh non !"
@@ -355,6 +351,10 @@ msgstr "Erreur de chargement du contenu supplémentaire"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Veuillez réessayer"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID&nbsp;: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

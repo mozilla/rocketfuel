@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,74 +27,6 @@ msgstr "Escriba o enderezo de correo dun usuario que quere facer administrador d
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Engadir aplicativos"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Buscar"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Non se identificou como un administrador"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Para crear ou modificar coleccións, debe identificarse como un administrador para efectivamente usar esta ferramenta."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Categoría"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Rexión"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operadora"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Coleccións"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Non se creo ningunha colección."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Engadir unha nova colección"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Aplicativos destacados"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Non se crearon seccións para aplicativos destacados."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Engadir unha nova colección para aplicativos destacados"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Estantes da operadora"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Non se creou ningún estante da operadora."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Engadir un novo estante da operadora"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Seleccione unha operadora para ver os seus estantes."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -196,29 +128,13 @@ msgstr "Non hai administradores para esta colección."
 msgid "Add Curator"
 msgstr "Engadir administrador"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Pechar"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Engadir aplicativos"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Non"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Si"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Ferramenta de administración"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Saír"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Identificarse"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Buscar"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -244,9 +160,93 @@ msgstr "Requírese un título breve"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Os títulos breves (ou slugs) deben comezar cunha letra e só poden conter letras, números ou guións. Deben ter un máximo de 30 caracteres ou menos e non poden ser iguais á colección existente."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Categoría"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Rexión"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operadora"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplicar"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Pechar"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Non"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Si"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Ferramenta de administración"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Saír"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Identificarse"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Non se identificou como un administrador"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Para crear ou modificar coleccións, debe identificarse como un administrador para efectivamente usar esta ferramenta."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Coleccións"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Non se creo ningunha colección."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Engadir unha nova colección"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Aplicativos destacados"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Non se crearon seccións para aplicativos destacados."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Engadir unha nova colección para aplicativos destacados"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Estantes da operadora"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Non se creou ningún estante da operadora."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Engadir un novo estante da operadora"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Seleccione unha operadora para ver os seus estantes."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -332,10 +332,6 @@ msgstr "Cargando rexións..."
 msgid "Loading carriers..."
 msgstr "Cargando operadoras..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Oh non!"
@@ -351,6 +347,10 @@ msgstr "Erro ao cargar máis"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Tentar de novo"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,83 +30,6 @@ msgstr ""
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Ƞȧḿȧşŧḗ"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Ȧḓḓ Ȧƥƥş"
-
-#: /templates/app_search.html:4
-#: /templates/app_search.html:5
-msgid "Search"
-msgstr "Şḗȧřƈħ"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Ẏǿŭ ȧřḗ ƞǿŧ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr ""
-"Īƞ ǿřḓḗř ŧǿ ƈřḗȧŧḗ ǿř ḿǿḓīƒẏ ƈǿŀŀḗƈŧīǿƞş, ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř "
-"ŧǿ ḗƒƒḗƈŧīṽḗŀẏ ŭşḗ ŧħīş ŧǿǿŀ."
-
-#: /templates/homepage.html:13
-#: /templates/duplicate_collection.html:22
-#: /templates/new_collection.html:44
-msgid "Category"
-msgstr "Ƈȧŧḗɠǿřẏ"
-
-#: /templates/homepage.html:19
-#: /templates/duplicate_collection.html:27
-#: /templates/new_collection.html:49
-msgid "Region"
-msgstr "Řḗɠīǿƞ"
-
-#: /templates/homepage.html:25
-#: /templates/duplicate_collection.html:32
-#: /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Ƈȧřřīḗř"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Ƈǿŀŀḗƈŧīǿƞş"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ƞǿ ƈǿŀŀḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Ȧḓḓ ȧ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Ƒḗȧŧŭřḗḓ Ȧƥƥş"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Ƞǿ ƒḗȧŧŭřḗḓ ȧƥƥ şḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Ȧḓḓ ȧ ƞḗẇ ƒḗȧŧŭřḗḓ ȧƥƥ ƈǿŀŀḗƈŧīǿƞ"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Ǿƥḗřȧŧǿř Şħḗŀṽḗş"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Ƞǿ ǿƥḗřȧŧǿř şħḗŀṽḗş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Ȧḓḓ ȧ ƞḗẇ ǿƥḗřȧŧǿř şħḗŀƒ"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Ƥŀḗȧşḗ şḗŀḗƈŧ ȧ ƈȧřřīḗř ŧǿ şḗḗ ǿƥḗřȧŧǿř şħḗŀṽḗş."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -216,29 +139,14 @@ msgstr "Ŧħḗřḗ ȧřḗ ƞǿ ƈŭřȧŧǿřş ƒǿř ŧħīş ƈǿŀŀḗƈ
 msgid "Add Curator"
 msgstr "Ȧḓḓ Ƈŭřȧŧǿř"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Ƈŀǿşḗ"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Ȧḓḓ Ȧƥƥş"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Ƞǿ"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ẏḗş"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Ƈŭřȧŧīǿƞ Ŧǿǿŀ"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Şīɠƞ Ǿŭŧ"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Şīɠƞ Īƞ"
+#: /templates/app_search.html:4
+#: /templates/app_search.html:5
+msgid "Search"
+msgstr "Şḗȧřƈħ"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -268,9 +176,101 @@ msgstr ""
 "ħẏƥħḗƞş. Īŧ ḿŭşŧ ƀḗ 30 ƈħȧřȧƈŧḗřş ǿř ŀḗşş ȧƞḓ ƈȧƞƞǿŧ ƀḗ ŧħḗ şȧḿḗ ȧş ŧħḗ "
 "ḗẋīşŧīƞɠ ƈǿŀŀḗƈŧīǿƞ."
 
+#: /templates/duplicate_collection.html:22
+#: /templates/homepage.html:13
+#: /templates/new_collection.html:44
+msgid "Category"
+msgstr "Ƈȧŧḗɠǿřẏ"
+
+#: /templates/duplicate_collection.html:27
+#: /templates/homepage.html:19
+#: /templates/new_collection.html:49
+msgid "Region"
+msgstr "Řḗɠīǿƞ"
+
+#: /templates/duplicate_collection.html:32
+#: /templates/homepage.html:25
+#: /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Ƈȧřřīḗř"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Ḓŭƥŀīƈȧŧḗ"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Ƈŀǿşḗ"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Ƞǿ"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ẏḗş"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Ƈŭřȧŧīǿƞ Ŧǿǿŀ"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Şīɠƞ Ǿŭŧ"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Şīɠƞ Īƞ"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Ẏǿŭ ȧřḗ ƞǿŧ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr ""
+"Īƞ ǿřḓḗř ŧǿ ƈřḗȧŧḗ ǿř ḿǿḓīƒẏ ƈǿŀŀḗƈŧīǿƞş, ẏǿŭ ḿŭşŧ ƀḗ ŀǿɠɠḗḓ īƞ ȧş ȧ Ƈŭřȧŧǿř "
+"ŧǿ ḗƒƒḗƈŧīṽḗŀẏ ŭşḗ ŧħīş ŧǿǿŀ."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Ƈǿŀŀḗƈŧīǿƞş"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ƞǿ ƈǿŀŀḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Ȧḓḓ ȧ ƞḗẇ ƈǿŀŀḗƈŧīǿƞ"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Ƒḗȧŧŭřḗḓ Ȧƥƥş"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Ƞǿ ƒḗȧŧŭřḗḓ ȧƥƥ şḗƈŧīǿƞş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Ȧḓḓ ȧ ƞḗẇ ƒḗȧŧŭřḗḓ ȧƥƥ ƈǿŀŀḗƈŧīǿƞ"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Ǿƥḗřȧŧǿř Şħḗŀṽḗş"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Ƞǿ ǿƥḗřȧŧǿř şħḗŀṽḗş ħȧṽḗ ƀḗḗƞ ƈřḗȧŧḗḓ."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Ȧḓḓ ȧ ƞḗẇ ǿƥḗřȧŧǿř şħḗŀƒ"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Ƥŀḗȧşḗ şḗŀḗƈŧ ȧ ƈȧřřīḗř ŧǿ şḗḗ ǿƥḗřȧŧǿř şħḗŀṽḗş."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -360,10 +360,6 @@ msgstr "Ŀǿȧḓīƞɠ řḗɠīǿƞş..."
 msgid "Loading carriers..."
 msgstr "Ŀǿȧḓīƞɠ ƈȧřřīḗřş..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ĪḒ: {īḓ}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Ǿħ ƞǿ!"
@@ -379,6 +375,10 @@ msgstr "Ḗřřǿř ŀǿȧḓīƞɠ ḿǿřḗ"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Ŧřẏ Ȧɠȧīƞ"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ĪḒ: {īḓ}"
 
 #: /media/js/forms.js:50
 msgid "Save"

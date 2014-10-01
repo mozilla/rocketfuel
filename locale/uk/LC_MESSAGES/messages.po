@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-08-18 07:20+0000\n"
 "Last-Translator: Artem <a.polivanchuk@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,74 +29,6 @@ msgstr "Введіть адресу електронної пошти корис
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Намасте"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Додати програми"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Пошук"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Ви не увійшли, як куратор"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Для того, щоб створювати або змінювати збірки, ви повинні увійти в якості куратора для ефективного використання цього інструменту."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Категорія"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Регіон"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Оператор"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Збірки"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Жодної збірки не створено."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Додати нову збірку"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Відібрані програми"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Жодного розділу відібраних програм не створено."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Додати нову збірку відібраних програм"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Полиці оператора"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Жодної полиці оператора не створено."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Додати нову полицю оператора"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Будь ласка, виберіть оператора, щоб побачити полиці оператора."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Для цієї збірки немає кураторів."
 msgid "Add Curator"
 msgstr "Додати куратора"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Закрити"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Додати програми"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Ні"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Так"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Інструмент куратора"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Вийти"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Увійти"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Пошук"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "Необхідна коротка URL"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Короткі URL повинні починатись із літери та можуть містити лише літери, цифри та дефіси. Їх довжина не повинна перевищувати 30 символів, а також вони не можуть співпадати з існуючою збіркою."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Категорія"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Регіон"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Оператор"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Дублювати"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Закрити"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Ні"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Так"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Інструмент куратора"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Вийти"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Увійти"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Ви не увійшли, як куратор"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Для того, щоб створювати або змінювати збірки, ви повинні увійти в якості куратора для ефективного використання цього інструменту."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Збірки"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Жодної збірки не створено."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Додати нову збірку"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Відібрані програми"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Жодного розділу відібраних програм не створено."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Додати нову збірку відібраних програм"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Полиці оператора"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Жодної полиці оператора не створено."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Додати нову полицю оператора"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Будь ласка, виберіть оператора, щоб побачити полиці оператора."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "Завантаження регіонів..."
 msgid "Loading carriers..."
 msgstr "Завантаження операторів..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "О ні!"
@@ -353,6 +349,10 @@ msgstr "Помилка подальшого завантаження"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Спробувати знову"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

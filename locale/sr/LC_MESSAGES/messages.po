@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-08-24 18:42+0000\n"
 "Last-Translator: Vanja <tumbas93@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,74 +29,6 @@ msgstr "Унесите адресу е-поште корисника којег 
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Додајте апликације"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Претражи"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Нисте пријављени као куратор"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Да бисте креирали или изменили колекције, морате бити пријављени као куратор како бисте успешно користили овај алат."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Категорија"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Регион"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Оператер"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Колекције"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ни једна колекција није креирана."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Додајте нову колекцију"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Истакнуте апликације"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Није креиран ни један одељак за истакнуте апликације."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Додајте нову колекцију за истакнуте апликације"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Полице оператора"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Ни једна полица оператора није креирана."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Дoдајте нову полицу оператора"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Молимо Вас изаберите мрежног оператера како бисте прегледали полице оператора."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Нема куратора за ову колекцију."
 msgid "Add Curator"
 msgstr "Додајте куратора"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Затвори"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Додајте апликације"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Не"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Да"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Алат за курацију"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Одјави се"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Пријави се"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Претражи"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "Назив url адресе је неопходан"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Називи url адреса морају почети словом и могу да садрже само слова, бројеве и цртице. Морају бити дужине 30 или мање карактера и не могу бити исти са постојећом колекцијом."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Категорија"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Регион"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Оператер"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Дупликат"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Затвори"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Не"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Да"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Алат за курацију"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Одјави се"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Пријави се"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Нисте пријављени као куратор"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Да бисте креирали или изменили колекције, морате бити пријављени као куратор како бисте успешно користили овај алат."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Колекције"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ни једна колекција није креирана."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Додајте нову колекцију"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Истакнуте апликације"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Није креиран ни један одељак за истакнуте апликације."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Додајте нову колекцију за истакнуте апликације"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Полице оператора"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Ни једна полица оператора није креирана."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Дoдајте нову полицу оператора"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Молимо Вас изаберите мрежног оператера како бисте прегледали полице оператора."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "Учитавање региона..."
 msgid "Loading carriers..."
 msgstr "Учитавање оператера..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "О, не!"
@@ -353,6 +349,10 @@ msgstr "Грешка током учитавања"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Покушај поново"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

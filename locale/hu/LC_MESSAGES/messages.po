@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-04-03 13:16+0000\n"
 "Last-Translator: Gábor <kelemeng@ubuntu.com>\n"
 "Language-Team: none\n"
@@ -29,74 +29,6 @@ msgstr "Adja meg a felhasználó e-mail címét, akit a gyűjtemény karbantart�
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Appok hozzáadása"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Keresés"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Nincs bejelentkezve karbantartóként"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Gyűjtemények létrehozásához vagy módosításához be kell jelentkeznie karbantartóként ezen eszköz hatásos használatához."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategória"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Régió"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Szolgáltató"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Gyűjtemények"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Nem jött létre gyűjtemény."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Új gyűjtemény hozzáadása"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Kiemelt appok"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Nem jöttek létre kiemelt appszakaszok."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Új kiemelt app gyűjtemény hozzáadása"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Operátori polcok"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Nem jött létre operátori polc."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Új operátori polc hozzáadása"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Válasszon ki egy szolgáltatót az operátori polcok kiválasztásához."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Nincsenek karbantartók a gyűjteményhez."
 msgid "Add Curator"
 msgstr "Karbantartó hozzáadása"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Bezárás"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Appok hozzáadása"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nem"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Igen"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Gondozói eszköz"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Kijelentkezés"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Bejelentkezés"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Keresés"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "Egy slug szükséges"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "A slug betűvel kezdődik, és csak betűket, számokat és kötőjeleket tartalmaz. Legfeljebb 30 karakter lehet, és nem lehet azonos egy meglévő gyűjteményével."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategória"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Régió"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Szolgáltató"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Megkettőzés"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Bezárás"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nem"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Igen"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Gondozói eszköz"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Kijelentkezés"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Bejelentkezés"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Nincs bejelentkezve karbantartóként"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Gyűjtemények létrehozásához vagy módosításához be kell jelentkeznie karbantartóként ezen eszköz hatásos használatához."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Gyűjtemények"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Nem jött létre gyűjtemény."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Új gyűjtemény hozzáadása"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Kiemelt appok"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Nem jöttek létre kiemelt appszakaszok."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Új kiemelt app gyűjtemény hozzáadása"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Operátori polcok"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Nem jött létre operátori polc."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Új operátori polc hozzáadása"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Válasszon ki egy szolgáltatót az operátori polcok kiválasztásához."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "Régiók betöltése…"
 msgid "Loading carriers..."
 msgstr "Szolgáltatók betöltése…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "Azonosító: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Jaj ne!"
@@ -353,6 +349,10 @@ msgstr "Hiba több betöltésekor"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Próbálja újra"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "Azonosító: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

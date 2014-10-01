@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-06-13 20:46+0000\n"
 "Last-Translator: Ibai <ibai@oihanguren.com>\n"
 "Language-Team: none\n"
@@ -29,74 +29,6 @@ msgstr "Sartu bilduma honen mantentzaile bihurtu nahi duzun erabiltzailearen pos
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Gehitu aplikazioak"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Bilatu"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Ez duzu saioa hasi mantentzaile gisa"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Bildumak sortu edo aldatzeko tresna hau erabili nahi baduzu, mantentzaile modura hasi behar duzu saioa."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategoria"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Eskualdea"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Hornitzailea"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Bildumak"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ez da bildumarik sortu."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Gehitu bilduma berri bat"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Nabarmendutako aplikazioak"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Ez da nabarmendutako aplikazioen atalik sortu."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Gehitu nabarmendutako aplikazioen bilduma berri bat"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Operatzaile-apalak"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Ez da operatzaile-apalik sortu."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Gehitu operatzaile-apal berri bat"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Hautatu hornitzaile bat operatzaile-apalak ikusteko."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Ez dago mantentzailerik bilduma honetarako."
 msgid "Add Curator"
 msgstr "Gehitu mantentzailea"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Itxi"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Gehitu aplikazioak"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Ez"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Bai"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Mantentze-tresna"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Amaitu saioa"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Hasi saioa"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Bilatu"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -248,9 +164,93 @@ msgstr ""
 "Slug-ek letra batekin hasi behar dute eta letrak, zenbakiak eta marratxoak soilik eduki ditzakete. 30 karaktere edo gutxiago eduki behar dituzte eta ezin dute izan lehendik dagoen bildumak duen "
 "bera."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategoria"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Eskualdea"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Hornitzailea"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Bikoiztu"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Itxi"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Ez"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Bai"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Mantentze-tresna"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Amaitu saioa"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Hasi saioa"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Ez duzu saioa hasi mantentzaile gisa"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Bildumak sortu edo aldatzeko tresna hau erabili nahi baduzu, mantentzaile modura hasi behar duzu saioa."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Bildumak"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ez da bildumarik sortu."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Gehitu bilduma berri bat"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Nabarmendutako aplikazioak"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Ez da nabarmendutako aplikazioen atalik sortu."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Gehitu nabarmendutako aplikazioen bilduma berri bat"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Operatzaile-apalak"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Ez da operatzaile-apalik sortu."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Gehitu operatzaile-apal berri bat"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Hautatu hornitzaile bat operatzaile-apalak ikusteko."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -336,10 +336,6 @@ msgstr "Eskualdeak kargatzen..."
 msgid "Loading carriers..."
 msgstr "Hornitzaileak kargatzen..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "IDa: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "O ez!"
@@ -355,6 +351,10 @@ msgstr "Errorea gehiago kargatzean"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Saiatu berriro"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "IDa: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

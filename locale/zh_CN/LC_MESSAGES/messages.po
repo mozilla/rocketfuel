@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-03-27 03:39+0000\n"
 "Last-Translator: Shen <steekid@icloud.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,74 +29,6 @@ msgstr "请输入此收藏集的策展人帐号的电子邮件地址"
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "你好"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "添加应用程序"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "搜索"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "您尚未登录为策展人"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "您必须先登录为策展人才能有效的使用此工具来建立或修改收藏集。"
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "分类"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "区域"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "运营商"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "收藏集"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "尚未创建收藏集。"
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "添加新的收藏集"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "精选应用程序"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "尚未创建精选应用程序分类。"
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "添加新的精选应用程序收藏集"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "电信运营商展示架"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "尚未创建电信运营商展示架"
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "添加新的电信运营商展示架"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "请选择一家电信运营商来查看他们的展示架"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "此收藏集目前没有策展人。"
 msgid "Add Curator"
 msgstr "添加策展人"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "关闭"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "添加应用程序"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "否"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "是"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "策展工具"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "登出"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "登录"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "搜索"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "Slug 是必填的"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Slug 必须以字母开始，只能包含字母、数字、连接符。必须少于30个字符，且不能与已有收藏集重名。"
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "分类"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "区域"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "运营商"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "复制"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "关闭"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "否"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "是"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "策展工具"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "登出"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "登录"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "您尚未登录为策展人"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "您必须先登录为策展人才能有效的使用此工具来建立或修改收藏集。"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "收藏集"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "尚未创建收藏集。"
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "添加新的收藏集"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "精选应用程序"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "尚未创建精选应用程序分类。"
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "添加新的精选应用程序收藏集"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "电信运营商展示架"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "尚未创建电信运营商展示架"
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "添加新的电信运营商展示架"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "请选择一家电信运营商来查看他们的展示架"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "正在载入区域列表..."
 msgid "Loading carriers..."
 msgstr "正在载入运营商列表..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "哦，不！"
@@ -353,6 +349,10 @@ msgstr "载入更多时出错"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "重试"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-07-28 22:12+0000\n"
 "Last-Translator: Andreas <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,74 +29,6 @@ msgstr "Ange e-postadressen för den användare som du vill göra till kurator f
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Lägg till appar"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Sök"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Du är inte inloggad som kurator"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "För att kunna skapa eller ändra samlingar måste du vara inloggad som en kurator för att effektivt använda detta verktyg."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategori"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operatör"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Samlingar"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Ingen samling har skapats."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Lägg till en ny samling"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Rekommenderade appar"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Inge rekommenderad app-sektion har skapats."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Lägg till en ny rekommenderad app-samling"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Hyllor för mobiloperatörer"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Inga hyllor för mobiloperatörer har skapats."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Lägg till en ny hylla för mobiloperatörer"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Välj en operatör för att se hyllor för mobiloperatörer."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Det finns inga kuratorer för denna samling."
 msgid "Add Curator"
 msgstr "Lägg till kurator"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Stäng"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Lägg till appar"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nej"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ja"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Kuratorverktyg"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Logga ut"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Logga in"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Sök"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "En slugg krävs"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Sluggar måste börja med en bokstav och får endast innehålla bokstäver, siffror och bindestreck. Den måste vara 30 tecken eller mindre och kan inte vara samma som den existerande samlingen."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategori"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operatör"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Dubblera"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Stäng"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nej"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ja"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Kuratorverktyg"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Logga ut"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Logga in"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Du är inte inloggad som kurator"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "För att kunna skapa eller ändra samlingar måste du vara inloggad som en kurator för att effektivt använda detta verktyg."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Samlingar"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Ingen samling har skapats."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Lägg till en ny samling"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Rekommenderade appar"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Inge rekommenderad app-sektion har skapats."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Lägg till en ny rekommenderad app-samling"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Hyllor för mobiloperatörer"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Inga hyllor för mobiloperatörer har skapats."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Lägg till en ny hylla för mobiloperatörer"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Välj en operatör för att se hyllor för mobiloperatörer."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "Laddar regioner..."
 msgid "Loading carriers..."
 msgstr "Laddar operatörer..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Åh nej!"
@@ -353,6 +349,10 @@ msgstr "Fel uppstod när mer skulle laddas"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Försök igen"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

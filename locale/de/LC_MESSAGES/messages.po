@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-03-26 16:37+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: none\n"
@@ -29,74 +29,6 @@ msgstr "Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie zum Verwalter di
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Apps hinzufügen"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Suchen"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Sie sind nicht als Verwalter angemeldet"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter anmelden, um dieses Werkzeug effektiv verwenden zu können."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategorie"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Region"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Mobilfunkanbieter"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Sammlungen"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Es wurden noch keine Sammlungen erstellt."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Eine neue Sammlung hinzufügen"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Vorgestellte Apps"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Es wurden noch keine Abschnitte für vorgestellte Apps erstellt."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Eine neue Sammlung für vorgestellte Apps hinzufügen"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Regale für Mobilfunkanbieter"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Es wurden noch keine Regale für Mobilfunkanbieter erstellt."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Ein neues Regal für Mobilfunkanbieter hinzufügen"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Bitte wählen Sie einen Mobilfunkanbieter aus, um Regale für Mobilfunkanbieter zu sehen."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Es gibt keine Verwalter für diese Sammlung."
 msgid "Add Curator"
 msgstr "Verwalter hinzufügen"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Schließen"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Apps hinzufügen"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nein"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ja"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Kurations-Werkzeug"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Abmelden"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Anmelden"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Suchen"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -248,9 +164,93 @@ msgstr ""
 "Adressnamen müssen mit einem Buchstaben anfangen und dürfen nur Buchstaben, Zahlen und Bindestriche enthalten. Er darf höchstens 30 Zeichen lang sein und darf nicht mit der bestehenden Sammlung "
 "übereinstimmen. "
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategorie"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Region"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Mobilfunkanbieter"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplizieren"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Schließen"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nein"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ja"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Kurations-Werkzeug"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Abmelden"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Sie sind nicht als Verwalter angemeldet"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Um Sammlungen zu erstellen oder zu bearbeiten, müssen Sie sich als Verwalter anmelden, um dieses Werkzeug effektiv verwenden zu können."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Sammlungen"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Es wurden noch keine Sammlungen erstellt."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Eine neue Sammlung hinzufügen"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Vorgestellte Apps"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Es wurden noch keine Abschnitte für vorgestellte Apps erstellt."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Eine neue Sammlung für vorgestellte Apps hinzufügen"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Regale für Mobilfunkanbieter"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Es wurden noch keine Regale für Mobilfunkanbieter erstellt."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Ein neues Regal für Mobilfunkanbieter hinzufügen"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Bitte wählen Sie einen Mobilfunkanbieter aus, um Regale für Mobilfunkanbieter zu sehen."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -336,10 +336,6 @@ msgstr "Regionen werden geladen…"
 msgid "Loading carriers..."
 msgstr "Mobilfunkanbieter werden geladen…"
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Oh, nein!"
@@ -355,6 +351,10 @@ msgstr "Fehler beim Laden weiterer Daten"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Versuchen Sie es erneut"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-04-01 23:14+0000\n"
 "Last-Translator: Aman <amanpreet.alam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,74 +29,6 @@ msgstr "ਉਪਭੋਗੀ ਦੇ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ। 
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "ਨਮਸਤੇ"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "ਐਪ ਜੋੜੋ"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "ਲੱਭੋ"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "ਤੁਹਾਨੂੰ ਇੱਕ ਪ੍ਰਧਾਨ ਦੇ ਤੌਰ ਤੇ ਲਾਗਇਨ ਨਹੀ ਕੀਤਾ"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "ਸੰਗ੍ਰਹਿ ਨੂੰ ਬਣਾਉਣ ਜਾ ਸੋਧ ਕਰਨ ਲਈ, ਇਸ ਜੰਤਰ ਨੂੰ ਵਰਤਣ ਲਈ ਇੱਕ ਪ੍ਰਧਾਨ ਤੌਰ ਤੇ ਲਾਗਇਨ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "ਸ਼੍ਰੇਣੀ"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "ਖੇਤਰ"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "ਕੈਰੀਅਰ"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "ਸੰਗ੍ਰਹਿ"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "ਕੋਈ ਸੰਗ੍ਰਹਿ ਬਣਾਇਆ ਨਹੀ ਗਿਆ ਹੈ।"
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "ਇੱਕ ਨਵ ਭੰਡਾਰ ਸ਼ਾਮਲ ਕਰੋ"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "ਗੁਣ ਐਪਸ"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "ਕੋਈ ਵਿਸ਼ੇਸ਼ਤਾ ਵਾਲਾ ਐਪ ਨਹੀ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "ਇੱਕ ਨਵ ਵਿਸ਼ੇਸ਼ਤਾ ਵਾਲੇ ਐਪ ਨੂੰ ਭੰਡਾਰ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰੋ"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "ਆਪਰੇਟਰ Shelves"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "ਕੋਈ ਆਪਰੇਟਰ shelves ਬਣਾਇਆ ਗਿਆ ਹੈ।"
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "ਇੱਕ ਨਵ ਆਪਰੇਟਰ ਸ਼ੈਲਫ ਸ਼ਾਮਲ ਕਰੋ"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "ਆਪਰੇਟਰ shelves ਨੂੰ ਵੇਖਣ ਲਈ ਇੱਕ ਕੈਰੀਅਰ ਦੀ ਚੋਣ ਕਰੋ ਜੀ।"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "ਇਸ ਨੂੰ ਇਕੱਠੇ ਕਰਨ ਲਈ ਕੋਈ ਵੀ ਪ�
 msgid "Add Curator"
 msgstr "ਪ੍ਰਧਾਨ ਸ਼ਾਮਲ ਕਰੋ"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "ਬੰਦ ਕਰੋ"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "ਐਪ ਜੋੜੋ"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "ਨਹੀ"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "ਹਾ"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Curation ਸੰਦ"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "ਸਾਈਨ ਆਉਟ"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "ਸਾਇਨ ਇਨ"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "ਲੱਭੋ"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "ਇੱਕ slug ਦੀ ਲੋੜ ਹੈ"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Slugs ਇੱਕ ਅੱਖਰ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਅੱਖਰ, ਅੰਕ, ਅਤੇ ਹਾਈਫਨ ਹੋ ਸਕਦੇ ਹਨ. ਇਹ 30 ਅੱਖਰ ਜ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਮੌਜੂਦਾ ਭੰਡਾਰ ਨੂੰ ਹੀ ਹੋ ਸਕਦਾ ਹੈ।"
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "ਸ਼੍ਰੇਣੀ"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "ਖੇਤਰ"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "ਕੈਰੀਅਰ"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "ਡੁਪਲੀਕੇਟ"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "ਬੰਦ ਕਰੋ"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "ਨਹੀ"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "ਹਾ"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Curation ਸੰਦ"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "ਸਾਈਨ ਆਉਟ"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "ਸਾਇਨ ਇਨ"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "ਤੁਹਾਨੂੰ ਇੱਕ ਪ੍ਰਧਾਨ ਦੇ ਤੌਰ ਤੇ ਲਾਗਇਨ ਨਹੀ ਕੀਤਾ"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "ਸੰਗ੍ਰਹਿ ਨੂੰ ਬਣਾਉਣ ਜਾ ਸੋਧ ਕਰਨ ਲਈ, ਇਸ ਜੰਤਰ ਨੂੰ ਵਰਤਣ ਲਈ ਇੱਕ ਪ੍ਰਧਾਨ ਤੌਰ ਤੇ ਲਾਗਇਨ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "ਸੰਗ੍ਰਹਿ"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "ਕੋਈ ਸੰਗ੍ਰਹਿ ਬਣਾਇਆ ਨਹੀ ਗਿਆ ਹੈ।"
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "ਇੱਕ ਨਵ ਭੰਡਾਰ ਸ਼ਾਮਲ ਕਰੋ"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "ਗੁਣ ਐਪਸ"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "ਕੋਈ ਵਿਸ਼ੇਸ਼ਤਾ ਵਾਲਾ ਐਪ ਨਹੀ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "ਇੱਕ ਨਵ ਵਿਸ਼ੇਸ਼ਤਾ ਵਾਲੇ ਐਪ ਨੂੰ ਭੰਡਾਰ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰੋ"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "ਆਪਰੇਟਰ Shelves"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "ਕੋਈ ਆਪਰੇਟਰ shelves ਬਣਾਇਆ ਗਿਆ ਹੈ।"
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "ਇੱਕ ਨਵ ਆਪਰੇਟਰ ਸ਼ੈਲਫ ਸ਼ਾਮਲ ਕਰੋ"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "ਆਪਰੇਟਰ shelves ਨੂੰ ਵੇਖਣ ਲਈ ਇੱਕ ਕੈਰੀਅਰ ਦੀ ਚੋਣ ਕਰੋ ਜੀ।"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "ਖੇਤਰ ਲੋਡ ਕੀਤਾ ..."
 msgid "Loading carriers..."
 msgstr "ਕੈਰੀਅਰ ਲੋਡ ਕੀਤਾ ..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "ਅੋਹ ਨਾ!"
@@ -353,6 +349,10 @@ msgstr "ਹੋਰ ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ "
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-03-27 16:00+0000\n"
 "Last-Translator: Branislav <sektormaster@atlas.sk>\n"
 "Language-Team: none\n"
@@ -29,74 +29,6 @@ msgstr "Zadajte e-mailovú adresu používateľa, ktorého chcete spraviť sprá
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Pridať aplikácie"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Vyhľadávanie"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "Nie ste prihlásený ako správca"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Ak chcete vytvoriť alebo upraviť kolekcie, musíte byť prihlásený ako správca, inak nebudete môcť tento nástroj efektívne využívať."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Kategória"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Región"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Operátor"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Kolekcie"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Neboli vytvorené žiadne kolekcie."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Pridať novú kolekciu"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Odporúčané aplikácie"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Neboli vytvorené žiadne sekcie odporúčaných aplikácií."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Pridať novú odporúčanú kolekciu aplikácií"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Špecifické pre operátora"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Neboli vytvorené žiadne kolekcie špeciálne pre operátora."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Pridať novú kolekciu špecifickú pre operátora"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Zvoľte operátora, ak chcete vidieť kolekcie špecifické pre operátora."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -198,29 +130,13 @@ msgstr "Pre túto kolekciu nie sú určení žiadni správcovia."
 msgid "Add Curator"
 msgstr "Pridať správcu"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Zavrieť"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Pridať aplikácie"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Nie"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Áno"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Nástroje správcu"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Odhlásiť sa"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Prihlásiť sa"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Vyhľadávanie"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -246,9 +162,93 @@ msgstr "Vyžaduje sa adresa URL"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "URL musí začínať písmenom a môže obsahovať len písmená, čísla a pomlčky. Môže mať maximálne 30 znakov a nemôže byť rovnaká ako už existujúca."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Kategória"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Región"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Operátor"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Duplicitná"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Zavrieť"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Nie"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Áno"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Nástroje správcu"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Odhlásiť sa"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Prihlásiť sa"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "Nie ste prihlásený ako správca"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Ak chcete vytvoriť alebo upraviť kolekcie, musíte byť prihlásený ako správca, inak nebudete môcť tento nástroj efektívne využívať."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Kolekcie"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Neboli vytvorené žiadne kolekcie."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Pridať novú kolekciu"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Odporúčané aplikácie"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Neboli vytvorené žiadne sekcie odporúčaných aplikácií."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Pridať novú odporúčanú kolekciu aplikácií"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Špecifické pre operátora"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Neboli vytvorené žiadne kolekcie špeciálne pre operátora."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Pridať novú kolekciu špecifickú pre operátora"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Zvoľte operátora, ak chcete vidieť kolekcie špecifické pre operátora."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -334,10 +334,6 @@ msgstr "Načítavajú sa regióny..."
 msgid "Loading carriers..."
 msgstr "Načítavajú sa operátori..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Ale nie!"
@@ -353,6 +349,10 @@ msgstr "Chyba pri načítaní"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Skúsiť znova"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

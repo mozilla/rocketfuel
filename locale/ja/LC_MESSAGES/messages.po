@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2014-03-26 14:10-0500\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -28,74 +28,6 @@ msgstr "このコレクションの管理者にしたいユーザのメールア
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "ナマステ"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "アプリを追加"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "検索"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr "あなたは管理者としてログインしていません"
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "コレクションを作成、編集するには、管理者としてログインし、このツールを効果的に使用する必要があります。"
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "カテゴリ"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "地域"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "キャリア"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "コレクション"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "コレクションはまだ作成されていません。"
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "新しいコレクションを追加"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "おすすめアプリ"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "おすすめアプリの項目はまだ作成されていません。"
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "新しいおすすめアプリコレクションを追加"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "オペレーターのコレクション"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "オペレーターのコレクションはまだ作成されていません。"
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "新しいオペレーターのコレクションを追加"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "オペレーターのコレクションを見るにはキャリアを選択してください。"
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -197,29 +129,13 @@ msgstr "このコレクションには管理者がいません。"
 msgid "Add Curator"
 msgstr "管理者を追加"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "閉じる"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "アプリを追加"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "いいえ"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "はい"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "管理者ツール"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "ログアウト"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "ログイン"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "検索"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -245,9 +161,93 @@ msgstr "スラグは必須です"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "スラグは、最初の文字をアルファベットにする必要があり、英数字とハイフンのみ使用できます。最大 30 文字で、既存のコレクションと同じものは使用できません。"
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "カテゴリ"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "地域"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "キャリア"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "複製"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "閉じる"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "いいえ"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "はい"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "管理者ツール"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "ログアウト"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "ログイン"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr "あなたは管理者としてログインしていません"
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "コレクションを作成、編集するには、管理者としてログインし、このツールを効果的に使用する必要があります。"
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "コレクション"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "コレクションはまだ作成されていません。"
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "新しいコレクションを追加"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "おすすめアプリ"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "おすすめアプリの項目はまだ作成されていません。"
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "新しいおすすめアプリコレクションを追加"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "オペレーターのコレクション"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "オペレーターのコレクションはまだ作成されていません。"
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "新しいオペレーターのコレクションを追加"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "オペレーターのコレクションを見るにはキャリアを選択してください。"
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -333,10 +333,6 @@ msgstr "地域を読み込んでいます..."
 msgid "Loading carriers..."
 msgstr "キャリアを読み込んでいます..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "エラー"
@@ -352,6 +348,10 @@ msgstr "読み込み中に問題が発生しました"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "再読み込み"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"

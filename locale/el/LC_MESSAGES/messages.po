@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17T16:10:54.942Z\n"
+"POT-Creation-Date: 2014-10-01T16:27:18.610Z\n"
 "PO-Revision-Date: 2013-09-12T16:21:18.130Z\n"
 "Last-Translator: Αλέξανδρος Μιόγλου <alexandros@mioglou.me>\n"
 "Language-Team: none\n"
@@ -28,74 +28,6 @@ msgstr "Εισάγετε τη διεύθυνση email ενός χρήστη π�
 #: /templates/add_curator.html:11
 msgid "Namaste"
 msgstr "Namaste"
-
-#: /templates/app_search.html:2
-msgid "Add Apps"
-msgstr "Προσθήκη εφαρμογών"
-
-#: /templates/app_search.html:4 /templates/app_search.html:5
-msgid "Search"
-msgstr "Αναζήτηση"
-
-#: /templates/homepage.html:5
-msgid "You are not logged in as a Curator"
-msgstr ""
-
-#: /templates/homepage.html:6
-msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
-msgstr "Για να δημιουργήσετε ή να τροποποιήσετε συλλογές, πρέπει να έχετε συνδεθεί σαν Επιμελητής ώστε να χρησιμοποιήσετε αποτελεσματικά αυτό το εργαλείο."
-
-#: /templates/homepage.html:13 /templates/duplicate_collection.html:22 /templates/new_collection.html:44
-msgid "Category"
-msgstr "Κατηγορία"
-
-#: /templates/homepage.html:19 /templates/duplicate_collection.html:27 /templates/new_collection.html:49
-msgid "Region"
-msgstr "Χώρα"
-
-#: /templates/homepage.html:25 /templates/duplicate_collection.html:32 /templates/new_collection.html:54
-msgid "Carrier"
-msgstr "Πάροχος"
-
-#: /templates/homepage.html:38
-msgid "Collections"
-msgstr "Συλλογές"
-
-#: /templates/homepage.html:46
-msgid "No collections have been created."
-msgstr "Δεν έχουν δημιουργηθεί συλλογές."
-
-#: /templates/homepage.html:50
-msgid "Add a new collection"
-msgstr "Προσθήκη νέας συλλογής"
-
-#: /templates/homepage.html:53
-msgid "Featured Apps"
-msgstr "Προβεβλημένες εφαρμογές"
-
-#: /templates/homepage.html:61
-msgid "No featured app sections have been created."
-msgstr "Δεν έχουν δημιουργηθεί κατηγορίες προβεβλημένων εφαρμογών."
-
-#: /templates/homepage.html:65
-msgid "Add a new featured app collection"
-msgstr "Προσθήκη νέας συλλογής προβεβλημένων εφαρμογών"
-
-#: /templates/homepage.html:70
-msgid "Operator Shelves"
-msgstr "Ράφια διαχειριστή"
-
-#: /templates/homepage.html:79
-msgid "No operator shelves have been created."
-msgstr "Δεν έχουν δημιουργηθεί ράφια διαχειριστή."
-
-#: /templates/homepage.html:83
-msgid "Add a new operator shelf"
-msgstr "Πρόσθεσε νέο ράφι διαχειριστή"
-
-#: /templates/homepage.html:85
-msgid "Please select a carrier to see operator shelves."
-msgstr "Επιλέξτε πάροχο για να δείτε ράφια διαχειριστή."
 
 #: /templates/collection.html:20
 msgid "Author:"
@@ -197,29 +129,13 @@ msgstr "Δεν υπάρχουν επιμελητές για αυτή τη συλ
 msgid "Add Curator"
 msgstr "Προσθήκε Επιμελητή"
 
-#: /templates/confirmation.html:0
-msgid "Close"
-msgstr "Κλείσιμο"
+#: /templates/app_search.html:2
+msgid "Add Apps"
+msgstr "Προσθήκη εφαρμογών"
 
-#: /templates/confirmation.html:3
-msgid "No"
-msgstr "Όχι"
-
-#: /templates/confirmation.html:4
-msgid "Yes"
-msgstr "Ναι"
-
-#: /templates/header.html:2
-msgid "Curation Tool"
-msgstr "Εργαλείο επιμέλειας"
-
-#: /templates/header.html:7
-msgid "Sign Out"
-msgstr "Αποσύνδεση"
-
-#: /templates/header.html:8
-msgid "Sign In"
-msgstr "Σύνδεση"
+#: /templates/app_search.html:4 /templates/app_search.html:5
+msgid "Search"
+msgstr "Αναζήτηση"
 
 #: /templates/duplicate_collection.html:2
 msgid "Duplicate Collection"
@@ -245,9 +161,93 @@ msgstr "Απαιτείται ψευδώνυμο"
 msgid "Slugs must start with a letter and can only contain letters, numbers, and hyphens. It must be 30 characters or less and cannot be the same as the existing collection."
 msgstr "Τα ψευδώνυμα πρέπει να αρχίζουν με γράμμα και περιέχουν μόνο γράμματα, αριθμούς, και κάτω παύλες. Πρέπει να είναι ως 30 χαρακτήρες και δε μπορούν να είναι τα ίδια με την υπάρχουσα συλλογή."
 
+#: /templates/duplicate_collection.html:22 /templates/homepage.html:13 /templates/new_collection.html:44
+msgid "Category"
+msgstr "Κατηγορία"
+
+#: /templates/duplicate_collection.html:27 /templates/homepage.html:19 /templates/new_collection.html:49
+msgid "Region"
+msgstr "Χώρα"
+
+#: /templates/duplicate_collection.html:32 /templates/homepage.html:25 /templates/new_collection.html:54
+msgid "Carrier"
+msgstr "Πάροχος"
+
 #: /templates/duplicate_collection.html:40
 msgid "Duplicate"
 msgstr "Αντιγραφή"
+
+#: /templates/confirmation.html:0
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: /templates/confirmation.html:3
+msgid "No"
+msgstr "Όχι"
+
+#: /templates/confirmation.html:4
+msgid "Yes"
+msgstr "Ναι"
+
+#: /templates/header.html:2
+msgid "Curation Tool"
+msgstr "Εργαλείο επιμέλειας"
+
+#: /templates/header.html:7
+msgid "Sign Out"
+msgstr "Αποσύνδεση"
+
+#: /templates/header.html:8
+msgid "Sign In"
+msgstr "Σύνδεση"
+
+#: /templates/homepage.html:5
+msgid "You are not logged in as a Curator"
+msgstr ""
+
+#: /templates/homepage.html:6
+msgid "In order to create or modify collections, you must be logged in as a Curator to effectively use this tool."
+msgstr "Για να δημιουργήσετε ή να τροποποιήσετε συλλογές, πρέπει να έχετε συνδεθεί σαν Επιμελητής ώστε να χρησιμοποιήσετε αποτελεσματικά αυτό το εργαλείο."
+
+#: /templates/homepage.html:38
+msgid "Collections"
+msgstr "Συλλογές"
+
+#: /templates/homepage.html:46
+msgid "No collections have been created."
+msgstr "Δεν έχουν δημιουργηθεί συλλογές."
+
+#: /templates/homepage.html:50
+msgid "Add a new collection"
+msgstr "Προσθήκη νέας συλλογής"
+
+#: /templates/homepage.html:53
+msgid "Featured Apps"
+msgstr "Προβεβλημένες εφαρμογές"
+
+#: /templates/homepage.html:61
+msgid "No featured app sections have been created."
+msgstr "Δεν έχουν δημιουργηθεί κατηγορίες προβεβλημένων εφαρμογών."
+
+#: /templates/homepage.html:65
+msgid "Add a new featured app collection"
+msgstr "Προσθήκη νέας συλλογής προβεβλημένων εφαρμογών"
+
+#: /templates/homepage.html:70
+msgid "Operator Shelves"
+msgstr "Ράφια διαχειριστή"
+
+#: /templates/homepage.html:79
+msgid "No operator shelves have been created."
+msgstr "Δεν έχουν δημιουργηθεί ράφια διαχειριστή."
+
+#: /templates/homepage.html:83
+msgid "Add a new operator shelf"
+msgstr "Πρόσθεσε νέο ράφι διαχειριστή"
+
+#: /templates/homepage.html:85
+msgid "Please select a carrier to see operator shelves."
+msgstr "Επιλέξτε πάροχο για να δείτε ράφια διαχειριστή."
 
 #: /templates/new_collection.html:2
 msgid "New {collection_type}"
@@ -333,10 +333,6 @@ msgstr "Φόρτωση περιοχών..."
 msgid "Loading carriers..."
 msgstr "Φόρτωση παρόχων..."
 
-#: /templates/helpers/curator.html:0
-msgid "ID: {id}"
-msgstr "ID: {id}"
-
 #: /templates/errors/fragment.html:1
 msgid "Oh no!"
 msgstr "Ωχ όχι!"
@@ -352,6 +348,10 @@ msgstr "Σφάλμα κατά τη φόρτωση περισσότερων"
 #: /templates/errors/pagination.html:2
 msgid "Try Again"
 msgstr "Προσπαθήστε ξανά"
+
+#: /templates/helpers/curator.html:0
+msgid "ID: {id}"
+msgstr "ID: {id}"
 
 #: /media/js/forms.js:50
 msgid "Save"
